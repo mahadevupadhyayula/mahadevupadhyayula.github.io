@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Case Studies
 
 A collection of product projects with the problem, approach, and measurable outcomes.

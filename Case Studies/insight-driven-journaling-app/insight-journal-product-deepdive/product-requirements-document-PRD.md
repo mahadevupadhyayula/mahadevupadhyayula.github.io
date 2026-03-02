@@ -1,4 +1,9 @@
-**📄 Product Requirements Document (PRD)**
+---
+layout: page
+title: "📄 Product Requirements Document (PRD)"
+permalink: /case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/product-requirements-document-prd/
+---
+
 
 ## Product: Insights-Driven Journaling App
 

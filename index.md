@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Mahadev Upadhyayula
 
 **Product Manager | 0→1 Builder | AI-Driven Systems**
