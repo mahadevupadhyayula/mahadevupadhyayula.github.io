@@ -6,6 +6,8 @@
   --link-hover: #083c3c;
   --divider: #cfe3e1;
   --surface: rgba(255, 255, 255, 0.55);
+  --deep-turquoise: #0b6f73;
+  --on-turquoise: #ffffff;
 }
 
 * {
@@ -49,7 +51,9 @@ a:focus {
   z-index: 10;
   margin-bottom: 2.5rem;
   padding-top: 0.75rem;
-  background: linear-gradient(to bottom, var(--bg) 65%, rgba(230, 247, 246, 0));
+  background: var(--deep-turquoise);
+  color: var(--on-turquoise);
+  font-weight: 700;
 }
 
 .site-nav {
@@ -59,14 +63,20 @@ a:focus {
   align-items: center;
   justify-content: flex-start;
   padding: 0.75rem 0;
-  border-bottom: 1px solid var(--divider);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .site-nav a {
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.01em;
+  color: var(--on-turquoise);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #d7ffff;
 }
 
 .page-content {
@@ -167,9 +177,11 @@ img {
 .site-footer {
   margin-top: 3rem;
   padding-top: 1.25rem;
-  border-top: 1px solid var(--divider);
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
   font-size: 0.95rem;
-  color: #385352;
+  color: var(--on-turquoise);
+  background: var(--deep-turquoise);
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -180,34 +192,71 @@ img {
   margin: 0;
 }
 
+.footer-brand,
+.footer-contact {
+  flex: 1;
+}
+
+.footer-brand {
+  text-align: left;
+}
+
+.footer-contact {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.footer-contact a {
+  color: inherit;
+}
+
 .footer-social {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  padding: 0.3rem 0.45rem;
-  border-radius: 999px;
-  background: rgba(246, 249, 249, 0.9);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  justify-content: center;
+  gap: 0.5rem;
+  flex: 1;
 }
 
 .footer-social a {
   display: inline-flex;
-  color: var(--link);
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.95);
+  border-radius: 999px;
+  padding: 0.25rem;
+  box-shadow: 0 0 0 1px rgba(11, 111, 115, 0.25);
 }
 
 .footer-social a:hover,
 .footer-social a:focus {
-  color: var(--link-hover);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
 }
 
 .footer-social svg {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
   fill: currentColor;
 }
+
+@media (max-width: 900px) {
+  .site-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-social,
+  .footer-contact {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+}
+
 
 
 table {
