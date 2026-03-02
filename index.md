@@ -1,4 +1,6 @@
-## Product Manager | 0→1 Builder | AI-Driven Systems
+# Mahadev Upadhyayula
+
+**Product Manager | 0→1 Builder | AI-Driven Systems**
 
 I build data-driven and AI-powered products that translate ambiguity into measurable user impact.
 
