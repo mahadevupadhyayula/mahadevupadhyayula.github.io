@@ -6,7 +6,6 @@ title: About Me
 <div class="about-grid">
   <div class="about-content">
     <div class="about-intro">
-      <h2>About Me</h2>
       <p>
         I am a product manager with an engineering foundation, focused on building AI-native
         systems and early-stage products that create measurable user impact.
