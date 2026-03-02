@@ -1,4 +1,4 @@
-# 🚀 MVP Execution: Core High-Level Steps
+**🚀 MVP Execution: Core High-Level Steps**
 
 Here’s a concise roadmap for executing (“shipping”) this MVP based on typical product and technical flow:
 

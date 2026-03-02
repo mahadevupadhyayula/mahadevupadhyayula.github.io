@@ -4,7 +4,7 @@ title: Product Impact at PayPal
 permalink: /case-studies/product-impact-at-paypal/
 ---
 
-## Driving Merchant Engagement Through ML Personalization & Funnel Optimization
+**Driving Merchant Engagement Through ML Personalization & Funnel Optimization**
 
 Company: PayPal
 

@@ -1,4 +1,4 @@
-# 🎯 MVP  Backend Architecture, Data Modeling and UI design
+**🎯 MVP  Backend Architecture, Data Modeling and UI design**
 
 Insight-Journal transforms unstructured journaling into structured self-awareness.
 

@@ -4,7 +4,7 @@ title: Insight Driven Journaling App
 permalink: /case-studies/insight-driven-journaling-app/
 ---
 
-## Designing an AI System That Turns Reflection Into Measurable Growth
+**Designing an AI System That Turns Reflection Into Measurable Growth**
 
 Let me walk you through a product I built to solve a behavioral problem using AI.
 

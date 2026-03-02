@@ -1,4 +1,4 @@
-# 🧩 MVP design - Insight driven Journaling App
+**🧩 MVP design - Insight driven Journaling App**
 
 ### Vision
 

@@ -4,7 +4,7 @@ title: G2 Organic Products
 permalink: /case-studies/g2-organic-products/
 ---
 
-## Building a 0→1 Multi-Agent Product & Resource Management Platform for Agribusinesses
+**Building a 0→1 Multi-Agent Product & Resource Management Platform for Agribusinesses**
 
 ---
 
