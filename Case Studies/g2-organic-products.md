@@ -12,7 +12,7 @@
 
 ---
 
-# 1. Executive Summary
+## 1. Executive Summary
 
 **Problem:**
 
@@ -36,9 +36,9 @@ Within 3 months of deployment:
 
 ---
 
-# 2. Problem Definition
+## 2. Problem Definition
 
-## User Persona
+### User Persona
 
 Primary users:
 
@@ -51,7 +51,7 @@ Secondary stakeholders:
 - Government-linked program participants
 - Independent contractors
 
-## Core Pain Points
+### Core Pain Points
 
 - No centralized system for tracking products and resources
 - Manual reconciliation between inventory, dispatch, and field reporting
@@ -64,7 +64,7 @@ It was lack of **structured workflow orchestration.**
 
 ---
 
-# 3. User Discovery & Insights
+## 3. User Discovery & Insights
 
 Discovery Methods:
 
@@ -85,22 +85,22 @@ The constraint was coordination — not capability.
 
 ---
 
-# 4. Product Strategy
+## 4. Product Strategy
 
-## North Star Metric
+### North Star Metric
 
 Operational Productivity Index
 
 (Tasks completed per unit time per operator)
 
-## Supporting Metrics
+### Supporting Metrics
 
 - Time-to-update inventory
 - Manual coordination time
 - Dispatch reconciliation accuracy
 - Active weekly usage
 
-## Strategic Decision
+### Strategic Decision
 
 Instead of building a generic CRM,
 
@@ -119,9 +119,9 @@ This modular approach allowed:
 
 ---
 
-# 5. MVP Definition & Prioritization
+## 5. MVP Definition & Prioritization
 
-## What We Included
+### What We Included
 
 - Centralized dashboard
 - Product lifecycle tracking
@@ -129,7 +129,7 @@ This modular approach allowed:
 - Role-based visibility
 - Basic analytics reporting
 
-## What We Cut
+### What We Cut
 
 - Advanced forecasting
 - Automated optimization logic
@@ -148,7 +148,7 @@ Ship fast enough to measure productivity impact.
 
 ---
 
-# 6. Solution Architecture
+## 6. Solution Architecture
 
 (Insert Architecture Diagram Here)
 
@@ -173,7 +173,7 @@ Too heavy, too complex for early adoption.
 
 ---
 
-# 7. Execution
+## 7. Execution
 
 - Defined PRDs with clear metric alignment
 - Sequenced development into focused sprint cycles
@@ -188,7 +188,7 @@ Challenges:
 
 ---
 
-# 8. Outcome & Measured Impact
+## 8. Outcome & Measured Impact
 
 Within 3 months:
 
@@ -205,7 +205,7 @@ They need less friction.
 
 ---
 
-# 9. What I Would Improve
+## 9. What I Would Improve
 
 If building V2:
 
@@ -220,7 +220,7 @@ Transform into a modular agritech operations platform with scalable AI-driven op
 
 ---
 
-# 10. Why This Matters
+## 10. Why This Matters
 
 This project demonstrates:
 

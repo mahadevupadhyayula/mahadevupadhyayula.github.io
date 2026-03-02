@@ -8,7 +8,7 @@
 
 # Insight Driven Journaling App
 
-### Designing an AI System That Turns Reflection Into Measurable Growth
+## Designing an AI System That Turns Reflection Into Measurable Growth
 
 Let me walk you through a product I built to solve a behavioral problem using AI.
 
@@ -21,7 +21,7 @@ Journaling is widely recommended for self-improvement, yet consistency drops off
 Through observation and first-principles thinking, I identified the root issue:
 
 > Journaling requires high emotional effort but produces no visible return.
-> 
+
 
 Most apps store text.
 
