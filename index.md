@@ -4,7 +4,7 @@ layout: default
 
 # Mahadev Upadhyayula
 
-**Product Manager | 0→1 Builder | AI-Driven Systems**
+**Product Manager&nbsp;&nbsp;•&nbsp;&nbsp;0→1 Builder&nbsp;&nbsp;•&nbsp;&nbsp;AI-Driven Systems**
 
 I build data-driven and AI-powered products that translate ambiguity into measurable user impact.
 
