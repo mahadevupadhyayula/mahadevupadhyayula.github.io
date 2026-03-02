@@ -1,12 +1,10 @@
-# Home
-
 # Mahadev Upadhyayula
 
 ## Product Manager | 0→1 Builder | AI-Driven Systems
 
 I build data-driven and AI-powered products that translate ambiguity into measurable user impact.
 
-With 5+ years across fintech and agritech, I’ve shipped engagement-driving features at PayPal and built a multi-agent Project and Resource Management platform as Founder of G2 Organic Products, improving user productivity by 40% .
+With 5+ years across fintech and agritech, I’ve shipped engagement-driving features at PayPal and built a multi-agent Project and Resource Management platform as Founder of G2 Organic Products, improving user productivity by 40%.
 
 My work sits at the intersection of:
 
@@ -38,9 +36,9 @@ Using behavioral dashboards, activation metrics, and prioritization frameworks t
 
 Designed an AI system that converts unstructured reflections into structured emotional signals and personalized daily insights.
 
-Architected a collaborative AI-agent framework that balances nutrition, cost, and time constraints to generate optimized meal plans.
-
 ### Meal Prep Optimization – Multi-Agent System
+
+Architected a collaborative AI-agent framework that balances nutrition, cost, and time constraints to generate optimized meal plans.
 
 ### G2 Organic Products – Multi-Agent Agritech CRM
 

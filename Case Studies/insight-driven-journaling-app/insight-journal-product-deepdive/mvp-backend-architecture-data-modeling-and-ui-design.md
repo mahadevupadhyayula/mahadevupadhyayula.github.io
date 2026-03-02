@@ -45,7 +45,6 @@ These are stored independently to allow deterministic and semantic analysis laye
 
 ---
 
-![ChatGPT Image Feb 25, 2026 at 02_52_27 PM.png](%F0%9F%8E%AF%20MVP%20Backend%20Architecture,%20Data%20Modeling%20and%20UI%20d/ChatGPT_Image_Feb_25_2026_at_02_52_27_PM.png)
 
 # Intelligence Engine Design
 
