@@ -1,6 +1,10 @@
-**Insight Journal - Product deep dive**
+---
+layout: page
+title: Insight Journal - Product Deep Dive
+permalink: /case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/
+---
 
-[📌 Product Design - Insight based journaling app](insight-journal-product-deepdive/product-design-insight-based-journaling-app.md)
+[📌 Product Design - Insight based journaling app](/case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/product-design-insight-based-journaling-app/)
 
 This page covers the **problem discovery and product thinking** behind Insight-Journal.
 
@@ -13,7 +17,7 @@ It explores:
 
 This section focuses on *why the product should exist* and how insight generation becomes the key retention driver.
 
-[🧩 MVP design - Insight driven Journaling App](insight-journal-product-deepdive/mvp-design-insight-driven-journaling-app.md)
+[🧩 MVP design - Insight driven Journaling App](/case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/mvp-design-insight-driven-journaling-app/)
 
 This page outlines the **interaction design and core user flow** for the MVP.
 
@@ -27,7 +31,7 @@ It details:
 
 The emphasis here is clarity, simplicity, and minimizing emotional load while maximizing perceived output value.
 
-[🚀 MVP Execution: Core High-Level Steps](insight-journal-product-deepdive/mvp-execution-core-high-level-steps.md)
+[🚀 MVP Execution: Core High-Level Steps](/case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/mvp-execution-core-high-level-steps/)
 
 This page explains **how the MVP was built and shipped**.
 
@@ -41,7 +45,7 @@ It includes:
 
 It demonstrates execution discipline — building only what validates the hypothesis, not overengineering
 
-[🎯 MVP Backend Architecture, Data Modeling and UI design](insight-journal-product-deepdive/mvp-backend-architecture-data-modeling-and-ui-design.md)
+[🎯 MVP Backend Architecture, Data Modeling and UI design](/case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/mvp-backend-architecture-data-modeling-and-ui-design/)
 
 This page dives into the **technical intelligence layer** behind the product.
 
@@ -57,7 +61,7 @@ It explains:
 
 This section highlights technical depth, system thinking, and scalability considerations.
 
-[📄 Product Requirements Document (PRD)](insight-journal-product-deepdive/product-requirements-document-PRD.md)
+[📄 Product Requirements Document (PRD)](/case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/product-requirements-document-prd/)
 
 This page formalizes the product into a **structured PM document**.
 

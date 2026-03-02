@@ -1,4 +1,9 @@
-**🎯 MVP  Backend Architecture, Data Modeling and UI design**
+---
+layout: page
+title: "🎯 MVP  Backend Architecture, Data Modeling and UI design"
+permalink: /case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/mvp-backend-architecture-data-modeling-and-ui-design/
+---
+
 
 Insight-Journal transforms unstructured journaling into structured self-awareness.
 

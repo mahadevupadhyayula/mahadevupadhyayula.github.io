@@ -5,16 +5,16 @@ title: About Me
 
 ## Positioning
 
-<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
-  <div style="flex: 1 1 320px; min-width: 280px;">
+<div class="about-grid">
+  <div>
     <ul>
       <li>Product Manager with 5+ years across fintech and agritech</li>
       <li>Engineering foundation with strong product ownership bias</li>
       <li>Focused on 0→1 systems, AI-native design, and measurable user impact</li>
     </ul>
   </div>
-  <div style="flex: 1 1 320px; min-width: 280px; text-align: center;">
-    <img src="/assets/images/headshot.jpg" alt="Mahadev Upadhyayula headshot" style="max-width: 100%; width: 320px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.16);" />
+  <div>
+    <img src="/assets/images/headshot.jpg" alt="Mahadev Upadhyayula headshot" class="about-photo" />
     <p><em>Headshot placeholder path: <code>/assets/images/headshot.jpg</code></em></p>
   </div>
 </div>

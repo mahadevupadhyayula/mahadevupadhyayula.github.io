@@ -1,4 +1,9 @@
-**📌 Product Design - Insight based journaling app**
+---
+layout: page
+title: "📌 Product Design - Insight based journaling app"
+permalink: /case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/product-design-insight-based-journaling-app/
+---
+
 
 ### Why journaling?
 
@@ -87,4 +92,4 @@ Goals and respective metrics:
 
 An AI powered journaling app was designed to drive insightful reflections and identify critical growth patterns for high performing professionals such as founders, PMs etc. who understand the importance of journaling but find it hard to stick to it because of lack of a feedback loop. 
 
-Next: [🧩 MVP design - Insight driven Journaling App](mvp-design-insight-driven-journaling-app.md)
+Next: [🧩 MVP design - Insight driven Journaling App](/case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/mvp-design-insight-driven-journaling-app/)

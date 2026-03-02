@@ -1,4 +1,9 @@
-**🧩 MVP design - Insight driven Journaling App**
+---
+layout: page
+title: "🧩 MVP design - Insight driven Journaling App"
+permalink: /case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/mvp-design-insight-driven-journaling-app/
+---
+
 
 ### Vision
 
