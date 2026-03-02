@@ -13,4 +13,4 @@ This section explains how each project is approached across the full product lif
 
 Each project deep dive is listed below and this list will continue to grow as more deep dives are added.
 
-- [Insight Driven Journaling App — Insight Journal Product Deep Dive]({{ '/case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/' | relative_url }})
+- [Insight Driven Journaling App — Deep Dive]({{ '/case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/' | relative_url }})
