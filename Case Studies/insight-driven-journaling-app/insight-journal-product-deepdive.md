@@ -1,4 +1,4 @@
-# Insight Journal - Product deep dive
+**Insight Journal - Product deep dive**
 
 [📌 Product Design - Insight based journaling app](insight-journal-product-deepdive/product-design-insight-based-journaling-app.md)
 

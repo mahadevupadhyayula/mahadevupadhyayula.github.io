@@ -1,4 +1,4 @@
-# 📄 Product Requirements Document (PRD)
+**📄 Product Requirements Document (PRD)**
 
 ## Product: Insights-Driven Journaling App
 

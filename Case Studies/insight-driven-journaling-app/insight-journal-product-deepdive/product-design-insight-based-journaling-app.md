@@ -1,4 +1,4 @@
-# 📌 Product Design - Insight based journaling app
+**📌 Product Design - Insight based journaling app**
 
 ### Why journaling?
 
