@@ -3,19 +3,27 @@ layout: page
 title: About Me
 ---
 
-## Positioning
-
 <div class="about-grid">
-  <div>
+  <div class="about-content">
+    <div class="about-intro">
+      <h2>About Me</h2>
+      <p>
+        I am a product manager with an engineering foundation, focused on building AI-native
+        systems and early-stage products that create measurable user impact.
+      </p>
+    </div>
+
+    <div class="about-positioning">
+      <h2>Positioning</h2>
     <ul>
       <li>Product Manager with 5+ years across fintech and agritech</li>
       <li>Engineering foundation with strong product ownership bias</li>
       <li>Focused on 0→1 systems, AI-native design, and measurable user impact</li>
     </ul>
+    </div>
   </div>
   <div>
     <img src="/assets/images/headshot.jpg" alt="Mahadev Upadhyayula headshot" class="about-photo" />
-    <p><em>Headshot placeholder path: <code>/assets/images/headshot.jpg</code></em></p>
   </div>
 </div>
 
