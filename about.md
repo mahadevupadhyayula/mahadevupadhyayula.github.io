@@ -1,14 +1,17 @@
-# About
+---
+layout: page
+title: About Me
+---
 
 ## Positioning
 
 <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
   <div style="flex: 1 1 320px; min-width: 280px;">
-
-- Product Manager with 5+ years across fintech and agritech
-- Engineering foundation with strong product ownership bias
-- Focused on 0→1 systems, AI-native design, and measurable user impact
-
+    <ul>
+      <li>Product Manager with 5+ years across fintech and agritech</li>
+      <li>Engineering foundation with strong product ownership bias</li>
+      <li>Focused on 0→1 systems, AI-native design, and measurable user impact</li>
+    </ul>
   </div>
   <div style="flex: 1 1 320px; min-width: 280px; text-align: center;">
     <img src="/assets/images/headshot.jpg" alt="Mahadev Upadhyayula headshot" style="max-width: 100%; width: 320px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.16);" />
@@ -21,14 +24,14 @@
 ## Career Evolution
 
 - Began career in engineering, building scalable systems and internal tooling
-- At PayPal:
-    - Contributed to customer-facing initiatives that increased engagement by 18%
-    - Improved onboarding activation by 15%
-    - Partnered cross-functionally to align engineering execution with product priorities
+- At PayPal:
+  - Contributed to customer-facing initiatives that increased engagement by 18%
+  - Improved onboarding activation by 15%
+  - Partnered cross-functionally to align engineering execution with product priorities
 - Transitioned to Founder at G2 Organic Products:
-    - Built and launched a multi-agent CRM for agribusinesses
-    - Improved user productivity by 40% within three months
-    - Owned PRDs, MVP scoping, roadmap planning, and analytics-driven iteration
+  - Built and launched a multi-agent CRM for agribusinesses
+  - Improved user productivity by 40% within three months
+  - Owned PRDs, MVP scoping, roadmap planning, and analytics-driven iteration
 
 ---
 
