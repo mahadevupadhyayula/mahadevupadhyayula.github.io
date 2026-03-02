@@ -1,10 +1,28 @@
+<div style="position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,0.95); backdrop-filter: blur(6px); border: 1px solid #e5e7eb; border-radius: 999px; padding: 10px 18px; margin: 8px auto 24px auto; width: fit-content; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
+  <nav style="display: flex; gap: 18px; align-items: center; font-weight: 600;">
+    <a href="/" style="text-decoration: none;">Home</a>
+    <a href="/about" style="text-decoration: none;">About Me</a>
+    <a href="/case-studies" style="text-decoration: none;">Case Studies</a>
+  </nav>
+</div>
+
 # About
 
 ## Positioning
 
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+  <div style="flex: 1 1 320px; min-width: 280px;">
+
 - Product Manager with 5+ years across fintech and agritech
 - Engineering foundation with strong product ownership bias
 - Focused on 0→1 systems, AI-native design, and measurable user impact
+
+  </div>
+  <div style="flex: 1 1 320px; min-width: 280px; text-align: center;">
+    <img src="/assets/images/headshot.jpg" alt="Mahadev Upadhyayula headshot" style="max-width: 100%; width: 320px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.16);" />
+    <p><em>Headshot placeholder path: <code>/assets/images/headshot.jpg</code></em></p>
+  </div>
+</div>
 
 ---
 
