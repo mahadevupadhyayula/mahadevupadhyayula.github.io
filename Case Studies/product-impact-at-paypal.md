@@ -18,7 +18,7 @@ Scope: Merchant Growth & Engagement
 
 ---
 
-# 1. Executive Summary
+## 1. Executive Summary
 
 **Context:**
 
@@ -44,9 +44,9 @@ PayPal’s merchant product ecosystem includes offers, onboarding flows, and ope
 
 ---
 
-# 2. Problem 1 — Low Merchant Offer Engagement
+## 2. Problem 1 — Low Merchant Offer Engagement
 
-## Context
+### Context
 
 PayPal provides merchants with promotional offers to drive customer acquisition and transaction volume.
 
@@ -62,7 +62,7 @@ Offers lacked contextual personalization.
 
 ---
 
-# 3. Discovery & Data Insights
+## 3. Discovery & Data Insights
 
 We analyzed:
 
@@ -84,13 +84,13 @@ A one-size-fits-all model was suboptimal.
 
 ---
 
-# 4. Solution — ML-Based Recommendation System
+## 4. Solution — ML-Based Recommendation System
 
-## Objective
+### Objective
 
 Increase merchant engagement by delivering relevant, personalized offers.
 
-## System Design
+### System Design
 
 We built a recommendation pipeline that:
 
@@ -109,7 +109,7 @@ Components:
 
 ---
 
-## Strategic Decisions
+### Strategic Decisions
 
 We avoided:
 
@@ -123,7 +123,7 @@ Instead:
 
 ---
 
-# 5. Measurement & Experimentation
+## 5. Measurement & Experimentation
 
 Success Metrics:
 
@@ -149,9 +149,9 @@ Personalization drove behavioral lift without increasing promotional spend.
 
 ---
 
-# 6. Problem 2 — Merchant Onboarding Drop-Off
+## 6. Problem 2 — Merchant Onboarding Drop-Off
 
-## Context
+### Context
 
 Data showed:
 
@@ -164,7 +164,7 @@ Activation was weak.
 
 ---
 
-# 7. Funnel Analysis
+## 7. Funnel Analysis
 
 We analyzed:
 
@@ -183,7 +183,7 @@ The friction was cognitive, not technical.
 
 ---
 
-# 8. Solution — Simplified Onboarding Flow
+## 8. Solution — Simplified Onboarding Flow
 
 Design Principles:
 
@@ -200,7 +200,7 @@ We restructured:
 
 ---
 
-# 9. Outcome
+## 9. Outcome
 
 Post-implementation metrics showed:
 
@@ -217,9 +217,9 @@ Small UX simplifications at scale produce outsized activation gains.
 
 ---
 
-# 10. Problem 3 — QA Bottlenecks Slowing Releases
+## 10. Problem 3 — QA Bottlenecks Slowing Releases
 
-## Context
+### Context
 
 Distributed teams were facing:
 
@@ -235,7 +235,7 @@ Result:
 
 ---
 
-# 11. Solution — QA Automation Pipeline
+## 11. Solution — QA Automation Pipeline
 
 I helped design and implement:
 
@@ -248,7 +248,7 @@ Integrated with internal tooling and sprint workflows.
 
 ---
 
-# 12. Impact
+## 12. Impact
 
 - Reduced manual triage time
 - Improved issue resolution speed
@@ -259,7 +259,7 @@ This had indirect but meaningful impact on product velocity.
 
 ---
 
-# 13. What This Case Demonstrates
+## 13. What This Case Demonstrates
 
 This experience reflects:
 
@@ -271,7 +271,7 @@ This experience reflects:
 
 ---
 
-# 14. What I Would Improve
+## 14. What I Would Improve
 
 If revisiting today:
 
@@ -282,7 +282,7 @@ If revisiting today:
 
 ---
 
-# 15. Why This Matters
+## 15. Why This Matters
 
 This case shows my ability to:
 
