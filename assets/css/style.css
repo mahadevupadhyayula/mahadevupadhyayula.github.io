@@ -135,10 +135,31 @@ img {
   display: grid;
   gap: 1.5rem;
   align-items: start;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 320px);
+}
+
+.about-content {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-intro {
+  margin-top: 0;
+}
+
+.about-intro h2,
+.about-positioning h2 {
+  margin-top: 0;
+}
+
+.about-positioning {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .about-photo {
+  width: 100%;
   border-radius: 12px;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 }
@@ -177,6 +198,17 @@ code {
   background: rgba(255, 255, 255, 0.55);
   padding: 0.08rem 0.3rem;
   border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-positioning {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 640px) {
