@@ -73,9 +73,3 @@ I focus on:
 - Metrics frameworks for early-stage AI products
 
 ---
-
-## Resume & Links
-
-- [Resume (PDF)](/asset/document/mahadev-upadhyayula-resume.pdf)
-- [LinkedIn](https://www.linkedin.com/in/mahu2/)
-- [GitHub](https://github.com/mahadevupadhyayula)
