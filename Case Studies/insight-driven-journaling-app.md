@@ -185,4 +185,4 @@ Because the foundation was structured correctly, the system scales without re-ar
 
 For a deeper dive into this project please check below:
 
-[Insight Journal - Product deep dive](Insight%20Driven%20Journaling%20App/Insight%20Journal%20-%20Product%20deep%20dive%20316f27a4e9d78093bf89dd78b340ed4a.md)
+[Insight Journal - Product deep dive](insight-driven-journaling-app/insight-journal-product-deepdive.md)

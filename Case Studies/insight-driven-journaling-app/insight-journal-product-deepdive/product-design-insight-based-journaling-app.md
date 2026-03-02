@@ -87,4 +87,4 @@ Goals and respective metrics:
 
 An AI powered journaling app was designed to drive insightful reflections and identify critical growth patterns for high performing professionals such as founders, PMs etc. who understand the importance of journaling but find it hard to stick to it because of lack of a feedback loop. 
 
-Next:  [🧩 MVP design - Insight driven Journaling App](%F0%9F%A7%A9%20MVP%20design%20-%20Insight%20driven%20Journaling%20App%20313f27a4e9d78004b57acae6b42be732.md)
+Next: [🧩 MVP design - Insight driven Journaling App](mvp-design-insight-driven-journaling-app.md)

@@ -10,7 +10,6 @@ Launch and validate a phase-aware, insight-driven journaling MVP that improves r
 
 ### MVP User Flow:
 
-![ChatGPT Image Feb 26, 2026 at 03_30_47 PM.png](%F0%9F%A7%A9%20MVP%20design%20-%20Insight%20driven%20Journaling%20App/ChatGPT_Image_Feb_26_2026_at_03_30_47_PM.png)
 
 # A Minimalist MVP Design
 
@@ -24,7 +23,6 @@ Launch and validate a phase-aware, insight-driven journaling MVP that improves r
 - Support Page
 - Not-enough-data page
 
-![ChatGPT Image Mar 1, 2026 at 06_30_33 AM.png](%F0%9F%A7%A9%20MVP%20design%20-%20Insight%20driven%20Journaling%20App/ChatGPT_Image_Mar_1_2026_at_06_30_33_AM.png)
 
 ## AI Insights Engine:
 
@@ -47,7 +45,6 @@ then:
 
 deterministic summary aggregation + similarity / clustering / pattern recurrence engine -> daily insights
 
-![ChatGPT Image Mar 1, 2026 at 06_53_08 AM.png](%F0%9F%A7%A9%20MVP%20design%20-%20Insight%20driven%20Journaling%20App/ChatGPT_Image_Mar_1_2026_at_06_53_08_AM.png)
 
 ## Structured Signals  and Text Embeddings:
 
@@ -59,7 +56,6 @@ deterministic summary aggregation + similarity / clustering / pattern recurrence
 - Identity Signals
 - Key Sentences (Embeddings)
 
-![ChatGPT Image Feb 26, 2026 at 04_47_09 PM.png](%F0%9F%A7%A9%20MVP%20design%20-%20Insight%20driven%20Journaling%20App/ChatGPT_Image_Feb_26_2026_at_04_47_09_PM.png)
 
 These structured signals could be generated using:
 
