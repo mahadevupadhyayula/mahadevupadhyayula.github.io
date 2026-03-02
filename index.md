@@ -38,23 +38,19 @@ Using behavioral dashboards, activation metrics, and prioritization frameworks t
 
 ---
 
-## Selected Case Studies
+## Featured Case Studies
 
-### AI-Powered Insight-Driven Journal
+### [AI-Powered Insight-Driven Journal](/case-studies/insight-driven-journaling-app/)
 
 Designed an AI system that converts unstructured reflections into structured emotional signals and personalized daily insights.
 
-### Meal Prep Optimization – Multi-Agent System
-
-Architected a collaborative AI-agent framework that balances nutrition, cost, and time constraints to generate optimized meal plans.
-
-### G2 Organic Products – Multi-Agent Agritech CRM
+### [G2 Organic Products – Multi-Agent Agritech CRM](/case-studies/g2-organic-products/)
 
 Built and launched a CRM platform for agribusinesses that improved user productivity by 40% through workflow optimization and behavioral analytics.
 
-Contributed to customer-facing features that increased engagement by 18% and improved user activation by 15%.
+### [Product Impact at PayPal](/case-studies/product-impact-at-paypal/)
 
-### Product Impact at PayPal
+Contributed to customer-facing features that increased engagement by 18% and improved user activation by 15%.
 
 ---
 
@@ -84,6 +80,6 @@ I focus on:
 
 ## Resume & Links
 
-- Resume (PDF)
-- LinkedIn
-- GitHub
+- [Resume (PDF)](/asset/document/mahadev-upadhyayula-resume.pdf)
+- [LinkedIn](https://www.linkedin.com/in/mahu2/)
+- [GitHub](https://github.com/mahadevupadhyayula)
