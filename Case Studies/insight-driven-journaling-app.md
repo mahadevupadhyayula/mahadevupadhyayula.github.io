@@ -131,6 +131,8 @@ No overbuilt analytics infrastructure.
 
 The MVP validates the behavioral loop before investing in scale.
 
+![Insight Journal architecture and execution](/assets/images/insight-journal-2.png)
+
 ---
 
 ## 6. UX Philosophy
@@ -144,6 +146,8 @@ The UI was designed to reduce emotional friction:
 The interface is intentionally minimal.
 
 If insight generation is the product, the UI should not compete with it.
+
+![Insight Journal UX philosophy](/assets/images/insight-journal-3.png)
 
 ---
 
