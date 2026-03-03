@@ -50,6 +50,7 @@ These are stored independently to allow deterministic and semantic analysis laye
 
 ---
 
+![insight-journal-6](/assets/images/insight-journal-6.png)
 
 # Intelligence Engine Design
 

@@ -15,8 +15,12 @@ Launch and validate a phase-aware, insight-driven journaling MVP that improves r
 
 ### MVP User Flow:
 
+![insight-journal-2](/assets/images/insight-journal-2.png)
+
 
 # A Minimalist MVP Design
+
+![insight-journal-3](/assets/images/insight-journal-3.png)
 
 ## UI Design:
 
@@ -50,6 +54,8 @@ then:
 
 deterministic summary aggregation + similarity / clustering / pattern recurrence engine -> daily insights
 
+![insight-journal-4](/assets/images/insight-journal-4.png)
+
 
 ## Structured Signals  and Text Embeddings:
 
@@ -60,6 +66,8 @@ deterministic summary aggregation + similarity / clustering / pattern recurrence
 - Behavioral Indicators
 - Identity Signals
 - Key Sentences (Embeddings)
+
+![insight-journal-5](/assets/images/insight-journal-5.png)
 
 
 These structured signals could be generated using:
