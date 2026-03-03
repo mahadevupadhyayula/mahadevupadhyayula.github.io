@@ -6,6 +6,8 @@ layout: default
 
 A collection of product projects with the problem, approach, and measurable outcomes.
 
+![Case studies showcase](/assets/images/case-studies-1.png)
+
 ## Projects
 
 - [Insight Driven Journaling App](/case-studies/insight-driven-journaling-app/)  
