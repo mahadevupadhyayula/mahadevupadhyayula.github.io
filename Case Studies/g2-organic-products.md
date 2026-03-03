@@ -8,6 +8,10 @@ permalink: /case-studies/g2-organic-products/
 
 ---
 
+![G2 Organic Products preview](/assets/images/g2-Org-1.png)
+
+---
+
 ## 1. Executive Summary
 
 **Problem:**

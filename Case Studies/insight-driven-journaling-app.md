@@ -10,6 +10,10 @@ Let me walk you through a product I built to solve a behavioral problem using AI
 
 ---
 
+![Insight Driven Journaling App preview](/assets/images/insight-journal-1.png)
+
+---
+
 ## 1. The Problem
 
 Journaling is widely recommended for self-improvement, yet consistency drops off quickly.
