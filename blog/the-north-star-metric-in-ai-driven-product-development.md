@@ -1,8 +1,13 @@
-# The North Star Metric in AI-Driven Product Development
+---
+layout: page
+title: The North Star Metric in AI-Driven Product Development
+subtitle: Why the brightest metric in the sky still won’t steer the ship
+date: 2026-03-10
+image: /assets/images/the-north-star-metric-in-ai-driven-product-development.png
+permalink: /blog/the-north-star-metric-in-ai-driven-product-development/
+---
 
-## *Why the brightest metric in the sky still won’t steer the ship*
-
-![ChatGPT Image Mar 10, 2026 at 09_12_26 AM.png](The%20North%20Star%20Metric%20in%20AI-Driven%20Product%20Develop/ChatGPT_Image_Mar_10_2026_at_09_12_26_AM.png)
+![The North Star Metric in AI-Driven Product Development](/assets/images/the-north-star-metric-in-ai-driven-product-development.png)
 
 In product management folklore, the **North Star Metric (NSM)** holds a near-mythical status. It promises alignment, clarity, and focus — a single guiding light that tells the entire organization whether the product is truly delivering value.
 
