@@ -1,8 +1,13 @@
-# Why AI Accuracy Metrics Can Mislead Product Teams
+---
+layout: page
+title: Why AI Accuracy Metrics Can Mislead Product Teams
+subtitle: 92% Accurate. 100% Confident. 0% Useful.
+date: 2026-03-04
+image: /assets/images/why-ai-accuracy-metrics-can-mislead-product-teams.png
+permalink: /blog/why-ai-accuracy-metrics-can-mislead-product-teams/
+---
 
-### **92% Accurate. 100% Confident. 0% Useful.**
-
-![ChatGPT Image Mar 4, 2026 at 07_48_15 PM.png](Why%20AI%20Accuracy%20Metrics%20Can%20Mislead%20Product%20Teams/ChatGPT_Image_Mar_4_2026_at_07_48_15_PM.png)
+![Why AI Accuracy Metrics Can Mislead Product Teams](/assets/images/why-ai-accuracy-metrics-can-mislead-product-teams.png)
 
 AI product demos often begin with a reassuring slide:
 

@@ -73,3 +73,25 @@ I focus on:
 - Metrics frameworks for early-stage AI products
 
 ---
+
+## Recent Blogs
+
+{% assign blog_pages = site.pages | where_exp: "item", "item.dir == '/blog/'" | sort: "date" | reverse %}
+
+<div class="blog-carousel" aria-label="Recent blog posts">
+  {% for blog in blog_pages limit: 5 %}
+    <article class="blog-carousel-card">
+      <a href="{{ blog.url | relative_url }}" aria-label="Read {{ blog.title }}">
+        <img src="{{ blog.image | relative_url }}" alt="{{ blog.title }}" loading="lazy">
+      </a>
+      <h3><a href="{{ blog.url | relative_url }}">{{ blog.title }}</a></h3>
+      {% if blog.subtitle %}
+        <p>{{ blog.subtitle }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
+
+<p>
+  <a class="button-link" href="{{ '/blogs' | relative_url }}">View All Blogs</a>
+</p>
