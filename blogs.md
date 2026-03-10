@@ -4,7 +4,7 @@ title: Blogs
 permalink: /blogs/
 ---
 
-{% assign blog_pages = site.pages | where_exp: "item", "item.dir == '/blog/'" | sort: "date" | reverse %}
+{% assign blog_pages = site.pages | where_exp: "item", "item.url contains '/blog/'" | sort: "date" | reverse %}
 
 <div class="blog-list" aria-label="All blogs">
   {% for blog in blog_pages %}
