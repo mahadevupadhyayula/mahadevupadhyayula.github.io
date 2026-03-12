@@ -79,7 +79,7 @@ I focus on:
 {% assign blog_pages = site.pages | where_exp: "item", "item.url contains '/blog/'" | sort: "date" | reverse %}
 
 <div class="blog-carousel" aria-label="Recent blog posts">
-  {% for blog in blog_pages limit: 5 %}
+  {% for blog in blog_pages limit: 3 %}
     <article class="blog-carousel-card">
       <a href="{{ blog.url | relative_url }}" aria-label="Read {{ blog.title }}">
         <img src="{{ blog.image | relative_url }}" alt="{{ blog.title }}" loading="lazy">

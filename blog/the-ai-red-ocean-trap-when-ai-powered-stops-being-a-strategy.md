@@ -1,8 +1,17 @@
+---
+layout: page
+title: The AI Red Ocean Trap: When “AI-Powered” Stops Being a Strategy
+subtitle: When everyone builds an AI product, nobody has one.
+date: 2026-03-11
+image: /assets/images/the-ai-red-ocean-trap-when-ai-powered-stops-being-a-strategy.png
+permalink: /blog/the-ai-red-ocean-trap-when-ai-powered-stops-being-a-strategy/
+---
+
 # The AI Red Ocean Trap: When “AI-Powered” Stops Being a Strategy
 
 ### When everyone builds an AI product, nobody has one.
 
-![ChatGPT Image Mar 11, 2026 at 11_14_10 PM.png](The%20AI%20Red%20Ocean%20Trap%20When%20%E2%80%9CAI-Powered%E2%80%9D%20Stops%20Bein/ChatGPT_Image_Mar_11_2026_at_11_14_10_PM.png)
+![The AI Red Ocean Trap: When “AI-Powered” Stops Being a Strategy](/assets/images/the-ai-red-ocean-trap-when-ai-powered-stops-being-a-strategy.png)
 
 ---
 
