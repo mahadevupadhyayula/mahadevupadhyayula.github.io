@@ -1,8 +1,14 @@
+---
+layout: page
+title: Relationship Intelligence Copilot for LinkedIn
+permalink: /case-studies/relationship-intelligence-copilot-for-linkedin/
+---
+
 # Relationship Intelligence Copilot for LinkedIn
 
 ### Building Authentic Professional Relationships at Scale
 
-![Split-screen_before_and_after_comparison_illustrat-1773630578351.png](Relationship%20Intelligence%20Copilot%20for%20LinkedIn/Split-screen_before_and_after_comparison_illustrat-1773630578351.png)
+![Split-screen_before_and_after_comparison_illustrat-1773630578351.png](/assets/images/relationship-intelligence-copilot-for-linkedIn-1.png)
 
 ---
 
@@ -52,7 +58,7 @@ Users cannot easily track:
 
 As a result, networking remains **unstructured and reactive**.
 
-![Illustration_of_a_chaotic_LinkedIn_feed_interface_-1773630624303.png](Relationship%20Intelligence%20Copilot%20for%20LinkedIn/Illustration_of_a_chaotic_LinkedIn_feed_interface_-1773630624303.png)
+![Illustration_of_a_chaotic_LinkedIn_feed_interface_-1773630624303.png](/assets/images/relationship-intelligence-copilot-for-linkedIn-2.png)
 
 ---
 
@@ -80,7 +86,7 @@ However, LinkedIn currently provides **no system to manage this progression**.
 
 This gap creates an opportunity for a **Relationship Intelligence system** that guides users through the journey.
 
-![Clean_funnel_diagram_visualization_showing_relatio-1773630617491.png](Relationship%20Intelligence%20Copilot%20for%20LinkedIn/Clean_funnel_diagram_visualization_showing_relatio-1773630617491.png)
+![Clean_funnel_diagram_visualization_showing_relatio-1773630617491.png](/assets/images/relationship-intelligence-copilot-for-linkedIn-3.png)
 
 ---
 
@@ -100,7 +106,7 @@ The product combines:
 
 The goal is to transform LinkedIn networking from **random activity into a structured relationship-building system**.
 
-![Modern_tech_illustration_showing_a_professional_pe-1773630636112.png](Relationship%20Intelligence%20Copilot%20for%20LinkedIn/Modern_tech_illustration_showing_a_professional_pe-1773630636112.png)
+![Modern_tech_illustration_showing_a_professional_pe-1773630636112.png](/assets/images/relationship-intelligence-copilot-for-linkedIn-4.png)
 
 ---
 
@@ -124,7 +130,7 @@ This loop encourages users to repeatedly engage with important people.
 
 This loop ensures that users **continuously move relationships forward** rather than interacting randomly.
 
-![mermaid-diagram-6.png](Relationship%20Intelligence%20Copilot%20for%20LinkedIn/mermaid-diagram-6.png)
+![mermaid-diagram-6.png](/assets/images/relationship-intelligence-copilot-for-linkedIn-5.png)
 
 ---
 
@@ -169,7 +175,7 @@ Example feed:
 
 This dramatically reduces **noise in the LinkedIn feed**.
 
-![Product_UI_mockup_showing_four_feature_cards_arran-1773630596982.png](Relationship%20Intelligence%20Copilot%20for%20LinkedIn/Product_UI_mockup_showing_four_feature_cards_arran-1773630596982.png)
+![Product_UI_mockup_showing_four_feature_cards_arran-1773630596982.png](/assets/images/relationship-intelligence-copilot-for-linkedIn-6.png)
 
 ---
 
@@ -207,7 +213,7 @@ This ensures users maintain **steady relationship touchpoints**.
 
 ---
 
-![AI_assistant_recommendation_panel_interface_showin-1773630586237.png](Relationship%20Intelligence%20Copilot%20for%20LinkedIn/AI_assistant_recommendation_panel_interface_showin-1773630586237.png)
+![AI_assistant_recommendation_panel_interface_showin-1773630586237.png](/assets/images/relationship-intelligence-copilot-for-linkedIn-7.png)
 
 ---
 
@@ -237,7 +243,7 @@ Next Step: Start DM conversation
 
 This helps users **understand where each relationship stands**.
 
-![Product_concept_diagram_showing_three_connected_el-1773630610657.png](Relationship%20Intelligence%20Copilot%20for%20LinkedIn/Product_concept_diagram_showing_three_connected_el-1773630610657.png)
+![Product_concept_diagram_showing_three_connected_el-1773630610657.png](/assets/images/relationship-intelligence-copilot-for-linkedIn-8.png)
 
 ---
 
