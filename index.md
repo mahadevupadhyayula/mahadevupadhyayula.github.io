@@ -41,17 +41,10 @@ Using behavioral dashboards, activation metrics, and prioritization frameworks t
 
   <div class="featured-case-study-track" data-carousel-track>
     <article class="featured-case-study-card" data-carousel-slide>
-      <a class="featured-case-study-image-link" href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}" aria-label="View Insight Driven Journaling App case study">
-        <img src="{{ '/assets/images/insight-journal-1.png' | relative_url }}" alt="Insight Driven Journaling App preview" loading="lazy">
+      <a class="featured-case-study-image-link" href="{{ '/case-studies/relationship-intelligence-copilot-for-linkedin/' | relative_url }}" aria-label="View Relationship Intelligence Copilot for LinkedIn case study">
+        <img src="{{ '/assets/images/relationship-intelligence-copilot-for-linkedIn-1.png' | relative_url }}" alt="Relationship Intelligence Copilot for LinkedIn preview" loading="lazy">
       </a>
-      <h3><a href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}">Insight Driven Journaling App</a></h3>
-    </article>
-
-    <article class="featured-case-study-card" data-carousel-slide>
-      <a class="featured-case-study-image-link" href="{{ '/case-studies/g2-organic-products/' | relative_url }}" aria-label="View G2 Organic Products case study">
-        <img src="{{ '/assets/images/g2-Org-1.png' | relative_url }}" alt="G2 Organic Products preview" loading="lazy">
-      </a>
-      <h3><a href="{{ '/case-studies/g2-organic-products/' | relative_url }}">G2 Organic Products</a></h3>
+      <h3><a href="{{ '/case-studies/relationship-intelligence-copilot-for-linkedin/' | relative_url }}">Relationship Intelligence Copilot for LinkedIn</a></h3>
     </article>
 
     <article class="featured-case-study-card" data-carousel-slide>
@@ -62,10 +55,17 @@ Using behavioral dashboards, activation metrics, and prioritization frameworks t
     </article>
 
     <article class="featured-case-study-card" data-carousel-slide>
-      <a class="featured-case-study-image-link" href="{{ '/case-studies/relationship-intelligence-copilot-for-linkedin/' | relative_url }}" aria-label="View Relationship Intelligence Copilot for LinkedIn case study">
-        <img src="{{ '/assets/images/relationship-intelligence-copilot-for-linkedIn-1.png' | relative_url }}" alt="Relationship Intelligence Copilot for LinkedIn preview" loading="lazy">
+      <a class="featured-case-study-image-link" href="{{ '/case-studies/g2-organic-products/' | relative_url }}" aria-label="View G2 Organic Products case study">
+        <img src="{{ '/assets/images/g2-Org-1.png' | relative_url }}" alt="G2 Organic Products preview" loading="lazy">
       </a>
-      <h3><a href="{{ '/case-studies/relationship-intelligence-copilot-for-linkedin/' | relative_url }}">Relationship Intelligence Copilot for LinkedIn</a></h3>
+      <h3><a href="{{ '/case-studies/g2-organic-products/' | relative_url }}">G2 Organic Products</a></h3>
+    </article>
+
+    <article class="featured-case-study-card" data-carousel-slide>
+      <a class="featured-case-study-image-link" href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}" aria-label="View Insight Driven Journaling App case study">
+        <img src="{{ '/assets/images/insight-journal-1.png' | relative_url }}" alt="Insight Driven Journaling App preview" loading="lazy">
+      </a>
+      <h3><a href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}">Insight Driven Journaling App</a></h3>
     </article>
   </div>
 
