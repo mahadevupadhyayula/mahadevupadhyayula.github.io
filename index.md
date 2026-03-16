@@ -48,6 +48,10 @@ Built and launched a CRM platform for agribusinesses that improved user producti
 
 Contributed to customer-facing features that increased engagement by 18% and improved user activation by 15%.
 
+### [Relationship Intelligence Copilot for LinkedIn](/case-studies/relationship-intelligence-copilot-for-linkedin/)
+
+Designed an AI copilot to help professionals build authentic LinkedIn relationships through guided engagement and next-best-action intelligence.
+
 ---
 
 ## Product Philosophy

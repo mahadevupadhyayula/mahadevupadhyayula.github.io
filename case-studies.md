@@ -18,3 +18,7 @@ A collection of product projects with the problem, approach, and measurable outc
 
 - [Product Impact at PayPal](/case-studies/product-impact-at-paypal/)  
   Merchant growth initiatives across ML personalization, onboarding funnel optimization, and delivery efficiency improvements.
+
+- [Relationship Intelligence Copilot for LinkedIn](/case-studies/relationship-intelligence-copilot-for-linkedin/)  
+  AI-powered relationship-building system that helps users track key profiles, engage consistently, and progress professional connections with intelligent next-step recommendations.
+
