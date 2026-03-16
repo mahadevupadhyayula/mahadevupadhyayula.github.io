@@ -36,21 +36,71 @@ Using behavioral dashboards, activation metrics, and prioritization frameworks t
 
 ## Featured Case Studies
 
-### [AI-Powered Insight-Driven Journal](/case-studies/insight-driven-journaling-app/)
+<div class="featured-case-study-carousel" aria-label="Featured case studies" data-carousel>
+  <button class="carousel-nav-button" type="button" data-carousel-prev aria-label="View previous case study">Previous</button>
 
-Designed an AI system that converts unstructured reflections into structured emotional signals and personalized daily insights.
+  <div class="featured-case-study-track" data-carousel-track>
+    <article class="featured-case-study-card" data-carousel-slide>
+      <h3><a href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}">AI-Powered Insight-Driven Journal</a></h3>
+      <p>Designed an AI system that converts unstructured reflections into structured emotional signals and personalized daily insights.</p>
+    </article>
 
-### [G2 Organic Products – Multi-Agent Agritech CRM](/case-studies/g2-organic-products/)
+    <article class="featured-case-study-card" data-carousel-slide>
+      <h3><a href="{{ '/case-studies/g2-organic-products/' | relative_url }}">G2 Organic Products – Multi-Agent Agritech CRM</a></h3>
+      <p>Built and launched a CRM platform for agribusinesses that improved user productivity by 40% through workflow optimization and behavioral analytics.</p>
+    </article>
 
-Built and launched a CRM platform for agribusinesses that improved user productivity by 40% through workflow optimization and behavioral analytics.
+    <article class="featured-case-study-card" data-carousel-slide>
+      <h3><a href="{{ '/case-studies/product-impact-at-paypal/' | relative_url }}">Product Impact at PayPal</a></h3>
+      <p>Contributed to customer-facing features that increased engagement by 18% and improved user activation by 15%.</p>
+    </article>
 
-### [Product Impact at PayPal](/case-studies/product-impact-at-paypal/)
+    <article class="featured-case-study-card" data-carousel-slide>
+      <h3><a href="{{ '/case-studies/relationship-intelligence-copilot-for-linkedin/' | relative_url }}">Relationship Intelligence Copilot for LinkedIn</a></h3>
+      <p>Designed an AI copilot to help professionals build authentic LinkedIn relationships through guided engagement and next-best-action intelligence.</p>
+    </article>
+  </div>
 
-Contributed to customer-facing features that increased engagement by 18% and improved user activation by 15%.
+  <button class="carousel-nav-button" type="button" data-carousel-next aria-label="View next case study">Next</button>
+</div>
 
-### [Relationship Intelligence Copilot for LinkedIn](/case-studies/relationship-intelligence-copilot-for-linkedin/)
+<script>
+  (function () {
+    var carousel = document.querySelector('[data-carousel]');
+    if (!carousel) return;
 
-Designed an AI copilot to help professionals build authentic LinkedIn relationships through guided engagement and next-best-action intelligence.
+    var slides = carousel.querySelectorAll('[data-carousel-slide]');
+    var prevButton = carousel.querySelector('[data-carousel-prev]');
+    var nextButton = carousel.querySelector('[data-carousel-next]');
+    var currentIndex = 0;
+
+    function updateCarousel() {
+      slides.forEach(function (slide, index) {
+        var isActive = index === currentIndex;
+        slide.classList.toggle('is-active', isActive);
+        slide.setAttribute('aria-hidden', String(!isActive));
+      });
+      prevButton.disabled = currentIndex === 0;
+      nextButton.disabled = currentIndex === slides.length - 1;
+    }
+
+    prevButton.addEventListener('click', function () {
+      if (currentIndex > 0) {
+        currentIndex -= 1;
+        updateCarousel();
+      }
+    });
+
+    nextButton.addEventListener('click', function () {
+      if (currentIndex < slides.length - 1) {
+        currentIndex += 1;
+        updateCarousel();
+      }
+    });
+
+    updateCarousel();
+  })();
+</script>
 
 ---
 
