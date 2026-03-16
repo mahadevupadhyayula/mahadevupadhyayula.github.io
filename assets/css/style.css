@@ -348,7 +348,7 @@ code {
 
 .featured-case-study-track {
   position: relative;
-  min-height: 180px;
+  min-height: 260px;
 }
 
 .featured-case-study-card {
@@ -358,19 +358,27 @@ code {
   border-radius: 12px;
   padding: 1rem;
   height: 100%;
+  text-align: center;
 }
 
 .featured-case-study-card.is-active {
   display: block;
 }
 
-.featured-case-study-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+.featured-case-study-image-link {
+  display: block;
+  margin-bottom: 0.75rem;
 }
 
-.featured-case-study-card p {
-  margin-bottom: 0;
+.featured-case-study-image-link img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.featured-case-study-card h3 {
+  margin: 0;
 }
 
 .carousel-nav-button {

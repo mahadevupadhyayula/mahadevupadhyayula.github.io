@@ -41,23 +41,31 @@ Using behavioral dashboards, activation metrics, and prioritization frameworks t
 
   <div class="featured-case-study-track" data-carousel-track>
     <article class="featured-case-study-card" data-carousel-slide>
-      <h3><a href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}">AI-Powered Insight-Driven Journal</a></h3>
-      <p>Designed an AI system that converts unstructured reflections into structured emotional signals and personalized daily insights.</p>
+      <a class="featured-case-study-image-link" href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}" aria-label="View Insight Driven Journaling App case study">
+        <img src="{{ '/assets/images/insight-journal-1.png' | relative_url }}" alt="Insight Driven Journaling App preview" loading="lazy">
+      </a>
+      <h3><a href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}">Insight Driven Journaling App</a></h3>
     </article>
 
     <article class="featured-case-study-card" data-carousel-slide>
-      <h3><a href="{{ '/case-studies/g2-organic-products/' | relative_url }}">G2 Organic Products – Multi-Agent Agritech CRM</a></h3>
-      <p>Built and launched a CRM platform for agribusinesses that improved user productivity by 40% through workflow optimization and behavioral analytics.</p>
+      <a class="featured-case-study-image-link" href="{{ '/case-studies/g2-organic-products/' | relative_url }}" aria-label="View G2 Organic Products case study">
+        <img src="{{ '/assets/images/g2-Org-1.png' | relative_url }}" alt="G2 Organic Products preview" loading="lazy">
+      </a>
+      <h3><a href="{{ '/case-studies/g2-organic-products/' | relative_url }}">G2 Organic Products</a></h3>
     </article>
 
     <article class="featured-case-study-card" data-carousel-slide>
+      <a class="featured-case-study-image-link" href="{{ '/case-studies/product-impact-at-paypal/' | relative_url }}" aria-label="View Product Impact at PayPal case study">
+        <img src="{{ '/assets/images/case-studies-1.png' | relative_url }}" alt="Product Impact at PayPal case study preview" loading="lazy">
+      </a>
       <h3><a href="{{ '/case-studies/product-impact-at-paypal/' | relative_url }}">Product Impact at PayPal</a></h3>
-      <p>Contributed to customer-facing features that increased engagement by 18% and improved user activation by 15%.</p>
     </article>
 
     <article class="featured-case-study-card" data-carousel-slide>
+      <a class="featured-case-study-image-link" href="{{ '/case-studies/relationship-intelligence-copilot-for-linkedin/' | relative_url }}" aria-label="View Relationship Intelligence Copilot for LinkedIn case study">
+        <img src="{{ '/assets/images/relationship-intelligence-copilot-for-linkedIn-1.png' | relative_url }}" alt="Relationship Intelligence Copilot for LinkedIn preview" loading="lazy">
+      </a>
       <h3><a href="{{ '/case-studies/relationship-intelligence-copilot-for-linkedin/' | relative_url }}">Relationship Intelligence Copilot for LinkedIn</a></h3>
-      <p>Designed an AI copilot to help professionals build authentic LinkedIn relationships through guided engagement and next-best-action intelligence.</p>
     </article>
   </div>
 
