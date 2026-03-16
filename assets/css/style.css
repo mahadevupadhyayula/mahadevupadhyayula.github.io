@@ -338,6 +338,75 @@ code {
   opacity: 0.92;
 }
 
+
+.featured-case-study-carousel {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+
+.featured-case-study-track {
+  position: relative;
+  min-height: 180px;
+}
+
+.featured-case-study-card {
+  display: none;
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: 12px;
+  padding: 1rem;
+  height: 100%;
+}
+
+.featured-case-study-card.is-active {
+  display: block;
+}
+
+.featured-case-study-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.featured-case-study-card p {
+  margin-bottom: 0;
+}
+
+.carousel-nav-button {
+  border: 1px solid var(--deep-turquoise);
+  background: var(--deep-turquoise);
+  color: var(--on-turquoise);
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.45rem 0.85rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+.carousel-nav-button:hover,
+.carousel-nav-button:focus {
+  opacity: 0.92;
+}
+
+.carousel-nav-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .featured-case-study-carousel {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-case-study-track {
+    order: 1;
+  }
+
+  .carousel-nav-button {
+    width: fit-content;
+  }
+}
 .blog-carousel {
   display: grid;
   grid-auto-flow: column;

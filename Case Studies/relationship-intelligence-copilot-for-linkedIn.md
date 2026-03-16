@@ -4,9 +4,7 @@ title: Relationship Intelligence Copilot for LinkedIn
 permalink: /case-studies/relationship-intelligence-copilot-for-linkedin/
 ---
 
-# Relationship Intelligence Copilot for LinkedIn
-
-### Building Authentic Professional Relationships at Scale
+_Building Authentic Professional Relationships at Scale_
 
 ![Split-screen_before_and_after_comparison_illustrat-1773630578351.png](/assets/images/relationship-intelligence-copilot-for-linkedIn-1.png)
 
@@ -26,7 +24,7 @@ The product acts as a **relationship-building assistant**, helping users move f
 
 ---
 
-# 2. Problem Statement
+## 2. Problem Statement
 
 Professionals often know **who they should build relationships with**, but they struggle with the execution.
 
@@ -62,7 +60,7 @@ As a result, networking remains **unstructured and reactive**.
 
 ---
 
-# 3. Opportunity
+## 3. Opportunity
 
 Professional networking works best when relationships are **built gradually through repeated meaningful interactions**.
 
@@ -90,7 +88,7 @@ This gap creates an opportunity for a **Relationship Intelligence system** tha
 
 ---
 
-# 4. Product Vision
+## 4. Product Vision
 
 The **Relationship Intelligence Copilot** helps users consistently build authentic relationships with specific LinkedIn professionals.
 
@@ -110,7 +108,7 @@ The goal is to transform LinkedIn networking from **random activity into a stru
 
 ---
 
-# 5. Core Product Loop
+## 5. Core Product Loop
 
 The product is built around a **relationship-building behavior loop**.
 
@@ -134,13 +132,13 @@ This loop ensures that users **continuously move relationships forward** rathe
 
 ---
 
-# 6. Key Product Features
+## 6. Key Product Features
 
 The MVP focuses on four core capabilities that directly support relationship building.
 
 ---
 
-## 6.1 Target Relationship Tracker
+### 6.1 Target Relationship Tracker
 
 Users can create a list of **important people to build relationships with**, such as:
 
@@ -160,7 +158,7 @@ This dashboard acts as a **personal CRM for LinkedIn relationships**.
 
 ---
 
-# 6.2 Curated Feed of Target People
+### 6.2 Curated Feed of Target People
 
 Instead of scrolling through the entire LinkedIn feed, users see **posts from the people they care about most**.
 
@@ -179,7 +177,7 @@ This dramatically reduces **noise in the LinkedIn feed**.
 
 ---
 
-# 6.3 AI Comment Suggestions
+### 6.3 AI Comment Suggestions
 
 Writing thoughtful comments quickly can be difficult.
 
@@ -199,7 +197,7 @@ The goal is **quality engagement rather than automation.**
 
 ---
 
-# 6.4 Engagement Reminder System
+### 6.4 Engagement Reminder System
 
 Consistency is essential for relationship building.
 
@@ -217,13 +215,13 @@ This ensures users maintain **steady relationship touchpoints**.
 
 ---
 
-# 7. Relationship Intelligence Layer
+## 7. Relationship Intelligence Layer
 
 Beyond simple engagement tools, the system includes **relationship analytics**.
 
 ---
 
-## Relationship Stage Tracker
+### Relationship Stage Tracker
 
 Each contact progresses through stages such as:
 
@@ -247,7 +245,7 @@ This helps users **understand where each relationship stands**.
 
 ---
 
-## Engagement Timeline
+### Engagement Timeline
 
 The product records interaction history.
 
@@ -265,7 +263,7 @@ Feb 12 — Sent DM
 
 This provides **context for future conversations**.
 
-## Trust Score / Relationship Strength
+### Trust Score / Relationship Strength
 
 The system analyzes signals such as:
 
@@ -277,7 +275,7 @@ It generates a **relationship strength score** that helps prioritize interacti
 
 ---
 
-# 8. AI “Next Best Action” Engine
+## 8. AI “Next Best Action” Engine
 
 One of the most powerful features is the **AI decision layer**.
 
@@ -307,7 +305,7 @@ This removes the uncertainty of **when and how to advance relationships**.
 
 ---
 
-# 9. Metrics for Product Success
+## 9. Metrics for Product Success
 
 The product’s success is measured not by activity but by **relationship progress**.
 
@@ -344,7 +342,7 @@ Guardrail metrics also ensure **high-quality interactions and prevent spam beha
 
 ---
 
-# 10. Expected Impact
+## 10. Expected Impact
 
 The Relationship Intelligence Copilot has the potential to transform how professionals use LinkedIn.
 
@@ -366,7 +364,7 @@ Ultimately, the system turns LinkedIn from a **content platform into a relation
 
 ---
 
-# 11. Conclusion
+## 11. Conclusion
 
 Professional success is often driven by **relationships rather than transactions**.
 
