@@ -138,19 +138,27 @@ I focus on:
 
 ## Recent Blogs
 
-{% assign blog_pages = site.pages | where_exp: "item", "item.path contains 'blog/' and item.title and item.image" | sort: "date" | reverse %}
+{% assign blog_pages = site.pages | sort: "date" | reverse %}
 
 <div class="blog-carousel" aria-label="Recent blog posts">
-  {% for blog in blog_pages limit: 3 %}
-    <article class="blog-carousel-card">
-      <a href="{{ blog.url | relative_url }}" aria-label="Read {{ blog.title }}">
-        <img src="{{ blog.image | relative_url }}" alt="{{ blog.title }}" loading="lazy">
-      </a>
-      <h3><a href="{{ blog.url | relative_url }}">{{ blog.title }}</a></h3>
-      {% if blog.subtitle %}
-        <p>{{ blog.subtitle }}</p>
+  {% assign recent_blog_count = 0 %}
+  {% for blog in blog_pages %}
+    {% if recent_blog_count < 3 %}
+      {% if blog.path contains 'blog/' %}
+        {% if blog.title and blog.image %}
+          <article class="blog-carousel-card">
+            <a href="{{ blog.url | relative_url }}" aria-label="Read {{ blog.title }}">
+              <img src="{{ blog.image | relative_url }}" alt="{{ blog.title }}" loading="lazy">
+            </a>
+            <h3><a href="{{ blog.url | relative_url }}">{{ blog.title }}</a></h3>
+            {% if blog.subtitle %}
+              <p>{{ blog.subtitle }}</p>
+            {% endif %}
+          </article>
+          {% assign recent_blog_count = recent_blog_count | plus: 1 %}
+        {% endif %}
       {% endif %}
-    </article>
+    {% endif %}
   {% endfor %}
 </div>
 
