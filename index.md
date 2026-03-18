@@ -138,7 +138,7 @@ I focus on:
 
 ## Recent Blogs
 
-{% assign blog_pages = site.pages | where_exp: "item", "item.url contains '/blog/'" | sort: "date" | reverse %}
+{% assign blog_pages = site.pages | where_exp: "item", "item.path contains 'blog/' and item.title and item.image" | sort: "date" | reverse %}
 
 <div class="blog-carousel" aria-label="Recent blog posts">
   {% for blog in blog_pages limit: 3 %}
