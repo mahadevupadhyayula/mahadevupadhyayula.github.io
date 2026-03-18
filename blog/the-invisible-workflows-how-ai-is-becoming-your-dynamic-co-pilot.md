@@ -41,12 +41,6 @@ permalink: /blog/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilo
   }
 </style>
 
-<div class="blog-post-header">
-  <h1 class="blog-post-title">The Invisible Workflows: How AI is Becoming Your Dynamic Co-Pilot</h1>
-  <p class="blog-post-subtitle">From rigid automations to dynamic multi-agent orchestration.</p>
-  <img class="blog-post-hero" src="{{ '/assets/images/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot-1.png' | relative_url }}" alt="The Invisible Workflows: How AI is Becoming Your Dynamic Co-Pilot" loading="eager">
-</div>
-
 Just yesterday, I was having a conversation about how automation is evolving. We’ve all seen AI in workflows — the static “if-this-then-that” pipelines, the scheduled bots, the integrations that connect tools. But what if I told you we’re on the verge of something far more radical?
 
 Today, Perplexity launches **“The Computer”**. And if you’re anything like me, your jaw probably dropped when you saw what it does. The world is moving fast — maybe scarier fast than most of us are ready for.
