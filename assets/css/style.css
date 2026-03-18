@@ -120,6 +120,25 @@ h3 {
   color: #2a3c3c;
 }
 
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-hero {
+  margin: 0 0 2rem;
+}
+
+.page-hero-image {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.page-body > h1:first-child {
+  display: none;
+}
+
 p,
 ul,
 ol,
