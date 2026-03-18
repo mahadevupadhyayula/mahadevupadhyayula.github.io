@@ -2,18 +2,13 @@
 layout: default
 ---
 <article>
-  {%- if page.title or page.subtitle or page.image -%}
+  {%- if page.title or page.subtitle -%}
     <header class="page-header">
       {%- if page.title -%}
         <h1 class="page-title">{{ page.title | escape }}</h1>
       {%- endif -%}
       {%- if page.subtitle -%}
         <p class="page-subtitle">{{ page.subtitle }}</p>
-      {%- endif -%}
-      {%- if page.image -%}
-        <figure class="page-hero">
-          <img class="page-hero-image" src="{{ page.image | relative_url }}" alt="{{ page.title | default: site.title | escape }}" loading="eager">
-        </figure>
       {%- endif -%}
     </header>
   {%- endif -%}
