@@ -7,6 +7,46 @@ image: /assets/images/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co
 permalink: /blog/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot/
 ---
 
+<style>
+  article > .page-title,
+  article > .page-subtitle {
+    display: none;
+  }
+
+  .blog-post-header {
+    margin-bottom: 2rem;
+  }
+
+  .blog-post-title {
+    color: var(--heading);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: clamp(2rem, 5vw, 2.65rem);
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    margin: 0 0 1.5rem;
+  }
+
+  .blog-post-subtitle {
+    margin-top: -0.7rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: #2a3c3c;
+  }
+
+  .blog-post-hero {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
+</style>
+
+<div class="blog-post-header">
+  <h1 class="blog-post-title">The Invisible Workflows: How AI is Becoming Your Dynamic Co-Pilot</h1>
+  <p class="blog-post-subtitle">From rigid automations to dynamic multi-agent orchestration.</p>
+  <img class="blog-post-hero" src="{{ '/assets/images/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot-1.png' | relative_url }}" alt="The Invisible Workflows: How AI is Becoming Your Dynamic Co-Pilot" loading="eager">
+</div>
+
 Just yesterday, I was having a conversation about how automation is evolving. We’ve all seen AI in workflows — the static “if-this-then-that” pipelines, the scheduled bots, the integrations that connect tools. But what if I told you we’re on the verge of something far more radical?
 
 Today, Perplexity launches **“The Computer”**. And if you’re anything like me, your jaw probably dropped when you saw what it does. The world is moving fast — maybe scarier fast than most of us are ready for.
@@ -27,17 +67,12 @@ This works for simple tasks but is brittle. Real work rarely fits into neat boxe
 
 But even smart AI helpers were still **following your script**. The workflow was fixed. AI was a helper, not a conductor.
 
-![the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot-1.png](/assets/images/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot-1.png)
-
-*Caption:* “Meet your new AI co-pilot: orchestrating complex workflows invisibly.”
 
 ---
 
 ## **Static vs Dynamic Workflows**
 
 Here’s the visual difference:
-
-**]**
 
 ![the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot-2.png](/assets/images/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot-2.png)
 
