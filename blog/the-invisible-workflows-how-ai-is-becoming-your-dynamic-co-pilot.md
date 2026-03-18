@@ -37,8 +37,6 @@ But even smart AI helpers were still **following your script**. The workflow wa
 
 Here’s the visual difference:
 
-**]**
-
 ![the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot-2.png](/assets/images/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot-2.png)
 
 *Caption:* “From rigid automation… to dynamic AI orchestration.”
