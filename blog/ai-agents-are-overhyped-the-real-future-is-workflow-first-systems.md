@@ -1,6 +1,13 @@
-# AI Agents Are Overhyped — The Real Future Is Workflow-First Systems
+---
+layout: page
+title: "AI Agents Are Overhyped — The Real Future Is Workflow-First Systems"
+subtitle: "Why workflow-first systems will outlast agent-first hype."
+date: 2026-03-20
+image: /assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-1.png
+permalink: /blog/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems/
+---
 
-![ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-1.png](AI%20Agents%20Are%20Overhyped%20%E2%80%94%20The%20Real%20Future%20Is%20Workf/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-1.png)
+![AI Agents Are Overhyped — The Real Future Is Workflow-First Systems](/assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-1.png)
 
 A few weeks ago, I was watching a founder demo what he called an “AI sales agent.” The pitch was simple and compelling: you give the system a goal—“generate qualified leads and book meetings”—and it handles everything end-to-end. It finds prospects, researches them, drafts emails, sends outreach, and even follows up.
 
@@ -36,7 +43,7 @@ But demos are controlled environments. Businesses are not.
 
 ---
 
-![ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-2.png](AI%20Agents%20Are%20Overhyped%20%E2%80%94%20The%20Real%20Future%20Is%20Workf/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-2.png)
+![Workflow-first businesses run on processes](/assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-2.png)
 
 ## Businesses Don’t Run on Outcomes—They Run on Processes
 
@@ -50,7 +57,7 @@ When you hand that entire system to an autonomous agent, you’re not automating
 
 ### 🧩 Key Takeaway
 
-![ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-3.png](AI%20Agents%20Are%20Overhyped%20%E2%80%94%20The%20Real%20Future%20Is%20Workf/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-3.png)
+![Autonomy introduces hidden reliability costs](/assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-3.png)
 
 ---
 
@@ -66,7 +73,7 @@ This makes them fragile in production environments where reliability is non-nego
 
 ### 🧩 Key Takeaway
 
-![ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-4.png](AI%20Agents%20Are%20Overhyped%20%E2%80%94%20The%20Real%20Future%20Is%20Workf/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-4.png)
+![Workflow-first thinking reframes the problem](/assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-4.png)
 
 ---
 
@@ -82,7 +89,7 @@ This creates a system that is both intelligent and reliable.
 
 ### 🧩 Key Takeaway
 
-![ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-5.png](AI%20Agents%20Are%20Overhyped%20%E2%80%94%20The%20Real%20Future%20Is%20Workf/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-5.png)
+![Agents work best as components in workflows](/assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-5.png)
 
 ---
 
@@ -133,7 +140,7 @@ On top of this sits an emerging capability—an AI layer that translates human i
 
 ### 🧩 Key Takeaway
 
-![ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-6.png](AI%20Agents%20Are%20Overhyped%20%E2%80%94%20The%20Real%20Future%20Is%20Workf/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-6.png)
+![A modular workflow-first architecture scales](/assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-6.png)
 
 ---
 
@@ -151,7 +158,7 @@ Same AI. Completely different reliability.
 
 ### 🧩 Key Takeaway
 
-![ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-7.png](AI%20Agents%20Are%20Overhyped%20%E2%80%94%20The%20Real%20Future%20Is%20Workf/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-7.png)
+![Workflow-first support systems are more reliable](/assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-7.png)
 
 ---
 
@@ -165,7 +172,7 @@ The shift is already happening—from standalone intelligence to orchestrated in
 
 ### 🧩 Key Takeaway
 
-![ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-8.png](AI%20Agents%20Are%20Overhyped%20%E2%80%94%20The%20Real%20Future%20Is%20Workf/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-8.png)
+![The future belongs to orchestrated intelligence](/assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-8.png)
 
 ---
 
@@ -183,7 +190,7 @@ Because while agents can improvise, it is workflows that scale.
 
 ### 🧩 Final Takeaway
 
-![ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-9.png](AI%20Agents%20Are%20Overhyped%20%E2%80%94%20The%20Real%20Future%20Is%20Workf/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-9.png)
+![Start with the workflow, then add AI](/assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-9.png)
 
 ---
 
