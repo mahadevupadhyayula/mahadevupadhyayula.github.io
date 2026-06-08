@@ -87,7 +87,7 @@ permalink: /work-with-me/
     <ul class="contact-list">
       <li><strong>Good inputs:</strong> CRM notes, lead research steps, content brief examples, document workflows, or screenshots of the current process.</li>
       <li><strong>What I’ll look for:</strong> extraction points, validation checks, human approval moments, and the clean output your team needs.</li>
-      <li><strong>What happens after submit:</strong> The form sends your workflow to a secure serverless endpoint for review, then shows a clear confirmation on this page.</li>
+      <li><strong>What happens after submit:</strong> The form sends your workflow inquiry through a form submission endpoint and shows a confirmation after submission.</li>
     </ul>
   </div>
 
@@ -423,7 +423,7 @@ permalink: /work-with-me/
       var errors = validateForm();
 
       if (endpoint.indexOf('YOUR_SUPABASE_PROJECT_REF') !== -1) {
-        errors.push({ field: 'workflow_type', message: 'The workflow inquiry endpoint needs the deployed Supabase Function URL.' });
+        errors.push({ field: 'workflow_type', message: 'The form submission endpoint needs the deployed Supabase Function URL.' });
       }
 
       if (errors.length > 0) {
@@ -446,7 +446,7 @@ permalink: /work-with-me/
       })
         .then(function (response) {
           return response.json().catch(function () {
-            return { success: false, message: 'The endpoint returned an unreadable response.' };
+            return { success: false, message: 'The form submission endpoint returned an unreadable response.' };
           }).then(function (body) {
             return { ok: response.ok, body: body };
           });
@@ -466,7 +466,7 @@ permalink: /work-with-me/
           showConfirmation(getValue('workflow_type'));
         })
         .catch(function () {
-          setStatus('I could not reach the workflow inquiry endpoint. Please try again shortly.', 'error');
+          setStatus('I could not reach the form submission endpoint. Please try again shortly.', 'error');
         })
         .finally(function () {
           if (submitButton) {
