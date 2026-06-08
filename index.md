@@ -79,6 +79,30 @@ description: I build human-approved AI workflow systems for B2B teams, including
   </div>
 </section>
 
+<section class="stage-one-services" aria-labelledby="why-different-title">
+  <div class="section-heading-row">
+    <div>
+      <p class="section-eyebrow">Workflow-first proof</p>
+      <h2 id="why-different-title">Why this is different</h2>
+    </div>
+  </div>
+  <p>I do not start with “what AI tool should we use?” I start with the workflow: inputs, decisions, risks, approval points, and clean outputs.</p>
+  <div class="service-card-grid">
+    <article>
+      <h3>Product background</h3>
+      <p>Ex-PayPal AI/data/product systems</p>
+    </article>
+    <article>
+      <h3>Operator background</h3>
+      <p>Founder building real business workflows</p>
+    </article>
+    <article>
+      <h3>Build proof</h3>
+      <p>CRM, lead research, content, and insight-system prototypes</p>
+    </article>
+  </div>
+</section>
+
 <section id="work-with-me" class="workflow-cta" aria-labelledby="workflow-title">
   <p class="section-eyebrow">Primary CTA flow</p>
   <h2 id="workflow-title">Send me one messy workflow. I’ll map the automation opportunity.</h2>
