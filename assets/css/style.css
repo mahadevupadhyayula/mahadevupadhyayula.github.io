@@ -482,3 +482,183 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+/* Stage 1: AI workflow conversion positioning */
+.hero-section,
+.trust-row,
+.stage-one-services,
+.workflow-cta {
+  margin-bottom: 2.5rem;
+}
+
+.hero-section {
+  padding: clamp(2rem, 6vw, 4rem);
+  border: 1px solid rgba(46, 168, 255, 0.24);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(46, 168, 255, 0.22), transparent 34rem),
+    linear-gradient(135deg, #071426 0%, #0b1020 58%, #06101f 100%);
+  color: #ffffff;
+  box-shadow: 0 24px 70px rgba(7, 20, 38, 0.22);
+}
+
+.hero-section h1 {
+  max-width: 900px;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(2.3rem, 7vw, 4.45rem);
+  letter-spacing: -0.055em;
+}
+
+.hero-eyebrow,
+.section-eyebrow {
+  margin-bottom: 0.75rem;
+  color: #4db8ff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-copy {
+  max-width: 760px;
+  color: #d7e6f7;
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.7rem;
+}
+
+.button-link.button-primary,
+.button-link.button-secondary {
+  border: 1px solid transparent;
+  box-shadow: 0 12px 32px rgba(15, 111, 255, 0.18);
+}
+
+.button-link.button-primary {
+  background: #1f8bff;
+  color: #ffffff;
+}
+
+.button-link.button-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.trust-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.trust-row div,
+.stage-one-services article,
+.workflow-cta {
+  border: 1px solid rgba(15, 94, 94, 0.16);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 14px 40px rgba(7, 20, 38, 0.08);
+}
+
+.trust-row div {
+  padding: 1rem;
+}
+
+.trust-row strong,
+.trust-row span {
+  display: block;
+}
+
+.trust-row strong {
+  color: #071426;
+  font-size: 1.05rem;
+}
+
+.trust-row span {
+  color: #405252;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.stage-one-services h2,
+.workflow-cta h2 {
+  max-width: 760px;
+}
+
+.service-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stage-one-services article {
+  padding: 1.15rem;
+}
+
+.stage-one-services article h3 {
+  margin-top: 0;
+}
+
+.workflow-cta {
+  padding: clamp(1.3rem, 4vw, 2rem);
+}
+
+.workflow-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.workflow-path span {
+  position: relative;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: #071426;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
+.workflow-path span:not(:last-child)::after {
+  content: "→";
+  margin-left: 0.6rem;
+  color: #1f8bff;
+}
+
+.nav-cta {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 999px;
+}
+
+.footer-main {
+  display: grid;
+  gap: 0.4rem;
+  max-width: 760px;
+  padding: 0 1rem;
+}
+
+.footer-positioning {
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+@media (max-width: 760px) {
+  .trust-row,
+  .service-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions .button-link {
+    width: 100%;
+    text-align: center;
+  }
+}
