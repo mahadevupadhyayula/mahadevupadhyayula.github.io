@@ -53,7 +53,7 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=workflow-audit' | relative_url }}">Request workflow audit</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-workflow-audit' | relative_url }}">Request workflow audit</a>
   </article>
 
   <article id="crm-hygiene-agent" class="service-detail-card">
@@ -82,7 +82,7 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=crm-hygiene' | relative_url }}">Request workflow audit</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-crm-hygiene' | relative_url }}">Request workflow audit</a>
   </article>
 
   <article id="pre-crm-research-agent" class="service-detail-card">
@@ -111,7 +111,7 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=pre-crm-research' | relative_url }}">Request workflow audit</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-pre-crm-research' | relative_url }}">Request workflow audit</a>
   </article>
 
   <article id="content-workflow-system" class="service-detail-card">
@@ -140,7 +140,7 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=content-workflow' | relative_url }}">Request workflow audit</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-content-workflow' | relative_url }}">Request workflow audit</a>
   </article>
 
   <article id="custom-ai-automation-mvp" class="service-detail-card">
@@ -169,6 +169,6 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=custom-ai-mvp' | relative_url }}">Request workflow audit</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-custom-ai-mvp' | relative_url }}">Request workflow audit</a>
   </article>
 </div>

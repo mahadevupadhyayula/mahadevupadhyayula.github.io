@@ -94,6 +94,8 @@ permalink: /work-with-me/
   <form id="workflow-intake" class="workflow-intake-form" action="https://YOUR_SUPABASE_PROJECT_REF.functions.supabase.co/submit-workflow-inquiry" method="post" data-endpoint="https://YOUR_SUPABASE_PROJECT_REF.functions.supabase.co/submit-workflow-inquiry" novalidate>
     <input type="hidden" name="source" value="work-with-me-main-conversion-page">
     <input id="intent" type="hidden" name="intent" value="">
+    <input id="page-url" type="hidden" name="page_url" value="">
+    <input id="referrer" type="hidden" name="referrer" value="">
 
     <div class="form-field">
       <label for="name">Name</label>
@@ -181,9 +183,13 @@ permalink: /work-with-me/
       'Long-form Blog Content Generator',
       'Custom AI Automation MVP'
     ];
+    var capturedPageUrl = window.location.href;
+    var capturedReferrer = document.referrer || '';
     var params = new URLSearchParams(window.location.search);
     var intent = params.get('intent') || '';
     var intentField = document.getElementById('intent');
+    var pageUrlField = document.getElementById('page-url');
+    var referrerField = document.getElementById('referrer');
     var workflowType = document.getElementById('workflow-type');
     var status = document.getElementById('workflow-intake-status');
     var submitButton = form.querySelector('button[type="submit"]');
@@ -295,8 +301,8 @@ permalink: /work-with-me/
         tools: getValue('tools'),
         timeline: getValue('timeline'),
         budget_range: getValue('budget_range'),
-        page_url: window.location.href,
-        referrer: document.referrer,
+        page_url: capturedPageUrl,
+        referrer: capturedReferrer,
         user_agent: window.navigator.userAgent
       };
     }
@@ -356,15 +362,27 @@ permalink: /work-with-me/
       confirmation.focus();
     }
 
+    function intentMatches(optionIntent, capturedIntent) {
+      return optionIntent === capturedIntent || capturedIntent.slice(-optionIntent.length - 1) === '-' + optionIntent;
+    }
+
     if (intentField) {
       intentField.value = intent;
+    }
+
+    if (pageUrlField) {
+      pageUrlField.value = capturedPageUrl;
+    }
+
+    if (referrerField) {
+      referrerField.value = capturedReferrer;
     }
 
     if (intent && workflowType) {
       Array.prototype.slice.call(workflowType.options).some(function (option) {
         var optionIntents = (option.getAttribute('data-intents') || '').split(',');
 
-        if (optionIntents.indexOf(intent) !== -1) {
+        if (optionIntents.some(function (optionIntent) { return intentMatches(optionIntent, intent); })) {
           workflowType.value = option.value;
           return true;
         }
