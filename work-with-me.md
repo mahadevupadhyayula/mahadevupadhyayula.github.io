@@ -173,6 +173,7 @@ permalink: /work-with-me/
     </div>
 
     <p class="form-note">Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output</p>
+    <p class="form-note form-note--privacy">Please do not include passwords, API keys, confidential customer data, or sensitive internal records. A summary or sample workflow is enough.</p>
     <p id="workflow-intake-status" class="form-status" role="status" aria-live="polite"></p>
     <button class="button-link button-primary" type="submit">Send me your workflow</button>
   </form>
