@@ -15,4 +15,7 @@ layout: default
   <div class="page-body">
     {{ content }}
   </div>
+  {%- if page.path contains 'blog/' -%}
+    {%- include blog-workflow-cta.html -%}
+  {%- endif -%}
 </article>
