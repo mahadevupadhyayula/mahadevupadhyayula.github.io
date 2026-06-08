@@ -1794,3 +1794,40 @@ img {
   opacity: 0.72;
   transform: none;
 }
+
+.workflow-confirmation {
+  grid-column: 1 / -1;
+  padding: clamp(1rem, 3vw, 1.35rem);
+  border: 1px solid rgba(87, 232, 166, 0.34);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(87, 232, 166, 0.12), rgba(84, 184, 255, 0.08));
+  color: #dfffee;
+}
+
+.workflow-confirmation:focus {
+  outline: 3px solid rgba(84, 184, 255, 0.42);
+  outline-offset: 4px;
+}
+
+.workflow-confirmation h3 {
+  margin: 0 0 0.55rem;
+  color: #ffffff;
+  font-size: clamp(1.35rem, 3vw, 1.7rem);
+}
+
+.workflow-confirmation p {
+  margin: 0.55rem 0 0;
+  color: #c7ffe3;
+  line-height: 1.6;
+}
+
+.workflow-confirmation__case-study {
+  padding-top: 0.35rem;
+}
+
+.workflow-confirmation__case-study a {
+  color: #7fd8ff;
+  font-weight: 850;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
