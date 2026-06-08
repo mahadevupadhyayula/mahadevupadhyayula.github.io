@@ -1,0 +1,437 @@
+<div class="workflow-modal" data-workflow-modal hidden>
+  <div class="workflow-modal__backdrop" data-workflow-modal-close></div>
+  <section class="workflow-modal__panel" role="dialog" aria-modal="true" aria-labelledby="workflow-modal-title" aria-describedby="workflow-modal-description" tabindex="-1">
+    <button class="workflow-modal__close" type="button" data-workflow-modal-close aria-label="Close workflow form">×</button>
+    <div class="workflow-modal__copy">
+      <p class="section-eyebrow">Send me your workflow</p>
+      <h2 id="workflow-modal-title">Share one messy workflow for review.</h2>
+      <p id="workflow-modal-description">Send the inputs, current tools, desired clean output, and where human approval belongs. I’ll review whether an audit, prototype, or focused workflow build is the right fit.</p>
+    </div>
+    {% include workflow-form.html form_id='workflow-modal-intake' id_prefix='workflow-modal' source='workflow-modal-send-me-your-workflow' %}
+  </section>
+</div>
+
+<script>
+  (function () {
+    var allowedWorkflowTypes = [
+      'AI Workflow Audit',
+      'CRM Hygiene Agent',
+      'Pre-CRM Research Agent',
+      'Long-form Blog Content Generator',
+      'Custom AI Automation MVP'
+    ];
+    var allowedHumanApprovalResponses = [
+      'Yes',
+      'No',
+      'Not sure'
+    ];
+    var capturedPageUrl = window.location.href;
+    var capturedReferrer = document.referrer || '';
+    var params = new URLSearchParams(window.location.search);
+    var pageIntent = params.get('intent') || '';
+    var modal = document.querySelector('[data-workflow-modal]');
+    var modalPanel = modal ? modal.querySelector('.workflow-modal__panel') : null;
+    var lastFocusedElement = null;
+
+    function getField(form, name) {
+      return form.elements[name];
+    }
+
+    function getValue(form, name) {
+      var field = getField(form, name);
+
+      return field && typeof field.value === 'string' ? field.value.trim() : '';
+    }
+
+    function setFieldValue(form, name, value) {
+      var field = getField(form, name);
+
+      if (field) {
+        field.value = value;
+      }
+    }
+
+    function setStatus(form, message, state) {
+      var status = form.querySelector('.form-status');
+
+      if (!status) {
+        return;
+      }
+
+      status.textContent = message || '';
+      status.className = state ? 'form-status form-status--' + state : 'form-status';
+    }
+
+    function clearFieldErrors(form) {
+      Array.prototype.slice.call(form.querySelectorAll('[data-error-for]')).forEach(function (error) {
+        error.remove();
+      });
+
+      Array.prototype.slice.call(form.querySelectorAll('[aria-invalid="true"]')).forEach(function (field) {
+        field.removeAttribute('aria-invalid');
+        field.removeAttribute('aria-describedby');
+      });
+    }
+
+    function showFieldError(form, fieldName, message) {
+      var field = getField(form, fieldName);
+
+      if (!field || !field.parentNode) {
+        return;
+      }
+
+      var error = document.createElement('span');
+      var errorId = form.id + '-' + fieldName.replace(/_/g, '-') + '-error';
+      error.id = errorId;
+      error.className = 'form-field-error';
+      error.setAttribute('data-error-for', fieldName);
+      error.textContent = message;
+      field.setAttribute('aria-invalid', 'true');
+      field.setAttribute('aria-describedby', errorId);
+      field.parentNode.appendChild(error);
+    }
+
+    function validateForm(form) {
+      var errors = [];
+      var email = getValue(form, 'email');
+      var workflowTypeValue = getValue(form, 'workflow_type');
+      var messyWorkflow = getValue(form, 'messy_workflow');
+      var desiredOutput = getValue(form, 'desired_output');
+      var humanApprovalRequired = getValue(form, 'human_approval_required');
+
+      [
+        ['name', 'Name is required.'],
+        ['email', 'Work email is required.'],
+        ['workflow_type', 'Workflow type is required.'],
+        ['messy_workflow', 'Messy workflow description is required.'],
+        ['desired_output', 'Desired clean output is required.'],
+        ['human_approval_required', 'Human approval requirement is required.'],
+        ['timeline', 'Timeline is required.']
+      ].forEach(function (item) {
+        if (!getValue(form, item[0])) {
+          errors.push({ field: item[0], message: item[1] });
+        }
+      });
+
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        errors.push({ field: 'email', message: 'Enter a valid work email address.' });
+      }
+
+      if (workflowTypeValue && allowedWorkflowTypes.indexOf(workflowTypeValue) === -1) {
+        errors.push({ field: 'workflow_type', message: 'Select one of the listed workflow types.' });
+      }
+
+      if (humanApprovalRequired && allowedHumanApprovalResponses.indexOf(humanApprovalRequired) === -1) {
+        errors.push({ field: 'human_approval_required', message: 'Select Yes, No, or Not sure.' });
+      }
+
+      if (messyWorkflow && messyWorkflow.length < 25) {
+        errors.push({ field: 'messy_workflow', message: 'Add a little more context about the messy workflow.' });
+      }
+
+      if (messyWorkflow.length > 4000) {
+        errors.push({ field: 'messy_workflow', message: 'Keep the messy workflow description under 4,000 characters.' });
+      }
+
+      if (desiredOutput && desiredOutput.length < 10) {
+        errors.push({ field: 'desired_output', message: 'Describe the clean output your team needs.' });
+      }
+
+      if (desiredOutput.length > 2500) {
+        errors.push({ field: 'desired_output', message: 'Keep the desired output under 2,500 characters.' });
+      }
+
+      return errors;
+    }
+
+    function buildPayload(form) {
+      return {
+        name: getValue(form, 'name'),
+        email: getValue(form, 'email'),
+        company: getValue(form, 'company'),
+        intent: getValue(form, 'intent'),
+        workflow_type: getValue(form, 'workflow_type'),
+        messy_workflow: getValue(form, 'messy_workflow'),
+        desired_output: getValue(form, 'desired_output'),
+        human_approval_required: getValue(form, 'human_approval_required'),
+        tools: getValue(form, 'tools'),
+        timeline: getValue(form, 'timeline'),
+        budget_range: getValue(form, 'budget_range'),
+        page_url: capturedPageUrl,
+        referrer: capturedReferrer,
+        user_agent: window.navigator.userAgent
+      };
+    }
+
+    function getCaseStudy(workflowTypeValue) {
+      var caseStudies = {
+        'CRM Hygiene Agent': {
+          label: 'View the CRM Hygiene Agent case study',
+          url: '{{ "/case-studies/crm-hygiene-agent/" | relative_url }}'
+        },
+        'Pre-CRM Research Agent': {
+          label: 'View the Pre-CRM Research Agent case study',
+          url: '{{ "/case-studies/pre-crm-research-agent/" | relative_url }}'
+        },
+        'Long-form Blog Content Generator': {
+          label: 'View the Long-form Blog Content Generator case study',
+          url: '{{ "/case-studies/long-form-blog-content-generator/" | relative_url }}'
+        }
+      };
+
+      return caseStudies[workflowTypeValue] || null;
+    }
+
+    function showConfirmation(form, workflowTypeValue) {
+      var confirmation = document.createElement('div');
+      var heading = document.createElement('h3');
+      var summary = document.createElement('p');
+      var nextStep = document.createElement('p');
+      var caseStudy = getCaseStudy(workflowTypeValue);
+
+      confirmation.className = 'workflow-confirmation';
+      confirmation.setAttribute('role', 'status');
+      confirmation.setAttribute('aria-live', 'polite');
+      confirmation.setAttribute('tabindex', '-1');
+
+      heading.textContent = 'Workflow received.';
+      summary.textContent = 'Thanks for sending the messy workflow. I’ll review the inputs, validation checks, human approval moments, and clean output your team needs.';
+      nextStep.textContent = 'Next step: I’ll look for the smallest useful automation scope and follow up with whether an audit, prototype, or focused workflow build is the right fit.';
+
+      confirmation.appendChild(heading);
+      confirmation.appendChild(summary);
+      confirmation.appendChild(nextStep);
+
+      if (caseStudy) {
+        var caseStudyCopy = document.createElement('p');
+        var caseStudyLink = document.createElement('a');
+
+        caseStudyCopy.className = 'workflow-confirmation__case-study';
+        caseStudyCopy.textContent = 'While I review it, you can see a related workflow example: ';
+        caseStudyLink.href = caseStudy.url;
+        caseStudyLink.textContent = caseStudy.label;
+        caseStudyCopy.appendChild(caseStudyLink);
+        confirmation.appendChild(caseStudyCopy);
+      }
+
+      form.replaceChildren(confirmation);
+      confirmation.focus();
+    }
+
+    function intentMatches(optionIntent, capturedIntent) {
+      return optionIntent === capturedIntent || capturedIntent.slice(-optionIntent.length - 1) === '-' + optionIntent;
+    }
+
+    function applyIntent(form, intent) {
+      var workflowType = getField(form, 'workflow_type');
+      setFieldValue(form, 'intent', intent || '');
+      setFieldValue(form, 'page_url', capturedPageUrl);
+      setFieldValue(form, 'referrer', capturedReferrer);
+
+      if (intent && workflowType) {
+        Array.prototype.slice.call(workflowType.options).some(function (option) {
+          var optionIntents = (option.getAttribute('data-intents') || '').split(',');
+
+          if (optionIntents.some(function (optionIntent) { return intentMatches(optionIntent, intent); })) {
+            workflowType.value = option.value;
+            return true;
+          }
+
+          return false;
+        });
+      }
+    }
+
+    function getIntentFromTrigger(trigger) {
+      var explicitIntent = trigger.getAttribute('data-workflow-intent');
+      var href = trigger.getAttribute('href') || '';
+      var queryIndex = href.indexOf('?');
+
+      if (explicitIntent) {
+        return explicitIntent;
+      }
+
+      if (queryIndex !== -1) {
+        return new URLSearchParams(href.slice(queryIndex + 1)).get('intent') || '';
+      }
+
+      return '';
+    }
+
+    function getFocusableElements() {
+      if (!modal) {
+        return [];
+      }
+
+      return Array.prototype.slice.call(modal.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')).filter(function (element) {
+        return element.offsetParent !== null;
+      });
+    }
+
+    function openModal(trigger) {
+      var modalForm = modal ? modal.querySelector('[data-workflow-form]') : null;
+
+      if (!modal || !modalPanel || !modalForm) {
+        return;
+      }
+
+      lastFocusedElement = document.activeElement;
+      applyIntent(modalForm, getIntentFromTrigger(trigger));
+      modal.hidden = false;
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('workflow-modal-open');
+
+      var firstField = modalForm.querySelector('input:not([type="hidden"]), select, textarea, button');
+      (firstField || modalPanel).focus();
+    }
+
+    function closeModal() {
+      if (!modal || modal.hidden) {
+        return;
+      }
+
+      modal.hidden = true;
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('workflow-modal-open');
+
+      if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+        lastFocusedElement.focus();
+      }
+    }
+
+    function handleModalKeydown(event) {
+      var focusableElements;
+      var firstElement;
+      var lastElement;
+
+      if (!modal || modal.hidden) {
+        return;
+      }
+
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeModal();
+        return;
+      }
+
+      if (event.key !== 'Tab') {
+        return;
+      }
+
+      focusableElements = getFocusableElements();
+
+      if (!focusableElements.length) {
+        event.preventDefault();
+        modalPanel.focus();
+        return;
+      }
+
+      firstElement = focusableElements[0];
+      lastElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    }
+
+    function handleSubmit(form, event) {
+      var endpoint;
+      var errors;
+      var submitButton;
+      var originalSubmitText;
+
+      event.preventDefault();
+      clearFieldErrors(form);
+      setStatus(form, '', '');
+
+      endpoint = form.getAttribute('data-endpoint') || form.getAttribute('action');
+      errors = validateForm(form);
+
+      if (endpoint.indexOf('YOUR_SUPABASE_PROJECT_REF') !== -1) {
+        errors.push({ field: 'workflow_type', message: 'The form submission endpoint needs the deployed Supabase Function URL.' });
+      }
+
+      if (errors.length > 0) {
+        errors.forEach(function (error) {
+          showFieldError(form, error.field, error.message);
+        });
+        setStatus(form, 'Please fix the highlighted fields and submit again.', 'error');
+        return;
+      }
+
+      submitButton = form.querySelector('button[type="submit"]');
+      originalSubmitText = submitButton ? submitButton.textContent : '';
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending workflow...';
+      }
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(buildPayload(form))
+      })
+        .then(function (response) {
+          return response.json().catch(function () {
+            return { success: false, message: 'The form submission endpoint returned an unreadable response.' };
+          }).then(function (body) {
+            return { ok: response.ok, body: body };
+          });
+        })
+        .then(function (result) {
+          if (!result.ok || !result.body.success) {
+            if (Array.isArray(result.body.errors)) {
+              result.body.errors.forEach(function (error) {
+                showFieldError(form, error.field, error.message);
+              });
+            }
+
+            setStatus(form, result.body.message || 'Something went wrong. Please try again.', 'error');
+            return;
+          }
+
+          showConfirmation(form, getValue(form, 'workflow_type'));
+        })
+        .catch(function () {
+          setStatus(form, 'I could not reach the form submission endpoint. Please try again shortly.', 'error');
+        })
+        .finally(function () {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = originalSubmitText || 'Send me your workflow';
+          }
+        });
+    }
+
+    Array.prototype.slice.call(document.querySelectorAll('[data-workflow-form]')).forEach(function (form) {
+      applyIntent(form, pageIntent);
+      form.addEventListener('submit', function (event) {
+        handleSubmit(form, event);
+      });
+    });
+
+    Array.prototype.slice.call(document.querySelectorAll('[data-workflow-modal-open]')).forEach(function (trigger) {
+      trigger.addEventListener('click', function (event) {
+        if (!modal) {
+          return;
+        }
+
+        event.preventDefault();
+        openModal(trigger);
+      });
+    });
+
+    if (modal) {
+      modal.setAttribute('aria-hidden', 'true');
+      Array.prototype.slice.call(modal.querySelectorAll('[data-workflow-modal-close]')).forEach(function (trigger) {
+        trigger.addEventListener('click', closeModal);
+      });
+      document.addEventListener('keydown', handleModalKeydown);
+    }
+  }());
+</script>

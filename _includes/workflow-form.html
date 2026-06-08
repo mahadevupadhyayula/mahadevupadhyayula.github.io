@@ -1,0 +1,91 @@
+{%- assign workflow_form_id = include.form_id | default: 'workflow-intake' -%}
+{%- assign workflow_form_prefix = include.id_prefix | default: workflow_form_id -%}
+{%- assign workflow_form_source = include.source | default: 'workflow-intake' -%}
+{%- assign workflow_form_endpoint = include.endpoint | default: 'https://YOUR_SUPABASE_PROJECT_REF.functions.supabase.co/submit-workflow-inquiry' -%}
+{%- assign workflow_form_button = include.button_label | default: 'Send me your workflow' -%}
+<form id="{{ workflow_form_id }}" class="workflow-intake-form" action="{{ workflow_form_endpoint }}" method="post" data-workflow-form data-endpoint="{{ workflow_form_endpoint }}" novalidate>
+  <input type="hidden" name="source" value="{{ workflow_form_source }}">
+  <input type="hidden" name="intent" value="">
+  <input type="hidden" name="page_url" value="">
+  <input type="hidden" name="referrer" value="">
+
+  <div class="form-field">
+    <label for="{{ workflow_form_prefix }}-name">Name</label>
+    <input id="{{ workflow_form_prefix }}-name" name="name" type="text" autocomplete="name" required>
+  </div>
+
+  <div class="form-field">
+    <label for="{{ workflow_form_prefix }}-email">Work email</label>
+    <input id="{{ workflow_form_prefix }}-email" name="email" type="email" autocomplete="email" required>
+  </div>
+
+  <div class="form-field">
+    <label for="{{ workflow_form_prefix }}-company">Company or team</label>
+    <input id="{{ workflow_form_prefix }}-company" name="company" type="text" autocomplete="organization" placeholder="B2B SaaS team, agency, RevOps group...">
+  </div>
+
+  <div class="form-field">
+    <label for="{{ workflow_form_prefix }}-workflow-type">Workflow type</label>
+    <select id="{{ workflow_form_prefix }}-workflow-type" name="workflow_type" required>
+      <option value="">Select one</option>
+      <option value="AI Workflow Audit" data-intents="workflow-audit,audit">AI Workflow Audit</option>
+      <option value="CRM Hygiene Agent" data-intents="crm-hygiene,crm-notes">CRM Hygiene Agent</option>
+      <option value="Pre-CRM Research Agent" data-intents="pre-crm-research,lead-research">Pre-CRM Research Agent</option>
+      <option value="Long-form Blog Content Generator" data-intents="content-workflow,content-briefs,blog-content">Long-form Blog Content Generator</option>
+      <option value="Custom AI Automation MVP" data-intents="custom-ai-mvp,automation-mvp,prototype">Custom AI Automation MVP</option>
+    </select>
+  </div>
+
+  <div class="form-field form-field-full">
+    <label for="{{ workflow_form_prefix }}-messy-workflow">Messy workflow description</label>
+    <textarea id="{{ workflow_form_prefix }}-messy-workflow" name="messy_workflow" rows="5" placeholder="Example: Sales reps paste CRM notes after calls, RevOps checks missing fields, and managers still need to confirm next steps before Salesforce is clean." required></textarea>
+  </div>
+
+  <div class="form-field form-field-full">
+    <label for="{{ workflow_form_prefix }}-clean-output">Desired clean output</label>
+    <textarea id="{{ workflow_form_prefix }}-clean-output" name="desired_output" rows="4" placeholder="Example: Validated account summary, updated CRM fields, clear follow-up tasks, content brief, or reviewed lead research package." required></textarea>
+  </div>
+
+  <div class="form-field">
+    <label for="{{ workflow_form_prefix }}-human-approval-required">Does this output need human approval before action?</label>
+    <select id="{{ workflow_form_prefix }}-human-approval-required" name="human_approval_required" required>
+      <option value="">Select one</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      <option value="Not sure">Not sure</option>
+    </select>
+  </div>
+
+  <div class="form-field form-field-full">
+    <label for="{{ workflow_form_prefix }}-tools">Current tools</label>
+    <input id="{{ workflow_form_prefix }}-tools" name="tools" type="text" placeholder="HubSpot, Salesforce, Airtable, Notion, Google Docs, Slack, Clay, Zapier...">
+  </div>
+
+  <div class="form-field">
+    <label for="{{ workflow_form_prefix }}-timeline">Timeline</label>
+    <select id="{{ workflow_form_prefix }}-timeline" name="timeline" required>
+      <option value="">Select one</option>
+      <option value="This week">This week</option>
+      <option value="Next 2-4 weeks">Next 2-4 weeks</option>
+      <option value="This quarter">This quarter</option>
+      <option value="Exploring options">Exploring options</option>
+    </select>
+  </div>
+
+  <div class="form-field">
+    <label for="{{ workflow_form_prefix }}-budget-range">Budget range <span>(optional)</span></label>
+    <select id="{{ workflow_form_prefix }}-budget-range" name="budget_range">
+      <option value="">Select one</option>
+      <option value="Under $2,500">Under $2,500</option>
+      <option value="$2,500-$5,000">$2,500-$5,000</option>
+      <option value="$5,000-$10,000">$5,000-$10,000</option>
+      <option value="$10,000+">$10,000+</option>
+      <option value="Not sure yet">Not sure yet</option>
+    </select>
+  </div>
+
+  <p class="form-note">Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output</p>
+  <p class="form-note form-note--privacy">Please do not include passwords, API keys, confidential customer data, or sensitive internal records. A summary or sample workflow is enough.</p>
+  <p class="form-status" role="status" aria-live="polite"></p>
+  <button class="button-link button-primary" type="submit">{{ workflow_form_button }}</button>
+</form>
