@@ -38,7 +38,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
         <dt>Best for</dt>
         <dd>Founders and operators choosing the first AI workflow to automate.</dd>
       </dl>
-      <p class="card-cta"><span>CTA</span><a href="{{ '/work-with-me?intent=homepage-workflow-audit' | relative_url }}">Start workflow audit</a></p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-workflow-audit' | relative_url }}">Start Workflow Audit</a></p>
     </article>
     <article>
       <h3>CRM Hygiene Agent</h3>
@@ -50,7 +50,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
         <dt>Best for</dt>
         <dd>Sales, RevOps, and customer teams with inconsistent CRM hygiene.</dd>
       </dl>
-      <p class="card-cta"><span>CTA</span><a href="{{ '/work-with-me?intent=homepage-crm-hygiene' | relative_url }}">Discuss CRM hygiene</a></p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-crm-hygiene' | relative_url }}">Discuss CRM Hygiene</a></p>
     </article>
     <article>
       <h3>Pre-CRM Research Agent</h3>
@@ -62,7 +62,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
         <dt>Best for</dt>
         <dd>B2B teams that need cleaner lead research before CRM entry.</dd>
       </dl>
-      <p class="card-cta"><span>CTA</span><a href="{{ '/work-with-me?intent=homepage-pre-crm-research' | relative_url }}">Discuss lead research</a></p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-pre-crm-research' | relative_url }}">Discuss Lead Research</a></p>
     </article>
     <article>
       <h3>Content Workflow System</h3>
@@ -74,7 +74,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
         <dt>Best for</dt>
         <dd>Agencies and B2B teams producing expert-led long-form content.</dd>
       </dl>
-      <p class="card-cta"><span>CTA</span><a href="{{ '/work-with-me?intent=homepage-content-workflow' | relative_url }}">Discuss content workflow</a></p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-content-workflow' | relative_url }}">Discuss Content Workflow</a></p>
     </article>
   </div>
 </section>
