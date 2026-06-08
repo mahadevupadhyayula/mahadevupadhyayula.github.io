@@ -15,6 +15,10 @@ description: I build human-approved AI workflow systems for B2B teams, including
   </div>
 </section>
 
+<section class="trust-row" aria-label="Relevant experience">
+  <p>Ex-PayPal • 5+ years in AI/data/product systems • 0→1 AI products • Founder/operator experience</p>
+</section>
+
 <section id="services" class="stage-one-services" aria-labelledby="services-title">
   <div class="section-heading-row">
     <div>
@@ -73,10 +77,6 @@ description: I build human-approved AI workflow systems for B2B teams, including
       <p class="card-cta"><span>CTA</span><a href="{{ '/work-with-me?intent=homepage-content-workflow' | relative_url }}">Discuss content workflow</a></p>
     </article>
   </div>
-</section>
-
-<section class="trust-row" aria-label="Relevant experience">
-  <p>Ex-PayPal • 5+ years in AI/data/product systems • 0→1 AI products • Founder/operator experience</p>
 </section>
 
 <section id="work-with-me" class="workflow-cta" aria-labelledby="workflow-title">
