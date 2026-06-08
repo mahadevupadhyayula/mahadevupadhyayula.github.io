@@ -134,6 +134,16 @@ permalink: /work-with-me/
       <textarea id="clean-output" name="desired_output" rows="4" placeholder="Example: Validated account summary, updated CRM fields, clear follow-up tasks, content brief, or reviewed lead research package." required></textarea>
     </div>
 
+    <div class="form-field">
+      <label for="human-approval-required">Does this output need human approval before action?</label>
+      <select id="human-approval-required" name="human_approval_required" required>
+        <option value="">Select one</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Not sure">Not sure</option>
+      </select>
+    </div>
+
     <div class="form-field form-field-full">
       <label for="tools">Current tools</label>
       <input id="tools" name="tools" type="text" placeholder="HubSpot, Salesforce, Airtable, Notion, Google Docs, Slack, Clay, Zapier...">
@@ -182,6 +192,11 @@ permalink: /work-with-me/
       'Pre-CRM Research Agent',
       'Long-form Blog Content Generator',
       'Custom AI Automation MVP'
+    ];
+    var allowedHumanApprovalResponses = [
+      'Yes',
+      'No',
+      'Not sure'
     ];
     var capturedPageUrl = window.location.href;
     var capturedReferrer = document.referrer || '';
@@ -248,6 +263,7 @@ permalink: /work-with-me/
       var workflowTypeValue = getValue('workflow_type');
       var messyWorkflow = getValue('messy_workflow');
       var desiredOutput = getValue('desired_output');
+      var humanApprovalRequired = getValue('human_approval_required');
 
       [
         ['name', 'Name is required.'],
@@ -255,6 +271,7 @@ permalink: /work-with-me/
         ['workflow_type', 'Workflow type is required.'],
         ['messy_workflow', 'Messy workflow description is required.'],
         ['desired_output', 'Desired clean output is required.'],
+        ['human_approval_required', 'Human approval requirement is required.'],
         ['timeline', 'Timeline is required.']
       ].forEach(function (item) {
         if (!getValue(item[0])) {
@@ -268,6 +285,10 @@ permalink: /work-with-me/
 
       if (workflowTypeValue && allowedWorkflowTypes.indexOf(workflowTypeValue) === -1) {
         errors.push({ field: 'workflow_type', message: 'Select one of the listed workflow types.' });
+      }
+
+      if (humanApprovalRequired && allowedHumanApprovalResponses.indexOf(humanApprovalRequired) === -1) {
+        errors.push({ field: 'human_approval_required', message: 'Select Yes, No, or Not sure.' });
       }
 
       if (messyWorkflow && messyWorkflow.length < 25) {
@@ -298,6 +319,7 @@ permalink: /work-with-me/
         workflow_type: getValue('workflow_type'),
         messy_workflow: getValue('messy_workflow'),
         desired_output: getValue('desired_output'),
+        human_approval_required: getValue('human_approval_required'),
         tools: getValue('tools'),
         timeline: getValue('timeline'),
         budget_range: getValue('budget_range'),
