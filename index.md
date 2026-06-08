@@ -10,7 +10,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
   <p class="hero-copy">CRM notes, lead research, content briefs, documents, and internal updates become structured outputs, validated workflows, and human-approved AI systems.</p>
   <p class="hero-service-line">Services: CRM Hygiene • Lead Research • Content Automation • AI Workflow Audits</p>
   <div class="hero-actions" aria-label="Primary actions">
-    <a class="button-link button-primary" href="{{ '/work-with-me' | relative_url }}">Book an AI Workflow Audit</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=workflow-audit' | relative_url }}">Book an AI Workflow Audit</a>
     <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">View Case Studies</a>
   </div>
 </section>
@@ -34,7 +34,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
         <dt>Best for</dt>
         <dd>Founders and operators choosing the first AI workflow to automate.</dd>
       </dl>
-      <p class="card-cta"><span>CTA</span><a href="{{ '/services' | relative_url }}#ai-workflow-audit">Explore audit</a></p>
+      <p class="card-cta"><span>CTA</span><a href="{{ '/work-with-me?intent=workflow-audit' | relative_url }}">Start workflow audit</a></p>
     </article>
     <article>
       <h3>CRM Hygiene Agent</h3>
@@ -46,7 +46,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
         <dt>Best for</dt>
         <dd>Sales, RevOps, and customer teams with inconsistent CRM hygiene.</dd>
       </dl>
-      <p class="card-cta"><span>CTA</span><a href="{{ '/services' | relative_url }}#crm-hygiene-agent">Explore CRM hygiene</a></p>
+      <p class="card-cta"><span>CTA</span><a href="{{ '/work-with-me?intent=crm-hygiene' | relative_url }}">Discuss CRM hygiene</a></p>
     </article>
     <article>
       <h3>Pre-CRM Research Agent</h3>
@@ -58,7 +58,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
         <dt>Best for</dt>
         <dd>B2B teams that need cleaner lead research before CRM entry.</dd>
       </dl>
-      <p class="card-cta"><span>CTA</span><a href="{{ '/services' | relative_url }}#pre-crm-research-agent">Explore lead research</a></p>
+      <p class="card-cta"><span>CTA</span><a href="{{ '/work-with-me?intent=pre-crm-research' | relative_url }}">Discuss lead research</a></p>
     </article>
     <article>
       <h3>Content Workflow System</h3>
@@ -70,7 +70,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
         <dt>Best for</dt>
         <dd>Agencies and B2B teams producing expert-led long-form content.</dd>
       </dl>
-      <p class="card-cta"><span>CTA</span><a href="{{ '/services' | relative_url }}#content-workflow-system">Explore content workflows</a></p>
+      <p class="card-cta"><span>CTA</span><a href="{{ '/work-with-me?intent=content-workflow' | relative_url }}">Discuss content workflow</a></p>
     </article>
   </div>
 </section>
@@ -90,7 +90,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
     <span>Human Approval</span>
     <span>Clean Output</span>
   </div>
-  <a class="button-link button-primary" href="{{ '/work-with-me' | relative_url }}">Send me your workflow</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=workflow-audit' | relative_url }}">Send me your workflow</a>
 </section>
 
 ---
