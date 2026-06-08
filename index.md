@@ -102,31 +102,27 @@ description: I build human-approved AI workflow systems for B2B teams, including
 
   <div class="featured-case-study-track" data-carousel-track>
     <article class="featured-case-study-card" data-carousel-slide>
-      <a class="featured-case-study-image-link" href="{{ '/case-studies/relationship-intelligence-copilot-for-linkedin/' | relative_url }}" aria-label="View Relationship Intelligence Copilot for LinkedIn case study">
-        <img src="{{ '/assets/images/relationship-intelligence-copilot-for-linkedIn-1.png' | relative_url }}" alt="Relationship Intelligence Copilot for LinkedIn preview" loading="lazy">
-      </a>
-      <h3><a href="{{ '/case-studies/relationship-intelligence-copilot-for-linkedin/' | relative_url }}">Relationship Intelligence Copilot for LinkedIn</a></h3>
+      <h3><a href="{{ '/case-studies/crm-hygiene-agent/' | relative_url }}">CRM Hygiene Agent</a></h3>
+      <p>Turns messy sales context, CRM notes, and deal updates into human-approved CRM-ready pipeline records.</p>
+      <a class="case-study-card__link" href="{{ '/case-studies/crm-hygiene-agent/' | relative_url }}">View case study →</a>
     </article>
 
     <article class="featured-case-study-card" data-carousel-slide>
-      <a class="featured-case-study-image-link" href="{{ '/case-studies/product-impact-at-paypal/' | relative_url }}" aria-label="View Product Impact at PayPal case study">
-        <img src="{{ '/assets/images/case-studies-1.png' | relative_url }}" alt="Product Impact at PayPal case study preview" loading="lazy">
-      </a>
+      <h3><a href="{{ '/case-studies/pre-crm-research-agent/' | relative_url }}">Pre-CRM Research Agent</a></h3>
+      <p>Researches, scores, and qualifies leads before CRM entry so sales teams avoid noisy records and weak prioritization.</p>
+      <a class="case-study-card__link" href="{{ '/case-studies/pre-crm-research-agent/' | relative_url }}">View case study →</a>
+    </article>
+
+    <article class="featured-case-study-card" data-carousel-slide>
+      <h3><a href="{{ '/case-studies/long-form-blog-content-generator/' | relative_url }}">Long-form Blog Content Generator</a></h3>
+      <p>Converts source documents into human-reviewed SEO/AEO blog drafts, content briefs, visual briefs, and publishing assets.</p>
+      <a class="case-study-card__link" href="{{ '/case-studies/long-form-blog-content-generator/' | relative_url }}">View case study →</a>
+    </article>
+
+    <article class="featured-case-study-card" data-carousel-slide>
       <h3><a href="{{ '/case-studies/product-impact-at-paypal/' | relative_url }}">Product Impact at PayPal</a></h3>
-    </article>
-
-    <article class="featured-case-study-card" data-carousel-slide>
-      <a class="featured-case-study-image-link" href="{{ '/case-studies/g2-organic-products/' | relative_url }}" aria-label="View G2 Organic Products case study">
-        <img src="{{ '/assets/images/g2-Org-1.png' | relative_url }}" alt="G2 Organic Products preview" loading="lazy">
-      </a>
-      <h3><a href="{{ '/case-studies/g2-organic-products/' | relative_url }}">G2 Organic Products</a></h3>
-    </article>
-
-    <article class="featured-case-study-card" data-carousel-slide>
-      <a class="featured-case-study-image-link" href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}" aria-label="View Insight Driven Journaling App case study">
-        <img src="{{ '/assets/images/insight-journal-1.png' | relative_url }}" alt="Insight Driven Journaling App preview" loading="lazy">
-      </a>
-      <h3><a href="{{ '/case-studies/insight-driven-journaling-app/' | relative_url }}">Insight Driven Journaling App</a></h3>
+      <p>Product and engineering work across ML personalization, funnel optimization, and QA workflow automation for merchant growth.</p>
+      <a class="case-study-card__link" href="{{ '/case-studies/product-impact-at-paypal/' | relative_url }}">View case study →</a>
     </article>
   </div>
 
