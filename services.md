@@ -45,7 +45,7 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=AI%20Workflow%20Audit%20Request">Request workflow audit</a>
+    <a class="button-link button-primary" href="mailto:mahadev@mahadevupadhyayula.com?subject=AI%20Workflow%20Audit%20Request">Request workflow audit</a>
   </article>
 
   <article id="crm-hygiene-agent" class="service-detail-card">
@@ -74,7 +74,7 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=CRM%20Hygiene%20Agent%20Request">Request workflow audit</a>
+    <a class="button-link button-primary" href="mailto:mahadev@mahadevupadhyayula.com?subject=CRM%20Hygiene%20Agent%20Request">Request workflow audit</a>
   </article>
 
   <article id="pre-crm-research-agent" class="service-detail-card">
@@ -103,7 +103,7 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=Pre-CRM%20Research%20Agent%20Request">Request workflow audit</a>
+    <a class="button-link button-primary" href="mailto:mahadev@mahadevupadhyayula.com?subject=Pre-CRM%20Research%20Agent%20Request">Request workflow audit</a>
   </article>
 
   <article id="content-workflow-system" class="service-detail-card">
@@ -132,7 +132,7 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=Content%20Workflow%20System%20Request">Request workflow audit</a>
+    <a class="button-link button-primary" href="mailto:mahadev@mahadevupadhyayula.com?subject=Content%20Workflow%20System%20Request">Request workflow audit</a>
   </article>
 
   <article id="custom-ai-automation-mvp" class="service-detail-card">
@@ -161,6 +161,6 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=Custom%20AI%20Automation%20MVP%20Request">Request workflow audit</a>
+    <a class="button-link button-primary" href="mailto:mahadev@mahadevupadhyayula.com?subject=Custom%20AI%20Automation%20MVP%20Request">Request workflow audit</a>
   </article>
 </div>
