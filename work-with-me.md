@@ -69,7 +69,7 @@ permalink: /work-with-me/
   <p class="section-eyebrow">How a project works</p>
   <h2 id="project-flow-title">We turn one real workflow into a reviewed automation path.</h2>
   <p>The goal is not to remove judgment. The goal is to make messy inputs easier to extract, validate, approve, and turn into clean output.</p>
-  <div class="workflow-path" aria-label="Project flow">
+  <div class="workflow-path" aria-label="Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output">
     <span>Messy Inputs</span>
     <span>AI Extraction</span>
     <span>Validation</span>
