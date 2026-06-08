@@ -818,3 +818,29 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+/* Stage 3: Work With Me conversion page */
+.work-with-me-hero .button-link {
+  margin-top: 0.35rem;
+}
+
+.work-with-me-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-block {
+  margin-top: 2.5rem;
+}
+
+.contact-list {
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 760px) {
+  .work-with-me-grid {
+    grid-template-columns: 1fr;
+  }
+}

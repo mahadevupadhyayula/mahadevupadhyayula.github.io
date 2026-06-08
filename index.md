@@ -8,7 +8,7 @@ layout: default
   <p class="hero-copy">CRM notes, lead research, content briefs, documents, and internal updates become structured outputs, validated workflows, and human-approved AI systems.</p>
   <p class="hero-service-line">Services: CRM Hygiene • Lead Research • Content Automation • AI Workflow Audits</p>
   <div class="hero-actions" aria-label="Primary actions">
-    <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=AI%20Workflow%20Audit%20Request">Book an AI Workflow Audit</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me' | relative_url }}">Book an AI Workflow Audit</a>
     <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">View Case Studies</a>
   </div>
 </section>
@@ -88,7 +88,7 @@ layout: default
     <span>Human Approval</span>
     <span>Clean Output</span>
   </div>
-  <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=My%20workflow%20for%20AI%20automation">Send me your workflow</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me' | relative_url }}">Send me your workflow</a>
 </section>
 
 ---
