@@ -1,0 +1,91 @@
+<aside class="blog-sticky-cta" data-blog-sticky-cta hidden aria-label="AI workflow audit call to action">
+  <div class="blog-sticky-cta__copy">
+    <strong>Turn this idea into a reviewed workflow.</strong>
+    <span>Map CRM notes, lead research, or content briefs into a human-approved AI system.</span>
+  </div>
+  <a class="blog-sticky-cta__link" href="{{ '/work-with-me' | relative_url }}">Book an AI Workflow Audit</a>
+  <button class="blog-sticky-cta__dismiss" type="button" data-blog-sticky-cta-dismiss aria-label="Dismiss AI workflow audit call to action">×</button>
+</aside>
+<script>
+  (function () {
+    var stickyCta = document.querySelector('[data-blog-sticky-cta]');
+    var dismissButton = document.querySelector('[data-blog-sticky-cta-dismiss]');
+    var inlineCta = document.querySelector('.blog-workflow-cta');
+    var storageKey = 'blogStickyCtaDismissed';
+
+    if (!stickyCta || !dismissButton) {
+      return;
+    }
+
+    try {
+      if (window.sessionStorage && window.sessionStorage.getItem(storageKey) === 'true') {
+        return;
+      }
+    } catch (error) {
+      // Continue without session persistence if storage is unavailable.
+    }
+
+    var inlineCtaVisible = false;
+    var dismissed = false;
+
+    function getScrollDepth() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || 0;
+      var documentHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+      var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+      var scrollableHeight = documentHeight - viewportHeight;
+
+      if (scrollableHeight <= 0) {
+        return 1;
+      }
+
+      return scrollTop / scrollableHeight;
+    }
+
+    function isInlineCtaInView() {
+      if (!inlineCta) {
+        return false;
+      }
+
+      var rect = inlineCta.getBoundingClientRect();
+      var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+      return rect.top < viewportHeight && rect.bottom > 0;
+    }
+
+    function updateStickyCta() {
+      if (dismissed || inlineCtaVisible || isInlineCtaInView()) {
+        stickyCta.hidden = true;
+        return;
+      }
+
+      stickyCta.hidden = getScrollDepth() < 0.55;
+    }
+
+    dismissButton.addEventListener('click', function () {
+      dismissed = true;
+      stickyCta.hidden = true;
+
+      try {
+        if (window.sessionStorage) {
+          window.sessionStorage.setItem(storageKey, 'true');
+        }
+      } catch (error) {
+        // Dismiss for this page view if storage is unavailable.
+      }
+    });
+
+    if ('IntersectionObserver' in window && inlineCta) {
+      var observer = new IntersectionObserver(function (entries) {
+        inlineCtaVisible = entries.some(function (entry) {
+          return entry.isIntersecting;
+        });
+        updateStickyCta();
+      }, { threshold: 0.01 });
+
+      observer.observe(inlineCta);
+    }
+
+    window.addEventListener('scroll', updateStickyCta, { passive: true });
+    window.addEventListener('resize', updateStickyCta);
+    updateStickyCta();
+  }());
+</script>
