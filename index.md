@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Mahadev Upadhyayula | AI Automation Consultant for B2B Workflow Systems
+description: I build human-approved AI workflow systems for B2B teams, including CRM hygiene agents, lead research automation, content workflow systems, and custom AI automation prototypes.
 ---
 
 <section class="hero-section" aria-labelledby="hero-title">

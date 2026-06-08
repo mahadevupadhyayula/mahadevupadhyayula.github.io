@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Work With Me
+title: Work With Me | AI Automation Consultant
+description: Work with Mahadev Upadhyayula to map, prototype, and build human-approved AI workflow systems for B2B teams.
 permalink: /work-with-me/
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: AI Workflow Services
+title: AI Workflow Services | CRM Hygiene, Lead Research & Content Automation
+description: Practical AI workflow services for CRM hygiene, lead research automation, content workflow systems, workflow audits, and custom AI automation MVPs.
 subtitle: Practical AI workflow systems for B2B teams that need cleaner inputs, structured outputs, validation, and human approval.
 permalink: /services/
 ---
@@ -16,6 +17,13 @@ permalink: /services/
     <span>Human Approval</span>
     <span>Clean Output</span>
   </div>
+</section>
+
+<section class="workflow-cta" aria-labelledby="services-case-studies-title">
+  <p class="section-eyebrow">See the workflow pattern in practice</p>
+  <h2 id="services-case-studies-title">Review AI workflow case studies for CRM hygiene, lead research, and content automation.</h2>
+  <p>Each case study shows how messy inputs become extracted, validated, human-approved, and packaged as clean output.</p>
+  <a class="button-link button-secondary" href="{{ '/case-studies/' | relative_url }}">View Case Studies</a>
 </section>
 
 <div class="services-list">
