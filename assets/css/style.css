@@ -717,14 +717,6 @@ code {
   margin-bottom: 0;
 }
 
-.card-cta span {
-  color: #071426;
-  font-size: 0.76rem;
-  font-weight: 850;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .card-cta a {
   color: #0d6fd1;
   font-weight: 800;
@@ -1351,7 +1343,6 @@ img {
 }
 
 .homepage-service-grid dt,
-.card-cta span,
 .service-detail-grid h3 {
   color: #9ed9ff;
 }
