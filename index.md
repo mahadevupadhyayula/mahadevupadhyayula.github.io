@@ -2,35 +2,63 @@
 layout: default
 ---
 
-# Mahadev Upadhyayula
+<section class="hero-section" aria-labelledby="hero-title">
+  <p class="hero-eyebrow">Human-approved AI workflow systems for B2B teams</p>
+  <h1 id="hero-title">Turn messy CRM notes, lead research, and content requests into clean workflows your team can trust.</h1>
+  <p class="hero-copy">I help B2B operators design and prototype AI systems that extract useful signal from messy inputs, validate the result, and keep a human approval step before anything reaches your CRM, sales motion, or content pipeline.</p>
+  <div class="hero-actions" aria-label="Primary actions">
+    <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=AI%20Workflow%20Audit%20Request">Book an AI Workflow Audit</a>
+    <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">View Case Studies</a>
+  </div>
+</section>
 
-**Product Manager&nbsp;&nbsp;•&nbsp;&nbsp;0→1 Builder&nbsp;&nbsp;•&nbsp;&nbsp;AI-Driven Systems**
+<section class="trust-row" aria-label="Relevant experience">
+  <div>
+    <strong>5+ years</strong>
+    <span>building data-backed product workflows</span>
+  </div>
+  <div>
+    <strong>PayPal</strong>
+    <span>merchant growth, personalization, and funnel work</span>
+  </div>
+  <div>
+    <strong>40% productivity lift</strong>
+    <span>from workflow orchestration in an operating business</span>
+  </div>
+</section>
 
-I build data-driven and AI-powered products that translate ambiguity into measurable user impact.
+<section id="services" class="stage-one-services" aria-labelledby="services-title">
+  <p class="section-eyebrow">Services</p>
+  <h2 id="services-title">AI workflow systems built around validation, not blind automation.</h2>
+  <div class="service-card-grid">
+    <article>
+      <h3>CRM Hygiene Agent</h3>
+      <p>Convert call notes, sales updates, and scattered account context into reviewed CRM fields and follow-up tasks.</p>
+    </article>
+    <article>
+      <h3>Pre-CRM Research Agent</h3>
+      <p>Research accounts and contacts before they enter your pipeline so reps start with cleaner context.</p>
+    </article>
+    <article>
+      <h3>Content Automation</h3>
+      <p>Transform transcripts, product notes, and source docs into structured content briefs for human review.</p>
+    </article>
+  </div>
+</section>
 
-With 5+ years across fintech and agritech, I’ve shipped engagement-driving features at PayPal and built a multi-agent Project and Resource Management platform as Founder of G2 Organic Products, improving user productivity by 40%.
-
-My work sits at the intersection of:
-
-- Product strategy and execution
-- AI and multi-agent systems
-- Behavioral analytics and decision science
-
----
-
-## What I Focus On
-
-### 0 → 1 Product Building
-
-Defining problems clearly, scoping MVPs tightly, and sequencing roadmaps to deliver early signal without overbuilding.
-
-### AI as a Product Primitive
-
-Designing systems that combine structured logic with LLM-based intelligence to generate insights — not just outputs.
-
-### Metrics-Driven Decision Making
-
-Using behavioral dashboards, activation metrics, and prioritization frameworks to guide product tradeoffs.
+<section id="work-with-me" class="workflow-cta" aria-labelledby="workflow-title">
+  <p class="section-eyebrow">Primary CTA flow</p>
+  <h2 id="workflow-title">Send me one messy workflow. I’ll map the automation opportunity.</h2>
+  <p>Start with a workflow audit: where the inputs come from, what AI should extract, what needs validation, and where human approval belongs.</p>
+  <div class="workflow-path" aria-label="Workflow path">
+    <span>Messy Inputs</span>
+    <span>AI Extraction</span>
+    <span>Validation</span>
+    <span>Human Approval</span>
+    <span>Clean Output</span>
+  </div>
+  <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=My%20workflow%20for%20AI%20automation">Send me your workflow</a>
+</section>
 
 ---
 
