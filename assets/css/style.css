@@ -1742,3 +1742,55 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+.workflow-intake-form .form-status {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+  color: #bdd0e5;
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
+.workflow-intake-form .form-status:empty {
+  display: none;
+}
+
+.workflow-intake-form .form-status--success,
+.workflow-intake-form .form-status--error {
+  padding: 0.72rem 0.85rem;
+  border-radius: 14px;
+}
+
+.workflow-intake-form .form-status--success {
+  border: 1px solid rgba(87, 232, 166, 0.34);
+  background: rgba(87, 232, 166, 0.1);
+  color: #c7ffe3;
+}
+
+.workflow-intake-form .form-status--error,
+.workflow-intake-form .form-field-error {
+  color: #ffd1d1;
+}
+
+.workflow-intake-form .form-status--error {
+  border: 1px solid rgba(255, 121, 121, 0.34);
+  background: rgba(255, 121, 121, 0.1);
+}
+
+.workflow-intake-form .form-field-error {
+  font-size: 0.82rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.workflow-intake-form [aria-invalid="true"] {
+  border-color: rgba(255, 121, 121, 0.72);
+  box-shadow: 0 0 0 3px rgba(255, 121, 121, 0.12);
+}
+
+.workflow-intake-form .button-link:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
