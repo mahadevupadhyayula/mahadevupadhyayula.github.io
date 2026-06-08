@@ -10,7 +10,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
   <p class="hero-copy">CRM notes, lead research, content briefs, documents, and internal updates become structured outputs, validated workflows, and human-approved AI systems.</p>
   <p class="hero-service-line">Services: CRM Hygiene • Lead Research • Content Automation • AI Workflow Audits</p>
   <div class="hero-actions" aria-label="Primary actions">
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-send-workflow' | relative_url }}">Send Me Your Workflow</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-send-workflow' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-send-workflow">Send Me Your Workflow</a>
     <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">View Case Studies</a>
   </div>
 </section>
@@ -90,7 +90,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
     <span>Human Approval</span>
     <span>Clean Output</span>
   </div>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-workflow-audit' | relative_url }}">Send me your workflow</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-workflow-audit' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-workflow-audit">Send me your workflow</a>
 </section>
 
 ---
