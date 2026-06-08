@@ -25,3 +25,17 @@ permalink: /blogs/
     {% endif %}
   {% endfor %}
 </div>
+
+<section class="blog-ideas-backlog" aria-labelledby="blog-ideas-backlog-title">
+  <p class="section-eyebrow">Future buyer-intent topics</p>
+  <h2 id="blog-ideas-backlog-title">Upcoming workflow automation posts</h2>
+  <p>Planned topics for B2B teams evaluating human-approved AI workflows:</p>
+  <ul>
+    <li>How to Automate CRM Hygiene Without Breaking Your Sales Process</li>
+    <li>How AI Can Turn Sales Notes Into Clean CRM Fields</li>
+    <li>Pre-CRM Research: The Best First AI Automation for GTM Teams</li>
+    <li>Why Human Approval Is the Missing Layer in AI Workflow Automation</li>
+  </ul>
+</section>
+
+{% include blog-workflow-cta.html %}

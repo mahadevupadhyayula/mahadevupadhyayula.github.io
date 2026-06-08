@@ -844,3 +844,40 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+/* Stage 5: Buyer-facing blog CTA blocks */
+.blog-workflow-cta,
+.blog-ideas-backlog {
+  margin-top: 3rem;
+  padding: clamp(1.35rem, 4vw, 2rem);
+  border: 1px solid rgba(46, 168, 255, 0.28);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(46, 168, 255, 0.16), transparent 24rem),
+    linear-gradient(135deg, #071426 0%, #0b1020 100%);
+  color: #d7e6f7;
+  box-shadow: 0 18px 48px rgba(7, 20, 38, 0.16);
+}
+
+.blog-workflow-cta h2,
+.blog-ideas-backlog h2 {
+  margin-top: 0;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.blog-workflow-cta p,
+.blog-ideas-backlog p,
+.blog-ideas-backlog li {
+  color: #d7e6f7;
+}
+
+.blog-workflow-cta .button-link {
+  margin-top: 0.35rem;
+}
+
+.blog-ideas-backlog ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
