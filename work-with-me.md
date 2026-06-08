@@ -86,39 +86,140 @@ permalink: /work-with-me/
     <p>Share the workflow you want cleaned up. I’ll use it to decide whether an audit, CRM hygiene build, lead research workflow, content system, or custom automation MVP is the right first step.</p>
     <ul class="contact-list">
       <li><strong>Good inputs:</strong> CRM notes, lead research steps, content brief examples, document workflows, or screenshots of the current process.</li>
-      <li><strong>What I’ll look for:</strong> extraction points, validation checks, approval moments, and the clean output your team needs.</li>
-      <li><strong>Prefer email?</strong> <a href="mailto:mahadev@mahadevupadhyayula.com?subject=My%20workflow%20for%20AI%20automation">mahadev@mahadevupadhyayula.com</a></li>
+      <li><strong>What I’ll look for:</strong> extraction points, validation checks, human approval moments, and the clean output your team needs.</li>
+      <li><strong>Prefer email?</strong> The form opens a structured email draft so the workflow context stays organized.</li>
     </ul>
   </div>
 
-  <form id="workflow-intake" class="workflow-intake-form" action="mailto:mahadev@mahadevupadhyayula.com" method="post" enctype="text/plain">
+  <form id="workflow-intake" class="workflow-intake-form" action="mailto:mahadev@mahadevupadhyayula.com" method="post" enctype="text/plain" data-recipient="mahadev@mahadevupadhyayula.com">
     <input type="hidden" name="source" value="work-with-me-main-conversion-page">
+    <input id="intent" type="hidden" name="intent" value="">
 
-    <label for="name">Name</label>
-    <input id="name" name="name" type="text" autocomplete="name" required>
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+    </div>
 
-    <label for="email">Work email</label>
-    <input id="email" name="email" type="email" autocomplete="email" required>
+    <div class="form-field">
+      <label for="email">Work email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+    </div>
 
-    <label for="company">Company or team</label>
-    <input id="company" name="company" type="text" autocomplete="organization">
+    <div class="form-field">
+      <label for="company">Company or team</label>
+      <input id="company" name="company" type="text" autocomplete="organization" placeholder="B2B SaaS team, agency, RevOps group...">
+    </div>
 
-    <label for="workflow-type">Workflow type</label>
-    <select id="workflow-type" name="workflow_type" required>
-      <option value="">Select one</option>
-      <option value="AI Workflow Audit">AI Workflow Audit</option>
-      <option value="CRM Hygiene Agent">CRM Hygiene Agent</option>
-      <option value="Pre-CRM Research Agent">Pre-CRM Research Agent</option>
-      <option value="Long-form Blog Content Generator">Long-form Blog Content Generator</option>
-      <option value="Custom AI Automation MVP">Custom AI Automation MVP</option>
-    </select>
+    <div class="form-field">
+      <label for="workflow-type">Workflow type</label>
+      <select id="workflow-type" name="workflow_type" required>
+        <option value="">Select one</option>
+        <option value="AI Workflow Audit" data-intents="workflow-audit,audit">AI Workflow Audit</option>
+        <option value="CRM Hygiene Agent" data-intents="crm-hygiene,crm-notes">CRM Hygiene Agent</option>
+        <option value="Pre-CRM Research Agent" data-intents="pre-crm-research,lead-research">Pre-CRM Research Agent</option>
+        <option value="Long-form Blog Content Generator" data-intents="content-workflow,content-briefs,blog-content">Long-form Blog Content Generator</option>
+        <option value="Custom AI Automation MVP" data-intents="custom-ai-mvp,automation-mvp,prototype">Custom AI Automation MVP</option>
+      </select>
+    </div>
 
-    <label for="workflow">Describe the messy workflow</label>
-    <textarea id="workflow" name="workflow_description" rows="5" placeholder="What inputs come in, who reviews them, and what clean output should reach your CRM, content system, or internal tools?" required></textarea>
+    <div class="form-field form-field-full">
+      <label for="messy-workflow">Messy workflow description</label>
+      <textarea id="messy-workflow" name="messy_workflow_description" rows="5" placeholder="Example: Sales reps paste CRM notes after calls, RevOps checks missing fields, and managers still need to confirm next steps before Salesforce is clean." required></textarea>
+    </div>
 
-    <label for="tools">Tools involved</label>
-    <input id="tools" name="tools_involved" type="text" placeholder="HubSpot, Salesforce, Airtable, Notion, Google Docs, Slack...">
+    <div class="form-field form-field-full">
+      <label for="clean-output">Desired clean output</label>
+      <textarea id="clean-output" name="desired_clean_output" rows="4" placeholder="Example: Validated account summary, updated CRM fields, clear follow-up tasks, content brief, or reviewed lead research package." required></textarea>
+    </div>
 
-    <button class="button-link button-primary" type="submit">Book an AI Workflow Audit</button>
+    <div class="form-field form-field-full">
+      <label for="tools">Current tools</label>
+      <input id="tools" name="current_tools" type="text" placeholder="HubSpot, Salesforce, Airtable, Notion, Google Docs, Slack, Clay, Zapier...">
+    </div>
+
+    <div class="form-field">
+      <label for="timeline">Timeline</label>
+      <select id="timeline" name="timeline" required>
+        <option value="">Select one</option>
+        <option value="This week">This week</option>
+        <option value="Next 2-4 weeks">Next 2-4 weeks</option>
+        <option value="This quarter">This quarter</option>
+        <option value="Exploring options">Exploring options</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="budget-range">Budget range <span>(optional)</span></label>
+      <select id="budget-range" name="budget_range">
+        <option value="">Select one</option>
+        <option value="Under $2,500">Under $2,500</option>
+        <option value="$2,500-$5,000">$2,500-$5,000</option>
+        <option value="$5,000-$10,000">$5,000-$10,000</option>
+        <option value="$10,000+">$10,000+</option>
+        <option value="Not sure yet">Not sure yet</option>
+      </select>
+    </div>
+
+    <p class="form-note">Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output</p>
+    <button class="button-link button-primary" type="submit">Send me your workflow</button>
   </form>
 </section>
+
+<script>
+  (function () {
+    var form = document.getElementById('workflow-intake');
+
+    if (!form) {
+      return;
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    var intent = params.get('intent') || '';
+    var intentField = document.getElementById('intent');
+    var workflowType = document.getElementById('workflow-type');
+
+    if (intentField) {
+      intentField.value = intent;
+    }
+
+    if (intent && workflowType) {
+      Array.prototype.slice.call(workflowType.options).some(function (option) {
+        var optionIntents = (option.getAttribute('data-intents') || '').split(',');
+
+        if (optionIntents.indexOf(intent) !== -1) {
+          workflowType.value = option.value;
+          return true;
+        }
+
+        return false;
+      });
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var recipient = form.getAttribute('data-recipient');
+      var data = new FormData(form);
+      var subject = 'Workflow inquiry: ' + (data.get('workflow_type') || 'AI Workflow Audit');
+      var body = [
+        'Name: ' + (data.get('name') || ''),
+        'Email: ' + (data.get('email') || ''),
+        'Company: ' + (data.get('company') || ''),
+        'Intent query parameter: ' + (data.get('intent') || ''),
+        'Workflow type: ' + (data.get('workflow_type') || ''),
+        '',
+        'Messy workflow description:',
+        data.get('messy_workflow_description') || '',
+        '',
+        'Desired clean output:',
+        data.get('desired_clean_output') || '',
+        '',
+        'Current tools: ' + (data.get('current_tools') || ''),
+        'Timeline: ' + (data.get('timeline') || ''),
+        'Budget range: ' + (data.get('budget_range') || '')
+      ].join('\n');
+
+      window.location.href = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  }());
+</script>
