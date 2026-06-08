@@ -169,27 +169,13 @@ description: I build human-approved AI workflow systems for B2B teams, including
 
 ---
 
-## Product Philosophy
+## How I Work
 
-Good products are not feature-rich.
+I turn messy B2B workflows into reviewed AI systems with one clear path:
 
-They are clarity-rich.
+**Map the workflow → identify inputs → design extraction → add validation → keep human approval → produce clean output**
 
-I focus on:
-
-- Identifying the real constraint
-- Defining the right success metric
-- Building the smallest version that proves value
-- Iterating with evidence, not instinct
-
----
-
-## Currently Exploring
-
-- Multi-agent orchestration patterns
-- AI-native product design
-- Deterministic + probabilistic hybrid systems
-- Metrics frameworks for early-stage AI products
+That means your CRM notes, lead research, content briefs, and internal updates become structured outputs your team can trust before they reach customers, dashboards, or downstream tools.
 
 ---
 
