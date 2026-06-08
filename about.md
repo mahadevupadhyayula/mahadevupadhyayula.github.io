@@ -25,7 +25,9 @@ title: About Mahadev
       <li><strong>PayPal product experience:</strong> shipped customer-facing growth and onboarding work inside a high-scale fintech environment.</li>
       <li><strong>Founder/operator experience:</strong> built and launched G2 Organic Products, including workflow tooling for agribusiness operations.</li>
       <li><strong>Current focus:</strong> CRM hygiene, pre-CRM research, content automation, structured extraction, and custom AI workflow prototypes.</li>
+      <li><strong>Freelance platform option:</strong> If your team prefers a managed freelance marketplace, you can also start the conversation on Contra.</li>
     </ul>
+    <a class="contra-inline-cta" href="https://contra.com/mahadev_upadhyayula_ll405kow?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=mahadev_upadhyayula_ll405kow" target="_blank" rel="noopener noreferrer">Work With Me on Contra</a>
   </aside>
 </section>
 

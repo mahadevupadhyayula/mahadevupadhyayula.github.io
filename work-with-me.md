@@ -78,6 +78,13 @@ permalink: /work-with-me/
   </div>
 </section>
 
+<section class="service-detail-card freelance-platform-card" aria-labelledby="freelance-platform-title">
+  <p class="section-eyebrow">Prefer a freelance platform?</p>
+  <h2 id="freelance-platform-title">Start the project through Contra if that fits your buying process.</h2>
+  <p>If your team wants marketplace messaging, project records, or platform-based contracting, Contra is available as a lightweight way to start an AI Workflow Audit or custom automation MVP.</p>
+  <a class="button-link button-secondary" href="https://contra.com/mahadev_upadhyayula_ll405kow?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=mahadev_upadhyayula_ll405kow" target="_blank" rel="noopener noreferrer">Work With Me on Contra</a>
+</section>
+
 <!-- Canonical intake: this page and the lightweight modal share the same reusable workflow form include and submission endpoint. -->
 <section class="service-detail-card intake-block" aria-labelledby="intake-title">
   <div class="intake-copy">
