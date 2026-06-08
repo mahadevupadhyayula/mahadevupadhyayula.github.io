@@ -831,6 +831,33 @@ code {
   padding-left: 1.2rem;
 }
 
+.contra-inline-cta {
+  align-self: flex-start;
+  margin-top: 0.35rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid rgba(84, 184, 255, 0.42);
+  border-radius: 999px;
+  background: rgba(84, 184, 255, 0.12);
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.contra-inline-cta:hover,
+.contra-inline-cta:focus {
+  border-color: rgba(84, 184, 255, 0.68);
+  background: rgba(84, 184, 255, 0.2);
+}
+
+.freelance-platform-card {
+  margin-bottom: 1.2rem;
+}
+
+.freelance-platform-card p:not(.section-eyebrow) {
+  max-width: 760px;
+  color: #bdd0e5;
+}
+
 @media (max-width: 760px) {
   .work-with-me-grid {
     grid-template-columns: 1fr;
