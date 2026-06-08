@@ -301,6 +301,61 @@ permalink: /work-with-me/
       };
     }
 
+    function getCaseStudy(workflowTypeValue) {
+      var caseStudies = {
+        'CRM Hygiene Agent': {
+          label: 'View the CRM Hygiene Agent case study',
+          url: '{{ "/case-studies/crm-hygiene-agent/" | relative_url }}'
+        },
+        'Pre-CRM Research Agent': {
+          label: 'View the Pre-CRM Research Agent case study',
+          url: '{{ "/case-studies/pre-crm-research-agent/" | relative_url }}'
+        },
+        'Long-form Blog Content Generator': {
+          label: 'View the Long-form Blog Content Generator case study',
+          url: '{{ "/case-studies/long-form-blog-content-generator/" | relative_url }}'
+        }
+      };
+
+      return caseStudies[workflowTypeValue] || null;
+    }
+
+    function showConfirmation(workflowTypeValue) {
+      var confirmation = document.createElement('div');
+      var heading = document.createElement('h3');
+      var summary = document.createElement('p');
+      var nextStep = document.createElement('p');
+      var caseStudy = getCaseStudy(workflowTypeValue);
+
+      confirmation.className = 'workflow-confirmation';
+      confirmation.setAttribute('role', 'status');
+      confirmation.setAttribute('aria-live', 'polite');
+      confirmation.setAttribute('tabindex', '-1');
+
+      heading.textContent = 'Workflow received.';
+      summary.textContent = 'Thanks for sending the messy workflow. I’ll review the inputs, validation checks, human approval moments, and clean output your team needs.';
+      nextStep.textContent = 'Next step: I’ll look for the smallest useful automation scope and follow up with whether an audit, prototype, or focused workflow build is the right fit.';
+
+      confirmation.appendChild(heading);
+      confirmation.appendChild(summary);
+      confirmation.appendChild(nextStep);
+
+      if (caseStudy) {
+        var caseStudyCopy = document.createElement('p');
+        var caseStudyLink = document.createElement('a');
+
+        caseStudyCopy.className = 'workflow-confirmation__case-study';
+        caseStudyCopy.textContent = 'While I review it, you can see a related workflow example: ';
+        caseStudyLink.href = caseStudy.url;
+        caseStudyLink.textContent = caseStudy.label;
+        caseStudyCopy.appendChild(caseStudyLink);
+        confirmation.appendChild(caseStudyCopy);
+      }
+
+      form.replaceChildren(confirmation);
+      confirmation.focus();
+    }
+
     if (intentField) {
       intentField.value = intent;
     }
@@ -367,11 +422,7 @@ permalink: /work-with-me/
             return;
           }
 
-          form.reset();
-          if (intentField) {
-            intentField.value = intent;
-          }
-          setStatus(result.body.message || 'Thanks — your workflow inquiry was received.', 'success');
+          showConfirmation(getValue('workflow_type'));
         })
         .catch(function () {
           setStatus('I could not reach the workflow inquiry endpoint. Please try again shortly.', 'error');
