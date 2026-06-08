@@ -3,9 +3,10 @@ layout: default
 ---
 
 <section class="hero-section" aria-labelledby="hero-title">
-  <p class="hero-eyebrow">Human-approved AI workflow systems for B2B teams</p>
-  <h1 id="hero-title">Turn messy CRM notes, lead research, and content requests into clean workflows your team can trust.</h1>
-  <p class="hero-copy">I help B2B operators design and prototype AI systems that extract useful signal from messy inputs, validate the result, and keep a human approval step before anything reaches your CRM, sales motion, or content pipeline.</p>
+  <h1 id="hero-title">AI Workflow Systems for B2B Teams</h1>
+  <p class="hero-subheadline">I help founders, agencies, RevOps teams, and operators turn messy workflows into practical AI automations.</p>
+  <p class="hero-copy">CRM notes, lead research, content briefs, documents, and internal updates become structured outputs, validated workflows, and human-approved AI systems.</p>
+  <p class="hero-service-line">Services: CRM Hygiene • Lead Research • Content Automation • AI Workflow Audits</p>
   <div class="hero-actions" aria-label="Primary actions">
     <a class="button-link button-primary" href="mailto:mahadevu318@gmail.com?subject=AI%20Workflow%20Audit%20Request">Book an AI Workflow Audit</a>
     <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">View Case Studies</a>
@@ -13,18 +14,7 @@ layout: default
 </section>
 
 <section class="trust-row" aria-label="Relevant experience">
-  <div>
-    <strong>5+ years</strong>
-    <span>building data-backed product workflows</span>
-  </div>
-  <div>
-    <strong>PayPal</strong>
-    <span>merchant growth, personalization, and funnel work</span>
-  </div>
-  <div>
-    <strong>40% productivity lift</strong>
-    <span>from workflow orchestration in an operating business</span>
-  </div>
+  <p>Ex-PayPal • 5+ years in AI/data/product systems • 0→1 AI products • Founder/operator experience</p>
 </section>
 
 <section id="services" class="stage-one-services" aria-labelledby="services-title">
