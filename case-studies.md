@@ -79,5 +79,5 @@ Commercial AI workflow projects and product case studies focused on turning mess
   <p class="section-eyebrow">Want to map this to your team?</p>
   <h2 id="case-study-cta-title">Start with one workflow that is messy today.</h2>
   <p>Book an AI Workflow Audit or send me the CRM notes, lead research process, content brief, or internal document workflow you want to clean up.</p>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=workflow-audit' | relative_url }}">Book an AI Workflow Audit</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=case-study-workflow-audit' | relative_url }}">Book an AI Workflow Audit</a>
 </section>
