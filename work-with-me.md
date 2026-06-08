@@ -87,11 +87,11 @@ permalink: /work-with-me/
     <ul class="contact-list">
       <li><strong>Good inputs:</strong> CRM notes, lead research steps, content brief examples, document workflows, or screenshots of the current process.</li>
       <li><strong>What I’ll look for:</strong> extraction points, validation checks, human approval moments, and the clean output your team needs.</li>
-      <li><strong>Prefer email?</strong> The form opens a structured email draft so the workflow context stays organized.</li>
+      <li><strong>What happens after submit:</strong> The form sends your workflow to a secure serverless endpoint for review, then shows a clear confirmation on this page.</li>
     </ul>
   </div>
 
-  <form id="workflow-intake" class="workflow-intake-form" action="mailto:mahadev@mahadevupadhyayula.com" method="post" enctype="text/plain" data-recipient="mahadev@mahadevupadhyayula.com">
+  <form id="workflow-intake" class="workflow-intake-form" action="https://YOUR_SUPABASE_PROJECT_REF.functions.supabase.co/submit-workflow-inquiry" method="post" data-endpoint="https://YOUR_SUPABASE_PROJECT_REF.functions.supabase.co/submit-workflow-inquiry" novalidate>
     <input type="hidden" name="source" value="work-with-me-main-conversion-page">
     <input id="intent" type="hidden" name="intent" value="">
 
@@ -124,17 +124,17 @@ permalink: /work-with-me/
 
     <div class="form-field form-field-full">
       <label for="messy-workflow">Messy workflow description</label>
-      <textarea id="messy-workflow" name="messy_workflow_description" rows="5" placeholder="Example: Sales reps paste CRM notes after calls, RevOps checks missing fields, and managers still need to confirm next steps before Salesforce is clean." required></textarea>
+      <textarea id="messy-workflow" name="messy_workflow" rows="5" placeholder="Example: Sales reps paste CRM notes after calls, RevOps checks missing fields, and managers still need to confirm next steps before Salesforce is clean." required></textarea>
     </div>
 
     <div class="form-field form-field-full">
       <label for="clean-output">Desired clean output</label>
-      <textarea id="clean-output" name="desired_clean_output" rows="4" placeholder="Example: Validated account summary, updated CRM fields, clear follow-up tasks, content brief, or reviewed lead research package." required></textarea>
+      <textarea id="clean-output" name="desired_output" rows="4" placeholder="Example: Validated account summary, updated CRM fields, clear follow-up tasks, content brief, or reviewed lead research package." required></textarea>
     </div>
 
     <div class="form-field form-field-full">
       <label for="tools">Current tools</label>
-      <input id="tools" name="current_tools" type="text" placeholder="HubSpot, Salesforce, Airtable, Notion, Google Docs, Slack, Clay, Zapier...">
+      <input id="tools" name="tools" type="text" placeholder="HubSpot, Salesforce, Airtable, Notion, Google Docs, Slack, Clay, Zapier...">
     </div>
 
     <div class="form-field">
@@ -161,6 +161,7 @@ permalink: /work-with-me/
     </div>
 
     <p class="form-note">Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output</p>
+    <p id="workflow-intake-status" class="form-status" role="status" aria-live="polite"></p>
     <button class="button-link button-primary" type="submit">Send me your workflow</button>
   </form>
 </section>
@@ -173,10 +174,132 @@ permalink: /work-with-me/
       return;
     }
 
+    var allowedWorkflowTypes = [
+      'AI Workflow Audit',
+      'CRM Hygiene Agent',
+      'Pre-CRM Research Agent',
+      'Long-form Blog Content Generator',
+      'Custom AI Automation MVP'
+    ];
     var params = new URLSearchParams(window.location.search);
     var intent = params.get('intent') || '';
     var intentField = document.getElementById('intent');
     var workflowType = document.getElementById('workflow-type');
+    var status = document.getElementById('workflow-intake-status');
+    var submitButton = form.querySelector('button[type="submit"]');
+
+    function setStatus(message, state) {
+      if (!status) {
+        return;
+      }
+
+      status.textContent = message || '';
+      status.className = state ? 'form-status form-status--' + state : 'form-status';
+    }
+
+    function getField(name) {
+      return form.elements[name];
+    }
+
+    function getValue(name) {
+      var field = getField(name);
+
+      return field && typeof field.value === 'string' ? field.value.trim() : '';
+    }
+
+    function clearFieldErrors() {
+      Array.prototype.slice.call(form.querySelectorAll('[data-error-for]')).forEach(function (error) {
+        error.remove();
+      });
+
+      Array.prototype.slice.call(form.querySelectorAll('[aria-invalid="true"]')).forEach(function (field) {
+        field.removeAttribute('aria-invalid');
+        field.removeAttribute('aria-describedby');
+      });
+    }
+
+    function showFieldError(fieldName, message) {
+      var field = getField(fieldName);
+
+      if (!field) {
+        return;
+      }
+
+      var error = document.createElement('span');
+      var errorId = fieldName + '-error';
+      error.id = errorId;
+      error.className = 'form-field-error';
+      error.setAttribute('data-error-for', fieldName);
+      error.textContent = message;
+      field.setAttribute('aria-invalid', 'true');
+      field.setAttribute('aria-describedby', errorId);
+      field.parentNode.appendChild(error);
+    }
+
+    function validateForm() {
+      var errors = [];
+      var email = getValue('email');
+      var workflowTypeValue = getValue('workflow_type');
+      var messyWorkflow = getValue('messy_workflow');
+      var desiredOutput = getValue('desired_output');
+
+      [
+        ['name', 'Name is required.'],
+        ['email', 'Work email is required.'],
+        ['workflow_type', 'Workflow type is required.'],
+        ['messy_workflow', 'Messy workflow description is required.'],
+        ['desired_output', 'Desired clean output is required.'],
+        ['timeline', 'Timeline is required.']
+      ].forEach(function (item) {
+        if (!getValue(item[0])) {
+          errors.push({ field: item[0], message: item[1] });
+        }
+      });
+
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        errors.push({ field: 'email', message: 'Enter a valid work email address.' });
+      }
+
+      if (workflowTypeValue && allowedWorkflowTypes.indexOf(workflowTypeValue) === -1) {
+        errors.push({ field: 'workflow_type', message: 'Select one of the listed workflow types.' });
+      }
+
+      if (messyWorkflow && messyWorkflow.length < 25) {
+        errors.push({ field: 'messy_workflow', message: 'Add a little more context about the messy workflow.' });
+      }
+
+      if (messyWorkflow.length > 4000) {
+        errors.push({ field: 'messy_workflow', message: 'Keep the messy workflow description under 4,000 characters.' });
+      }
+
+      if (desiredOutput && desiredOutput.length < 10) {
+        errors.push({ field: 'desired_output', message: 'Describe the clean output your team needs.' });
+      }
+
+      if (desiredOutput.length > 2500) {
+        errors.push({ field: 'desired_output', message: 'Keep the desired output under 2,500 characters.' });
+      }
+
+      return errors;
+    }
+
+    function buildPayload() {
+      return {
+        name: getValue('name'),
+        email: getValue('email'),
+        company: getValue('company'),
+        intent: getValue('intent'),
+        workflow_type: getValue('workflow_type'),
+        messy_workflow: getValue('messy_workflow'),
+        desired_output: getValue('desired_output'),
+        tools: getValue('tools'),
+        timeline: getValue('timeline'),
+        budget_range: getValue('budget_range'),
+        page_url: window.location.href,
+        referrer: document.referrer,
+        user_agent: window.navigator.userAgent
+      };
+    }
 
     if (intentField) {
       intentField.value = intent;
@@ -197,29 +320,68 @@ permalink: /work-with-me/
 
     form.addEventListener('submit', function (event) {
       event.preventDefault();
+      clearFieldErrors();
+      setStatus('', '');
 
-      var recipient = form.getAttribute('data-recipient');
-      var data = new FormData(form);
-      var subject = 'Workflow inquiry: ' + (data.get('workflow_type') || 'AI Workflow Audit');
-      var body = [
-        'Name: ' + (data.get('name') || ''),
-        'Email: ' + (data.get('email') || ''),
-        'Company: ' + (data.get('company') || ''),
-        'Intent query parameter: ' + (data.get('intent') || ''),
-        'Workflow type: ' + (data.get('workflow_type') || ''),
-        '',
-        'Messy workflow description:',
-        data.get('messy_workflow_description') || '',
-        '',
-        'Desired clean output:',
-        data.get('desired_clean_output') || '',
-        '',
-        'Current tools: ' + (data.get('current_tools') || ''),
-        'Timeline: ' + (data.get('timeline') || ''),
-        'Budget range: ' + (data.get('budget_range') || '')
-      ].join('\n');
+      var endpoint = form.getAttribute('data-endpoint') || form.getAttribute('action');
+      var errors = validateForm();
 
-      window.location.href = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      if (endpoint.indexOf('YOUR_SUPABASE_PROJECT_REF') !== -1) {
+        errors.push({ field: 'workflow_type', message: 'The workflow inquiry endpoint needs the deployed Supabase Function URL.' });
+      }
+
+      if (errors.length > 0) {
+        errors.forEach(function (error) {
+          showFieldError(error.field, error.message);
+        });
+        setStatus('Please fix the highlighted fields and submit again.', 'error');
+        return;
+      }
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending workflow...';
+      }
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(buildPayload())
+      })
+        .then(function (response) {
+          return response.json().catch(function () {
+            return { success: false, message: 'The endpoint returned an unreadable response.' };
+          }).then(function (body) {
+            return { ok: response.ok, body: body };
+          });
+        })
+        .then(function (result) {
+          if (!result.ok || !result.body.success) {
+            if (Array.isArray(result.body.errors)) {
+              result.body.errors.forEach(function (error) {
+                showFieldError(error.field, error.message);
+              });
+            }
+
+            setStatus(result.body.message || 'Something went wrong. Please try again.', 'error');
+            return;
+          }
+
+          form.reset();
+          if (intentField) {
+            intentField.value = intent;
+          }
+          setStatus(result.body.message || 'Thanks — your workflow inquiry was received.', 'success');
+        })
+        .catch(function () {
+          setStatus('I could not reach the workflow inquiry endpoint. Please try again shortly.', 'error');
+        })
+        .finally(function () {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Send me your workflow';
+          }
+        });
     });
   }());
 </script>
