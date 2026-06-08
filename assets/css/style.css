@@ -1664,7 +1664,8 @@ img {
 
 .workflow-intake-form {
   display: grid;
-  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
   padding: clamp(1rem, 3vw, 1.35rem);
   border: 1px solid rgba(84, 184, 255, 0.18);
   border-radius: 22px;
@@ -1675,6 +1676,22 @@ img {
   color: #e8f6ff;
   font-size: 0.88rem;
   font-weight: 850;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.form-field-full,
+.workflow-intake-form .form-note,
+.workflow-intake-form .button-link {
+  grid-column: 1 / -1;
+}
+
+.workflow-intake-form label span {
+  color: rgba(216, 228, 242, 0.68);
+  font-weight: 750;
 }
 
 .workflow-intake-form input,
@@ -1693,6 +1710,17 @@ img {
   resize: vertical;
 }
 
+.workflow-intake-form .form-note {
+  margin: 0.2rem 0 0;
+  padding: 0.72rem 0.85rem;
+  border: 1px solid rgba(84, 184, 255, 0.18);
+  border-radius: 14px;
+  background: rgba(84, 184, 255, 0.08);
+  color: #bde8ff;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
 .workflow-intake-form input::placeholder,
 .workflow-intake-form textarea::placeholder {
   color: rgba(216, 228, 242, 0.58);
@@ -1709,7 +1737,8 @@ img {
 }
 
 @media (max-width: 820px) {
-  .intake-block {
+  .intake-block,
+  .workflow-intake-form {
     grid-template-columns: 1fr;
   }
 }
