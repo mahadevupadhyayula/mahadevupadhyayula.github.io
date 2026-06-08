@@ -13,27 +13,68 @@ layout: default
   </div>
 </section>
 
-<section class="trust-row" aria-label="Relevant experience">
-  <p>Ex-PayPal • 5+ years in AI/data/product systems • 0→1 AI products • Founder/operator experience</p>
-</section>
-
 <section id="services" class="stage-one-services" aria-labelledby="services-title">
-  <p class="section-eyebrow">Services</p>
-  <h2 id="services-title">AI workflow systems built around validation, not blind automation.</h2>
-  <div class="service-card-grid">
+  <div class="section-heading-row">
+    <div>
+      <p class="section-eyebrow">AI Workflow Services</p>
+      <h2 id="services-title">Hire me to turn messy team workflows into reviewed AI systems.</h2>
+    </div>
+    <a class="inline-section-link" href="{{ '/services' | relative_url }}">View all services</a>
+  </div>
+  <div class="service-card-grid homepage-service-grid">
+    <article>
+      <h3>AI Workflow Audit</h3>
+      <dl>
+        <dt>Problem</dt>
+        <dd>You know a workflow is slow, but the automation path is unclear.</dd>
+        <dt>What I build</dt>
+        <dd>A mapped workflow with inputs, validation steps, approval points, and MVP scope.</dd>
+        <dt>Best for</dt>
+        <dd>Founders and operators choosing the first AI workflow to automate.</dd>
+      </dl>
+      <p class="card-cta"><span>CTA</span><a href="{{ '/services' | relative_url }}#ai-workflow-audit">Explore audit</a></p>
+    </article>
     <article>
       <h3>CRM Hygiene Agent</h3>
-      <p>Convert call notes, sales updates, and scattered account context into reviewed CRM fields and follow-up tasks.</p>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Call notes and account updates do not reliably make it into clean CRM fields.</dd>
+        <dt>What I build</dt>
+        <dd>A human-approved workflow that extracts notes into CRM updates and follow-up tasks.</dd>
+        <dt>Best for</dt>
+        <dd>Sales, RevOps, and customer teams with inconsistent CRM hygiene.</dd>
+      </dl>
+      <p class="card-cta"><span>CTA</span><a href="{{ '/services' | relative_url }}#crm-hygiene-agent">Explore CRM hygiene</a></p>
     </article>
     <article>
       <h3>Pre-CRM Research Agent</h3>
-      <p>Research accounts and contacts before they enter your pipeline so reps start with cleaner context.</p>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Reps spend time researching leads before they can prioritize outreach.</dd>
+        <dt>What I build</dt>
+        <dd>A research workflow that collects company context, contact signals, and qualification notes.</dd>
+        <dt>Best for</dt>
+        <dd>B2B teams that need cleaner lead research before CRM entry.</dd>
+      </dl>
+      <p class="card-cta"><span>CTA</span><a href="{{ '/services' | relative_url }}#pre-crm-research-agent">Explore lead research</a></p>
     </article>
     <article>
-      <h3>Content Automation</h3>
-      <p>Transform transcripts, product notes, and source docs into structured content briefs for human review.</p>
+      <h3>Content Workflow System</h3>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Useful source material gets stuck in transcripts, notes, and scattered docs.</dd>
+        <dt>What I build</dt>
+        <dd>A workflow that turns inputs into briefs, outlines, drafts, and review checklists.</dd>
+        <dt>Best for</dt>
+        <dd>Agencies and B2B teams producing expert-led long-form content.</dd>
+      </dl>
+      <p class="card-cta"><span>CTA</span><a href="{{ '/services' | relative_url }}#content-workflow-system">Explore content workflows</a></p>
     </article>
   </div>
+</section>
+
+<section class="trust-row" aria-label="Relevant experience">
+  <p>Ex-PayPal • 5+ years in AI/data/product systems • 0→1 AI products • Founder/operator experience</p>
 </section>
 
 <section id="work-with-me" class="workflow-cta" aria-labelledby="workflow-title">
