@@ -83,7 +83,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
   <p class="section-eyebrow">Primary CTA flow</p>
   <h2 id="workflow-title">Send me one messy workflow. I’ll map the automation opportunity.</h2>
   <p>Start with a workflow audit: where the inputs come from, what AI should extract, what needs validation, and where human approval belongs.</p>
-  <div class="workflow-path" aria-label="Workflow path">
+  <div class="workflow-path" aria-label="Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output">
     <span>Messy Inputs</span>
     <span>AI Extraction</span>
     <span>Validation</span>

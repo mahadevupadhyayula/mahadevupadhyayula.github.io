@@ -10,7 +10,7 @@ permalink: /services/
   <p class="section-eyebrow">What you can hire me for</p>
   <h2 id="services-intro-title">I build focused AI workflows that turn messy inputs into reviewed business outputs.</h2>
   <p>Most teams do not need a broad AI initiative. They need one painful workflow mapped, prototyped, validated, and handed back as a usable system.</p>
-  <div class="workflow-path" aria-label="Workflow path">
+  <div class="workflow-path" aria-label="Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output">
     <span>Messy Inputs</span>
     <span>AI Extraction</span>
     <span>Validation</span>

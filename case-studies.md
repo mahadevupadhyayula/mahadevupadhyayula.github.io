@@ -34,7 +34,7 @@ Commercial AI workflow projects and product case studies focused on turning mess
 <section class="workflow-cta" aria-labelledby="case-study-workflow-title">
   <p class="section-eyebrow">Reusable workflow pattern</p>
   <h2 id="case-study-workflow-title">Every case study keeps automation reviewed before it ships clean output.</h2>
-  <div class="workflow-path" aria-label="Case study workflow path">
+  <div class="workflow-path" aria-label="Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output">
     <span>Messy Inputs</span>
     <span>AI Extraction</span>
     <span>Validation</span>
