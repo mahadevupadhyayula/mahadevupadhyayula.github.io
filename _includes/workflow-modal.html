@@ -7,7 +7,7 @@
       <h2 id="workflow-modal-title">Share one messy workflow for review.</h2>
       <p id="workflow-modal-description">Send the inputs, current tools, desired clean output, and where human approval belongs. I’ll review whether an audit, prototype, or focused workflow build is the right fit.</p>
     </div>
-    {% include workflow-form.html form_id='workflow-modal-intake' id_prefix='workflow-modal' source='workflow-modal-send-me-your-workflow' %}
+    {% include workflow-form.html form_id='workflow-modal-intake' id_prefix='workflow-modal' %}
   </section>
 </div>
 
@@ -157,7 +157,6 @@
         tools: getValue(form, 'tools'),
         timeline: getValue(form, 'timeline'),
         budget_range: getValue(form, 'budget_range'),
-        source: getValue(form, 'source'),
         page_url: capturedPageUrl,
         referrer: capturedReferrer,
         user_agent: window.navigator.userAgent

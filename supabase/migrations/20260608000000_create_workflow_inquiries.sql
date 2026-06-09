@@ -8,12 +8,14 @@ create table if not exists public.workflow_inquiries (
   workflow_type text not null,
   messy_workflow text not null,
   desired_output text not null,
+  human_approval_required text not null,
   tools text,
   timeline text not null,
   budget_range text,
   page_url text,
   referrer text,
   user_agent text,
+  status text not null default 'new',
   created_at timestamptz not null default now(),
 
   constraint workflow_inquiries_email_format
@@ -26,12 +28,16 @@ create table if not exists public.workflow_inquiries (
       'Long-form Blog Content Generator',
       'Custom AI Automation MVP'
     )),
+  constraint workflow_inquiries_human_approval_required_allowed
+    check (human_approval_required in ('Yes', 'No', 'Not sure')),
   constraint workflow_inquiries_name_length
     check (char_length(btrim(name)) between 2 and 120),
   constraint workflow_inquiries_messy_workflow_length
     check (char_length(btrim(messy_workflow)) between 25 and 4000),
   constraint workflow_inquiries_desired_output_length
     check (char_length(btrim(desired_output)) between 10 and 2500),
+  constraint workflow_inquiries_human_approval_required_length
+    check (char_length(human_approval_required) <= 20),
   constraint workflow_inquiries_company_length
     check (company is null or char_length(company) <= 180),
   constraint workflow_inquiries_intent_length
@@ -47,7 +53,9 @@ create table if not exists public.workflow_inquiries (
   constraint workflow_inquiries_referrer_length
     check (referrer is null or char_length(referrer) <= 2048),
   constraint workflow_inquiries_user_agent_length
-    check (user_agent is null or char_length(user_agent) <= 512)
+    check (user_agent is null or char_length(user_agent) <= 512),
+  constraint workflow_inquiries_status_length
+    check (char_length(btrim(status)) between 1 and 80)
 );
 
 comment on table public.workflow_inquiries is 'Human-approved AI workflow inquiry submissions from the static site.';
