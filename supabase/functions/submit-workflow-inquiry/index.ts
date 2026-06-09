@@ -29,7 +29,6 @@ const MAX_LENGTHS = {
   tools: 1000,
   timeline: 80,
   budget_range: 80,
-  source: 120,
   page_url: 2048,
   referrer: 2048,
   user_agent: 512,
@@ -59,7 +58,6 @@ type InquiryPayload = {
   tools?: unknown;
   timeline?: unknown;
   budget_range?: unknown;
-  source?: unknown;
   page_url?: unknown;
   referrer?: unknown;
   user_agent?: unknown;
@@ -133,7 +131,6 @@ function validatePayload(payload: InquiryPayload) {
     tools: toNullableString(payload.tools, MAX_LENGTHS.tools),
     timeline: toCleanString(payload.timeline),
     budget_range: toNullableString(payload.budget_range, MAX_LENGTHS.budget_range),
-    source: toNullableString(payload.source, MAX_LENGTHS.source),
     page_url: toNullableString(payload.page_url, MAX_LENGTHS.page_url),
     referrer: toNullableString(payload.referrer, MAX_LENGTHS.referrer),
     user_agent: toNullableString(payload.user_agent, MAX_LENGTHS.user_agent),
