@@ -21,11 +21,15 @@ This static site does not write directly to `public.workflow_inquiries`. The bro
    - `SUPABASE_URL`
    - `SUPABASE_SERVICE_ROLE_KEY`
 
-4. Replace `YOUR_SUPABASE_PROJECT_REF` in `_includes/workflow-form.html` with the project ref for the deployed function URL. The endpoint is assigned by `workflow_form_endpoint` near the top of `_includes/workflow-form.html`:
+4. Configure the public frontend endpoint for GitHub Pages. This repo is a Jekyll site, not a Vite app, but the GitHub Actions Pages workflow intentionally reads the public repository variable named `VITE_WORKFLOW_INQUIRY_ENDPOINT` and writes it into generated Jekyll data at build time. In the repository Pages settings, use GitHub Actions as the source, then set the repository variable to:
 
    ```text
-   https://YOUR_SUPABASE_PROJECT_REF.functions.supabase.co/submit-workflow-inquiry
+   https://dgrwgiagpcqkxdokhglb.functions.supabase.co/submit-workflow-inquiry
    ```
+
+   The workflow form reads `site.data.env.workflow_inquiry_endpoint`, which is generated during the Pages build from `VITE_WORKFLOW_INQUIRY_ENDPOINT`. If the variable is missing, the browser shows a safe fallback message and does not attempt to submit the form.
+
+   Only put the public Edge Function URL in this frontend variable. Do not expose `SUPABASE_SERVICE_ROLE_KEY`, Supabase secret keys, or other server-only credentials in GitHub Pages variables or client-side code.
 
 ## Response shape
 

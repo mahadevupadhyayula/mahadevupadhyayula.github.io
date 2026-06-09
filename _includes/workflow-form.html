@@ -1,8 +1,9 @@
 {%- assign workflow_form_id = include.form_id | default: 'workflow-intake' -%}
 {%- assign workflow_form_prefix = include.id_prefix | default: workflow_form_id -%}
-{%- assign workflow_form_endpoint = include.endpoint | default: 'https://dgrwgiagpcqkxdokhglb.functions.supabase.co/submit-workflow-inquiry' -%}
+{%- assign configured_workflow_endpoint = site.data.env.workflow_inquiry_endpoint | default: '' -%}
+{%- assign workflow_form_endpoint = include.endpoint | default: configured_workflow_endpoint -%}
 {%- assign workflow_form_button = include.button_label | default: 'Send me your workflow' -%}
-<form id="{{ workflow_form_id }}" class="workflow-intake-form" action="{{ workflow_form_endpoint }}" method="post" data-workflow-form data-endpoint="{{ workflow_form_endpoint }}" novalidate>
+<form id="{{ workflow_form_id }}" class="workflow-intake-form" action="{{ workflow_form_endpoint | escape }}" method="post" data-workflow-form data-endpoint="{{ workflow_form_endpoint | escape }}" novalidate>
   <input type="hidden" name="intent" value="">
   <input type="hidden" name="page_url" value="">
   <input type="hidden" name="referrer" value="">
