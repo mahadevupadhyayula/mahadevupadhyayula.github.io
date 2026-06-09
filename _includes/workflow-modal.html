@@ -27,6 +27,7 @@
     ];
     var capturedPageUrl = window.location.href;
     var capturedReferrer = document.referrer || '';
+    var capturedUserAgent = window.navigator && window.navigator.userAgent ? window.navigator.userAgent : '';
     var params = new URLSearchParams(window.location.search);
     var pageIntent = params.get('intent') || '';
     var modal = document.querySelector('[data-workflow-modal]');
@@ -159,7 +160,7 @@
         budget_range: getValue(form, 'budget_range'),
         page_url: capturedPageUrl,
         referrer: capturedReferrer,
-        user_agent: window.navigator.userAgent
+        user_agent: capturedUserAgent
       };
     }
 
@@ -227,6 +228,7 @@
       setFieldValue(form, 'intent', intent || '');
       setFieldValue(form, 'page_url', capturedPageUrl);
       setFieldValue(form, 'referrer', capturedReferrer);
+      setFieldValue(form, 'user_agent', capturedUserAgent);
 
       if (intent && workflowType) {
         Array.prototype.slice.call(workflowType.options).some(function (option) {
@@ -366,6 +368,9 @@
       submitButton = form.querySelector('button[type="submit"]');
       originalSubmitText = submitButton ? submitButton.textContent : '';
 
+      form.setAttribute('aria-busy', 'true');
+      setStatus(form, 'Sending workflow...', 'loading');
+
       if (submitButton) {
         submitButton.disabled = true;
         submitButton.textContent = 'Sending workflow...';
@@ -391,16 +396,18 @@
               });
             }
 
-            setStatus(form, result.body.message || 'Something went wrong. Please try again.', 'error');
+            setStatus(form, result.body.message || 'Something went wrong. Please email mahadev@mahadevupadhyayula.com or try again.', 'error');
             return;
           }
 
           showConfirmation(form, getValue(form, 'workflow_type'));
         })
         .catch(function () {
-          setStatus(form, 'I could not reach the form submission endpoint. Please try again shortly.', 'error');
+          setStatus(form, 'I could not reach the form submission endpoint. Please email mahadev@mahadevupadhyayula.com or try again shortly.', 'error');
         })
         .finally(function () {
+          form.setAttribute('aria-busy', 'false');
+
           if (submitButton) {
             submitButton.disabled = false;
             submitButton.textContent = originalSubmitText || 'Send me your workflow';
