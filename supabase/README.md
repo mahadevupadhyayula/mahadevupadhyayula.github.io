@@ -21,7 +21,7 @@ This static site does not write directly to `public.workflow_inquiries`. The bro
    - `SUPABASE_URL`
    - `SUPABASE_SERVICE_ROLE_KEY`
 
-4. Replace `YOUR_SUPABASE_PROJECT_REF` in `work-with-me.md` with the project ref for the deployed function URL:
+4. Replace `YOUR_SUPABASE_PROJECT_REF` in `_includes/workflow-form.html` with the project ref for the deployed function URL. The endpoint is assigned by `workflow_form_endpoint` near the top of `_includes/workflow-form.html`:
 
    ```text
    https://YOUR_SUPABASE_PROJECT_REF.functions.supabase.co/submit-workflow-inquiry
