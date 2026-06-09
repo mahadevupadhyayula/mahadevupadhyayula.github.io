@@ -11,6 +11,12 @@ const ALLOWED_WORKFLOW_TYPES = new Set([
   'Custom AI Automation MVP',
 ]);
 
+const ALLOWED_HUMAN_APPROVAL_REQUIRED = new Set([
+  'Yes',
+  'No',
+  'Not sure',
+]);
+
 const MAX_LENGTHS = {
   name: 120,
   email: 254,
@@ -19,6 +25,7 @@ const MAX_LENGTHS = {
   intent: 120,
   messy_workflow: 4000,
   desired_output: 2500,
+  human_approval_required: 20,
   tools: 1000,
   timeline: 80,
   budget_range: 80,
@@ -47,6 +54,7 @@ type InquiryPayload = {
   workflow_type?: unknown;
   messy_workflow?: unknown;
   desired_output?: unknown;
+  human_approval_required?: unknown;
   tools?: unknown;
   timeline?: unknown;
   budget_range?: unknown;
@@ -119,6 +127,7 @@ function validatePayload(payload: InquiryPayload) {
     workflow_type: toCleanString(payload.workflow_type),
     messy_workflow: toCleanString(payload.messy_workflow),
     desired_output: toCleanString(payload.desired_output),
+    human_approval_required: toCleanString(payload.human_approval_required),
     tools: toNullableString(payload.tools, MAX_LENGTHS.tools),
     timeline: toCleanString(payload.timeline),
     budget_range: toNullableString(payload.budget_range, MAX_LENGTHS.budget_range),
@@ -134,6 +143,12 @@ function validatePayload(payload: InquiryPayload) {
   addRequiredStringError(errors, normalized.workflow_type, 'workflow_type', 'Workflow type');
   addRequiredStringError(errors, normalized.messy_workflow, 'messy_workflow', 'Messy workflow');
   addRequiredStringError(errors, normalized.desired_output, 'desired_output', 'Desired output');
+  addRequiredStringError(
+    errors,
+    normalized.human_approval_required,
+    'human_approval_required',
+    'Human approval requirement',
+  );
   addRequiredStringError(errors, normalized.timeline, 'timeline', 'Timeline');
 
   if (normalized.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalized.email)) {
@@ -142,6 +157,16 @@ function validatePayload(payload: InquiryPayload) {
 
   if (normalized.workflow_type && !ALLOWED_WORKFLOW_TYPES.has(normalized.workflow_type)) {
     errors.push({ field: 'workflow_type', message: 'Select an allowed workflow type.' });
+  }
+
+  if (
+    normalized.human_approval_required
+    && !ALLOWED_HUMAN_APPROVAL_REQUIRED.has(normalized.human_approval_required)
+  ) {
+    errors.push({
+      field: 'human_approval_required',
+      message: 'Select Yes, No, or Not sure for human approval.',
+    });
   }
 
   return { normalized, errors };
