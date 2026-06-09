@@ -340,6 +340,10 @@
       }
     }
 
+    function isEndpointConfigured(endpoint) {
+      return endpoint && endpoint !== '#' && endpoint.indexOf('YOUR_SUPABASE_PROJECT_REF') === -1;
+    }
+
     function handleSubmit(form, event) {
       var endpoint;
       var errors;
@@ -350,18 +354,19 @@
       clearFieldErrors(form);
       setStatus(form, '', '');
 
-      endpoint = form.getAttribute('data-endpoint') || form.getAttribute('action');
+      endpoint = (form.getAttribute('data-endpoint') || form.getAttribute('action') || '').trim();
       errors = validateForm(form);
-
-      if (endpoint.indexOf('YOUR_SUPABASE_PROJECT_REF') !== -1) {
-        errors.push({ field: 'workflow_type', message: 'The form submission endpoint needs the deployed Supabase Function URL.' });
-      }
 
       if (errors.length > 0) {
         errors.forEach(function (error) {
           showFieldError(form, error.field, error.message);
         });
         setStatus(form, 'Please fix the highlighted fields and submit again.', 'error');
+        return;
+      }
+
+      if (!isEndpointConfigured(endpoint)) {
+        setStatus(form, 'This form is temporarily unavailable because the public workflow endpoint is not configured. Please email mahadev@mahadevupadhyayula.com with your workflow instead.', 'error');
         return;
       }
 
