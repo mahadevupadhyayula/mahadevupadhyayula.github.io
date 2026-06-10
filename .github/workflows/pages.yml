@@ -26,19 +26,23 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Write public frontend config
+      - name: Write public frontend config override
         run: |
-          mkdir -p _data
           python3 - <<'PY'
           import json
           import os
           from pathlib import Path
 
           endpoint = os.environ.get('VITE_WORKFLOW_INQUIRY_ENDPOINT', '').strip()
-          Path('_data/env.json').write_text(
-              json.dumps({'workflow_inquiry_endpoint': endpoint}, indent=2) + '\n',
-              encoding='utf-8'
-          )
+          if endpoint:
+              Path('_data').mkdir(exist_ok=True)
+              Path('_data/env.json').write_text(
+                  json.dumps({'workflow_inquiry_endpoint': endpoint}, indent=2) + '\n',
+                  encoding='utf-8'
+              )
+          else:
+              Path('_data/env.json').unlink(missing_ok=True)
+              print('Using committed _data/env.yml workflow endpoint.')
           PY
 
       - name: Build with Jekyll

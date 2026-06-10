@@ -27,7 +27,7 @@ This static site does not write directly to `public.workflow_inquiries`. The bro
    https://dgrwgiagpcqkxdokhglb.functions.supabase.co/submit-workflow-inquiry
    ```
 
-   The workflow form reads `site.data.env.workflow_inquiry_endpoint`, which is generated during the Pages build from `VITE_WORKFLOW_INQUIRY_ENDPOINT`. If the variable is missing, the browser shows a safe fallback message and does not attempt to submit the form.
+   The workflow form reads `site.data.env.workflow_inquiry_endpoint`. The committed `_data/env.yml` provides the public Supabase Edge Function endpoint for GitHub Pages builds; `VITE_WORKFLOW_INQUIRY_ENDPOINT` can still override it during the Pages build when that repository variable is set. If neither value is present, the browser shows a safe fallback message and does not attempt to submit the form.
 
    Only put the public Edge Function URL in this frontend variable. Do not expose `SUPABASE_SERVICE_ROLE_KEY`, Supabase secret keys, or other server-only credentials in GitHub Pages variables or client-side code.
 
