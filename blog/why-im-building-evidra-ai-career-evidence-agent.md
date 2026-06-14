@@ -4,7 +4,7 @@ title: "Why I am Building Evidra.ai: The Career Evidence Problem Nobody Tracks"
 subtitle: "Why career growth should start with evidence, not generic AI content"
 seo_title: "Why I am Building an AI Career Growth Agent: The Career Evidence Problem Nobody Tracks"
 description: "I am building Evidra.ai, an evidence-first AI career growth agent that turns real work into interview-ready stories, recruiter signals, and opportunity readiness. Here is why I am starting with one focused workflow: Interview Sprint."
-date: "2026-06-14"
+date: 2026-06-14
 category: "AI Product Strategy"
 tags:
   - AI career growth agent
