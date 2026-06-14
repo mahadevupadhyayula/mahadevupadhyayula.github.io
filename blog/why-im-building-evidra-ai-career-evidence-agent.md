@@ -17,7 +17,7 @@ slug: "why-im-building-evidra-ai-career-evidence-agent"
 image: "/assets/images/why-im-building-evidra-ai-career-evidence-agent.png"
 coverImage: "/assets/images/why-im-building-evidra-ai-career-evidence-agent.png"
 permalink: "/blog/why-im-building-evidra-ai-career-evidence-agent/"
-canonicalUrl: "https://mahadevupadhyayula.github.io/blog/why-im-building-evidra-ai-career-evidence-agent/"
+canonicalUrl: "https://mahadevupadhyayula.com/blog/why-im-building-evidra-ai-career-evidence-agent/"
 ---
 
 ![Evidra.ai career evidence graph showing scattered project notes, metrics, feedback, decisions, and resume bullets becoming structured career evidence.](/assets/images/why-im-building-evidra-ai-career-evidence-agent.png)
