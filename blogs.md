@@ -4,7 +4,7 @@ title: Blogs
 permalink: /blogs/
 ---
 
-{% assign blog_pages = site.pages | sort_natural: "date" | reverse %}
+{% assign blog_pages = site.pages | sort: "date" | reverse %}
 
 <div class="blog-list" aria-label="All blogs">
   {% for blog in blog_pages %}
