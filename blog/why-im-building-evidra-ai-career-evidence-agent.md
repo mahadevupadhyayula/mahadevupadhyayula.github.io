@@ -620,4 +620,3 @@ If the career evidence problem resonates, DM me.
 And when the YouTube video is live, I’ll link the full product-builder breakdown there too.
 
 This is the start of the Evidra.ai build-in-public journey: one problem, one wedge, one product decision at a time.
-```
