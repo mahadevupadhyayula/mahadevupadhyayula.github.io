@@ -19,13 +19,24 @@ Do not upload secrets, private client information, drafts that should not be quo
 
 Whenever important website content changes, replace or re-upload the relevant file in the vector store.
 
-## 2. Configure Supabase secrets
+## 2. Apply the database migration
+
+The assistant allows 20 questions per hour for each hashed connection identifier. Apply the included migration before deploying the function:
+
+```bash
+supabase db push
+```
+
+The table has row-level security enabled and is accessed only through a service-role RPC from the Edge Function.
+
+## 3. Configure Supabase secrets
 
 Set these server-only secrets for the existing Supabase project:
 
 ```bash
 supabase secrets set OPENAI_API_KEY=your_openai_api_key
 supabase secrets set OPENAI_VECTOR_STORE_ID=vs_your_vector_store_id
+supabase secrets set RATE_LIMIT_SALT=a_long_random_value
 ```
 
 Optional settings:
@@ -35,9 +46,11 @@ supabase secrets set OPENAI_MODEL=gpt-5.4-mini
 supabase secrets set ALLOWED_ORIGINS=https://mahadevupadhyayula.com,https://www.mahadevupadhyayula.com,https://mahadevupadhyayula.github.io
 ```
 
-Never add `OPENAI_API_KEY` to `_data/env.yml`, GitHub Pages variables, JavaScript, or any other public file.
+`gpt-5.4-mini` is the default to balance response quality, latency, and cost for a public website assistant. The function forces a File Search call, uses low reasoning effort, and limits the visible answer length.
 
-## 3. Deploy the Edge Function
+Never add `OPENAI_API_KEY`, `RATE_LIMIT_SALT`, or service-role credentials to `_data/env.yml`, GitHub Pages variables, JavaScript, or any other public file.
+
+## 4. Deploy the Edge Function
 
 ```bash
 supabase functions deploy ask-mahadev
@@ -82,5 +95,6 @@ A successful response uses:
 2. Ask each suggested question and confirm the answer stays within published site content.
 3. Confirm source links open the correct page.
 4. Ask for information not present on the site and confirm the assistant says it does not have enough information.
-5. Confirm no OpenAI key appears in browser source, network responses, or the GitHub repository.
-6. Check the assistant on a mobile viewport and on a blog post with the sticky CTA visible.
+5. Send more than 20 questions in an hour from one connection and confirm the function returns HTTP 429.
+6. Confirm no OpenAI key appears in browser source, network responses, or the GitHub repository.
+7. Check the assistant on a mobile viewport and on a blog post with the sticky CTA visible.
