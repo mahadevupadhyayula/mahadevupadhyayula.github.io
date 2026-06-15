@@ -164,6 +164,37 @@ function extractSources(response: OpenAIResponse) {
   return Array.from(sources.values()).slice(0, 5);
 }
 
+async function rateLimitKey(request: Request) {
+  const forwardedFor = request.headers.get('x-forwarded-for') || '';
+  const clientIp = request.headers.get('cf-connecting-ip') || forwardedFor.split(',')[0].trim() || 'unknown';
+  const salt = Deno.env.get('RATE_LIMIT_SALT') || 'ask-mahadev';
+  const bytes = new TextEncoder().encode(`${salt}:${clientIp}`);
+  const digest = await crypto.subtle.digest('SHA-256', bytes);
+
+  return Array.from(new Uint8Array(digest))
+    .map((byte) => byte.toString(16).padStart(2, '0'))
+    .join('');
+}
+
+async function isWithinRateLimit(request: Request, supabaseUrl: string, serviceRoleKey: string) {
+  const response = await fetch(`${supabaseUrl}/rest/v1/rpc/check_ask_mahadev_rate_limit`, {
+    method: 'POST',
+    headers: {
+      apikey: serviceRoleKey,
+      Authorization: `Bearer ${serviceRoleKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ p_client_key: await rateLimitKey(request) }),
+  });
+
+  if (!response.ok) {
+    console.error('Ask Mahadev rate limit check failed', await response.text());
+    throw new Error('Rate limit service unavailable');
+  }
+
+  return await response.json() === true;
+}
+
 Deno.serve(async (request) => {
   if (request.method === 'OPTIONS') {
     return new Response('ok', { headers: corsHeaders(request) });
@@ -209,11 +240,27 @@ Deno.serve(async (request) => {
   const openAIKey = Deno.env.get('OPENAI_API_KEY');
   const vectorStoreId = Deno.env.get('OPENAI_VECTOR_STORE_ID');
   const model = Deno.env.get('OPENAI_MODEL') || 'gpt-5.4-mini';
+  const supabaseUrl = Deno.env.get('SUPABASE_URL');
+  const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
 
-  if (!openAIKey || !vectorStoreId) {
+  if (!openAIKey || !vectorStoreId || !supabaseUrl || !serviceRoleKey) {
     return jsonResponse(request, {
       success: false,
       message: 'Ask Mahadev is not configured yet.',
+    }, 503);
+  }
+
+  try {
+    if (!await isWithinRateLimit(request, supabaseUrl, serviceRoleKey)) {
+      return jsonResponse(request, {
+        success: false,
+        message: 'Ask Mahadev has reached the hourly question limit for this connection. Please try again later.',
+      }, 429);
+    }
+  } catch (_error) {
+    return jsonResponse(request, {
+      success: false,
+      message: 'Ask Mahadev is temporarily unavailable. Please try again shortly.',
     }, 503);
   }
 
@@ -239,7 +286,11 @@ Deno.serve(async (request) => {
       vector_store_ids: [vectorStoreId],
       max_num_results: 6,
     }],
-    max_output_tokens: 700,
+    tool_choice: { type: 'file_search' },
+    max_tool_calls: 1,
+    reasoning: { effort: 'low' },
+    text: { verbosity: 'low' },
+    max_output_tokens: 900,
     store: true,
   };
 
