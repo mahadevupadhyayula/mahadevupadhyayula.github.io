@@ -10,6 +10,13 @@ Commercial AI workflow projects and product case studies focused on turning mess
 
 <div class="case-study-card-grid" aria-label="Featured AI workflow case studies">
   <article class="case-study-card case-study-card--priority">
+    <p class="case-study-card__eyebrow">Commercial operations · Human approval</p>
+    <h2><a href="{{ '/case-studies/iquote/' | relative_url }}">iQuote</a></h2>
+    <p>Working AI-assisted quote workflow that turns unstructured requests into reviewed product, inventory, pricing and approval decisions before producing a customer-ready quote.</p>
+    <a class="case-study-card__link" href="{{ '/case-studies/iquote/' | relative_url }}">View case study →</a>
+  </article>
+
+  <article class="case-study-card case-study-card--priority">
     <p class="case-study-card__eyebrow">CRM hygiene · Human approval</p>
     <h2><a href="{{ '/case-studies/crm-hygiene-agent/' | relative_url }}">CRM Hygiene Agent</a></h2>
     <p>Portfolio prototype for turning messy sales context, CRM notes, and deal updates into human-approved CRM-ready pipeline records.</p>
