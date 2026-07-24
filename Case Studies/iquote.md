@@ -102,21 +102,75 @@ permalink: /case-studies/iquote/
   <section aria-labelledby="walkthrough-title">
     <div class="iquote-section-header">
       <p class="iquote-section-eyebrow">Product walkthrough</p>
-      <h2 id="walkthrough-title">The operating workflow is visible at every stage</h2>
-      <p>The embedded Loom demonstrates intake, extraction, inventory and pricing resolution, delegated approval and customer-safe output. The screen below shows the most important exception-handling principle: unresolved stock blocks the quote instead of producing an unsupported commitment.</p>
+      <h2 id="walkthrough-title">Follow the quote from request intake to customer-safe output</h2>
+      <p>Each stage exposes what the system extracted, what deterministic services resolved and where a person must review or approve the commercial decision.</p>
     </div>
-    <article class="iquote-step">
-      <div class="iquote-step__copy">
-        <span class="iquote-step__number">EXCEPTION EVIDENCE</span>
-        <h3>Make operational uncertainty explicit</h3>
-        <p>When stock cannot fulfil the request, the quote remains unresolved and the user must select a supported fulfilment path. The system does not fabricate availability.</p>
-        <div class="iquote-actions">
-          <a class="button-link button-primary" href="https://www.loom.com/share/e9fa80ef934a4eff91f0e0a508616f61" target="_blank" rel="noopener noreferrer">Open the full walkthrough</a>
-          <a class="button-link button-secondary" href="https://i-quote-seven.vercel.app/quotes" target="_blank" rel="noopener noreferrer">Explore the workflow</a>
+
+    <div class="iquote-walkthrough">
+      <article class="iquote-step">
+        <div class="iquote-step__copy">
+          <span class="iquote-step__number">01 — REQUEST INTAKE</span>
+          <h3>Begin with the customer’s operational request</h3>
+          <p>The workflow starts with an unstructured quote request, customer context, opportunity details and commercial requirements rather than an empty chat interface.</p>
+          <p>The original request remains visible so every downstream field can be reviewed against its source.</p>
         </div>
-      </div>
-      <div class="iquote-step__media"><img src="{{ '/assets/images/case-studies/iquote/iQuote-scs-insufficient-inventory.svg' | relative_url }}" alt="Insufficient inventory exception in iQuote" loading="lazy"></div>
-    </article>
+        <div class="iquote-step__media">
+          <img src="{{ '/assets/iQuote-scs/iQuote-scs-intake.png' | relative_url }}" alt="iQuote customer request intake with an unstructured quote request and customer context" loading="lazy" decoding="async">
+        </div>
+      </article>
+
+      <article class="iquote-step">
+        <div class="iquote-step__copy">
+          <span class="iquote-step__number">02 — STRUCTURED QUOTE DRAFT</span>
+          <h3>Convert the request into reviewable structured fields</h3>
+          <p>AI-assisted extraction proposes customer, product, quantity, discount, installation and delivery fields with confidence and source indicators.</p>
+          <p>The sales representative can review and correct the draft before any catalogue, inventory or pricing decision is made.</p>
+        </div>
+        <div class="iquote-step__media">
+          <img src="{{ '/assets/iQuote-scs/iQuote-scs-structuredextraction.png' | relative_url }}" alt="iQuote structured quote draft with editable extracted fields and confidence indicators" loading="lazy" decoding="async">
+        </div>
+      </article>
+
+      <article class="iquote-step">
+        <div class="iquote-step__copy">
+          <span class="iquote-step__number">03 — INVENTORY EXCEPTION</span>
+          <h3>Block unsupported fulfilment instead of guessing</h3>
+          <p>When the requested quantity cannot be fulfilled from seeded warehouse inventory, the quote remains unresolved and the user must choose a supported path.</p>
+          <p>The application makes operational uncertainty explicit rather than inventing stock availability or silently producing an incomplete commitment.</p>
+        </div>
+        <div class="iquote-step__media">
+          <img src="{{ '/assets/iQuote-scs/iQuote-scs-insufficient-inventory.png' | relative_url }}" alt="iQuote insufficient inventory exception requiring a supported fulfilment decision" loading="lazy" decoding="async">
+        </div>
+      </article>
+
+      <article class="iquote-step">
+        <div class="iquote-step__copy">
+          <span class="iquote-step__number">04 — DISCOUNT APPROVAL</span>
+          <h3>Route policy exceptions with commercial context</h3>
+          <p>A requested discount above the straight-through threshold creates a delegated approval containing the subtotal, discount, margin and required approval role.</p>
+          <p>The approver can accept, modify or reject the exception before the workflow returns to quote generation.</p>
+        </div>
+        <div class="iquote-step__media">
+          <img src="{{ '/assets/iQuote-scs/iQuote-scs-approval-decision.png' | relative_url }}" alt="iQuote discount approval decision with approve, edit and reject controls" loading="lazy" decoding="async">
+        </div>
+      </article>
+
+      <article class="iquote-step">
+        <div class="iquote-step__copy">
+          <span class="iquote-step__number">05 — CUSTOMER PDF</span>
+          <h3>Generate customer-facing output only from approved state</h3>
+          <p>The final document contains approved products, quantities, prices, terms, validity and delivery assumptions.</p>
+          <p>Internal economics, workflow reasoning and approval details remain outside the customer-safe PDF.</p>
+          <div class="iquote-actions">
+            <a class="button-link button-primary" href="https://www.loom.com/share/e9fa80ef934a4eff91f0e0a508616f61" target="_blank" rel="noopener noreferrer">Open the full walkthrough</a>
+            <a class="button-link button-secondary" href="https://i-quote-seven.vercel.app/quotes" target="_blank" rel="noopener noreferrer">Explore the live workflow</a>
+          </div>
+        </div>
+        <div class="iquote-step__media">
+          <img src="{{ '/assets/iQuote-scs/iQuote-scs-quote-generated.png' | relative_url }}" alt="Customer-facing quote PDF generated from approved iQuote state" loading="lazy" decoding="async">
+        </div>
+      </article>
+    </div>
   </section>
 
   <section aria-labelledby="boundary-title">
