@@ -8,25 +8,27 @@ permalink: /case-studies/iquote/
 <link rel="stylesheet" href="{{ '/assets/css/iquote-case-study.css' | relative_url }}">
 
 <div class="iquote-page">
-  <section class="iquote-hero" aria-labelledby="iquote-title">
-    <div>
-      <p class="iquote-breadcrumb"><a href="{{ '/case-studies' | relative_url }}">Case Studies</a> / iQuote</p>
-      <p class="iquote-eyebrow">Enterprise finance &amp; commercial operations workflow</p>
-      <h1 id="iquote-title">From messy quote requests to approved commercial output</h1>
-      <p class="iquote-lede">iQuote is a working AI-assisted quote workflow that extracts unstructured customer requests, resolves products and inventory, applies deterministic pricing rules, and routes exceptions through human approval before producing a customer-ready quote.</p>
-      <p class="iquote-status">Functional portfolio demo using representative commercial data</p>
-      <div class="iquote-actions" aria-label="iQuote project links">
-        <a class="button-link button-primary" href="#demo">Watch the walkthrough</a>
-        <a class="button-link button-secondary" href="https://i-quote-seven.vercel.app/quotes" target="_blank" rel="noopener noreferrer">Try the live demo</a>
-        <a class="button-link button-secondary" href="https://github.com/mahadevupadhyayula/iQuote/tree/main" target="_blank" rel="noopener noreferrer">View GitHub</a>
+  <div class="iquote-hero-stack" style="display: grid; gap: 1.25rem;">
+    <section class="iquote-hero" aria-labelledby="iquote-title" style="display: block;">
+      <div>
+        <p class="iquote-breadcrumb"><a href="{{ '/case-studies' | relative_url }}">Case Studies</a> / iQuote</p>
+        <p class="iquote-eyebrow">Enterprise finance &amp; commercial operations workflow</p>
+        <h1 id="iquote-title">From messy quote requests to approved commercial output</h1>
+        <p class="iquote-lede">iQuote is a working AI-assisted quote workflow that extracts unstructured customer requests, resolves products and inventory, applies deterministic pricing rules, and routes exceptions through human approval before producing a customer-ready quote.</p>
+        <p class="iquote-status">Functional portfolio demo using representative commercial data</p>
+        <div class="iquote-actions" aria-label="iQuote project links">
+          <a class="button-link button-primary" href="#demo">Watch the walkthrough</a>
+          <a class="button-link button-secondary" href="https://i-quote-seven.vercel.app/quotes" target="_blank" rel="noopener noreferrer">Try the live demo</a>
+          <a class="button-link button-secondary" href="https://github.com/mahadevupadhyayula/iQuote/tree/main" target="_blank" rel="noopener noreferrer">View GitHub</a>
+        </div>
       </div>
-    </div>
+    </section>
     <div id="demo" class="iquote-video-shell">
       <div class="iquote-video">
         <iframe src="https://www.loom.com/embed/e9fa80ef934a4eff91f0e0a508616f61" title="iQuote product walkthrough" allowfullscreen></iframe>
       </div>
     </div>
-  </section>
+  </div>
 
   <section class="iquote-proof-bar" aria-label="iQuote proof summary">
     <article><span>Workflow</span><strong>Request-to-approved-quote</strong></article>
@@ -133,7 +135,19 @@ permalink: /case-studies/iquote/
 
       <article class="iquote-step">
         <div class="iquote-step__copy">
-          <span class="iquote-step__number">03 — INVENTORY EXCEPTION</span>
+          <span class="iquote-step__number">03 — PRICING &amp; INVENTORY RESOLUTION</span>
+          <h3>Resolve fulfilment and pricing from deterministic business data</h3>
+          <p>Confirmed product matches are resolved against available warehouse inventory before the pricing service applies the active price source, requested discount and commercial calculations.</p>
+          <p>The workspace keeps inventory selection, pricing basis, quoted totals and internal economics visible so the representative can verify the commercial result before continuing.</p>
+        </div>
+        <div class="iquote-step__media">
+          <img src="{{ '/assets/iQuote-scs/iQuote-scs-pricing-inventory-fullfillment.png' | relative_url }}" alt="iQuote pricing and inventory resolution showing confirmed fulfilment, deterministic pricing and quote totals" loading="lazy" decoding="async">
+        </div>
+      </article>
+
+      <article class="iquote-step">
+        <div class="iquote-step__copy">
+          <span class="iquote-step__number">04 — INVENTORY EXCEPTION</span>
           <h3>Block unsupported fulfilment instead of guessing</h3>
           <p>When the requested quantity cannot be fulfilled from seeded warehouse inventory, the quote remains unresolved and the user must choose a supported path.</p>
           <p>The application makes operational uncertainty explicit rather than inventing stock availability or silently producing an incomplete commitment.</p>
@@ -145,7 +159,7 @@ permalink: /case-studies/iquote/
 
       <article class="iquote-step">
         <div class="iquote-step__copy">
-          <span class="iquote-step__number">04 — DISCOUNT APPROVAL</span>
+          <span class="iquote-step__number">05 — DISCOUNT APPROVAL</span>
           <h3>Route policy exceptions with commercial context</h3>
           <p>A requested discount above the straight-through threshold creates a delegated approval containing the subtotal, discount, margin and required approval role.</p>
           <p>The approver can accept, modify or reject the exception before the workflow returns to quote generation.</p>
@@ -157,7 +171,7 @@ permalink: /case-studies/iquote/
 
       <article class="iquote-step">
         <div class="iquote-step__copy">
-          <span class="iquote-step__number">05 — CUSTOMER PDF</span>
+          <span class="iquote-step__number">06 — CUSTOMER PDF</span>
           <h3>Generate customer-facing output only from approved state</h3>
           <p>The final document contains approved products, quantities, prices, terms, validity and delivery assumptions.</p>
           <p>Internal economics, workflow reasoning and approval details remain outside the customer-safe PDF.</p>
