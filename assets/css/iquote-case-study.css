@@ -1,0 +1,506 @@
+.iquote-page {
+  --iquote-border: rgba(94, 194, 255, 0.2);
+  --iquote-surface: rgba(7, 20, 38, 0.78);
+  --iquote-surface-soft: rgba(255, 255, 255, 0.045);
+  --iquote-muted: #bdd0e5;
+  --iquote-accent: #5ec2ff;
+  --iquote-green: #63e6b2;
+  display: grid;
+  gap: clamp(2.5rem, 7vw, 5rem);
+}
+
+.iquote-page section {
+  scroll-margin-top: 6rem;
+}
+
+.iquote-breadcrumb {
+  margin: 0 0 1rem;
+  color: var(--iquote-muted);
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
+.iquote-breadcrumb a {
+  color: var(--iquote-accent);
+  text-decoration: none;
+}
+
+.iquote-hero {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  border: 1px solid rgba(94, 194, 255, 0.3);
+  border-radius: 30px;
+  background:
+    linear-gradient(rgba(94, 194, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 194, 255, 0.055) 1px, transparent 1px),
+    radial-gradient(circle at 12% 8%, rgba(46, 168, 255, 0.26), transparent 26rem),
+    linear-gradient(135deg, #08182c 0%, #050b16 62%, #020611 100%);
+  background-size: 44px 44px, 44px 44px, auto, auto;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
+}
+
+.iquote-hero h1 {
+  margin: 0 0 1rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(2.4rem, 7vw, 5.1rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.iquote-eyebrow,
+.iquote-section-eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--iquote-accent);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.iquote-lede {
+  max-width: 650px;
+  color: #dcecff;
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  line-height: 1.55;
+}
+
+.iquote-status {
+  display: inline-flex;
+  margin: 0.35rem 0 0;
+  padding: 0.45rem 0.72rem;
+  border: 1px solid rgba(99, 230, 178, 0.34);
+  border-radius: 999px;
+  background: rgba(99, 230, 178, 0.1);
+  color: #bff8df;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.iquote-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.35rem;
+}
+
+.iquote-video-shell {
+  overflow: hidden;
+  border: 1px solid rgba(94, 194, 255, 0.3);
+  border-radius: 22px;
+  background: #020611;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.42);
+}
+
+.iquote-video {
+  position: relative;
+  width: 100%;
+  padding-top: 62.5%;
+}
+
+.iquote-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.iquote-proof-bar,
+.iquote-card-grid,
+.iquote-scenario-grid,
+.iquote-decision-grid,
+.iquote-value-grid,
+.iquote-architecture-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.iquote-proof-bar {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: -2rem;
+}
+
+.iquote-proof-bar article,
+.iquote-card,
+.iquote-scenario,
+.iquote-decision,
+.iquote-value-card,
+.iquote-architecture-card {
+  padding: 1.15rem;
+  border: 1px solid var(--iquote-border);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02)), var(--iquote-surface);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.iquote-proof-bar span,
+.iquote-card h3,
+.iquote-scenario h3,
+.iquote-decision h3,
+.iquote-value-card h3,
+.iquote-architecture-card h3 {
+  display: block;
+  margin: 0 0 0.4rem;
+  color: #9ed9ff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.iquote-proof-bar strong {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.iquote-section-header {
+  max-width: 780px;
+  margin-bottom: 1.4rem;
+}
+
+.iquote-section-header h2 {
+  margin: 0 0 0.65rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  letter-spacing: -0.045em;
+}
+
+.iquote-section-header p,
+.iquote-card p,
+.iquote-scenario p,
+.iquote-decision p,
+.iquote-value-card p,
+.iquote-architecture-card p,
+.iquote-value-card li,
+.iquote-architecture-card li {
+  color: var(--iquote-muted);
+}
+
+.iquote-contrast {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.iquote-contrast article {
+  padding: 1.2rem;
+  border-radius: 20px;
+}
+
+.iquote-contrast__weak {
+  border: 1px solid rgba(255, 126, 126, 0.24);
+  background: rgba(255, 126, 126, 0.055);
+}
+
+.iquote-contrast__strong {
+  border: 1px solid rgba(99, 230, 178, 0.28);
+  background: rgba(99, 230, 178, 0.06);
+}
+
+.iquote-contrast h3 {
+  margin: 0 0 0.6rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.iquote-flow {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(100px, 1fr));
+  gap: 0.6rem;
+  overflow-x: auto;
+  padding: 0.9rem;
+  border: 1px solid var(--iquote-border);
+  border-radius: 24px;
+  background: rgba(3, 9, 20, 0.55);
+}
+
+.iquote-flow span {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 5.2rem;
+  padding: 0.7rem;
+  border: 1px solid rgba(94, 194, 255, 0.24);
+  border-radius: 16px;
+  background: rgba(94, 194, 255, 0.08);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.iquote-flow span:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -0.55rem;
+  z-index: 2;
+  color: var(--iquote-accent);
+}
+
+.iquote-flow-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.8rem;
+  color: var(--iquote-muted);
+  font-size: 0.86rem;
+}
+
+.iquote-flow-legend span {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.iquote-card-grid,
+.iquote-decision-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.iquote-card h3,
+.iquote-decision h3 {
+  color: #fff;
+  font-size: 1.02rem;
+  letter-spacing: -0.015em;
+  text-transform: none;
+}
+
+.iquote-walkthrough {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.iquote-step {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(1rem, 4vw, 2rem);
+  align-items: center;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--iquote-border);
+  border-radius: 24px;
+  background: var(--iquote-surface-soft);
+}
+
+.iquote-step:nth-child(even) .iquote-step__copy {
+  order: 2;
+}
+
+.iquote-step:nth-child(even) .iquote-step__media {
+  order: 1;
+}
+
+.iquote-step__number {
+  color: var(--iquote-accent);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+}
+
+.iquote-step h3 {
+  margin: 0.3rem 0 0.65rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(1.35rem, 3.5vw, 2rem);
+  letter-spacing: -0.035em;
+}
+
+.iquote-step p {
+  color: var(--iquote-muted);
+}
+
+.iquote-step__media img {
+  width: 100%;
+  max-height: 610px;
+  object-fit: contain;
+  border: 1px solid rgba(94, 194, 255, 0.2);
+  border-radius: 18px;
+  background: #f7f9fc;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.3);
+}
+
+.iquote-boundary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.iquote-boundary article {
+  padding: 1.3rem;
+  border: 1px solid var(--iquote-border);
+  border-radius: 22px;
+  background: var(--iquote-surface);
+}
+
+.iquote-boundary h3 {
+  margin: 0 0 0.8rem;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.iquote-boundary ul,
+.iquote-value-card ul,
+.iquote-architecture-card ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.iquote-boundary li {
+  color: var(--iquote-muted);
+}
+
+.iquote-boundary-callout {
+  margin: 1rem 0 0;
+  padding: 1rem;
+  border-left: 3px solid var(--iquote-accent);
+  background: rgba(94, 194, 255, 0.08);
+  color: #e6f5ff;
+  font-weight: 800;
+}
+
+.iquote-scenario-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.iquote-scenario strong {
+  color: #fff;
+}
+
+.iquote-architecture-grid,
+.iquote-value-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.iquote-architecture-path {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.iquote-architecture-path span {
+  padding: 0.75rem;
+  border: 1px solid rgba(94, 194, 255, 0.18);
+  border-radius: 14px;
+  background: rgba(94, 194, 255, 0.07);
+  color: #fff;
+  font-weight: 750;
+  text-align: center;
+}
+
+.iquote-doc-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.iquote-maturity {
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid rgba(99, 230, 178, 0.24);
+  border-radius: 24px;
+  background: radial-gradient(circle at top left, rgba(99, 230, 178, 0.11), transparent 28rem), var(--iquote-surface);
+}
+
+.iquote-maturity h3 {
+  margin-top: 0;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.iquote-maturity p,
+.iquote-maturity li {
+  color: var(--iquote-muted);
+}
+
+.iquote-final-cta {
+  padding: clamp(1.6rem, 5vw, 3rem);
+  border: 1px solid rgba(94, 194, 255, 0.28);
+  border-radius: 28px;
+  background:
+    linear-gradient(rgba(94, 194, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 194, 255, 0.055) 1px, transparent 1px),
+    radial-gradient(circle at top left, rgba(46, 168, 255, 0.2), transparent 25rem),
+    #050b16;
+  background-size: 42px 42px, 42px 42px, auto, auto;
+  text-align: center;
+}
+
+.iquote-final-cta h2 {
+  margin-top: 0;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.iquote-final-cta p {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--iquote-muted);
+}
+
+.iquote-final-cta .iquote-actions {
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .iquote-hero,
+  .iquote-step,
+  .iquote-boundary,
+  .iquote-architecture-grid,
+  .iquote-value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .iquote-proof-bar,
+  .iquote-card-grid,
+  .iquote-decision-grid,
+  .iquote-scenario-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .iquote-step:nth-child(even) .iquote-step__copy,
+  .iquote-step:nth-child(even) .iquote-step__media {
+    order: initial;
+  }
+}
+
+@media (max-width: 640px) {
+  .iquote-page {
+    gap: 2.6rem;
+  }
+
+  .iquote-hero {
+    padding: 1.2rem;
+    border-radius: 22px;
+  }
+
+  .iquote-actions .button-link {
+    width: 100%;
+  }
+
+  .iquote-proof-bar,
+  .iquote-card-grid,
+  .iquote-decision-grid,
+  .iquote-scenario-grid,
+  .iquote-contrast {
+    grid-template-columns: 1fr;
+  }
+
+  .iquote-proof-bar {
+    margin-top: -1rem;
+  }
+
+  .iquote-flow {
+    grid-template-columns: repeat(8, minmax(150px, 1fr));
+  }
+}
