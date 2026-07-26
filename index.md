@@ -55,7 +55,6 @@ image_alt: AI workflow systems for B2B revenue teams
       <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-crm-hygiene' | relative_url }}">Discuss CRM Hygiene</a></p>
     </article>
   </div>
-  <p class="section-supporting-copy">Need lead research, content workflows, or a custom automation MVP? <a href="{{ '/services' | relative_url }}">View all services</a>.</p>
 </section>
 
 <section class="stage-one-services" aria-labelledby="engagement-path-title">
