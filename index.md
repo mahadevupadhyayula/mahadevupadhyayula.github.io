@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Mahadev Upadhyayula | AI Automation Consultant for B2B Workflow Systems
-description: I build human-approved AI workflow systems for B2B teams, including CRM hygiene agents, lead research automation, content workflow systems, and custom AI automation prototypes.
+title: AI Workflow Systems for B2B Revenue Teams | Mahadev Upadhyayula
+description: I help B2B revenue teams turn CRM hygiene, lead research, and quote-prep work into structured, validated, human-approved AI workflows.
 ---
 
 <section class="hero-section" aria-labelledby="hero-title">
-  <h1 id="hero-title">AI Workflow Systems for B2B Teams</h1>
-  <p class="hero-subheadline">I help founders, agencies, RevOps teams, and operators turn messy workflows into practical AI automations.</p>
-  <p class="hero-copy">CRM notes, lead research, content briefs, documents, and internal updates become structured outputs, validated workflows, and human-approved AI systems.</p>
-  <p class="hero-service-line">Services: CRM Hygiene • Lead Research • Content Automation • AI Workflow Audits</p>
+  <h1 id="hero-title">AI Workflow Systems for B2B Revenue Teams</h1>
+  <p class="hero-subheadline">I help B2B revenue and client-operations teams turn messy CRM, lead-research, and quote-prep work into practical AI workflows.</p>
+  <p class="hero-copy">Your team gets structured outputs, validation rules, and human approval before information reaches the CRM, a client quote, or the next operating step.</p>
+  <p class="hero-service-line">Focus: CRM Hygiene • Pre-CRM Research • Quote/Proposal Workflows</p>
   <div class="hero-actions" aria-label="Primary actions">
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-send-workflow' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-send-workflow">Send Me Your Workflow</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-revenue-workflow-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-revenue-workflow-sprint">Book a Revenue Workflow Sprint</a>
     <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">View Case Studies</a>
   </div>
 </section>
@@ -29,16 +29,16 @@ description: I build human-approved AI workflow systems for B2B teams, including
   </div>
   <div class="service-card-grid homepage-service-grid">
     <article>
-      <h3>AI Workflow Audit</h3>
+      <h3>Revenue Workflow AI Sprint</h3>
       <dl>
         <dt>Problem</dt>
         <dd>You know a workflow is slow, but the automation path is unclear.</dd>
         <dt>What I build</dt>
-        <dd>A mapped workflow with inputs, validation steps, approval points, and MVP scope.</dd>
+        <dd>A workflow map, automation opportunity assessment, validation plan, human-approval design, and MVP scope.</dd>
         <dt>Best for</dt>
-        <dd>Founders and operators choosing the first AI workflow to automate.</dd>
+        <dd>Revenue and operations leaders choosing the first workflow to improve.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-workflow-audit' | relative_url }}">Start Workflow Audit</a></p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-revenue-workflow-sprint' | relative_url }}">Book a Workflow Sprint</a></p>
     </article>
     <article>
       <h3>CRM Hygiene Agent</h3>
@@ -65,6 +65,18 @@ description: I build human-approved AI workflow systems for B2B teams, including
       <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-pre-crm-research' | relative_url }}">Discuss Lead Research</a></p>
     </article>
     <article>
+      <h3>Quote/Proposal Workflow</h3>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Quotes and proposals depend on scattered inputs, manual checks, and inconsistent review.</dd>
+        <dt>What I build</dt>
+        <dd>A human-approved workflow that prepares a structured, reviewable quote or proposal draft.</dd>
+        <dt>Best for</dt>
+        <dd>B2B service firms and sales teams preparing client-facing commercial documents.</dd>
+      </dl>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-quote-proposal' | relative_url }}">Discuss Quote Automation</a></p>
+    </article>
+    <article>
       <h3>Content Workflow System</h3>
       <dl>
         <dt>Problem</dt>
@@ -76,6 +88,20 @@ description: I build human-approved AI workflow systems for B2B teams, including
       </dl>
       <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-content-workflow' | relative_url }}">Discuss Content Workflow</a></p>
     </article>
+  </div>
+</section>
+
+<section class="stage-one-services" aria-labelledby="engagement-path-title">
+  <div class="section-heading-row">
+    <div>
+      <p class="section-eyebrow">How engagements work</p>
+      <h2 id="engagement-path-title">Start small, prove value, then expand.</h2>
+    </div>
+  </div>
+  <div class="service-card-grid">
+    <article><h3>1. Revenue Workflow Assessment</h3><p>Map the workflow, inputs, risks, approvals, and implementation scope.</p></article>
+    <article><h3>2. Fixed-Scope Workflow Build</h3><p>Build and validate one focused workflow around a measurable operating problem.</p></article>
+    <article><h3>3. Optional Optimization</h3><p>Improve quality, integrations, monitoring, and adoption after the workflow proves useful.</p></article>
   </div>
 </section>
 
@@ -105,8 +131,8 @@ description: I build human-approved AI workflow systems for B2B teams, including
 
 <section id="work-with-me" class="workflow-cta" aria-labelledby="workflow-title">
   <p class="section-eyebrow">Primary CTA flow</p>
-  <h2 id="workflow-title">Send me one messy workflow. I’ll map the automation opportunity.</h2>
-  <p>Start with a workflow audit: where the inputs come from, what AI should extract, what needs validation, and where human approval belongs.</p>
+  <h2 id="workflow-title">Bring one revenue workflow. Leave with a clearer automation path.</h2>
+  <p>Start with a Revenue Workflow Sprint: identify the inputs, extraction logic, validation rules, human approvals, and the smallest useful implementation scope.</p>
   <div class="workflow-path" aria-label="Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output">
     <span>Messy Inputs</span>
     <span>AI Extraction</span>
@@ -114,7 +140,7 @@ description: I build human-approved AI workflow systems for B2B teams, including
     <span>Human Approval</span>
     <span>Clean Output</span>
   </div>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-workflow-audit' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-workflow-audit">Send me your workflow</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-workflow-audit' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-revenue-workflow-sprint">Get a Workflow Assessment</a>
 </section>
 
 ---
