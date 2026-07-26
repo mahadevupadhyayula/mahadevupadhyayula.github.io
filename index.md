@@ -54,6 +54,18 @@ image_alt: AI workflow systems for B2B revenue teams
       </dl>
       <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-crm-hygiene' | relative_url }}">Discuss CRM Hygiene</a></p>
     </article>
+    <article>
+      <h3>Quote/Proposal Workflow</h3>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Quotes and proposals depend on scattered inputs, manual checks, and inconsistent review.</dd>
+        <dt>What I build</dt>
+        <dd>A human-approved workflow that prepares a structured, reviewable quote or proposal draft.</dd>
+        <dt>Best for</dt>
+        <dd>B2B service firms and sales teams preparing client-facing commercial documents.</dd>
+      </dl>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-quote-proposal' | relative_url }}">Discuss Quote Automation</a></p>
+    </article>
   </div>
 </section>
 
