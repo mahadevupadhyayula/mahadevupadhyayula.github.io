@@ -1,15 +1,15 @@
 ---
 layout: page
-title: AI Workflow Services | CRM Hygiene, Lead Research & Content Automation
-description: Practical AI workflow services for CRM hygiene, lead research automation, content workflow systems, workflow audits, and custom AI automation MVPs.
-subtitle: Practical AI workflow systems for B2B teams that need cleaner inputs, structured outputs, validation, and human approval.
+title: Revenue Workflow AI Services | CRM Hygiene, Lead Research & Quote Automation
+description: Practical AI workflow services for B2B revenue teams: CRM hygiene, pre-CRM research, quote automation, validation, and human approval.
+subtitle: Practical AI workflow systems for B2B revenue and client-operations teams that need cleaner inputs, structured outputs, validation, and human approval.
 permalink: /services/
 ---
 
 <section class="services-intro" aria-labelledby="services-intro-title">
   <p class="section-eyebrow">What you can hire me for</p>
-  <h2 id="services-intro-title">I build focused AI workflows that turn messy inputs into reviewed business outputs.</h2>
-  <p>Most teams do not need a broad AI initiative. They need one painful workflow mapped, prototyped, validated, and handed back as a usable system.</p>
+  <h2 id="services-intro-title">I build focused revenue workflows that turn messy inputs into reviewed business outputs.</h2>
+  <p>Most B2B teams do not need a broad AI initiative. They need one painful CRM, research, or quote workflow mapped, validated, and handed back as a usable system.</p>
   <div class="workflow-path" aria-label="Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output">
     <span>Messy Inputs</span>
     <span>AI Extraction</span>
@@ -27,13 +27,13 @@ permalink: /services/
 </section>
 
 <div class="services-list">
-  <article id="ai-workflow-audit" class="service-detail-card">
+  <article id="revenue-workflow-ai-sprint" class="service-detail-card">
     <p class="service-number">01</p>
-    <h2>AI Workflow Audit</h2>
+    <h2>Revenue Workflow AI Sprint</h2>
     <div class="service-detail-grid">
       <section>
         <h3>Who it is for</h3>
-        <p>Founders, agencies, RevOps leaders, and operators who see repetitive work but are not sure what should be automated first.</p>
+        <p>RevOps leaders, sales operations teams, B2B founders, and client-operations teams who see repetitive revenue work but are not sure what to automate first.</p>
       </section>
       <section>
         <h3>Problem it solves</h3>
@@ -53,7 +53,7 @@ permalink: /services/
         </ul>
       </section>
     </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-workflow-audit' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-workflow-audit">Request workflow audit</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-revenue-workflow-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-revenue-workflow-sprint">Book a Revenue Workflow Sprint</a>
   </article>
 
   <article id="crm-hygiene-agent" class="service-detail-card">
@@ -114,8 +114,20 @@ permalink: /services/
     <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-pre-crm-research' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-pre-crm-research">Request workflow audit</a>
   </article>
 
-  <article id="content-workflow-system" class="service-detail-card">
+  <article id="quote-proposal-workflow" class="service-detail-card">
     <p class="service-number">04</p>
+    <h2>Quote/Proposal Workflow</h2>
+    <div class="service-detail-grid">
+      <section><h3>Who it is for</h3><p>B2B service firms and sales teams preparing client quotes or proposals from scattered commercial inputs.</p></section>
+      <section><h3>Problem it solves</h3><p>Quote preparation is slow, inconsistent, and dependent on manually reconciling requirements, products, pricing, and approval rules.</p></section>
+      <section><h3>What I build</h3><p>A human-approved workflow that turns structured and unstructured inputs into a reviewable quote or proposal draft.</p></section>
+      <section><h3>Example outputs</h3><ul><li>Structured quote or proposal draft</li><li>Missing-information checks</li><li>Validation rules and approval queue</li><li>Export-ready client document</li></ul></section>
+    </div>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-quote-proposal' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-quote-proposal">Discuss quote automation</a>
+  </article>
+
+  <article id="content-workflow-system" class="service-detail-card">
+    <p class="service-number">05</p>
     <h2>Content Workflow System</h2>
     <div class="service-detail-grid">
       <section>
@@ -144,7 +156,7 @@ permalink: /services/
   </article>
 
   <article id="custom-ai-automation-mvp" class="service-detail-card">
-    <p class="service-number">05</p>
+    <p class="service-number">06</p>
     <h2>Custom AI Automation MVP</h2>
     <div class="service-detail-grid">
       <section>
