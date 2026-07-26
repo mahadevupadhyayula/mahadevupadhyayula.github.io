@@ -55,18 +55,6 @@ image_alt: AI workflow systems for B2B revenue teams
       <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-crm-hygiene' | relative_url }}">Discuss CRM Hygiene</a></p>
     </article>
     <article>
-      <h3>Pre-CRM Research Agent</h3>
-      <dl>
-        <dt>Problem</dt>
-        <dd>Reps spend time researching leads before they can prioritize outreach.</dd>
-        <dt>What I build</dt>
-        <dd>A research workflow that collects company context, contact signals, and qualification notes.</dd>
-        <dt>Best for</dt>
-        <dd>B2B teams that need cleaner lead research before CRM entry.</dd>
-      </dl>
-      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-pre-crm-research' | relative_url }}">Discuss Lead Research</a></p>
-    </article>
-    <article>
       <h3>Quote/Proposal Workflow</h3>
       <dl>
         <dt>Problem</dt>
@@ -77,18 +65,6 @@ image_alt: AI workflow systems for B2B revenue teams
         <dd>B2B service firms and sales teams preparing client-facing commercial documents.</dd>
       </dl>
       <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-quote-proposal' | relative_url }}">Discuss Quote Automation</a></p>
-    </article>
-    <article>
-      <h3>Content Workflow System</h3>
-      <dl>
-        <dt>Problem</dt>
-        <dd>Useful source material gets stuck in transcripts, notes, and scattered docs.</dd>
-        <dt>What I build</dt>
-        <dd>A workflow that turns inputs into briefs, outlines, drafts, and review checklists.</dd>
-        <dt>Best for</dt>
-        <dd>Agencies and B2B teams producing expert-led long-form content.</dd>
-      </dl>
-      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-content-workflow' | relative_url }}">Discuss Content Workflow</a></p>
     </article>
   </div>
 </section>
