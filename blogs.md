@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Blogs
+title: AI Workflow Automation Insights for B2B Teams
+description: Practical insights on human-approved AI workflows, CRM hygiene, lead research, quote automation, and B2B operations.
 permalink: /blogs/
+image: /assets/images/social-preview.svg
+image_alt: AI workflow automation insights for B2B teams
 ---
 
 {% assign blog_pages = site.pages | sort: "date" | reverse %}
