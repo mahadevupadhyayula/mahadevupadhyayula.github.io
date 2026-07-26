@@ -3,9 +3,9 @@
   <section class="workflow-modal__panel" role="dialog" aria-modal="true" aria-labelledby="workflow-modal-title" aria-describedby="workflow-modal-description" tabindex="-1">
     <button class="workflow-modal__close" type="button" data-workflow-modal-close aria-label="Close workflow form">×</button>
     <div class="workflow-modal__copy">
-      <p class="section-eyebrow">Send me your workflow</p>
-      <h2 id="workflow-modal-title">Share one messy workflow for review.</h2>
-      <p id="workflow-modal-description">Send the inputs, current tools, desired clean output, and where human approval belongs. I’ll review whether an audit, prototype, or focused workflow build is the right fit.</p>
+      <p class="section-eyebrow">Get a Workflow Assessment</p>
+      <h2 id="workflow-modal-title">Share one revenue workflow for review.</h2>
+      <p id="workflow-modal-description">Send the inputs, current tools, desired clean output, and where human approval belongs. I’ll review whether a Revenue Workflow Sprint, focused workflow build, or prototype is the right fit.</p>
     </div>
     {% include workflow-form.html form_id='workflow-modal-intake' id_prefix='workflow-modal' %}
   </section>
@@ -14,9 +14,10 @@
 <script>
   (function () {
     var allowedWorkflowTypes = [
-      'AI Workflow Audit',
+      'Revenue Workflow AI Sprint',
       'CRM Hygiene Agent',
       'Pre-CRM Research Agent',
+      'Quote/Proposal Workflow',
       'Long-form Blog Content Generator',
       'Custom AI Automation MVP'
     ];
