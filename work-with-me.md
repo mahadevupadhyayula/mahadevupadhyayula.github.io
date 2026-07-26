@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Work With Me | AI Automation Consultant
-description: Work with Mahadev Upadhyayula to map, prototype, and build human-approved AI workflow systems for B2B teams.
+title: Book a Revenue Workflow Sprint | Mahadev Upadhyayula
+description: Book a Revenue Workflow Sprint to map, validate, and build human-approved AI workflows for CRM hygiene, lead research, and quote preparation.
 permalink: /work-with-me/
 ---
 
 <section class="services-intro work-with-me-hero" aria-labelledby="work-with-me-intro">
-  <p class="section-eyebrow">Freelance AI automation for B2B teams</p>
-  <h2 id="work-with-me-intro">Book an AI Workflow Audit for one messy B2B workflow.</h2>
-  <p>If your team is copying CRM notes, researching leads manually, turning raw inputs into content briefs, or cleaning up unstructured documents, this is the main place to start.</p>
+  <p class="section-eyebrow">Revenue workflow automation for B2B teams</p>
+  <h2 id="work-with-me-intro">Book a Revenue Workflow Sprint for one messy B2B workflow.</h2>
+  <p>If your team is cleaning CRM notes, researching leads manually, or preparing quotes from scattered inputs, this is the main place to start.</p>
   <p>I’ll review the workflow, identify what AI should extract, where validation belongs, and what needs human approval before clean output reaches your tools.</p>
   <div class="hero-actions" aria-label="Work with me actions">
-    <a class="button-link button-primary" href="#workflow-intake">Send me your workflow</a>
+    <a class="button-link button-primary" href="#workflow-intake">Get a Workflow Assessment</a>
     <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">View Case Studies</a>
   </div>
 </section>
@@ -35,6 +35,7 @@ permalink: /work-with-me/
     <ul>
       <li>CRM notes that need structured fields, next steps, and missing-information checks</li>
       <li>Lead research that should happen before a prospect enters the CRM</li>
+      <li>Quote or proposal preparation built from requirements, pricing, and approval inputs</li>
       <li>Content briefs built from transcripts, product notes, and subject-matter input</li>
       <li>Unstructured documents that need extraction, validation, and approval</li>
       <li>Internal updates that need cleaner routing across tools and teams</li>
@@ -47,7 +48,7 @@ permalink: /work-with-me/
   <h2 id="engagement-options-title">Start with the smallest useful scope, then build only what proves value.</h2>
   <div class="service-card-grid homepage-service-grid">
     <article>
-      <h3>AI Workflow Audit</h3>
+      <h3>Revenue Workflow Assessment</h3>
       <p>Map one workflow, identify inputs and approval points, and leave with a practical automation plan.</p>
     </article>
     <article>
@@ -59,10 +60,20 @@ permalink: /work-with-me/
       <p>Turn public account research into reviewed company summaries before records enter the CRM.</p>
     </article>
     <article>
+      <h3>Quote/Proposal Workflow</h3>
+      <p>Turn commercial inputs into a structured, reviewable quote or proposal draft before client delivery.</p>
+    </article>
+    <article>
       <h3>Custom AI Automation MVP</h3>
       <p>Build a lightweight prototype that extracts, validates, and prepares clean output for human approval.</p>
     </article>
   </div>
+</section>
+
+<section class="stage-one-services" aria-labelledby="engagement-path-title">
+  <p class="section-eyebrow">Engagement path</p>
+  <h2 id="engagement-path-title">Assessment first, then a fixed-scope build, then optional optimization.</h2>
+  <p>Start by defining the workflow, its risks, and its approval points. Build only what proves value, then improve integrations, monitoring, and adoption if the first workflow succeeds.</p>
 </section>
 
 <section class="workflow-cta" aria-labelledby="project-flow-title">
@@ -89,8 +100,8 @@ permalink: /work-with-me/
 <section class="service-detail-card intake-block" aria-labelledby="intake-title">
   <div class="intake-copy">
     <p class="section-eyebrow">Main conversion page</p>
-    <h2 id="intake-title">Send me your workflow</h2>
-    <p>Share the workflow you want cleaned up. I’ll use it to decide whether an audit, CRM hygiene build, lead research workflow, content system, or custom automation MVP is the right first step.</p>
+    <h2 id="intake-title">Get a Workflow Assessment</h2>
+    <p>Share the revenue workflow you want improved. I’ll use it to decide whether a Revenue Workflow Sprint, CRM hygiene build, lead research workflow, quote/proposal workflow, or custom automation MVP is the right first step.</p>
     <ul class="contact-list">
       <li><strong>Good inputs:</strong> CRM notes, lead research steps, content brief examples, document workflows, or screenshots of the current process.</li>
       <li><strong>What I’ll look for:</strong> extraction points, validation checks, human approval moments, and the clean output your team needs.</li>
