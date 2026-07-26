@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       VITE_WORKFLOW_INQUIRY_ENDPOINT: ${{ vars.VITE_WORKFLOW_INQUIRY_ENDPOINT }}
+      VITE_ASK_MAHADEV_ENDPOINT: ${{ vars.VITE_ASK_MAHADEV_ENDPOINT }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,23 +27,29 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Write public frontend config override
+      - name: Write public frontend config
         run: |
           python3 - <<'PY'
           import json
           import os
           from pathlib import Path
 
-          endpoint = os.environ.get('VITE_WORKFLOW_INQUIRY_ENDPOINT', '').strip()
-          if endpoint:
-              Path('_data').mkdir(exist_ok=True)
-              Path('_data/env.json').write_text(
-                  json.dumps({'workflow_inquiry_endpoint': endpoint}, indent=2) + '\n',
-                  encoding='utf-8'
-              )
-          else:
-              Path('_data/env.json').unlink(missing_ok=True)
-              print('Using committed _data/env.yml workflow endpoint.')
+          config = {
+              'workflow_inquiry_endpoint': 'https://dgrwgiagpcqkxdokhglb.supabase.co/functions/v1/submit-workflow-inquiry',
+              'ask_mahadev_endpoint': 'https://dgrwgiagpcqkxdokhglb.supabase.co/functions/v1/ask-mahadev',
+          }
+
+          overrides = {
+              'workflow_inquiry_endpoint': os.environ.get('VITE_WORKFLOW_INQUIRY_ENDPOINT', '').strip(),
+              'ask_mahadev_endpoint': os.environ.get('VITE_ASK_MAHADEV_ENDPOINT', '').strip(),
+          }
+
+          config.update({key: value for key, value in overrides.items() if value})
+          Path('_data').mkdir(exist_ok=True)
+          Path('_data/env.json').write_text(
+              json.dumps(config, indent=2) + '\n',
+              encoding='utf-8'
+          )
           PY
 
       - name: Build with Jekyll

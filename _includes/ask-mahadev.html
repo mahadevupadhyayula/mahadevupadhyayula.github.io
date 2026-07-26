@@ -1,0 +1,41 @@
+{%- assign ask_mahadev_endpoint = site.data.env.ask_mahadev_endpoint | default: '' -%}
+<div class="ask-mahadev" data-ask-mahadev data-endpoint="{{ ask_mahadev_endpoint | escape }}">
+  <button class="ask-mahadev__trigger" type="button" data-ask-mahadev-open aria-expanded="false" aria-controls="ask-mahadev-panel">
+    <span class="ask-mahadev__trigger-mark" aria-hidden="true">M</span>
+    <span>Ask Mahadev</span>
+  </button>
+
+  <section id="ask-mahadev-panel" class="ask-mahadev__panel" data-ask-mahadev-panel role="dialog" aria-modal="false" aria-labelledby="ask-mahadev-title" hidden>
+    <header class="ask-mahadev__header">
+      <div>
+        <p class="ask-mahadev__eyebrow">Website assistant</p>
+        <h2 id="ask-mahadev-title">Ask Mahadev</h2>
+      </div>
+      <button class="ask-mahadev__close" type="button" data-ask-mahadev-close aria-label="Close Ask Mahadev">×</button>
+    </header>
+
+    <div class="ask-mahadev__messages" data-ask-mahadev-messages role="log" aria-live="polite" aria-relevant="additions">
+      <article class="ask-mahadev__message ask-mahadev__message--assistant">
+        <span class="ask-mahadev__avatar" aria-hidden="true">M</span>
+        <div class="ask-mahadev__bubble">
+          <p>Ask about my AI workflow services, case studies, product experience, or writing. I will answer using information published on this website.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="ask-mahadev__suggestions" data-ask-mahadev-suggestions aria-label="Suggested questions">
+      <button type="button" data-ask-mahadev-suggestion>Which project best matches a RevOps problem?</button>
+      <button type="button" data-ask-mahadev-suggestion>What AI workflows has Mahadev built?</button>
+      <button type="button" data-ask-mahadev-suggestion>How can Mahadev help with messy CRM notes?</button>
+    </div>
+
+    <form class="ask-mahadev__form" data-ask-mahadev-form>
+      <label class="visually-hidden" for="ask-mahadev-question">Your question</label>
+      <textarea id="ask-mahadev-question" data-ask-mahadev-input rows="2" maxlength="1200" placeholder="Ask a question about Mahadev's work..." required></textarea>
+      <button type="submit" data-ask-mahadev-submit aria-label="Send question">Send</button>
+    </form>
+
+    <p class="ask-mahadev__note">Answers are grounded in this website. For project-specific advice, <a href="{{ '/work-with-me/' | relative_url }}" data-workflow-modal-open data-workflow-intent="workflow-audit">send Mahadev your workflow</a>.</p>
+  </section>
+</div>
+<script src="{{ '/assets/js/ask-mahadev.js' | relative_url }}" defer></script>
