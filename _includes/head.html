@@ -12,7 +12,68 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  {% assign seo_description = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+  {% assign seo_image = page.image | default: site.default_social_image | absolute_url %}
+  <meta name="description" content="{{ seo_description }}">
+  <meta property="og:image" content="{{ seo_image }}">
+  <meta property="og:image:alt" content="{{ page.image_alt | default: page.title | default: site.title | escape }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ seo_image }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {%- seo title=false -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mahadev Upadhyayula",
+    "url": "{{ site.url }}",
+    "jobTitle": "AI Workflow Automation Consultant",
+    "sameAs": [
+      "https://www.linkedin.com/in/mahu2/",
+      "https://github.com/mahadevupadhyayula"
+    ]
+  }
+  </script>
+  {% if page.schema_type == 'Service' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "{{ page.service_name | default: page.title | escape }}",
+    "description": "{{ seo_description | escape }}",
+    "provider": {
+      "@type": "Person",
+      "name": "Mahadev Upadhyayula",
+      "url": "{{ site.url }}"
+    },
+    "areaServed": "Worldwide"
+  }
+  </script>
+  {% endif %}
+  {% if page.path contains 'blog/' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title | escape }}",
+    "description": "{{ seo_description | escape }}",
+    "image": "{{ seo_image }}",
+    "author": {"@type": "Person", "name": "Mahadev Upadhyayula"},
+    "publisher": {"@type": "Person", "name": "Mahadev Upadhyayula"},
+    "mainEntityOfPage": "{{ page.url | absolute_url }}"
+  }
+  </script>
+  {% endif %}
+  {% if page.path contains 'Case Studies/' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "{{ page.title | escape }}",
+    "description": "{{ seo_description | escape }}",
+    "author": {"@type": "Person", "name": "Mahadev Upadhyayula"},
+    "url": "{{ page.url | absolute_url }}"
+  }
+  </script>
+  {% endif %}
 </head>

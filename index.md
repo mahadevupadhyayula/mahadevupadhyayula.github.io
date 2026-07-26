@@ -2,6 +2,8 @@
 layout: default
 title: AI Workflow Systems for B2B Revenue Teams | Mahadev Upadhyayula
 description: I help B2B revenue teams turn CRM hygiene, lead research, and quote-prep work into structured, validated, human-approved AI workflows.
+image: /assets/images/social-preview.svg
+image_alt: AI workflow systems for B2B revenue teams
 ---
 
 <section class="hero-section" aria-labelledby="hero-title">
@@ -140,7 +142,7 @@ description: I help B2B revenue teams turn CRM hygiene, lead research, and quote
     <span>Human Approval</span>
     <span>Clean Output</span>
   </div>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-workflow-audit' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-revenue-workflow-sprint">Get a Workflow Assessment</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-revenue-workflow-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-revenue-workflow-sprint">Get a Workflow Assessment</a>
 </section>
 
 ---

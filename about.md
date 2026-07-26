@@ -1,6 +1,9 @@
 ---
 layout: default
-title: About Mahadev
+title: About Mahadev | AI Workflow Automation Consultant
+description: Learn how Mahadev Upadhyayula helps B2B revenue and operations teams design human-approved AI workflows for CRM, research, and quote preparation.
+image: /assets/images/social-preview.svg
+image_alt: Mahadev Upadhyayula AI workflow automation consultant
 ---
 
 <section class="hero-section about-hero" aria-labelledby="about-hero-title">

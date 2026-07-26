@@ -3,6 +3,10 @@ layout: page
 title: Book a Revenue Workflow Sprint | Mahadev Upadhyayula
 description: Book a Revenue Workflow Sprint to map, validate, and build human-approved AI workflows for CRM hygiene, lead research, and quote preparation.
 permalink: /work-with-me/
+schema_type: Service
+service_name: Revenue Workflow AI Sprint
+image: /assets/images/social-preview.svg
+image_alt: Book a Revenue Workflow Sprint
 ---
 
 <section class="services-intro work-with-me-hero" aria-labelledby="work-with-me-intro">

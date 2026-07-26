@@ -1,5 +1,9 @@
 ---
 layout: default
+title: B2B Revenue Workflow AI Case Studies
+description: Explore AI workflow case studies for CRM hygiene, pre-CRM research, quote automation, and human-approved B2B operations.
+image: /assets/images/social-preview.svg
+image_alt: B2B revenue workflow AI case studies
 ---
 
 # Case Studies
