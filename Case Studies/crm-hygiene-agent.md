@@ -1,7 +1,10 @@
 ---
 layout: page
-title: CRM Hygiene Agent
+title: CRM Hygiene AI Workflow for B2B Revenue Teams
+description: Portfolio prototype for a human-approved CRM hygiene workflow that converts messy sales context into source-backed, reviewable pipeline updates.
 permalink: /case-studies/crm-hygiene-agent/
+image: /assets/images/social-preview.svg
+image_alt: CRM hygiene AI workflow for B2B revenue teams
 ---
 
 **Portfolio prototype: Turning messy sales context into CRM-ready pipeline updates**
