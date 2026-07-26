@@ -1,6 +1,14 @@
 title: Mahadev Upadhyayula
-description: Human-approved AI workflow systems for B2B teams
+description: Human-approved AI workflow systems for B2B revenue and client-operations teams
 url: "https://mahadevupadhyayula.com"
 timezone: Asia/Kolkata
 theme: minima
 markdown: kramdown
+default_social_image: /assets/images/social-preview.svg
+twitter:
+  username: mahadevu318
+social:
+  name: Mahadev Upadhyayula
+  links:
+    - https://www.linkedin.com/in/mahu2/
+    - https://github.com/mahadevupadhyayula
