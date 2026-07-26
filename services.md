@@ -4,6 +4,10 @@ title: Revenue Workflow AI Services | CRM Hygiene, Lead Research & Quote Automat
 description: Practical AI workflow services for B2B revenue teams: CRM hygiene, pre-CRM research, quote automation, validation, and human approval.
 subtitle: Practical AI workflow systems for B2B revenue and client-operations teams that need cleaner inputs, structured outputs, validation, and human approval.
 permalink: /services/
+schema_type: Service
+service_name: Revenue Workflow AI Sprint
+image: /assets/images/social-preview.svg
+image_alt: Revenue workflow AI services for B2B teams
 ---
 
 <section class="services-intro" aria-labelledby="services-intro-title">
