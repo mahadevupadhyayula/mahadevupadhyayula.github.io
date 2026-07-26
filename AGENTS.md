@@ -5,7 +5,7 @@
 This is Mahadev Upadhyayula’s personal website. The current goal is to reposition it from a general Product Manager portfolio into a freelance AI automation conversion site.
 
 Primary positioning:
-Mahadev builds human-approved AI workflow systems for B2B teams, including CRM hygiene, lead research, content automation, and custom AI workflow prototypes.
+Mahadev helps B2B revenue and client-operations teams turn CRM hygiene, pre-CRM research, quote preparation, and related manual workflows into structured, validated, human-approved AI systems.
 
 ## Copy principles
 
@@ -29,13 +29,13 @@ Mahadev builds human-approved AI workflow systems for B2B teams, including CRM h
 ## Core CTA
 
 Primary CTA:
-Book an AI Workflow Audit
+Book a Revenue Workflow Sprint
 
 Secondary CTA:
 View Case Studies
 
 Lead CTA:
-Send me your workflow
+Get a Workflow Assessment
 
 ## Core workflow diagram
 
@@ -45,11 +45,12 @@ Messy Inputs → AI Extraction → Validation → Human Approval → Clean Outpu
 ## Commercial priorities
 
 Prioritize these services and case studies:
-1. CRM Hygiene Agent
-2. Pre-CRM Research Agent
-3. Long-form Blog Content Generator
-4. AI Workflow Audit
+1. Revenue Workflow AI Sprint
+2. CRM Hygiene Agent
+3. Pre-CRM Research Agent
+4. Quote/Proposal Workflow
 5. Custom AI Automation MVP
+6. Content Workflow System
 
 ## Engineering rules
 
