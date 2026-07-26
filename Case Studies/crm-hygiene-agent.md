@@ -8,6 +8,13 @@ permalink: /case-studies/crm-hygiene-agent/
 
 Service relevance: CRM hygiene automation, sales operations workflows, human-approved AI extraction.
 
+## Executive summary
+
+- **Buyer:** B2B sales, RevOps, and customer-success leaders responsible for reliable pipeline data.
+- **Business problem:** Important deal context stays in free text, leaving CRM records incomplete and forecast decisions less reliable.
+- **Proposed outcome:** Source-backed, reviewable CRM update packages with clear next steps, risk flags, and missing-information checks.
+- **Initial implementation scope:** Connect one approved source of sales context, define required CRM fields and validation rules, then route proposed updates through a human review queue.
+
 ---
 
 ## Problem
