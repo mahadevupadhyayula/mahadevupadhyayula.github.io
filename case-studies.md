@@ -4,7 +4,7 @@ layout: default
 
 # Case Studies
 
-Commercial AI workflow projects and product case studies focused on turning messy work into validated, human-approved outputs.
+Revenue and client-operations AI workflow projects focused on turning messy CRM, research, and commercial work into validated, human-approved outputs.
 
 ## Featured AI Workflow Case Studies
 
@@ -92,6 +92,6 @@ Commercial AI workflow projects and product case studies focused on turning mess
 <section class="service-detail-card contact-block" aria-labelledby="case-study-cta-title">
   <p class="section-eyebrow">Want to map this to your team?</p>
   <h2 id="case-study-cta-title">Start with one workflow that is messy today.</h2>
-  <p>Book an AI Workflow Audit or send me the CRM notes, lead research process, content brief, or internal document workflow you want to clean up.</p>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=case-study-workflow-audit' | relative_url }}">Book an AI Workflow Audit</a>
+  <p>Book a Revenue Workflow Sprint or share the CRM notes, lead research process, quote-prep flow, or internal workflow you want to improve.</p>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=case-study-revenue-workflow-sprint' | relative_url }}">Book a Revenue Workflow Sprint</a>
 </section>
