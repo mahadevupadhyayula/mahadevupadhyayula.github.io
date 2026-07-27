@@ -101,5 +101,5 @@ These projects demonstrate specific workflow patterns and product decisions. The
   <p class="section-eyebrow">Apply the pattern to your team</p>
   <h2 id="case-study-cta-title">Discuss one B2B SaaS workflow worth prototyping.</h2>
   <p>Share the inputs your team reviews, the decision or action that follows, and where human approval needs to stay in the loop.</p>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=case-study-ai-workflow-prototype' | relative_url }}">Discuss an AI Workflow Prototype</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=case-study-ai-workflow-prototype-sprint' | relative_url }}">Discuss an AI Workflow Prototype</a>
 </section>

@@ -2,16 +2,16 @@
 
 ## Project goal
 
-This is Mahadev Upadhyayula’s personal website. The current goal is to reposition it from a general Product Manager portfolio into a freelance AI automation conversion site.
+This is Mahadev Upadhyayula’s personal website. The current goal is to position it as a practical B2B SaaS AI workflow-product site.
 
 Primary positioning:
-Mahadev helps B2B revenue and client-operations teams turn CRM hygiene, pre-CRM research, quote preparation, and related manual workflows into structured, validated, human-approved AI systems.
+Mahadev builds human-approved AI workflow products for B2B SaaS product, engineering, and implementation teams. The work turns scattered inputs and signals into structured, validated, reviewable outputs.
 
 ## Copy principles
 
 - Write for buyers, not recruiters first.
 - Be specific and concrete.
-- Prefer “CRM notes,” “lead research,” “content briefs,” “validated workflows,” and “human approval” over generic AI language.
+- Prefer “quality signals,” “implementation inputs,” “product evidence,” “reviewable workflows,” and “human approval” over generic AI language.
 - Avoid hype words like “AI magic,” “revolutionary,” “cutting-edge,” or “agentic transformation.”
 - Keep paragraphs short and scannable.
 
@@ -29,28 +29,27 @@ Mahadev helps B2B revenue and client-operations teams turn CRM hygiene, pre-CRM 
 ## Core CTA
 
 Primary CTA:
-Book a Revenue Workflow Sprint
+Discuss a Workflow Prototype
 
 Secondary CTA:
-View Case Studies
+Explore Workflow Examples
 
 Lead CTA:
-Get a Workflow Assessment
+Send Workflow Inquiry
 
 ## Core workflow diagram
 
 Use this pattern where relevant:
-Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output
+Scattered Inputs → AI Processing → Validation → Human Approval → Reviewable Output
 
 ## Commercial priorities
 
 Prioritize these services and case studies:
-1. Revenue Workflow AI Sprint
-2. CRM Hygiene Agent
-3. Pre-CRM Research Agent
-4. Quote/Proposal Workflow
-5. Custom AI Automation MVP
-6. Content Workflow System
+1. AI Workflow Prototype Sprint
+2. Quality Intelligence Workbench
+3. Implementation Intelligence Workspace
+4. Product Evidence Workbench
+5. Existing CRM hygiene, pre-CRM research, quote/proposal, content, and custom workflow capabilities as secondary offers
 
 ## Engineering rules
 
