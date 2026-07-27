@@ -218,5 +218,5 @@ For a deeper dive into this project please check below:
   <p class="section-eyebrow">Apply the workflow pattern</p>
   <h2 id="insight-journal-cta">Discuss a structured AI workflow prototype.</h2>
   <p>Start with the unstructured inputs, the state that needs to persist, the decision or feedback the product should support, and the human-review model.</p>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=insight-journal-structured-workflow' | relative_url }}">Discuss an AI Workflow Prototype</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=insight-journal-other-internal-workflow' | relative_url }}">Discuss an AI Workflow Prototype</a>
 </section>
