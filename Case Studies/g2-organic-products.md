@@ -257,5 +257,5 @@ The strongest transferable evidence is operational workflow-product design: mapp
   <p class="section-eyebrow">Apply the workflow pattern</p>
   <h2 id="g2-case-study-cta">Discuss an implementation or operational workflow prototype.</h2>
   <p>Start with the roles, inputs, handoffs, and decisions that currently depend on fragmented tools.</p>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=g2-implementation-operations-workflow' | relative_url }}">Discuss an AI Workflow Prototype</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=g2-implementation-onboarding-workflow' | relative_url }}">Discuss an AI Workflow Prototype</a>
 </section>
