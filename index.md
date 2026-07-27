@@ -1,19 +1,19 @@
 ---
 layout: default
-title: AI Workflow Systems for B2B Revenue Teams | Mahadev Upadhyayula
-description: I help B2B revenue teams turn CRM hygiene, lead research, and quote-prep work into structured, validated, human-approved AI workflows.
+title: Human-Approved AI Workflow Products for B2B SaaS | Mahadev Upadhyayula
+description: I build focused AI workflow products that turn scattered inputs and signals into structured, reviewable work for B2B SaaS product, engineering, and implementation teams.
 image: /assets/images/social-preview.svg
-image_alt: AI workflow systems for B2B revenue teams
+image_alt: Human-approved AI workflow products for B2B SaaS teams
 ---
 
 <section class="hero-section" aria-labelledby="hero-title">
-  <h1 id="hero-title">AI Workflow Systems for B2B Revenue Teams</h1>
-  <p class="hero-subheadline">I help B2B revenue and client-operations teams turn messy CRM, lead-research, and quote-prep work into practical AI workflows.</p>
-  <p class="hero-copy">Your team gets structured outputs, validation rules, and human approval before information reaches the CRM, a client quote, or the next operating step.</p>
-  <p class="hero-service-line">Focus: CRM Hygiene • Pre-CRM Research • Quote/Proposal Workflows</p>
+  <h1 id="hero-title">Human-Approved AI Workflow Products for B2B SaaS Teams</h1>
+  <p class="hero-subheadline">I build focused workflow products for product, engineering, and implementation teams—turning scattered inputs and signals into structured, reviewable work.</p>
+  <p class="hero-copy">Each workflow combines AI-assisted extraction and synthesis with validation, clear approval points, and outputs your team can inspect before they move downstream.</p>
+  <p class="hero-service-line">Focus: Quality Intelligence • Implementation Intelligence • Product Evidence</p>
   <div class="hero-actions" aria-label="Primary actions">
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-revenue-workflow-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-revenue-workflow-sprint">Book a Revenue Workflow Sprint</a>
-    <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">View Case Studies</a>
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-ai-workflow-prototype-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-ai-workflow-prototype-sprint">Discuss a Workflow Prototype</a>
+    <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">Explore Workflow Examples</a>
   </div>
 </section>
 
@@ -24,47 +24,47 @@ image_alt: AI workflow systems for B2B revenue teams
 <section id="services" class="stage-one-services" aria-labelledby="services-title">
   <div class="section-heading-row">
     <div>
-      <p class="section-eyebrow">AI Workflow Services</p>
-      <h2 id="services-title">Hire me to turn messy team workflows into reviewed AI systems.</h2>
+      <p class="section-eyebrow">B2B SaaS workflow use cases</p>
+      <h2 id="services-title">Turn fragmented operating signals into work your team can review and use.</h2>
     </div>
     <a class="inline-section-link" href="{{ '/services' | relative_url }}">View all services</a>
   </div>
   <div class="service-card-grid homepage-service-grid">
     <article>
-      <h3>Revenue Workflow AI Sprint</h3>
+      <h3>Quality Intelligence</h3>
       <dl>
         <dt>Problem</dt>
-        <dd>You know a workflow is slow, but the automation path is unclear.</dd>
-        <dt>What I build</dt>
-        <dd>A workflow map, automation opportunity assessment, validation plan, human-approval design, and MVP scope.</dd>
+        <dd>Defects, support signals, test results, and release context live across tools, making quality risks hard to see early.</dd>
+        <dt>Workflow product</dt>
+        <dd>Bring the signals together into structured findings, evidence, and proposed actions for a human to review.</dd>
         <dt>Best for</dt>
-        <dd>Revenue and operations leaders choosing the first workflow to improve.</dd>
+        <dd>Product and engineering teams improving triage, release readiness, and quality decisions.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-revenue-workflow-sprint' | relative_url }}">Book a Workflow Sprint</a></p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-quality-intelligence' | relative_url }}">Discuss Quality Intelligence</a></p>
     </article>
     <article>
-      <h3>CRM Hygiene Agent</h3>
+      <h3>Implementation Intelligence</h3>
       <dl>
         <dt>Problem</dt>
-        <dd>Call notes and account updates do not reliably make it into clean CRM fields.</dd>
-        <dt>What I build</dt>
-        <dd>A human-approved workflow that extracts notes into CRM updates and follow-up tasks.</dd>
+        <dd>Customer requirements, configuration decisions, open questions, and handoffs are scattered across calls and documents.</dd>
+        <dt>Workflow product</dt>
+        <dd>Convert implementation inputs into reviewed requirements, decisions, risks, and next steps with source context.</dd>
         <dt>Best for</dt>
-        <dd>Sales, RevOps, and customer teams with inconsistent CRM hygiene.</dd>
+        <dd>Implementation and customer teams coordinating complex onboarding and delivery work.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-crm-hygiene' | relative_url }}">Discuss CRM Hygiene</a></p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-implementation-intelligence' | relative_url }}">Discuss Implementation Intelligence</a></p>
     </article>
     <article>
-      <h3>Quote/Proposal Workflow</h3>
+      <h3>Product Evidence</h3>
       <dl>
         <dt>Problem</dt>
-        <dd>Quotes and proposals depend on scattered inputs, manual checks, and inconsistent review.</dd>
-        <dt>What I build</dt>
-        <dd>A human-approved workflow that prepares a structured, reviewable quote or proposal draft.</dd>
+        <dd>Customer feedback, usage signals, research, and delivery context are difficult to connect to product decisions.</dd>
+        <dt>Workflow product</dt>
+        <dd>Organize signals into traceable evidence, themes, and decision-ready briefs that product teams can challenge and approve.</dd>
         <dt>Best for</dt>
-        <dd>B2B service firms and sales teams preparing client-facing commercial documents.</dd>
+        <dd>Product teams prioritizing opportunities and documenting why a decision should move forward.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-quote-proposal' | relative_url }}">Discuss Quote Automation</a></p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-product-evidence' | relative_url }}">Discuss Product Evidence</a></p>
     </article>
   </div>
 </section>
@@ -73,24 +73,24 @@ image_alt: AI workflow systems for B2B revenue teams
   <div class="section-heading-row">
     <div>
       <p class="section-eyebrow">How engagements work</p>
-      <h2 id="engagement-path-title">Start small, prove value, then expand.</h2>
+      <h2 id="engagement-path-title">Start with one workflow worth proving.</h2>
     </div>
   </div>
   <div class="service-card-grid">
-    <article><h3>1. Revenue Workflow Assessment</h3><p>Map the workflow, inputs, risks, approvals, and implementation scope.</p></article>
-    <article><h3>2. Fixed-Scope Workflow Build</h3><p>Build and validate one focused workflow around a measurable operating problem.</p></article>
-    <article><h3>3. Optional Optimization</h3><p>Improve quality, integrations, monitoring, and adoption after the workflow proves useful.</p></article>
+    <article><h3>1. AI Workflow Prototype Sprint</h3><p>Choose one workflow, map its inputs and decisions, and build a reviewable prototype around the smallest useful outcome.</p></article>
+    <article><h3>2. Fixed-Scope Workflow Build</h3><p>Turn the validated prototype into a focused product with the right rules, integrations, and approval steps.</p></article>
+    <article><h3>3. Optional Optimization</h3><p>Improve output quality, monitoring, and adoption once the workflow proves useful in practice.</p></article>
   </div>
 </section>
 
 <section class="stage-one-services" aria-labelledby="why-different-title">
   <div class="section-heading-row">
     <div>
-      <p class="section-eyebrow">Workflow-first proof</p>
-      <h2 id="why-different-title">Why this is different</h2>
+      <p class="section-eyebrow">Focused by design</p>
+      <h2 id="why-different-title">A workflow product, not another chat window.</h2>
     </div>
   </div>
-  <p>I do not start with “what AI tool should we use?” I start with the workflow: inputs, decisions, risks, approval points, and clean outputs.</p>
+  <p>I do not start with a generic chatbot or a broad transformation program. I start with one bounded workflow: the inputs, decisions, risks, approval points, and clean outputs that make it useful.</p>
   <div class="service-card-grid">
     <article>
       <h3>Product background</h3>
@@ -98,19 +98,19 @@ image_alt: AI workflow systems for B2B revenue teams
     </article>
     <article>
       <h3>Operator background</h3>
-      <p>Founder building real business workflows</p>
+      <p>Founder building focused, reviewable workflow products</p>
     </article>
     <article>
       <h3>Build proof</h3>
-      <p>CRM, lead research, content, and insight-system prototypes</p>
+      <p>Working prototypes across quality, implementation, research, and evidence workflows</p>
     </article>
   </div>
 </section>
 
 <section id="work-with-me" class="workflow-cta" aria-labelledby="workflow-title">
   <p class="section-eyebrow">Primary CTA flow</p>
-  <h2 id="workflow-title">Bring one revenue workflow. Leave with a clearer automation path.</h2>
-  <p>Start with a Revenue Workflow Sprint: identify the inputs, extraction logic, validation rules, human approvals, and the smallest useful implementation scope.</p>
+  <h2 id="workflow-title">Bring one scattered workflow. Leave with a reviewable prototype.</h2>
+  <p>Start with an AI Workflow Prototype Sprint: identify the signals, structure the work, define validation and human approval, and test the smallest useful product shape.</p>
   <div class="workflow-path" aria-label="Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output">
     <span>Messy Inputs</span>
     <span>AI Extraction</span>
@@ -118,7 +118,7 @@ image_alt: AI workflow systems for B2B revenue teams
     <span>Human Approval</span>
     <span>Clean Output</span>
   </div>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-revenue-workflow-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-revenue-workflow-sprint">Get a Workflow Assessment</a>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-ai-workflow-prototype-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-ai-workflow-prototype-sprint">Discuss a Workflow Prototype</a>
 </section>
 
 ---
@@ -199,11 +199,11 @@ image_alt: AI workflow systems for B2B revenue teams
 
 ## How I Work
 
-I turn messy B2B workflows into reviewed AI systems with one clear path:
+I turn scattered B2B SaaS inputs into reviewed workflow products with one clear path:
 
 **Map the workflow → identify inputs → design extraction → add validation → keep human approval → produce clean output**
 
-That means your CRM notes, lead research, content briefs, and internal updates become structured outputs your team can trust before they reach customers, dashboards, or downstream tools.
+That means product signals, quality findings, implementation notes, and decision context become structured outputs your team can inspect before they reach customers, roadmaps, or downstream tools.
 
 ---
 
