@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AI Workflow Prototype Sprint for B2B SaaS Teams
-description: A focused four-to-six-week sprint to prototype a human-approved AI workflow for B2B SaaS product, engineering, and implementation teams.
+description: "A focused four-to-six-week sprint to prototype a human-approved AI workflow for B2B SaaS product, engineering, and implementation teams."
 subtitle: Turn one scattered, judgment-heavy workflow into a structured, reviewable prototype your team can evaluate before committing to a larger build.
 permalink: /services/
 schema_type: Service
