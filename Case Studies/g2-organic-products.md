@@ -1,14 +1,27 @@
 ---
 layout: page
-title: G2 Organic Products
+title: G2 Organic Products | Operational Workflow Product
+description: Founder-led 0→1 operational workflow-product design for inventory, distribution, coordination, role-based visibility, and operational intelligence.
 permalink: /case-studies/g2-organic-products/
 ---
 
-**Building a 0→1 Multi-Agent Product & Resource Management Platform for Agribusinesses**
+**Building a 0→1 operational workflow product for fragmented agribusiness coordination**
+
+Evidence type: Founder-led product work.
 
 ---
 
 ![G2 Organic Products preview](/assets/images/g2-Org-1.png)
+
+---
+
+## Workflow-product relevance
+
+- **Workflow problem:** Inventory, distribution, and field reporting were coordinated through WhatsApp, spreadsheets, phone calls, and manual logs.
+- **Inputs and systems:** Product lifecycle updates, resource allocation, dispatch information, field reporting, and operational dashboards.
+- **Product approach:** A centralized product and resource management platform with role-based visibility and modular workflow components.
+- **Trust model:** The early product deliberately avoided over-automation and prioritized clear operational visibility for the people coordinating the work.
+- **Outcome:** The original documented productivity and coordination outcomes are preserved below.
 
 ---
 
@@ -233,3 +246,16 @@ This project demonstrates:
 It reflects how I think about product problems:
 
 Define the constraint → Design for clarity → Measure real behavioral change.
+
+---
+
+## B2B SaaS relevance
+
+The strongest transferable evidence is operational workflow-product design: mapping fragmented work, deciding what each role needs to see, centralizing state, surfacing bottlenecks, and using operational intelligence to support coordination. This is founder-led product evidence, not a claim about a B2B SaaS client deployment.
+
+<section class="workflow-cta" aria-labelledby="g2-case-study-cta">
+  <p class="section-eyebrow">Apply the workflow pattern</p>
+  <h2 id="g2-case-study-cta">Discuss an implementation or operational workflow prototype.</h2>
+  <p>Start with the roles, inputs, handoffs, and decisions that currently depend on fragmented tools.</p>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=g2-implementation-operations-workflow' | relative_url }}">Discuss an AI Workflow Prototype</a>
+</section>
