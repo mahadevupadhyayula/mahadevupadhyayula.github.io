@@ -1,190 +1,157 @@
 ---
 layout: page
-title: Revenue Workflow AI Services | CRM Hygiene, Lead Research & Quote Automation
-description: Practical AI workflow services for B2B revenue teams: CRM hygiene, pre-CRM research, quote automation, validation, and human approval.
-subtitle: Practical AI workflow systems for B2B revenue and client-operations teams that need cleaner inputs, structured outputs, validation, and human approval.
+title: AI Workflow Prototype Sprint for B2B SaaS Teams
+description: A focused four-to-six-week sprint to prototype a human-approved AI workflow for B2B SaaS product, engineering, and implementation teams.
+subtitle: Turn one scattered, judgment-heavy workflow into a structured, reviewable prototype your team can evaluate before committing to a larger build.
 permalink: /services/
 schema_type: Service
-service_name: Revenue Workflow AI Sprint
+service_name: AI Workflow Prototype Sprint
 image: /assets/images/social-preview.svg
-image_alt: Revenue workflow AI services for B2B teams
+image_alt: AI Workflow Prototype Sprint for B2B SaaS teams
 ---
 
 <section class="services-intro" aria-labelledby="services-intro-title">
-  <p class="section-eyebrow">What you can hire me for</p>
-  <h2 id="services-intro-title">I build focused revenue workflows that turn messy inputs into reviewed business outputs.</h2>
-  <p>Most B2B teams do not need a broad AI initiative. They need one painful CRM, research, or quote workflow mapped, validated, and handed back as a usable system.</p>
-  <div class="workflow-path" aria-label="Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output">
-    <span>Messy Inputs</span>
-    <span>AI Extraction</span>
+  <p class="section-eyebrow">Primary engagement</p>
+  <h2 id="services-intro-title">AI Workflow Prototype Sprint</h2>
+  <p>A practical four-to-six-week engagement for B2B SaaS teams that need to test one internal AI workflow without starting a broad transformation project.</p>
+  <p>We turn scattered inputs and signals into a focused workflow prototype with structured outputs, validation rules, and explicit human approval.</p>
+  <div class="workflow-path" aria-label="Scattered Inputs → AI Processing → Validation → Human Approval → Reviewable Output">
+    <span>Scattered Inputs</span>
+    <span>AI Processing</span>
     <span>Validation</span>
     <span>Human Approval</span>
-    <span>Clean Output</span>
+    <span>Reviewable Output</span>
+  </div>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-ai-workflow-prototype-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-ai-workflow-prototype-sprint">Discuss a Workflow Prototype</a>
+</section>
+
+<article id="ai-workflow-prototype-sprint" class="service-detail-card">
+  <p class="service-number">01</p>
+  <h2>One bounded workflow, made concrete enough to evaluate.</h2>
+  <div class="service-detail-grid">
+    <section>
+      <h3>Who it is for</h3>
+      <p>Product, engineering, implementation, customer, and operations teams inside B2B SaaS companies that own a recurring workflow with scattered context and important human judgment.</p>
+    </section>
+    <section>
+      <h3>The workflow problem</h3>
+      <p>Inputs live across tickets, calls, documents, product signals, and internal tools. People manually reconcile that context before they can make a decision, prepare a handoff, or take action.</p>
+    </section>
+    <section>
+      <h3>What is built</h3>
+      <p>A working, reviewable prototype for one workflow: input handling, AI-assisted extraction or synthesis, validation checks, an approval step, and a structured output.</p>
+    </section>
+    <section>
+      <h3>Likely inputs</h3>
+      <ul>
+        <li>Support tickets, defects, release notes, or test results</li>
+        <li>Implementation calls, requirements, plans, and open questions</li>
+        <li>Customer feedback, research notes, usage signals, or product documents</li>
+        <li>Representative sample data rather than sensitive production records</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Likely outputs</h3>
+      <ul>
+        <li>Structured findings with links back to source context</li>
+        <li>Prioritized risks, exceptions, or proposed actions</li>
+        <li>A review queue or approval-ready decision brief</li>
+        <li>A clear record of what the system produced and what a person approved</li>
+      </ul>
+    </section>
+    <section>
+      <h3>What is included</h3>
+      <ul>
+        <li>Workflow and decision mapping</li>
+        <li>Input and output definition</li>
+        <li>Prototype interface and workflow logic</li>
+        <li>Validation and human-approval design</li>
+        <li>Evaluation with representative examples</li>
+        <li>Findings, constraints, and next-step recommendations</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Deliberately not included</h3>
+      <ul>
+        <li>A company-wide AI strategy or transformation program</li>
+        <li>A generic chatbot without a defined workflow outcome</li>
+        <li>A production rollout, 24/7 operations, or open-ended integrations</li>
+        <li>Replacement of accountable human decisions</li>
+        <li>Claims that the prototype is ready for unrestricted production use</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Good sprint fit</h3>
+      <p>The owning team can name the current inputs, the decision or action that should improve, the systems involved, and the person who must review the output.</p>
+    </section>
+  </div>
+</article>
+
+<section class="stage-one-services" aria-labelledby="sprint-timeline-title">
+  <p class="section-eyebrow">Typical four-to-six-week timeline</p>
+  <h2 id="sprint-timeline-title">A short path from workflow evidence to an evaluated prototype.</h2>
+  <div class="service-card-grid">
+    <article>
+      <h3>Week 1: Frame</h3>
+      <p>Choose the workflow, map ownership and decisions, review representative inputs, and define what a useful output must contain.</p>
+    </article>
+    <article>
+      <h3>Week 2: Design</h3>
+      <p>Define extraction and synthesis steps, validation rules, exceptions, approval points, and the prototype interaction.</p>
+    </article>
+    <article>
+      <h3>Weeks 3–4: Build</h3>
+      <p>Build the focused workflow and test it against representative examples from the team’s actual process.</p>
+    </article>
+    <article>
+      <h3>Weeks 5–6: Evaluate</h3>
+      <p>Refine where needed, document constraints, and recommend whether to stop, iterate, or plan a separate implementation phase.</p>
+    </article>
+  </div>
+  <p>Some workflows can be evaluated in four weeks. Additional input formats, review roles, or system constraints may require the full six.</p>
+</section>
+
+<section class="stage-one-services" aria-labelledby="specializations-title">
+  <p class="section-eyebrow">Secondary specializations</p>
+  <h2 id="specializations-title">Three B2B SaaS workflow patterns that fit the sprint.</h2>
+  <div class="service-card-grid homepage-service-grid">
+    <article>
+      <h3>Quality Intelligence Workbench</h3>
+      <p>Bring defects, support signals, test results, and release context into structured findings, evidence, risks, and proposed actions for product and engineering review.</p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=service-quality-release-workflow' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-quality-release-workflow">Discuss a quality workflow</a></p>
+    </article>
+    <article>
+      <h3>Implementation Intelligence Workspace</h3>
+      <p>Turn calls, requirements, configuration decisions, and handoffs into reviewed requirements, unresolved questions, risks, and next steps with source context.</p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=service-implementation-onboarding-workflow' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-implementation-onboarding-workflow">Discuss an implementation workflow</a></p>
+    </article>
+    <article>
+      <h3>Product Evidence Workbench</h3>
+      <p>Organize customer feedback, research, usage signals, and delivery context into traceable evidence, themes, and decision-ready product briefs.</p>
+      <p class="card-cta"><a href="{{ '/work-with-me?intent=service-product-customer-evidence-workflow' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-product-customer-evidence-workflow">Discuss a product-evidence workflow</a></p>
+    </article>
   </div>
 </section>
 
-<section class="workflow-cta" aria-labelledby="services-case-studies-title">
-  <p class="section-eyebrow">See the workflow pattern in practice</p>
-  <h2 id="services-case-studies-title">Review AI workflow case studies for CRM hygiene, lead research, and content automation.</h2>
-  <p>Each case study shows how messy inputs become extracted, validated, human-approved, and packaged as clean output.</p>
-  <a class="button-link button-secondary" href="{{ '/case-studies/' | relative_url }}">View Case Studies</a>
+<section class="stage-one-services" aria-labelledby="legacy-capabilities-title">
+  <p class="section-eyebrow">Additional capabilities</p>
+  <h2 id="legacy-capabilities-title">Existing workflow patterns remain available when they are the better fit.</h2>
+  <p>These focused capabilities are secondary to the B2B SaaS prototype sprint, but they can still be scoped around a clear input, review step, and useful output.</p>
+  <div class="service-card-grid">
+    <article><h3>CRM Hygiene</h3><p>Prepare structured CRM field updates, missing-information flags, and follow-up tasks for review.</p></article>
+    <article><h3>Pre-CRM Research</h3><p>Prepare source-backed account context and qualification notes before a person approves CRM entry.</p></article>
+    <article><h3>Quote and Proposal Workflows</h3><p>Turn requirements, commercial inputs, and approval rules into a reviewable quote or proposal draft.</p></article>
+    <article><h3>Content Workflows</h3><p>Turn source material into structured briefs, outlines, drafts, and editorial review checklists.</p></article>
+    <article><h3>Custom Workflow MVPs</h3><p>Test another bounded internal workflow with explicit inputs, validation, approval, and output.</p></article>
+  </div>
 </section>
 
-<div class="services-list">
-  <article id="revenue-workflow-ai-sprint" class="service-detail-card">
-    <p class="service-number">01</p>
-    <h2>Revenue Workflow AI Sprint</h2>
-    <div class="service-detail-grid">
-      <section>
-        <h3>Who it is for</h3>
-        <p>RevOps leaders, sales operations teams, B2B founders, and client-operations teams who see repetitive revenue work but are not sure what to automate first.</p>
-      </section>
-      <section>
-        <h3>Problem it solves</h3>
-        <p>Your team has messy inputs, unclear handoffs, and ad hoc reviews. The risk is building an automation before the workflow is understood.</p>
-      </section>
-      <section>
-        <h3>What I build</h3>
-        <p>A workflow map, automation opportunity assessment, validation plan, human approval checkpoints, and a scoped MVP recommendation.</p>
-      </section>
-      <section>
-        <h3>Example outputs</h3>
-        <ul>
-          <li>Workflow map from input to clean output</li>
-          <li>Automation readiness scorecard</li>
-          <li>Data and tool requirements list</li>
-          <li>MVP build plan with risks and review steps</li>
-        </ul>
-      </section>
-    </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-revenue-workflow-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-revenue-workflow-sprint">Book a Revenue Workflow Sprint</a>
-  </article>
-
-  <article id="crm-hygiene-agent" class="service-detail-card">
-    <p class="service-number">02</p>
-    <h2>CRM Hygiene Agent</h2>
-    <div class="service-detail-grid">
-      <section>
-        <h3>Who it is for</h3>
-        <p>Sales teams, RevOps teams, customer success teams, and founders who rely on CRM data but struggle to keep it accurate.</p>
-      </section>
-      <section>
-        <h3>Problem it solves</h3>
-        <p>Call notes, meeting summaries, account context, next steps, and follow-ups are scattered across tools or left in free text.</p>
-      </section>
-      <section>
-        <h3>What I build</h3>
-        <p>A human-approved workflow that extracts CRM notes, proposes field updates, flags missing data, and prepares follow-up tasks for review.</p>
-      </section>
-      <section>
-        <h3>Example outputs</h3>
-        <ul>
-          <li>Structured CRM field update suggestions</li>
-          <li>Follow-up task drafts with owners and dates</li>
-          <li>Missing-information flags</li>
-          <li>Review queue before CRM changes are applied</li>
-        </ul>
-      </section>
-    </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-crm-hygiene' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-crm-hygiene">Request workflow audit</a>
-  </article>
-
-  <article id="pre-crm-research-agent" class="service-detail-card">
-    <p class="service-number">03</p>
-    <h2>Pre-CRM Research Agent</h2>
-    <div class="service-detail-grid">
-      <section>
-        <h3>Who it is for</h3>
-        <p>B2B sales teams, lead generation teams, agencies, and founders who need better account context before a lead enters the CRM.</p>
-      </section>
-      <section>
-        <h3>Problem it solves</h3>
-        <p>Lead research is manual, inconsistent, and hard to compare across accounts. Reps lose time gathering basic company and contact context.</p>
-      </section>
-      <section>
-        <h3>What I build</h3>
-        <p>A research workflow that gathers account context, contact signals, qualification notes, and source links before a human approves CRM entry.</p>
-      </section>
-      <section>
-        <h3>Example outputs</h3>
-        <ul>
-          <li>Account research summaries</li>
-          <li>Contact-role and buying-committee notes</li>
-          <li>Qualification fields for CRM review</li>
-          <li>Source-backed lead research packets</li>
-        </ul>
-      </section>
-    </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-pre-crm-research' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-pre-crm-research">Request workflow audit</a>
-  </article>
-
-  <article id="quote-proposal-workflow" class="service-detail-card">
-    <p class="service-number">04</p>
-    <h2>Quote/Proposal Workflow</h2>
-    <div class="service-detail-grid">
-      <section><h3>Who it is for</h3><p>B2B service firms and sales teams preparing client quotes or proposals from scattered commercial inputs.</p></section>
-      <section><h3>Problem it solves</h3><p>Quote preparation is slow, inconsistent, and dependent on manually reconciling requirements, products, pricing, and approval rules.</p></section>
-      <section><h3>What I build</h3><p>A human-approved workflow that turns structured and unstructured inputs into a reviewable quote or proposal draft.</p></section>
-      <section><h3>Example outputs</h3><ul><li>Structured quote or proposal draft</li><li>Missing-information checks</li><li>Validation rules and approval queue</li><li>Export-ready client document</li></ul></section>
-    </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-quote-proposal' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-quote-proposal">Discuss quote automation</a>
-  </article>
-
-  <article id="content-workflow-system" class="service-detail-card">
-    <p class="service-number">05</p>
-    <h2>Content Workflow System</h2>
-    <div class="service-detail-grid">
-      <section>
-        <h3>Who it is for</h3>
-        <p>Agencies, consultants, and B2B teams that create long-form blogs, thought leadership, newsletters, or content briefs from expert input.</p>
-      </section>
-      <section>
-        <h3>Problem it solves</h3>
-        <p>Transcripts, product notes, customer insights, and source documents take too long to turn into structured content assets.</p>
-      </section>
-      <section>
-        <h3>What I build</h3>
-        <p>A content workflow that turns raw inputs into briefs, outlines, draft sections, source notes, and editorial review checklists.</p>
-      </section>
-      <section>
-        <h3>Example outputs</h3>
-        <ul>
-          <li>Long-form content briefs</li>
-          <li>SEO-informed outlines and draft sections</li>
-          <li>Source extraction tables</li>
-          <li>Human review checklist before publishing</li>
-        </ul>
-      </section>
-    </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-content-workflow' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-content-workflow">Request workflow audit</a>
-  </article>
-
-  <article id="custom-ai-automation-mvp" class="service-detail-card">
-    <p class="service-number">06</p>
-    <h2>Custom AI Automation MVP</h2>
-    <div class="service-detail-grid">
-      <section>
-        <h3>Who it is for</h3>
-        <p>Teams with a specific internal workflow, client delivery process, or prototype idea that needs a small validated build.</p>
-      </section>
-      <section>
-        <h3>Problem it solves</h3>
-        <p>You need to test whether an AI workflow can save time or improve quality before investing in a larger product or internal system.</p>
-      </section>
-      <section>
-        <h3>What I build</h3>
-        <p>A scoped MVP that connects your inputs, extraction logic, validation steps, human approval flow, and final output format.</p>
-      </section>
-      <section>
-        <h3>Example outputs</h3>
-        <ul>
-          <li>Clickable workflow prototype or lightweight internal tool</li>
-          <li>Prompt and evaluation workflow</li>
-          <li>Human approval and exception handling process</li>
-          <li>Documentation for next-step implementation</li>
-        </ul>
-      </section>
-    </div>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-custom-ai-mvp' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-custom-ai-mvp">Request workflow audit</a>
-  </article>
-</div>
+<section class="workflow-cta" aria-labelledby="services-cta-title">
+  <p class="section-eyebrow">Start with the workflow</p>
+  <h2 id="services-cta-title">Share the workflow your team owns and the decision it needs to improve.</h2>
+  <p>A useful first conversation covers the owning team, representative inputs, desired decision or action, systems involved, and where human approval belongs.</p>
+  <div class="hero-actions">
+    <a class="button-link button-primary" href="{{ '/work-with-me?intent=service-ai-workflow-prototype-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="service-ai-workflow-prototype-sprint">Discuss a Workflow Prototype</a>
+    <a class="button-link button-secondary" href="{{ '/case-studies/' | relative_url }}">Explore Workflow Examples</a>
+  </div>
+</section>
