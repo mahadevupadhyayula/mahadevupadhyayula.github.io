@@ -1,16 +1,29 @@
 ---
 layout: page
-title: Insight Driven Journaling App
+title: Insight Journal | Structured AI Workflow Product
+description: Personal AI product build using structured extraction, persistent signals and embeddings, deterministic aggregation, similarity retrieval, explainability, and user feedback.
 permalink: /case-studies/insight-driven-journaling-app/
 ---
 
-**Designing an AI System That Turns Reflection Into Measurable Growth**
+**A personal product build that turns unstructured reflection into persistent, explainable feedback**
 
-Let me walk you through a product I built to solve a behavioral problem using AI.
+Evidence type: Personal product and build, not client work.
 
 ---
 
 ![Insight Driven Journaling App preview](/assets/images/insight-journal-1.png)
+
+---
+
+## Workflow-product relevance
+
+- **Workflow problem:** Free-form journal entries require effort but do not naturally produce structured feedback or visible patterns.
+- **Input:** Unstructured journal text.
+- **Structured extraction:** Mood, stress, energy, and themes are extracted as numerical and categorical fields.
+- **Persistence and retrieval:** Raw entries, structured signals, and text embeddings are stored so the system can retrieve similar context and detect recurrence over time.
+- **Logic separation:** Deterministic rolling aggregation handles measurable trends; embedding similarity and probabilistic synthesis handle contextual patterns.
+- **Explainability and trust:** Numerical aggregation grounds the insight, while the interface includes structured insight cards and a clear “Not Enough Data” state instead of forcing a conclusion.
+- **User feedback loop:** The MVP is designed to test which insights users find useful and where the response creates confusion.
 
 ---
 
@@ -181,6 +194,8 @@ This project highlights several PM competencies:
 
 Most importantly, it shows how to convert an abstract emotional behavior into a measurable system.
 
+For B2B SaaS teams, the transferable pattern is the architecture of the workflow: convert unstructured input into persistent structured state, keep deterministic and probabilistic logic separate, retrieve relevant context, explain why an output was produced, and use user feedback to evaluate usefulness.
+
 ---
 
 ## 9. Future Expansion
@@ -198,3 +213,10 @@ Because the foundation was structured correctly, the system scales without re-ar
 For a deeper dive into this project please check below:
 
 [Insight Journal - Product deep dive](insight-driven-journaling-app/insight-journal-product-deepdive.md)
+
+<section class="workflow-cta" aria-labelledby="insight-journal-cta">
+  <p class="section-eyebrow">Apply the workflow pattern</p>
+  <h2 id="insight-journal-cta">Discuss a structured AI workflow prototype.</h2>
+  <p>Start with the unstructured inputs, the state that needs to persist, the decision or feedback the product should support, and the human-review model.</p>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=insight-journal-structured-workflow' | relative_url }}">Discuss an AI Workflow Prototype</a>
+</section>
