@@ -2,7 +2,7 @@
 {%- assign workflow_form_prefix = include.id_prefix | default: workflow_form_id -%}
 {%- assign configured_workflow_endpoint = site.data.env.workflow_inquiry_endpoint | default: '' -%}
 {%- assign workflow_form_endpoint = include.endpoint | default: configured_workflow_endpoint -%}
-{%- assign workflow_form_button = include.button_label | default: 'Send me your workflow' -%}
+{%- assign workflow_form_button = include.button_label | default: 'Send Workflow Inquiry' -%}
 <form id="{{ workflow_form_id }}" class="workflow-intake-form" action="{{ workflow_form_endpoint | escape }}" method="post" data-workflow-form data-endpoint="{{ workflow_form_endpoint | escape }}" novalidate>
   <input type="hidden" name="intent" value="">
   <input type="hidden" name="page_url" value="">
@@ -20,31 +20,35 @@
   </div>
 
   <div class="form-field">
-    <label for="{{ workflow_form_prefix }}-company">Company or team</label>
-    <input id="{{ workflow_form_prefix }}-company" name="company" type="text" autocomplete="organization" placeholder="B2B SaaS team, agency, RevOps group...">
+    <label for="{{ workflow_form_prefix }}-company">Company and owning team</label>
+    <input id="{{ workflow_form_prefix }}-company" name="company" type="text" autocomplete="organization" placeholder="Example: Acme SaaS — Implementation Operations">
   </div>
 
   <div class="form-field">
     <label for="{{ workflow_form_prefix }}-workflow-type">Workflow type</label>
     <select id="{{ workflow_form_prefix }}-workflow-type" name="workflow_type" required>
       <option value="">Select one</option>
-      <option value="Revenue Workflow AI Sprint" data-intents="workflow-audit,audit,revenue-workflow-sprint">Revenue Workflow AI Sprint</option>
-      <option value="CRM Hygiene Agent" data-intents="crm-hygiene,crm-notes">CRM Hygiene Agent</option>
-      <option value="Pre-CRM Research Agent" data-intents="pre-crm-research,lead-research">Pre-CRM Research Agent</option>
-      <option value="Quote/Proposal Workflow" data-intents="quote-proposal,quote-automation,quote-workflow">Quote/Proposal Workflow</option>
-      <option value="Long-form Blog Content Generator" data-intents="content-workflow,content-briefs,blog-content">Long-form Blog Content Generator</option>
-      <option value="Custom AI Automation MVP" data-intents="custom-ai-mvp,automation-mvp,prototype">Custom AI Automation MVP</option>
+      <option value="AI Workflow Prototype Sprint" data-intents="ai-workflow-prototype-sprint,workflow-prototype-sprint,prototype-sprint">AI Workflow Prototype Sprint</option>
+      <option value="Quality / Release Workflow" data-intents="quality-release-workflow,quality-intelligence">Quality / Release Workflow</option>
+      <option value="Implementation / Onboarding Workflow" data-intents="implementation-onboarding-workflow,implementation-intelligence">Implementation / Onboarding Workflow</option>
+      <option value="Product / Customer-Evidence Workflow" data-intents="product-customer-evidence-workflow,product-evidence">Product / Customer-Evidence Workflow</option>
+      <option value="Other Internal Workflow" data-intents="other-internal-workflow,internal-workflow">Other Internal Workflow</option>
+      <option value="CRM Hygiene Workflow" data-intents="crm-hygiene,crm-notes">CRM Hygiene Workflow (additional capability)</option>
+      <option value="Pre-CRM Research Workflow" data-intents="pre-crm-research,lead-research">Pre-CRM Research Workflow (additional capability)</option>
+      <option value="Quote / Proposal Workflow" data-intents="quote-proposal,quote-automation,quote-workflow">Quote / Proposal Workflow (additional capability)</option>
+      <option value="Content Workflow" data-intents="content-workflow,content-briefs,blog-content">Content Workflow (additional capability)</option>
+      <option value="Custom Workflow MVP" data-intents="custom-ai-mvp,automation-mvp,prototype">Custom Workflow MVP (additional capability)</option>
     </select>
   </div>
 
   <div class="form-field form-field-full">
-    <label for="{{ workflow_form_prefix }}-messy-workflow">Messy workflow description</label>
-    <textarea id="{{ workflow_form_prefix }}-messy-workflow" name="messy_workflow" rows="5" placeholder="Example: Sales reps paste CRM notes after calls, RevOps checks missing fields, and managers still need to confirm next steps before Salesforce is clean." required></textarea>
+    <label for="{{ workflow_form_prefix }}-messy-workflow">Current workflow and inputs</label>
+    <textarea id="{{ workflow_form_prefix }}-messy-workflow" name="messy_workflow" rows="5" placeholder="What does the owning team review today? Include representative input types such as tickets, release notes, calls, requirements, feedback, research, or usage signals." required></textarea>
   </div>
 
   <div class="form-field form-field-full">
-    <label for="{{ workflow_form_prefix }}-clean-output">Desired clean output</label>
-    <textarea id="{{ workflow_form_prefix }}-clean-output" name="desired_output" rows="4" placeholder="Example: Validated account summary, updated CRM fields, clear follow-up tasks, content brief, or reviewed lead research package." required></textarea>
+    <label for="{{ workflow_form_prefix }}-clean-output">Desired decision, action, or reviewed output</label>
+    <textarea id="{{ workflow_form_prefix }}-clean-output" name="desired_output" rows="4" placeholder="What should a person be able to decide, approve, hand off, or act on after reviewing the workflow output?" required></textarea>
   </div>
 
   <div class="form-field">
@@ -58,17 +62,17 @@
   </div>
 
   <div class="form-field form-field-full">
-    <label for="{{ workflow_form_prefix }}-tools">Current tools</label>
-    <input id="{{ workflow_form_prefix }}-tools" name="tools" type="text" placeholder="HubSpot, Salesforce, Airtable, Notion, Google Docs, Slack, Clay, Zapier...">
+    <label for="{{ workflow_form_prefix }}-tools">Systems involved</label>
+    <input id="{{ workflow_form_prefix }}-tools" name="tools" type="text" placeholder="Example: Jira, Linear, Zendesk, Slack, Notion, product analytics, CRM, data warehouse">
   </div>
 
   <div class="form-field">
     <label for="{{ workflow_form_prefix }}-timeline">Timeline</label>
     <select id="{{ workflow_form_prefix }}-timeline" name="timeline" required>
       <option value="">Select one</option>
-      <option value="This week">This week</option>
-      <option value="Next 2-4 weeks">Next 2-4 weeks</option>
-      <option value="This quarter">This quarter</option>
+      <option value="Ready in the next 2-4 weeks">Ready in the next 2-4 weeks</option>
+      <option value="Ready in the next 1-2 months">Ready in the next 1-2 months</option>
+      <option value="Later this quarter">Later this quarter</option>
       <option value="Exploring options">Exploring options</option>
     </select>
   </div>
@@ -85,7 +89,7 @@
     </select>
   </div>
 
-  <p class="form-note">Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output</p>
+  <p class="form-note">Scattered Inputs → AI Processing → Validation → Human Approval → Reviewable Output</p>
   <p class="form-note form-note--privacy">Please do not include passwords, API keys, confidential customer data, or sensitive internal records. A summary or sample workflow is enough.</p>
   <p class="form-status" role="status" aria-live="polite"></p>
   <button class="button-link button-primary" type="submit">{{ workflow_form_button }}</button>
