@@ -1,16 +1,31 @@
 ---
 layout: page
-title: Product Impact at PayPal
+title: Product Quality & Onboarding Operations at PayPal
+description: PayPal product and engineering experience across ML personalization, merchant onboarding, and QA workflow automation, preserving the original outcomes and context.
 permalink: /case-studies/product-impact-at-paypal/
 ---
 
-**Driving Merchant Engagement Through ML Personalization & Funnel Optimization**
+**Product and engineering experience across merchant engagement, onboarding operations, and product quality**
 
 Company: PayPal
 
 Role: Software Engineer – Product Team
 
 Scope: Merchant Growth & Engagement
+
+Evidence type: Employment experience at PayPal. This is not presented as an AI workflow client project.
+
+---
+
+## Workflow-product relevance
+
+This work is relevant to B2B SaaS workflow products in three specific ways:
+
+- **Product quality operations:** QA inputs, issue ownership, severity, routing, and status updates were structured to reduce coordination overhead and support faster release cycles.
+- **Onboarding operations:** Step-level completion data, time-to-complete, abandonment triggers, and support-ticket patterns informed a redesigned merchant onboarding flow.
+- **Trustworthy product logic:** The offer recommendation work started with interpretable models and controlled experimentation rather than unnecessary model complexity.
+
+The original facts, metrics, and role context are preserved below.
 
 ---
 
@@ -264,6 +279,7 @@ This experience reflects:
 - Experimentation rigor
 - Systems-level improvement
 - Cross-functional execution in a large organization
+- Product quality and onboarding workflows grounded in operational evidence
 
 ---
 
@@ -289,3 +305,14 @@ This case shows my ability to:
 - Improve both user-facing systems and internal processes
 
 ---
+
+## B2B SaaS relevance
+
+The transferable pattern is practical rather than promotional: connect product and operational inputs to a clear workflow, reduce avoidable coordination, and measure whether the change improves engagement, onboarding, or release execution. The documented PayPal work is employment experience, not a claim of delivering an external AI workflow engagement.
+
+<section class="workflow-cta" aria-labelledby="paypal-case-study-cta">
+  <p class="section-eyebrow">Apply the workflow pattern</p>
+  <h2 id="paypal-case-study-cta">Discuss a quality or onboarding workflow prototype.</h2>
+  <p>Start with the signals your team reviews, the decision or handoff that follows, and the person who needs to approve the output.</p>
+  <a class="button-link button-primary" href="{{ '/work-with-me?intent=paypal-quality-onboarding-workflow' | relative_url }}">Discuss an AI Workflow Prototype</a>
+</section>
