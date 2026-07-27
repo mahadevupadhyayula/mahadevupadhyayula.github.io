@@ -4,11 +4,16 @@ declare const Deno: {
 };
 
 const ALLOWED_WORKFLOW_TYPES = new Set([
-  'AI Workflow Audit',
-  'CRM Hygiene Agent',
-  'Pre-CRM Research Agent',
-  'Long-form Blog Content Generator',
-  'Custom AI Automation MVP',
+  'AI Workflow Prototype Sprint',
+  'Quality / Release Workflow',
+  'Implementation / Onboarding Workflow',
+  'Product / Customer-Evidence Workflow',
+  'Other Internal Workflow',
+  'CRM Hygiene Workflow',
+  'Pre-CRM Research Workflow',
+  'Quote / Proposal Workflow',
+  'Content Workflow',
+  'Custom Workflow MVP',
 ]);
 
 const ALLOWED_HUMAN_APPROVAL_REQUIRED = new Set([
@@ -141,8 +146,8 @@ function validatePayload(payload: InquiryPayload) {
   addRequiredStringError(errors, normalized.name, 'name', 'Name');
   addRequiredStringError(errors, normalized.email, 'email', 'Email');
   addRequiredStringError(errors, normalized.workflow_type, 'workflow_type', 'Workflow type');
-  addRequiredStringError(errors, normalized.messy_workflow, 'messy_workflow', 'Messy workflow');
-  addRequiredStringError(errors, normalized.desired_output, 'desired_output', 'Desired output');
+  addRequiredStringError(errors, normalized.messy_workflow, 'messy_workflow', 'Current workflow and inputs');
+  addRequiredStringError(errors, normalized.desired_output, 'desired_output', 'Desired decision, action, or output');
   addRequiredStringError(
     errors,
     normalized.human_approval_required,
