@@ -40,7 +40,7 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
         <dt>Best for</dt>
         <dd>Product and engineering teams improving triage, release readiness, and quality decisions.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-quality-intelligence' | relative_url }}">Discuss Quality Intelligence</a></p>
+      <p class="card-cta"><a href="{{ '/case-studies/quality-intelligence/' | relative_url }}">View Quality Intelligence proof</a> · <a href="{{ '/work-with-me?intent=homepage-quality-intelligence' | relative_url }}">Discuss Quality Intelligence</a></p>
     </article>
     <article>
       <h3>Implementation Intelligence</h3>
