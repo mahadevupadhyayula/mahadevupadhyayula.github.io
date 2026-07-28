@@ -64,7 +64,7 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
         <dt>Best for</dt>
         <dd>Product teams prioritizing opportunities and documenting why a decision should move forward.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-product-evidence' | relative_url }}">Discuss Product Evidence</a></p>
+      <p class="card-cta"><a href="{{ '/case-studies/product-evidence/' | relative_url }}">View Product Evidence proof</a> · <a href="{{ '/work-with-me?intent=homepage-product-evidence' | relative_url }}">Discuss Product Evidence</a></p>
     </article>
   </div>
 </section>

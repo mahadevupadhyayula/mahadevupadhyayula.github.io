@@ -83,6 +83,13 @@ These projects demonstrate specific workflow patterns and product decisions. The
   </article>
 
   <article class="case-study-card">
+    <p class="case-study-card__eyebrow">Portfolio proof asset · Pre-demo human-approved workflow</p>
+    <h2><a href="{{ '/case-studies/product-evidence/' | relative_url }}">Customer Evidence-to-Discovery Brief</a></h2>
+    <p>Representative workflow proof for turning fragmented customer evidence into a source-linked discovery brief, with a product-reviewer approval gate before any next action is recorded.</p>
+    <a class="case-study-card__link" href="{{ '/case-studies/product-evidence/' | relative_url }}">View proof page →</a>
+  </article>
+
+  <article class="case-study-card">
     <p class="case-study-card__eyebrow">Portfolio prototype · CRM hygiene</p>
     <h2><a href="{{ '/case-studies/crm-hygiene-agent/' | relative_url }}">CRM Hygiene Workflow</a></h2>
     <p>Prototype for turning sales context, CRM notes, and deal updates into source-backed, human-reviewed pipeline records.</p>
