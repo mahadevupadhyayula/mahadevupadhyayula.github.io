@@ -5,9 +5,9 @@ layout: default
 
 <div class="proof-page">
   <section class="proof-hero" aria-labelledby="proof-title">
-    <p class="proof-breadcrumb"><a href="{{ '/case-studies' | relative_url }}">Workflow examples</a> / {{ page.pillar | default: page.title }}</p>
+    <p class="proof-breadcrumb"><a href="{{ '/case-studies' | relative_url }}">Case Studies</a> / {{ page.pillar | default: page.title }}</p>
     <p class="proof-eyebrow">{{ page.pillar | default: 'Human-approved AI workflow product' }}</p>
-    <h1 id="proof-title">{{ page.title }}</h1>
+    <h1 id="proof-title">{{ page.hero_title | default: page.title }}</h1>
     {% if page.lede %}<p class="proof-lede">{{ page.lede }}</p>{% endif %}
     <p class="proof-status">{{ page.prototype_status | default: 'Representative synthetic-data prototype—not a client deployment or production performance claim.' }}</p>
     {% if page.audience %}<p class="proof-meta"><strong>For:</strong> {{ page.audience }}</p>{% endif %}
@@ -89,6 +89,15 @@ layout: default
         <p>{{ page.roi_pilot_measurement }}</p>
       </article>
     </div>
+    {% if page.roi_scenarios %}
+      <div class="proof-roi-scenarios" aria-label="Illustrative annual delivery-capacity scenarios">
+        <h3>Illustrative annual capacity scenarios</h3>
+        <table>
+          <thead><tr><th scope="col">Scenario</th><th scope="col">Assumptions</th><th scope="col">Annual capacity hypothesis</th></tr></thead>
+          <tbody>{% for scenario in page.roi_scenarios %}<tr><th scope="row">{{ scenario.name }}</th><td>{{ scenario.assumptions }}</td><td><strong>{{ scenario.value }}</strong></td></tr>{% endfor %}</tbody>
+        </table>
+      </div>
+    {% endif %}
     <p class="proof-roi-note">The model is used to decide what to measure and validate with the buyer’s data. It does not represent guaranteed savings, revenue, retention, or EBITDA impact.</p>
   </section>
 
