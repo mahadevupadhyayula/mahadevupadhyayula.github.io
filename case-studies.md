@@ -69,6 +69,13 @@ These projects demonstrate specific workflow patterns and product decisions. The
   </article>
 
   <article class="case-study-card">
+    <p class="case-study-card__eyebrow">Portfolio proof asset · Pre-demo human-approved workflow</p>
+    <h2><a href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">Sales-to-Implementation Handoff Validator</a></h2>
+    <p>Representative workflow proof for turning closed-won deal evidence into a source-linked implementation readiness review before customer kickoff, with an implementation-manager approval gate.</p>
+    <a class="case-study-card__link" href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">View proof page →</a>
+  </article>
+
+  <article class="case-study-card">
     <p class="case-study-card__eyebrow">Portfolio prototype · CRM hygiene</p>
     <h2><a href="{{ '/case-studies/crm-hygiene-agent/' | relative_url }}">CRM Hygiene Workflow</a></h2>
     <p>Prototype for turning sales context, CRM notes, and deal updates into source-backed, human-reviewed pipeline records.</p>
