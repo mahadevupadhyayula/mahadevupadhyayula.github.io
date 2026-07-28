@@ -52,7 +52,7 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
         <dt>Best for</dt>
         <dd>Implementation and customer teams coordinating complex onboarding and delivery work.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/work-with-me?intent=homepage-implementation-intelligence' | relative_url }}">Discuss Implementation Intelligence</a></p>
+      <p class="card-cta"><a href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">View Implementation Intelligence proof</a> · <a href="{{ '/work-with-me?intent=homepage-implementation-intelligence' | relative_url }}">Discuss Implementation Intelligence</a></p>
     </article>
     <article>
       <h3>Product Evidence</h3>
