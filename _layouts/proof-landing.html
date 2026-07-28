@@ -1,0 +1,111 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="{{ '/assets/css/proof-landing-page.css' | relative_url }}">
+
+<div class="proof-page">
+  <section class="proof-hero" aria-labelledby="proof-title">
+    <p class="proof-breadcrumb"><a href="{{ '/case-studies' | relative_url }}">Workflow examples</a> / {{ page.pillar | default: page.title }}</p>
+    <p class="proof-eyebrow">{{ page.pillar | default: 'Human-approved AI workflow product' }}</p>
+    <h1 id="proof-title">{{ page.title }}</h1>
+    {% if page.lede %}<p class="proof-lede">{{ page.lede }}</p>{% endif %}
+    <p class="proof-status">{{ page.prototype_status | default: 'Representative synthetic-data prototype—not a client deployment or production performance claim.' }}</p>
+    {% if page.audience %}<p class="proof-meta"><strong>For:</strong> {{ page.audience }}</p>{% endif %}
+    {% if page.best_fit %}<p class="proof-meta"><strong>Best fit:</strong> {{ page.best_fit }}</p>{% endif %}
+
+    <div class="proof-actions" aria-label="Proof assets">
+      <a class="button-link button-primary" href="#executive-brief">Read the Executive Brief</a>
+      {% if page.demo_url %}
+        <a class="button-link button-secondary" href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">Explore the Live Demo</a>
+      {% else %}
+        <span class="proof-action--planned" aria-label="Live demo planned after the demo build">Live Demo · Planned</span>
+      {% endif %}
+      {% if page.loom_url %}
+        <a class="button-link button-secondary" href="{{ page.loom_url }}" target="_blank" rel="noopener noreferrer">Watch the Walkthrough</a>
+      {% else %}
+        <span class="proof-action--planned" aria-label="Walkthrough planned after the demo build">2–3 min Walkthrough · Planned</span>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="proof-summary" aria-label="Workflow proof summary">
+    <article><span>Workflow</span><strong>{{ page.workflow_summary }}</strong></article>
+    <article><span>AI role</span><strong>{{ page.ai_role }}</strong></article>
+    <article><span>Human control</span><strong>{{ page.human_control }}</strong></article>
+    <article><span>Output</span><strong>{{ page.controlled_output }}</strong></article>
+  </section>
+
+  <section class="proof-section" aria-labelledby="problem-title">
+    <p class="proof-eyebrow">The operating problem</p>
+    <h2 id="problem-title">{{ page.problem_title }}</h2>
+    <p>{{ page.problem_summary }}</p>
+    <div class="proof-contrast">
+      <article class="proof-contrast--weak">
+        <h3>Weak pattern</h3>
+        <p>{{ page.weak_pattern }}</p>
+      </article>
+      <article class="proof-contrast--strong">
+        <h3>Human-approved workflow pattern</h3>
+        <p>{{ page.strong_pattern }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="proof-section" aria-labelledby="workflow-title">
+    <p class="proof-eyebrow">Evidence-to-decision workflow</p>
+    <h2 id="workflow-title">{{ page.workflow_title }}</h2>
+    <div class="proof-flow" aria-label="{{ page.workflow_flow }}">
+      {% assign proof_steps = page.workflow_steps | split: '|' %}
+      {% for step in proof_steps %}<span>{{ step | strip }}</span>{% endfor %}
+    </div>
+    <p class="proof-flow-legend">AI prepares the evidence and bounded recommendation. The named reviewer inspects, edits, and decides before controlled downstream output is created.</p>
+  </section>
+
+  <section id="executive-brief" class="proof-section proof-brief" aria-labelledby="executive-brief-title">
+    <p class="proof-eyebrow">Executive brief</p>
+    <h2 id="executive-brief-title">{{ page.executive_brief_title | default: 'The proof brief' }}</h2>
+    {{ content }}
+  </section>
+
+  <section class="proof-section proof-roi" aria-labelledby="roi-title">
+    <p class="proof-eyebrow">ROI model</p>
+    <h2 id="roi-title">A transparent value hypothesis—not a savings promise.</h2>
+    <div class="proof-roi-grid">
+      <article>
+        <span>Value driver</span>
+        <strong>{{ page.roi_driver }}</strong>
+        <p>{{ page.roi_driver_detail }}</p>
+      </article>
+      <article>
+        <span>Illustrative equation</span>
+        <code>{{ page.roi_equation }}</code>
+      </article>
+      <article>
+        <span>Assumptions to baseline</span>
+        <p>{{ page.roi_assumptions }}</p>
+      </article>
+      <article>
+        <span>Pilot measurement</span>
+        <p>{{ page.roi_pilot_measurement }}</p>
+      </article>
+    </div>
+    <p class="proof-roi-note">The model is used to decide what to measure and validate with the buyer’s data. It does not represent guaranteed savings, revenue, retention, or EBITDA impact.</p>
+  </section>
+
+  <section class="proof-section proof-assets" aria-labelledby="assets-title">
+    <p class="proof-eyebrow">Assets</p>
+    <h2 id="assets-title">Inspect the current proof—and the next layer when it is ready.</h2>
+    <div class="proof-assets-grid">
+      <article><h3>Executive Brief</h3><p>Available on this page: operating problem, workflow, control point, scope, and value hypothesis.</p><a href="#executive-brief">Read the brief →</a></article>
+      <article><h3>Live Demo</h3><p>A thin synthetic-data workflow showing evidence, review, and a controlled output.</p>{% if page.demo_url %}<a href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">Open demo →</a>{% else %}<span>Planned after demo build</span>{% endif %}</article>
+      <article><h3>2–3 minute walkthrough</h3><p>A concise video showing the operating problem, workflow, and human approval gate.</p>{% if page.loom_url %}<a href="{{ page.loom_url }}" target="_blank" rel="noopener noreferrer">Watch walkthrough →</a>{% else %}<span>Planned after demo build</span>{% endif %}</article>
+    </div>
+  </section>
+
+  <section class="proof-cta" aria-labelledby="proof-cta-title">
+    <p class="proof-eyebrow">Next step</p>
+    <h2 id="proof-cta-title">{{ page.cta_title | default: 'Discuss one workflow worth validating.' }}</h2>
+    <p>{{ page.cta_copy | default: 'Start with one real workflow, the evidence your team already reviews, and the accountable person who must approve the outcome.' }}</p>
+    <a class="button-link button-primary" href="{{ page.cta_url | default: '/work-with-me?intent=proof-landing-page' | relative_url }}">{{ page.cta_label | default: 'Discuss a Workflow Prototype' }}</a>
+  </section>
+</div>
