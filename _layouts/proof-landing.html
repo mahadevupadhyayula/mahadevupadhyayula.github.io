@@ -55,7 +55,8 @@ layout: default
     <p class="proof-eyebrow">Evidence-to-decision workflow</p>
     <h2 id="workflow-title">{{ page.workflow_title }}</h2>
     <div class="proof-flow" aria-label="{{ page.workflow_flow }}">
-      {% assign proof_steps = page.workflow_steps | split: '|' %}
+      {% assign proof_flow_source = page.workflow_steps | default: page.workflow_flow %}
+      {% assign proof_steps = proof_flow_source | split: '|' %}
       {% for step in proof_steps %}<span>{{ step | strip }}</span>{% endfor %}
     </div>
     <p class="proof-flow-legend">AI prepares the evidence and bounded recommendation. The named reviewer inspects, edits, and decides before controlled downstream output is created.</p>
