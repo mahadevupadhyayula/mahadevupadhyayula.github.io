@@ -7,6 +7,7 @@ pillar: Implementation Intelligence · Portfolio proof asset
 hero_title: Prevent delivery surprises before implementation begins.
 lede: Create an evidence-backed readiness review from the deal sources your team already uses, then keep the implementation manager in control of what proceeds.
 prototype_status: Representative synthetic-data workflow prototype—not a production deployment or a claimed client result.
+demo_url: /workflow-demos/sales-to-implementation-handoff-validator/
 audience: Heads and VPs of Implementation or Professional Services at B2B SaaS companies.
 best_fit: Separate sales and implementation teams; enterprise deployments involving integrations or security review; recurring delivery rework caused by handoff ambiguity.
 workflow_summary: Closed-won handoff readiness review
