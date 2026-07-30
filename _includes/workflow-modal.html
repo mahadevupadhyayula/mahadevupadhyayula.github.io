@@ -4,10 +4,10 @@
     <button class="workflow-modal__close" type="button" data-workflow-modal-close aria-label="Close workflow form">×</button>
     <div class="workflow-modal__copy">
       <p class="section-eyebrow">AI Workflow Prototype Sprint</p>
-      <h2 id="workflow-modal-title">Share one B2B SaaS workflow for review.</h2>
-      <p id="workflow-modal-description">Send the owning team, representative inputs, desired decision or action, systems involved, and where human approval belongs. I’ll assess whether a focused prototype sprint is the right fit.</p>
+      <h2 id="workflow-modal-title">Start with the workflow that is creating friction.</h2>
+      <p id="workflow-modal-description">A short description is enough. I’ll assess whether a focused review or prototype sprint is a sensible next step—no confidential records required.</p>
     </div>
-    {% include workflow-form.html form_id='workflow-modal-intake' id_prefix='workflow-modal' %}
+    {% include workflow-form.html form_id='workflow-modal-intake' id_prefix='workflow-modal' compact=true button_label='Request a Workflow Review' %}
   </section>
 </div>
 
@@ -235,7 +235,7 @@
       setFieldValue(form, 'referrer', capturedReferrer);
       setFieldValue(form, 'user_agent', capturedUserAgent);
 
-      if (intent && workflowType) {
+      if (intent && workflowType && workflowType.options) {
         Array.prototype.slice.call(workflowType.options).some(function (option) {
           var optionIntents = (option.getAttribute('data-intents') || '').split(',');
 
