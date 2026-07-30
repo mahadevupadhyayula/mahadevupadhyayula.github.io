@@ -10,7 +10,7 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
   <h1 id="hero-title">Human-Approved AI Workflow Products for B2B SaaS Teams</h1>
   <p class="hero-subheadline">I build focused workflow products for product, engineering, and implementation teams—turning scattered inputs and signals into structured, reviewable work.</p>
   <p class="hero-copy">Each workflow combines AI-assisted extraction and synthesis with validation, clear approval points, and outputs your team can inspect before they move downstream.</p>
-  <p class="hero-service-line">Focus: Quality Intelligence • Implementation Intelligence • Product Evidence</p>
+  <p class="hero-service-line">Focus: Implementation Intelligence • Quality Intelligence • Product Evidence</p>
   <div class="hero-actions" aria-label="Primary actions">
     <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-ai-workflow-prototype-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-ai-workflow-prototype-sprint">Discuss a Workflow Prototype</a>
     <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">Explore Workflow Examples</a>
@@ -31,28 +31,28 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
   </div>
   <div class="service-card-grid homepage-service-grid">
     <article>
-      <h3>Quality Intelligence</h3>
-      <dl>
-        <dt>Problem</dt>
-        <dd>Defects, support signals, test results, and release context live across tools, making quality risks hard to see early.</dd>
-        <dt>Workflow product</dt>
-        <dd>Bring the signals together into structured findings, evidence, and proposed actions for a human to review.</dd>
-        <dt>Best for</dt>
-        <dd>Product and engineering teams improving triage, release readiness, and quality decisions.</dd>
-      </dl>
-      <p class="card-cta"><a href="{{ '/case-studies/quality-intelligence/' | relative_url }}">View Quality Intelligence proof</a> · <a href="{{ '/work-with-me?intent=homepage-quality-intelligence' | relative_url }}">Discuss Quality Intelligence</a></p>
-    </article>
-    <article>
       <h3>Implementation Intelligence</h3>
       <dl>
         <dt>Problem</dt>
-        <dd>Customer requirements, configuration decisions, open questions, and handoffs are scattered across calls and documents.</dd>
+        <dd>Sales commitments, requirements, dependencies, risks, and open questions are scattered across calls, CRM records, and documents before delivery begins.</dd>
         <dt>Workflow product</dt>
-        <dd>Convert implementation inputs into reviewed requirements, decisions, risks, and next steps with source context.</dd>
+        <dd>Reconcile the handoff into a source-linked readiness review that an implementation manager can accept, conditionally accept, return, or escalate.</dd>
         <dt>Best for</dt>
-        <dd>Implementation and customer teams coordinating complex onboarding and delivery work.</dd>
+        <dd>Implementation, professional-services, and customer teams coordinating complex onboarding and delivery work.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">View Implementation Intelligence proof</a> · <a href="{{ '/work-with-me?intent=homepage-implementation-intelligence' | relative_url }}">Discuss Implementation Intelligence</a></p>
+      <p class="card-cta"><a href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">Explore Implementation Intelligence</a></p>
+    </article>
+    <article>
+      <h3>Quality Intelligence</h3>
+      <dl>
+        <dt>Problem</dt>
+        <dd>Support escalations, diagnostics, possible duplicates, and technical context live across tools, slowing engineering-ready defect triage.</dd>
+        <dt>Workflow product</dt>
+        <dd>Prepare an evidence-backed defect candidate for an accountable support or quality reviewer to approve, return, reject, or mark as a duplicate.</dd>
+        <dt>Best for</dt>
+        <dd>Support-heavy or technically complex B2B SaaS product and engineering organizations.</dd>
+      </dl>
+      <p class="card-cta"><a href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">Explore Quality Intelligence</a></p>
     </article>
     <article>
       <h3>Product Evidence</h3>
@@ -60,11 +60,11 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
         <dt>Problem</dt>
         <dd>Customer feedback, usage signals, research, and delivery context are difficult to connect to product decisions.</dd>
         <dt>Workflow product</dt>
-        <dd>Organize signals into traceable evidence, themes, and decision-ready briefs that product teams can challenge and approve.</dd>
+        <dd>Organize signals into traceable evidence, themes, and discovery briefs that product teams can challenge without automating prioritization or roadmap decisions.</dd>
         <dt>Best for</dt>
-        <dd>Product teams prioritizing opportunities and documenting why a decision should move forward.</dd>
+        <dd>Product teams reconciling customer evidence and deciding what discovery action should happen next.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/case-studies/product-evidence/' | relative_url }}">View Product Evidence proof</a> · <a href="{{ '/work-with-me?intent=homepage-product-evidence' | relative_url }}">Discuss Product Evidence</a></p>
+      <p class="card-cta"><a href="{{ '/workflow-products/product-evidence/' | relative_url }}">Explore Product Evidence</a></p>
     </article>
   </div>
 </section>
@@ -123,28 +123,28 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
 
 ---
 
-## Featured Case Studies
+## Featured Workflow Proof
 
 <div class="featured-case-study-carousel" aria-label="Featured case studies" data-carousel>
   <button class="carousel-nav-button" type="button" data-carousel-prev aria-label="View previous case study">Previous</button>
 
   <div class="featured-case-study-track" data-carousel-track>
     <article class="featured-case-study-card" data-carousel-slide>
-      <h3><a href="{{ '/case-studies/crm-hygiene-agent/' | relative_url }}">CRM Hygiene Agent</a></h3>
-      <p>Turns messy sales context, CRM notes, and deal updates into human-approved CRM-ready pipeline records.</p>
-      <a class="case-study-card__link" href="{{ '/case-studies/crm-hygiene-agent/' | relative_url }}">View case study →</a>
+      <h3><a href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">Implementation Intelligence</a></h3>
+      <p>Reconciles sales commitments, requirements, dependencies, risks, and missing information into a source-linked readiness review before delivery begins.</p>
+      <a class="case-study-card__link" href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">View proof concept →</a>
     </article>
 
     <article class="featured-case-study-card" data-carousel-slide>
-      <h3><a href="{{ '/case-studies/pre-crm-research-agent/' | relative_url }}">Pre-CRM Research Agent</a></h3>
-      <p>Researches, scores, and qualifies leads before CRM entry so sales teams avoid noisy records and weak prioritization.</p>
-      <a class="case-study-card__link" href="{{ '/case-studies/pre-crm-research-agent/' | relative_url }}">View case study →</a>
+      <h3><a href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">Quality Intelligence</a></h3>
+      <p>Turns fragmented support and technical evidence into a reviewable defect-triage package without automating the engineering decision.</p>
+      <a class="case-study-card__link" href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">View proof concept →</a>
     </article>
 
     <article class="featured-case-study-card" data-carousel-slide>
-      <h3><a href="{{ '/case-studies/long-form-blog-content-generator/' | relative_url }}">Long-form Blog Content Generator</a></h3>
-      <p>Converts source documents into human-reviewed SEO/AEO blog drafts, content briefs, visual briefs, and publishing assets.</p>
-      <a class="case-study-card__link" href="{{ '/case-studies/long-form-blog-content-generator/' | relative_url }}">View case study →</a>
+      <h3><a href="{{ '/workflow-products/product-evidence/' | relative_url }}">Product Evidence</a></h3>
+      <p>Organizes scattered customer feedback into a source-linked evidence pack that a product reviewer can challenge before deciding the next discovery action.</p>
+      <a class="case-study-card__link" href="{{ '/workflow-products/product-evidence/' | relative_url }}">View proof concept →</a>
     </article>
 
     <article class="featured-case-study-card" data-carousel-slide>
