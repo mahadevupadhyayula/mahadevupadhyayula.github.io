@@ -46,8 +46,8 @@ Scattered Inputs → AI Processing → Validation → Human Approval → Reviewa
 
 Prioritize these services and case studies:
 1. AI Workflow Prototype Sprint
-2. Quality Intelligence Workbench
-3. Implementation Intelligence Workspace
+2. Implementation Intelligence Workspace
+3. Quality Intelligence Workbench
 4. Product Evidence Workbench
 5. Existing CRM hygiene, pre-CRM research, quote/proposal, content, and custom workflow capabilities as secondary offers
 
