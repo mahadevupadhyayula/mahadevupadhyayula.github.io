@@ -7,13 +7,14 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
 ---
 
 <section class="hero-section" aria-labelledby="hero-title">
-  <h1 id="hero-title">Human-Approved AI Workflow Products for B2B SaaS Teams</h1>
-  <p class="hero-subheadline">I build focused workflow products for product, engineering, and implementation teams—turning scattered inputs and signals into structured, reviewable work.</p>
-  <p class="hero-copy">Each workflow combines AI-assisted extraction and synthesis with validation, clear approval points, and outputs your team can inspect before they move downstream.</p>
-  <p class="hero-service-line">Focus: Implementation Intelligence • Quality Intelligence • Product Evidence</p>
+  <p class="hero-eyebrow">Implementation Intelligence for B2B SaaS</p>
+  <h1 id="hero-title">Prevent delivery surprises before implementation begins.</h1>
+  <p class="hero-subheadline">I build human-approved AI workflows that reconcile sales commitments, requirements, dependencies, risks, and open questions into an implementation-readiness review.</p>
+  <p class="hero-copy">The implementation manager inspects the source evidence, edits findings, and decides what can proceed before delivery work moves downstream.</p>
+  <p class="hero-service-line">Lead workflow: Sales-to-Implementation Handoff Validator</p>
   <div class="hero-actions" aria-label="Primary actions">
     <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-ai-workflow-prototype-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-ai-workflow-prototype-sprint">Discuss a Workflow Prototype</a>
-    <a class="button-link button-secondary" href="{{ '/case-studies' | relative_url }}">Explore Workflow Examples</a>
+    <a class="button-link button-secondary" href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">Inspect the Workflow Proof</a>
   </div>
 </section>
 
@@ -25,7 +26,7 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
   <div class="section-heading-row">
     <div>
       <p class="section-eyebrow">B2B SaaS workflow use cases</p>
-      <h2 id="services-title">Turn fragmented operating signals into work your team can review and use.</h2>
+      <h2 id="services-title">Start with the implementation handoff. Apply the same pattern where evidence and judgment meet.</h2>
     </div>
     <a class="inline-section-link" href="{{ '/services' | relative_url }}">View all services</a>
   </div>
@@ -40,7 +41,7 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
         <dt>Best for</dt>
         <dd>Implementation, professional-services, and customer teams coordinating complex onboarding and delivery work.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">Explore Implementation Intelligence</a></p>
+      <p class="card-cta"><a href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">Explore Implementation Intelligence</a></p>
     </article>
     <article>
       <h3>Quality Intelligence</h3>
@@ -52,7 +53,7 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
         <dt>Best for</dt>
         <dd>Support-heavy or technically complex B2B SaaS product and engineering organizations.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">Explore Quality Intelligence</a></p>
+      <p class="card-cta"><a href="{{ '/case-studies/quality-intelligence/' | relative_url }}">Explore Quality Intelligence</a></p>
     </article>
     <article>
       <h3>Product Evidence</h3>
@@ -64,7 +65,7 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
         <dt>Best for</dt>
         <dd>Product teams reconciling customer evidence and deciding what discovery action should happen next.</dd>
       </dl>
-      <p class="card-cta"><a href="{{ '/workflow-products/product-evidence/' | relative_url }}">Explore Product Evidence</a></p>
+      <p class="card-cta"><a href="{{ '/case-studies/product-evidence/' | relative_url }}">Explore Product Evidence</a></p>
     </article>
   </div>
 </section>
@@ -102,7 +103,7 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
     </article>
     <article>
       <h3>Build proof</h3>
-      <p>Working prototypes across quality, implementation, research, and evidence workflows</p>
+      <p>Detailed proof concepts and workflow designs across implementation, quality, research, and product evidence</p>
     </article>
   </div>
 </section>
@@ -120,80 +121,6 @@ image_alt: Human-approved AI workflow products for B2B SaaS teams
   </div>
   <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-ai-workflow-prototype-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-ai-workflow-prototype-sprint">Discuss a Workflow Prototype</a>
 </section>
-
----
-
-## Featured Workflow Proof
-
-<div class="featured-case-study-carousel" aria-label="Featured case studies" data-carousel>
-  <button class="carousel-nav-button" type="button" data-carousel-prev aria-label="View previous case study">Previous</button>
-
-  <div class="featured-case-study-track" data-carousel-track>
-    <article class="featured-case-study-card" data-carousel-slide>
-      <h3><a href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">Implementation Intelligence</a></h3>
-      <p>Reconciles sales commitments, requirements, dependencies, risks, and missing information into a source-linked readiness review before delivery begins.</p>
-      <a class="case-study-card__link" href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">View proof concept →</a>
-    </article>
-
-    <article class="featured-case-study-card" data-carousel-slide>
-      <h3><a href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">Quality Intelligence</a></h3>
-      <p>Turns fragmented support and technical evidence into a reviewable defect-triage package without automating the engineering decision.</p>
-      <a class="case-study-card__link" href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">View proof concept →</a>
-    </article>
-
-    <article class="featured-case-study-card" data-carousel-slide>
-      <h3><a href="{{ '/workflow-products/product-evidence/' | relative_url }}">Product Evidence</a></h3>
-      <p>Organizes scattered customer feedback into a source-linked evidence pack that a product reviewer can challenge before deciding the next discovery action.</p>
-      <a class="case-study-card__link" href="{{ '/workflow-products/product-evidence/' | relative_url }}">View proof concept →</a>
-    </article>
-
-    <article class="featured-case-study-card" data-carousel-slide>
-      <h3><a href="{{ '/case-studies/product-impact-at-paypal/' | relative_url }}">Product Impact at PayPal</a></h3>
-      <p>Product and engineering work across ML personalization, funnel optimization, and QA workflow automation for merchant growth.</p>
-      <a class="case-study-card__link" href="{{ '/case-studies/product-impact-at-paypal/' | relative_url }}">View case study →</a>
-    </article>
-  </div>
-
-  <button class="carousel-nav-button" type="button" data-carousel-next aria-label="View next case study">Next</button>
-</div>
-
-<script>
-  (function () {
-    var carousel = document.querySelector('[data-carousel]');
-    if (!carousel) return;
-
-    var slides = carousel.querySelectorAll('[data-carousel-slide]');
-    var prevButton = carousel.querySelector('[data-carousel-prev]');
-    var nextButton = carousel.querySelector('[data-carousel-next]');
-    var currentIndex = 0;
-
-    function updateCarousel() {
-      slides.forEach(function (slide, index) {
-        var isActive = index === currentIndex;
-        slide.classList.toggle('is-active', isActive);
-        slide.setAttribute('aria-hidden', String(!isActive));
-      });
-      prevButton.disabled = currentIndex === 0;
-      nextButton.disabled = currentIndex === slides.length - 1;
-    }
-
-    prevButton.addEventListener('click', function () {
-      if (currentIndex > 0) {
-        currentIndex -= 1;
-        updateCarousel();
-      }
-    });
-
-    nextButton.addEventListener('click', function () {
-      if (currentIndex < slides.length - 1) {
-        currentIndex += 1;
-        updateCarousel();
-      }
-    });
-
-    updateCarousel();
-  })();
-</script>
 
 ---
 
