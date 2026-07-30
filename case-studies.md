@@ -12,6 +12,33 @@ Evidence of designing products and workflows that turn scattered inputs into str
 
 The first group contains the most relevant operating and product-building experience. Portfolio prototypes and reference implementations are listed separately as capability evidence—not presented as client work.
 
+## Workflow Product Proof
+
+These proof concepts show the three B2B SaaS workflow products I currently specialize in. They use representative scenarios and are not presented as client deployments or achieved customer outcomes.
+
+<div class="case-study-card-grid" aria-label="Workflow product proof">
+  <article class="case-study-card case-study-card--priority">
+    <p class="case-study-card__eyebrow">Lead proof concept · Implementation readiness</p>
+    <h2><a href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">Implementation Intelligence</a></h2>
+    <p>Reconciles sales commitments, requirements, dependencies, risks, and missing information into a source-linked handoff-readiness review before delivery begins.</p>
+    <a class="case-study-card__link" href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">View proof concept →</a>
+  </article>
+
+  <article class="case-study-card case-study-card--priority">
+    <p class="case-study-card__eyebrow">Proof concept · Support-to-engineering triage</p>
+    <h2><a href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">Quality Intelligence</a></h2>
+    <p>Prepares fragmented support and technical evidence as a reviewable defect candidate while leaving classification, severity, and routing with an accountable human.</p>
+    <a class="case-study-card__link" href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">View proof concept →</a>
+  </article>
+
+  <article class="case-study-card case-study-card--priority">
+    <p class="case-study-card__eyebrow">Proof concept · Customer evidence reconciliation</p>
+    <h2><a href="{{ '/workflow-products/product-evidence/' | relative_url }}">Product Evidence</a></h2>
+    <p>Turns scattered customer feedback into a source-linked evidence pack for product discovery without automating prioritization or roadmap decisions.</p>
+    <a class="case-study-card__link" href="{{ '/workflow-products/product-evidence/' | relative_url }}">View proof concept →</a>
+  </article>
+</div>
+
 ## Primary Product & Operations Evidence
 
 <div class="case-study-card-grid" aria-label="Primary product and operations evidence">
@@ -66,27 +93,6 @@ These projects demonstrate specific workflow patterns and product decisions. The
     <h2><a href="{{ '/case-studies/iquote/' | relative_url }}">iQuote</a></h2>
     <p>AI-assisted quote workflow that turns unstructured requests into reviewed product, inventory, pricing, and approval decisions before producing a customer-ready quote.</p>
     <a class="case-study-card__link" href="{{ '/case-studies/iquote/' | relative_url }}">View workflow example →</a>
-  </article>
-
-  <article class="case-study-card">
-    <p class="case-study-card__eyebrow">Portfolio proof asset · Pre-demo human-approved workflow</p>
-    <h2><a href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">Sales-to-Implementation Handoff Validator</a></h2>
-    <p>Representative workflow proof for turning closed-won deal evidence into a source-linked implementation readiness review before customer kickoff, with an implementation-manager approval gate.</p>
-    <a class="case-study-card__link" href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">View proof page →</a>
-  </article>
-
-  <article class="case-study-card">
-    <p class="case-study-card__eyebrow">Portfolio proof asset · Pre-demo human-approved workflow</p>
-    <h2><a href="{{ '/case-studies/quality-intelligence/' | relative_url }}">Support Escalation-to-Defect Triage</a></h2>
-    <p>Representative workflow proof for turning fragmented support-escalation evidence into a traceable defect candidate before engineering handoff, with an escalation-manager approval gate.</p>
-    <a class="case-study-card__link" href="{{ '/case-studies/quality-intelligence/' | relative_url }}">View proof page →</a>
-  </article>
-
-  <article class="case-study-card">
-    <p class="case-study-card__eyebrow">Portfolio proof asset · Pre-demo human-approved workflow</p>
-    <h2><a href="{{ '/case-studies/product-evidence/' | relative_url }}">Customer Evidence-to-Discovery Brief</a></h2>
-    <p>Representative workflow proof for turning fragmented customer evidence into a source-linked discovery brief, with a product-reviewer approval gate before any next action is recorded.</p>
-    <a class="case-study-card__link" href="{{ '/case-studies/product-evidence/' | relative_url }}">View proof page →</a>
   </article>
 
   <article class="case-study-card">
