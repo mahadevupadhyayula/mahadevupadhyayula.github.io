@@ -25,9 +25,9 @@ image_alt: Discuss an AI Workflow Prototype Sprint
     <p class="service-number">01</p>
     <h2>Good-fit teams</h2>
     <ul>
-      <li>Product and engineering teams reviewing quality or release signals</li>
-      <li>Implementation teams coordinating requirements, decisions, risks, and handoffs</li>
-      <li>Product teams connecting customer evidence to prioritization and planning</li>
+      <li>Implementation and professional-services teams validating sales commitments, requirements, risks, dependencies, and missing information before delivery begins</li>
+      <li>Support, quality, product, and engineering teams preparing escalation evidence for accountable defect triage</li>
+      <li>Product teams reconciling customer evidence for discovery without automating prioritization or roadmap decisions</li>
       <li>Other internal B2B SaaS teams with a bounded, repeatable workflow and a clear owner</li>
     </ul>
   </article>
@@ -49,9 +49,9 @@ image_alt: Discuss an AI Workflow Prototype Sprint
   <p class="section-eyebrow">Workflow options</p>
   <h2 id="work-with-me-options-title">Choose the closest pattern. The first discussion will narrow the scope.</h2>
   <div class="service-card-grid homepage-service-grid">
-    <article><h3>Quality / Release Workflow</h3><p>Defects, support signals, tests, and release context prepared for review.</p></article>
-    <article><h3>Implementation / Onboarding Workflow</h3><p>Requirements, calls, decisions, open questions, and next steps made traceable.</p></article>
-    <article><h3>Product / Customer-Evidence Workflow</h3><p>Feedback, research, usage signals, and delivery context organized for product decisions.</p></article>
+    <article><h3>Implementation Intelligence</h3><p>Sales commitments, requirements, dependencies, risks, and missing information reconciled into a source-linked readiness review before delivery begins.</p></article>
+    <article><h3>Quality Intelligence</h3><p>Support escalations, diagnostics, possible duplicates, and technical context prepared as an evidence-backed defect candidate for accountable review.</p></article>
+    <article><h3>Product Evidence</h3><p>Customer feedback, research, usage signals, and delivery context organized for discovery review without making prioritization or roadmap decisions.</p></article>
     <article><h3>Other Internal Workflow</h3><p>Another bounded workflow with known inputs, a useful output, and an accountable reviewer.</p></article>
   </div>
 </section>
