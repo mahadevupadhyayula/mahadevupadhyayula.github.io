@@ -19,23 +19,23 @@ These proof concepts show the three B2B SaaS workflow products I currently speci
 <div class="case-study-card-grid" aria-label="Workflow product proof">
   <article class="case-study-card case-study-card--priority">
     <p class="case-study-card__eyebrow">Lead proof concept · Implementation readiness</p>
-    <h2><a href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">Implementation Intelligence</a></h2>
+    <h2><a href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">Implementation Intelligence</a></h2>
     <p>Reconciles sales commitments, requirements, dependencies, risks, and missing information into a source-linked handoff-readiness review before delivery begins.</p>
-    <a class="case-study-card__link" href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">View proof concept →</a>
+    <a class="case-study-card__link" href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">View proof concept →</a>
   </article>
 
   <article class="case-study-card case-study-card--priority">
     <p class="case-study-card__eyebrow">Proof concept · Support-to-engineering triage</p>
-    <h2><a href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">Quality Intelligence</a></h2>
+    <h2><a href="{{ '/case-studies/quality-intelligence/' | relative_url }}">Quality Intelligence</a></h2>
     <p>Prepares fragmented support and technical evidence as a reviewable defect candidate while leaving classification, severity, and routing with an accountable human.</p>
-    <a class="case-study-card__link" href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">View proof concept →</a>
+    <a class="case-study-card__link" href="{{ '/case-studies/quality-intelligence/' | relative_url }}">View proof concept →</a>
   </article>
 
   <article class="case-study-card case-study-card--priority">
     <p class="case-study-card__eyebrow">Proof concept · Customer evidence reconciliation</p>
-    <h2><a href="{{ '/workflow-products/product-evidence/' | relative_url }}">Product Evidence</a></h2>
+    <h2><a href="{{ '/case-studies/product-evidence/' | relative_url }}">Product Evidence</a></h2>
     <p>Turns scattered customer feedback into a source-linked evidence pack for product discovery without automating prioritization or roadmap decisions.</p>
-    <a class="case-study-card__link" href="{{ '/workflow-products/product-evidence/' | relative_url }}">View proof concept →</a>
+    <a class="case-study-card__link" href="{{ '/case-studies/product-evidence/' | relative_url }}">View proof concept →</a>
   </article>
 </div>
 
