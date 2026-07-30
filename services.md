@@ -118,17 +118,17 @@ image_alt: AI Workflow Prototype Sprint for B2B SaaS teams
     <article>
       <h3>Implementation Intelligence Workspace</h3>
       <p>Reconcile sales commitments, requirements, dependencies, risks, and missing information into a source-linked readiness review before delivery begins.</p>
-      <p class="card-cta"><a href="{{ '/workflow-products/implementation-intelligence/' | relative_url }}">Explore Implementation Intelligence</a></p>
+      <p class="card-cta"><a href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">Explore Implementation Intelligence</a></p>
     </article>
     <article>
       <h3>Quality Intelligence Workbench</h3>
       <p>Bring support escalations, diagnostics, possible duplicates, and technical context into an evidence-backed defect candidate for accountable review.</p>
-      <p class="card-cta"><a href="{{ '/workflow-products/quality-intelligence/' | relative_url }}">Explore Quality Intelligence</a></p>
+      <p class="card-cta"><a href="{{ '/case-studies/quality-intelligence/' | relative_url }}">Explore Quality Intelligence</a></p>
     </article>
     <article>
       <h3>Product Evidence Workbench</h3>
       <p>Organize customer feedback, research, usage signals, and delivery context into traceable evidence and discovery briefs without automating prioritization or roadmap decisions.</p>
-      <p class="card-cta"><a href="{{ '/workflow-products/product-evidence/' | relative_url }}">Explore Product Evidence</a></p>
+      <p class="card-cta"><a href="{{ '/case-studies/product-evidence/' | relative_url }}">Explore Product Evidence</a></p>
     </article>
   </div>
 </section>
