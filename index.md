@@ -1,165 +1,32 @@
 ---
 layout: default
-title: Human-Approved AI Workflow Products for B2B SaaS | Mahadev Upadhyayula
-description: I build focused AI workflow products that turn scattered inputs and signals into structured, reviewable work for B2B SaaS product, engineering, and implementation teams.
+title: Human-Approved AI Workflow Products | Mahadev Upadhyayula
+description: Make AI workflows reliable enough for real business operations with deterministic validation, source-linked review, and human approval.
 image: /assets/images/social-preview.svg
-image_alt: Human-approved AI workflow products for B2B SaaS teams
+image_alt: Human-approved AI workflow products for B2B teams
 ---
-
 <section class="hero-section" aria-labelledby="hero-title">
-  <p class="hero-eyebrow">Implementation Intelligence for B2B SaaS</p>
-  <h1 id="hero-title">Prevent delivery surprises before implementation begins.</h1>
-  <p class="hero-subheadline">I build human-approved AI workflows that reconcile sales commitments, requirements, dependencies, risks, and open questions into an implementation-readiness review.</p>
-  <p class="hero-copy">The implementation manager inspects the source evidence, edits findings, and decides what can proceed before delivery work moves downstream.</p>
-  <p class="hero-service-line">Lead workflow: Sales-to-Implementation Handoff Validator</p>
-  <div class="hero-actions" aria-label="Primary actions">
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-ai-workflow-prototype-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-ai-workflow-prototype-sprint">Discuss a Workflow Prototype</a>
-    <a class="button-link button-secondary" href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">Inspect the Workflow Proof</a>
-  </div>
+<p class="hero-eyebrow">Human-approved AI workflow products</p>
+<h1 id="hero-title">Make AI workflows reliable enough for real business operations.</h1>
+<p class="hero-subheadline">Turn scattered revenue, customer, product, and operational evidence into structured, validated, reviewable outputs—before they shape delivery, engineering, product, or revenue decisions.</p>
+<div class="hero-actions"><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/' | relative_url }}">Start a Workflow Audit</a><a class="button-link button-secondary" href="{{ '/workflow-evidence/' | relative_url }}">Explore Workflow Evidence</a></div>
 </section>
 
-<section class="trust-row" aria-label="Relevant experience">
-  <p>Ex-PayPal • 5+ years in AI/data/product systems • 0→1 AI products • Founder/operator experience</p>
-</section>
+<section aria-labelledby="pain-title"><p class="section-eyebrow">Where evidence breaks down</p><h2 id="pain-title">Critical decisions often begin with scattered, conflicting inputs.</h2><div class="card-grid four">
+<article><h3>Revenue</h3><p>Account context, buyer evidence, CRM fields, and commercial assumptions drift across tools.</p></article><article><h3>Implementation</h3><p>Commitments, requirements, risks, and owners remain unresolved when delivery begins.</p></article><article><h3>Quality</h3><p>Support signals and diagnostics arrive without enough evidence for accountable triage.</p></article><article><h3>Product</h3><p>Feedback, research, usage, and delivery context are hard to trace to a decision.</p></article></div></section>
 
-<section id="services" class="stage-one-services" aria-labelledby="services-title">
-  <div class="section-heading-row">
-    <div>
-      <p class="section-eyebrow">B2B SaaS workflow use cases</p>
-      <h2 id="services-title">Start with the implementation handoff. Apply the same pattern where evidence and judgment meet.</h2>
-    </div>
-    <a class="inline-section-link" href="{{ '/services' | relative_url }}">View all services</a>
-  </div>
-  <div class="service-card-grid homepage-service-grid">
-    <article>
-      <h3>Implementation Intelligence</h3>
-      <dl>
-        <dt>Problem</dt>
-        <dd>Sales commitments, requirements, dependencies, risks, and open questions are scattered across calls, CRM records, and documents before delivery begins.</dd>
-        <dt>Workflow product</dt>
-        <dd>Reconcile the handoff into a source-linked readiness review that an implementation manager can accept, conditionally accept, return, or escalate.</dd>
-        <dt>Best for</dt>
-        <dd>Implementation, professional-services, and customer teams coordinating complex onboarding and delivery work.</dd>
-      </dl>
-      <p class="card-cta"><a href="{{ '/case-studies/implementation-intelligence/' | relative_url }}">Explore Implementation Intelligence</a></p>
-    </article>
-    <article>
-      <h3>Quality Intelligence</h3>
-      <dl>
-        <dt>Problem</dt>
-        <dd>Support escalations, diagnostics, possible duplicates, and technical context live across tools, slowing engineering-ready defect triage.</dd>
-        <dt>Workflow product</dt>
-        <dd>Prepare an evidence-backed defect candidate for an accountable support or quality reviewer to approve, return, reject, or mark as a duplicate.</dd>
-        <dt>Best for</dt>
-        <dd>Support-heavy or technically complex B2B SaaS product and engineering organizations.</dd>
-      </dl>
-      <p class="card-cta"><a href="{{ '/case-studies/quality-intelligence/' | relative_url }}">Explore Quality Intelligence</a></p>
-    </article>
-    <article>
-      <h3>Product Evidence</h3>
-      <dl>
-        <dt>Problem</dt>
-        <dd>Customer feedback, usage signals, research, and delivery context are difficult to connect to product decisions.</dd>
-        <dt>Workflow product</dt>
-        <dd>Organize signals into traceable evidence, themes, and discovery briefs that product teams can challenge without automating prioritization or roadmap decisions.</dd>
-        <dt>Best for</dt>
-        <dd>Product teams reconciling customer evidence and deciding what discovery action should happen next.</dd>
-      </dl>
-      <p class="card-cta"><a href="{{ '/case-studies/product-evidence/' | relative_url }}">Explore Product Evidence</a></p>
-    </article>
-  </div>
-</section>
+<section class="control-layer" aria-labelledby="control-title"><p class="section-eyebrow">The control layer</p><h2 id="control-title">AI prepares the work. Rules test it. A person decides.</h2><div class="workflow-path" aria-label="Scattered inputs, AI extraction and reconciliation, deterministic validation, source-linked review, human approval, controlled output"><span>Scattered inputs</span><span>AI extraction and reconciliation</span><span>Deterministic validation</span><span>Source-linked review</span><span>Human approval</span><span>Controlled output</span></div></section>
 
-<section class="stage-one-services" aria-labelledby="engagement-path-title">
-  <div class="section-heading-row">
-    <div>
-      <p class="section-eyebrow">How engagements work</p>
-      <h2 id="engagement-path-title">Start with one workflow worth proving.</h2>
-    </div>
-  </div>
-  <div class="service-card-grid">
-    <article><h3>1. AI Workflow Prototype Sprint</h3><p>Choose one workflow, map its inputs and decisions, and build a reviewable prototype around the smallest useful outcome.</p></article>
-    <article><h3>2. Fixed-Scope Workflow Build</h3><p>Turn the validated prototype into a focused product with the right rules, integrations, and approval steps.</p></article>
-    <article><h3>3. Optional Optimization</h3><p>Improve output quality, monitoring, and adoption once the workflow proves useful in practice.</p></article>
-  </div>
-</section>
+<section aria-labelledby="pillars-title"><p class="section-eyebrow">Four workflow pillars</p><h2 id="pillars-title">One reviewable operating pattern, applied to four teams.</h2><div class="card-grid four">
+<article><span class="state state-review">Revenue owner review</span><h3>Revenue Intelligence</h3><p>Prepare source-backed account, buyer, CRM, and commercial evidence before records or decisions move forward.</p></article><article><span class="state state-confirmed">Implementation review</span><h3>Implementation Intelligence</h3><p>Reconcile what was sold, required, and unresolved before delivery starts.</p></article><article><span class="state state-gap">Quality decision</span><h3>Quality Intelligence</h3><p>Turn fragmented escalation evidence into a reviewable defect candidate.</p></article><article><span class="state state-review">Product decision</span><h3>Product Evidence</h3><p>Connect customer and product signals without automating prioritisation.</p></article></div></section>
 
-<section class="stage-one-services" aria-labelledby="why-different-title">
-  <div class="section-heading-row">
-    <div>
-      <p class="section-eyebrow">Focused by design</p>
-      <h2 id="why-different-title">A workflow product, not another chat window.</h2>
-    </div>
-  </div>
-  <p>I do not start with a generic chatbot or a broad transformation program. I start with one bounded workflow: the inputs, decisions, risks, approval points, and clean outputs that make it useful.</p>
-  <div class="service-card-grid">
-    <article>
-      <h3>Product background</h3>
-      <p>Ex-PayPal AI/data/product systems</p>
-    </article>
-    <article>
-      <h3>Operator background</h3>
-      <p>Founder building focused, reviewable workflow products</p>
-    </article>
-    <article>
-      <h3>Build proof</h3>
-      <p>Detailed proof concepts and workflow designs across implementation, quality, research, and product evidence</p>
-    </article>
-  </div>
-</section>
+<section aria-labelledby="evidence-title"><p class="section-eyebrow">Workflow Evidence</p><h2 id="evidence-title">Inspect representative proof—not implied customer outcomes.</h2><div class="card-grid four">
+<article><h3>Revenue</h3><p>Portfolio prototypes and architecture evidence.</p><a href="{{ '/workflow-evidence/revenue-intelligence/' | relative_url }}">Inspect evidence</a></article><article><h3>Implementation</h3><p>A guided synthetic handoff-validator demo.</p><a href="{{ '/workflow-evidence/implementation-intelligence/' | relative_url }}">Inspect evidence</a></article><article><h3>Quality</h3><p>A representative reviewer-first workflow brief.</p><a href="{{ '/workflow-evidence/quality-intelligence/' | relative_url }}">Inspect evidence</a></article><article><h3>Product</h3><p>A representative evidence-reconciliation workflow.</p><a href="{{ '/workflow-evidence/product-evidence/' | relative_url }}">Inspect evidence</a></article></div></section>
 
-<section id="work-with-me" class="workflow-cta" aria-labelledby="workflow-title">
-  <p class="section-eyebrow">Primary CTA flow</p>
-  <h2 id="workflow-title">Bring one scattered workflow. Leave with a reviewable prototype.</h2>
-  <p>Start with an AI Workflow Prototype Sprint: identify the signals, structure the work, define validation and human approval, and test the smallest useful product shape.</p>
-  <div class="workflow-path" aria-label="Messy Inputs → AI Extraction → Validation → Human Approval → Clean Output">
-    <span>Messy Inputs</span>
-    <span>AI Extraction</span>
-    <span>Validation</span>
-    <span>Human Approval</span>
-    <span>Clean Output</span>
-  </div>
-  <a class="button-link button-primary" href="{{ '/work-with-me?intent=homepage-ai-workflow-prototype-sprint' | relative_url }}" data-workflow-modal-open data-workflow-intent="homepage-ai-workflow-prototype-sprint">Discuss a Workflow Prototype</a>
-</section>
+<section aria-labelledby="services-title"><p class="section-eyebrow">Services</p><h2 id="services-title">Choose the smallest engagement that supports a sound decision.</h2><div class="card-grid three"><article><h3>Workflow Audit</h3><p>Map the workflow, baseline, controls, and next experiment.</p></article><article><h3>AI Workflow Prototype Sprint</h3><p>Build and evaluate one bounded, reviewer-first workflow.</p></article><article><h3>AI Workflow Advisory</h3><p>Guide prioritisation, measurement, governance, and architecture.</p></article></div><a class="inline-section-link" href="{{ '/services/' | relative_url }}">Compare services</a></section>
 
----
+<section aria-labelledby="credibility-title"><p class="section-eyebrow">Relevant background</p><h2 id="credibility-title">Product judgment and hands-on workflow building.</h2><p>Mahadev’s verified background spans product, engineering, data platforms, merchant intelligence, onboarding, experimentation, QA, and independent AI workflow prototypes. He worked at PayPal from 2019 to 2024 and has built independently since 2024.</p><a href="{{ '/about/' | relative_url }}">Read the evidence-controlled background</a></section>
 
-## How I Work
+<section aria-labelledby="insights-title"><p class="section-eyebrow">Insights</p><h2 id="insights-title">Practical thinking on workflow reliability.</h2><div class="card-grid three"><article><h3><a href="{{ '/blog/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems/' | relative_url }}">Workflow-first systems</a></h3><p>Why bounded workflows matter more than broad autonomy.</p></article><article><h3><a href="{{ '/blog/why-ai-accuracy-metrics-can-mislead-product-teams/' | relative_url }}">Beyond AI accuracy</a></h3><p>Measure whether outputs support real decisions.</p></article><article><h3><a href="{{ '/blog/data-driven-vs-driven-by-data-a-critical-distinction-for-ai-product-managers/' | relative_url }}">Evidence and judgment</a></h3><p>Keep accountable decisions grounded in context.</p></article></div><a href="{{ '/insights/' | relative_url }}">Explore Insights</a></section>
 
-I turn scattered B2B SaaS inputs into reviewed workflow products with one clear path:
-
-**Map the workflow → identify inputs → design extraction → add validation → keep human approval → produce clean output**
-
-That means product signals, quality findings, implementation notes, and decision context become structured outputs your team can inspect before they reach customers, roadmaps, or downstream tools.
-
----
-
-## Recent Blogs
-
-{% assign blog_pages = site.pages | sort: "date" | reverse %}
-
-<div class="blog-carousel" aria-label="Recent blog posts">
-  {% assign recent_blog_count = 0 %}
-  {% for blog in blog_pages %}
-    {% if recent_blog_count < 3 %}
-      {% if blog.path contains 'blog/' %}
-        {% if blog.title and blog.image %}
-          <article class="blog-carousel-card">
-            <a href="{{ blog.url | relative_url }}" aria-label="Read {{ blog.title }}">
-              <img src="{{ blog.image | relative_url }}" alt="{{ blog.title }}" loading="lazy">
-            </a>
-            <h3><a href="{{ blog.url | relative_url }}">{{ blog.title }}</a></h3>
-            {% if blog.subtitle %}
-              <p>{{ blog.subtitle }}</p>
-            {% endif %}
-          </article>
-          {% assign recent_blog_count = recent_blog_count | plus: 1 %}
-        {% endif %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-</div>
-
-<p>
-  <a class="button-link" href="{{ '/blogs' | relative_url }}">View All Blogs</a>
-</p>
+<section class="final-cta" aria-labelledby="final-title"><p class="section-eyebrow">Start with the operating problem</p><h2 id="final-title">Find the smallest workflow worth making reviewable.</h2><p>Bring the inputs, current rework, accountable owner, and decision that needs stronger evidence.</p><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/' | relative_url }}">Start a Workflow Audit</a></section>

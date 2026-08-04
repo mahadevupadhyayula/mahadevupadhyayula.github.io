@@ -15,6 +15,11 @@
   {% assign seo_description = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
   {% assign seo_image = page.image | default: site.default_social_image | absolute_url %}
   <meta name="description" content="{{ seo_description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ seo_description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ seo_image }}">
   <meta property="og:image:alt" content="{{ page.image_alt | default: page.title | default: site.title | escape }}">
   <meta name="twitter:card" content="summary_large_image">
@@ -27,7 +32,7 @@
     "@type": "Person",
     "name": "Mahadev Upadhyayula",
     "url": "{{ site.url }}",
-    "jobTitle": "AI Workflow Automation Consultant",
+    "jobTitle": "AI Workflow Product Builder",
     "sameAs": [
       "https://www.linkedin.com/in/mahu2/",
       "https://github.com/mahadevupadhyayula"

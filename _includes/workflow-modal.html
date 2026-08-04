@@ -108,11 +108,16 @@
       [
         ['name', 'Name is required.'],
         ['email', 'Work email is required.'],
+        ['company', 'Company is required.'],
+        ['role', 'Role is required.'],
+        ['owning_team', 'Owning team is required.'],
         ['workflow_type', 'Workflow type is required.'],
         ['messy_workflow', 'Current workflow and inputs are required.'],
         ['desired_output', 'Desired decision, action, or output is required.'],
         ['human_approval_required', 'Human approval requirement is required.'],
-        ['timeline', 'Timeline is required.']
+        ['volume', 'Rough volume or frequency is required.'],
+        ['cost_risk', 'Current rework, time cost, or risk is required.'],
+        ['timeline', 'Preferred engagement is required.']
       ].forEach(function (item) {
         if (!getValue(form, item[0])) {
           errors.push({ field: item[0], message: item[1] });
@@ -157,7 +162,7 @@
         company: getValue(form, 'company'),
         intent: getValue(form, 'intent'),
         workflow_type: getValue(form, 'workflow_type'),
-        messy_workflow: getValue(form, 'messy_workflow'),
+        messy_workflow: [getValue(form, 'messy_workflow'), getValue(form, 'role') && 'Role: ' + getValue(form, 'role'), getValue(form, 'owning_team') && 'Owning team: ' + getValue(form, 'owning_team'), getValue(form, 'volume') && 'Volume/frequency: ' + getValue(form, 'volume'), getValue(form, 'cost_risk') && 'Current rework/time/risk: ' + getValue(form, 'cost_risk')].filter(Boolean).join('\n\n'),
         desired_output: getValue(form, 'desired_output'),
         human_approval_required: getValue(form, 'human_approval_required'),
         tools: getValue(form, 'tools'),

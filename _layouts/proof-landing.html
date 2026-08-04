@@ -17,13 +17,9 @@ layout: default
       <a class="button-link button-primary" href="#executive-brief">Read the Executive Brief</a>
       {% if page.demo_url %}
         <a class="button-link button-secondary" href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">Explore the Live Demo</a>
-      {% else %}
-        <span class="proof-action--planned" aria-label="Live demo planned after the demo build">Live Demo · Planned</span>
       {% endif %}
       {% if page.loom_url %}
         <a class="button-link button-secondary" href="{{ page.loom_url }}" target="_blank" rel="noopener noreferrer">Watch the Walkthrough</a>
-      {% else %}
-        <span class="proof-action--planned" aria-label="Walkthrough planned after the demo build">2–3 min Walkthrough · Planned</span>
       {% endif %}
     </div>
   </section>
@@ -107,8 +103,8 @@ layout: default
     <h2 id="assets-title">Inspect the current proof—and the next layer when it is ready.</h2>
     <div class="proof-assets-grid">
       <article><h3>Executive Brief</h3><p>Available on this page: operating problem, workflow, control point, scope, and value hypothesis.</p><a href="#executive-brief">Read the brief →</a></article>
-      <article><h3>Live Demo</h3><p>A thin synthetic-data workflow showing evidence, review, and a controlled output.</p>{% if page.demo_url %}<a href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">Open demo →</a>{% else %}<span>Planned after demo build</span>{% endif %}</article>
-      <article><h3>2–3 minute walkthrough</h3><p>A concise video showing the operating problem, workflow, and human approval gate.</p>{% if page.loom_url %}<a href="{{ page.loom_url }}" target="_blank" rel="noopener noreferrer">Watch walkthrough →</a>{% else %}<span>Planned after demo build</span>{% endif %}</article>
+      {% if page.demo_url %}<article><h3>Guided demo</h3><p>A synthetic-data workflow showing evidence, review, and a controlled output.</p><a href="{{ page.demo_url }}" target="_blank" rel="noopener noreferrer">Open guided demo →</a></article>{% endif %}
+      {% if page.loom_url %}<article><h3>Workflow walkthrough</h3><p>A concise video showing the operating problem, workflow, and human approval gate.</p><a href="{{ page.loom_url }}" target="_blank" rel="noopener noreferrer">Watch walkthrough →</a></article>{% endif %}
     </div>
   </section>
 
@@ -116,6 +112,6 @@ layout: default
     <p class="proof-eyebrow">Next step</p>
     <h2 id="proof-cta-title">{{ page.cta_title | default: 'Discuss one workflow worth validating.' }}</h2>
     <p>{{ page.cta_copy | default: 'Start with one real workflow, the evidence your team already reviews, and the accountable person who must approve the outcome.' }}</p>
-    <a class="button-link button-primary" href="{{ page.cta_url | default: '/work-with-me?intent=proof-landing-page' | relative_url }}">{{ page.cta_label | default: 'Discuss a Workflow Prototype' }}</a>
+    <a class="button-link button-primary" href="{{ page.cta_url | default: '/start-a-workflow-audit/' | relative_url }}">{{ page.cta_label | default: 'Start a Workflow Audit' }}</a>
   </section>
 </div>
