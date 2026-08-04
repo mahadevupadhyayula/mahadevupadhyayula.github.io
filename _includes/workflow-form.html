@@ -21,33 +21,38 @@
   </div>
 
   <div class="form-field">
-    <label for="{{ workflow_form_prefix }}-company">Company and owning team</label>
-    <input id="{{ workflow_form_prefix }}-company" name="company" type="text" autocomplete="organization" placeholder="Example: Acme SaaS — Implementation Operations">
+    <label for="{{ workflow_form_prefix }}-company">Company</label>
+    <input id="{{ workflow_form_prefix }}-company" name="company" type="text" autocomplete="organization" required>
+  </div>
+
+  <div class="form-field">
+    <label for="{{ workflow_form_prefix }}-role">Role</label>
+    <input id="{{ workflow_form_prefix }}-role" name="role" type="text" autocomplete="organization-title" required>
+  </div>
+
+  <div class="form-field">
+    <label for="{{ workflow_form_prefix }}-owning-team">Owning team</label>
+    <input id="{{ workflow_form_prefix }}-owning-team" name="owning_team" type="text" required>
   </div>
 
   {% if workflow_form_compact %}
     <input name="workflow_type" type="hidden" value="AI Workflow Prototype Sprint">
   {% else %}
     <div class="form-field">
-      <label for="{{ workflow_form_prefix }}-workflow-type">Workflow type</label>
+      <label for="{{ workflow_form_prefix }}-workflow-type">Closest workflow pillar</label>
       <select id="{{ workflow_form_prefix }}-workflow-type" name="workflow_type" required>
       <option value="">Select one</option>
-      <option value="AI Workflow Prototype Sprint" data-intents="ai-workflow-prototype-sprint,workflow-prototype-sprint,prototype-sprint">AI Workflow Prototype Sprint</option>
-      <option value="Quality / Release Workflow" data-intents="quality-release-workflow,quality-intelligence">Quality / Release Workflow</option>
-      <option value="Implementation / Onboarding Workflow" data-intents="implementation-onboarding-workflow,implementation-intelligence">Implementation / Onboarding Workflow</option>
-      <option value="Product / Customer-Evidence Workflow" data-intents="product-customer-evidence-workflow,product-evidence">Product / Customer-Evidence Workflow</option>
-      <option value="Other Internal Workflow" data-intents="other-internal-workflow,internal-workflow">Other Internal Workflow</option>
-      <option value="CRM Hygiene Workflow" data-intents="crm-hygiene,crm-notes">CRM Hygiene Workflow (additional capability)</option>
-      <option value="Pre-CRM Research Workflow" data-intents="pre-crm-research,lead-research">Pre-CRM Research Workflow (additional capability)</option>
-      <option value="Quote / Proposal Workflow" data-intents="quote-proposal,quote-automation,quote-workflow">Quote / Proposal Workflow (additional capability)</option>
-      <option value="Content Workflow" data-intents="content-workflow,content-briefs,blog-content">Content Workflow (additional capability)</option>
-      <option value="Custom Workflow MVP" data-intents="custom-ai-mvp,automation-mvp,prototype">Custom Workflow MVP (additional capability)</option>
+      <option value="CRM Hygiene Workflow">Revenue Intelligence</option>
+      <option value="Implementation / Onboarding Workflow">Implementation Intelligence</option>
+      <option value="Quality / Release Workflow">Quality Intelligence</option>
+      <option value="Product / Customer-Evidence Workflow">Product Evidence</option>
+      <option value="Other Internal Workflow">Unsure / another workflow</option>
       </select>
     </div>
   {% endif %}
 
   <div class="form-field form-field-full">
-    <label for="{{ workflow_form_prefix }}-messy-workflow">{% if workflow_form_compact %}What workflow is creating friction?{% else %}Current workflow and inputs{% endif %}</label>
+    <label for="{{ workflow_form_prefix }}-messy-workflow">{% if workflow_form_compact %}What workflow is creating friction?{% else %}Current workflow or pain{% endif %}</label>
     <textarea id="{{ workflow_form_prefix }}-messy-workflow" name="messy_workflow" rows="{% if workflow_form_compact %}4{% else %}5{% endif %}" placeholder="{% if workflow_form_compact %}Briefly describe the owning team, the inputs they reconcile, and where delivery surprises or rework appear.{% else %}What does the owning team review today? Include representative input types such as tickets, release notes, calls, requirements, feedback, research, or usage signals.{% endif %}" required></textarea>
   </div>
 
@@ -59,6 +64,15 @@
     <div class="form-field form-field-full">
       <label for="{{ workflow_form_prefix }}-clean-output">Desired decision, action, or reviewed output</label>
       <textarea id="{{ workflow_form_prefix }}-clean-output" name="desired_output" rows="4" placeholder="What should a person be able to decide, approve, hand off, or act on after reviewing the workflow output?" required></textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="{{ workflow_form_prefix }}-volume">Rough volume or frequency</label>
+      <input id="{{ workflow_form_prefix }}-volume" name="volume" type="text" required placeholder="Example: 40 handoffs per month">
+    </div>
+    <div class="form-field form-field-full">
+      <label for="{{ workflow_form_prefix }}-cost-risk">Current rework, time cost, or risk</label>
+      <textarea id="{{ workflow_form_prefix }}-cost-risk" name="cost_risk" rows="3" required></textarea>
     </div>
 
     <div class="form-field">
@@ -77,26 +91,13 @@
     </div>
 
     <div class="form-field">
-      <label for="{{ workflow_form_prefix }}-timeline">Timeline</label>
+      <label for="{{ workflow_form_prefix }}-timeline">Preferred engagement</label>
       <select id="{{ workflow_form_prefix }}-timeline" name="timeline" required>
-        <option value="">Select one</option>
-        <option value="Ready in the next 2-4 weeks">Ready in the next 2-4 weeks</option>
-        <option value="Ready in the next 1-2 months">Ready in the next 1-2 months</option>
-        <option value="Later this quarter">Later this quarter</option>
-        <option value="Exploring options">Exploring options</option>
+        <option value="">Select one</option><option value="Workflow Audit">Audit</option><option value="AI Workflow Prototype Sprint">Prototype</option><option value="AI Workflow Advisory">Advisory</option><option value="Exploring options">Unsure</option>
       </select>
     </div>
 
-    <div class="form-field">
-      <label for="{{ workflow_form_prefix }}-budget-range">Indicative budget <span>(optional)</span></label>
-      <select id="{{ workflow_form_prefix }}-budget-range" name="budget_range">
-        <option value="">Prefer to discuss scope first</option>
-        <option value="$5,000-$10,000">$5,000–$10,000</option>
-        <option value="$10,000-$20,000">$10,000–$20,000</option>
-        <option value="$20,000+">$20,000+</option>
-        <option value="Not sure yet">Not sure yet</option>
-      </select>
-    </div>
+
   {% endif %}
 
   {% unless workflow_form_compact %}<p class="form-note">Scattered Inputs → AI Processing → Validation → Human Approval → Reviewable Output</p>{% endunless %}
