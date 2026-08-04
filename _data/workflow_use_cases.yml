@@ -1,0 +1,51 @@
+- name: Revenue Intelligence
+  buyer: Revenue Operations
+  problem: CRM records, calls, buyer research, and commercial context conflict or remain incomplete before qualification, forecasting, or outreach decisions.
+  inputs: Approved CRM fields, first-party call evidence, authoritative company sources, and verified buyer sources
+  ai_work: Extract account facts, reconcile recent context, and prepare candidate CRM changes with source links
+  validation: Required-field, freshness, allowed-value, duplicate, and cross-source conflict checks
+  reviewer: Revenue Operations lead
+  output: Reviewed account brief and approval-ready CRM change set
+  pilot_metrics: CRM completeness, review time, qualification speed, prevented incorrect writeback
+  url: /workflow-evidence/revenue-intelligence/
+  proof_status: Representative workflow proof
+  headline: Make CRM and account context reliable before revenue teams act.
+
+- name: Implementation Intelligence
+  buyer: Implementation and Professional Services
+  problem: Commitments, requirements, dependencies, security needs, owners, and open questions remain scattered when delivery begins.
+  inputs: CRM commitments, executed agreements, discovery evidence, solution notes, and approved requirements
+  ai_work: Extract commitments and dependencies, reconcile handoff evidence, and surface gaps or ambiguity
+  validation: Required-input, ownership, conflict, dependency, and readiness checks
+  reviewer: Implementation manager
+  output: Approved implementation-readiness baseline and controlled handoff package
+  pilot_metrics: Late gaps, remediation effort, review time
+  url: /workflow-evidence/implementation-intelligence/
+  proof_status: Representative workflow proof
+  headline: Catch delivery-critical ambiguity before customer kickoff.
+
+- name: Quality Intelligence
+  buyer: Quality Engineering and Support
+  problem: Support reports, diagnostics, duplicates, environment details, and release context are fragmented before engineering triage.
+  inputs: Support tickets, system logs, diagnostics, environment details, and release records
+  ai_work: Extract reproducible evidence, reconcile duplicates, and prepare defect candidates for inspection
+  validation: Reproduction-field, environment, duplicate, release, and evidence-coverage checks
+  reviewer: Quality Engineering lead
+  output: Approved engineering-ready defect candidate or documented return decision
+  pilot_metrics: Triage time, returned candidates, accepted findings
+  url: /workflow-evidence/quality-intelligence/
+  proof_status: Representative workflow proof
+  headline: Give engineering evidence—not another ticket history.
+
+- name: Product Evidence
+  buyer: Product and Product Operations
+  problem: Feedback, interviews, usage signals, commercial context, and delivery evidence are difficult to reconcile without losing provenance.
+  inputs: Customer feedback, research, usage signals, support evidence, and delivery context
+  ai_work: Extract themes, connect claims to sources, and reconcile supporting and conflicting signals
+  validation: Source-coverage, freshness, segment, duplicate, and contradiction checks
+  reviewer: Product manager
+  output: Source-linked discovery brief with an explicit reviewer decision
+  pilot_metrics: Evidence coverage, review time, accepted themes
+  url: /workflow-evidence/product-evidence/
+  proof_status: Representative workflow proof
+  headline: Turn customer signals into product evidence your team can inspect.

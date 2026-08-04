@@ -1,6 +1,6 @@
 ---
 layout: workflow-proof
-title: Revenue Intelligence | Workflow Evidence
+title: Revenue Intelligence | Use Cases
 permalink: /workflow-evidence/revenue-intelligence/
 description: A representative human-approved Revenue Intelligence workflow with source evidence, deterministic validation, reviewer decisions, and controlled output.
 evidence_status: Representative workflow and product-building evidence.

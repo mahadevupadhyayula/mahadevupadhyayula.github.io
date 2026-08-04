@@ -1,6 +1,6 @@
 ---
 layout: workflow-proof
-title: Implementation Intelligence | Workflow Evidence
+title: Implementation Intelligence | Use Cases
 permalink: /workflow-evidence/implementation-intelligence/
 description: A representative human-approved Implementation Intelligence workflow with source evidence, deterministic validation, reviewer decisions, and controlled output.
 evidence_status: Representative workflow and product-building evidence.
