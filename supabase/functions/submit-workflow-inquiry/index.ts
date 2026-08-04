@@ -14,6 +14,17 @@ const ALLOWED_WORKFLOW_TYPES = new Set([
   'Quote / Proposal Workflow',
   'Content Workflow',
   'Custom Workflow MVP',
+  'Revenue Intelligence',
+  'Implementation Intelligence',
+  'Quality Intelligence',
+  'Product Evidence',
+]);
+
+const ALLOWED_ENGAGEMENTS = new Set([
+  'Workflow Audit',
+  'AI Workflow Prototype Sprint',
+  'AI Workflow Advisory',
+  'Exploring options',
 ]);
 
 const ALLOWED_HUMAN_APPROVAL_REQUIRED = new Set([
@@ -27,11 +38,15 @@ const MAX_LENGTHS = {
   email: 254,
   workflow_type: 120,
   company: 180,
+  role: 180,
+  owning_team: 180,
   intent: 120,
   messy_workflow: 4000,
   desired_output: 2500,
   human_approval_required: 20,
   tools: 1000,
+  volume: 500,
+  cost_risk: 2000,
   timeline: 80,
   budget_range: 80,
   page_url: 2048,
@@ -55,12 +70,16 @@ type InquiryPayload = {
   name?: unknown;
   email?: unknown;
   company?: unknown;
+  role?: unknown;
+  owning_team?: unknown;
   intent?: unknown;
   workflow_type?: unknown;
   messy_workflow?: unknown;
   desired_output?: unknown;
   human_approval_required?: unknown;
   tools?: unknown;
+  volume?: unknown;
+  cost_risk?: unknown;
   timeline?: unknown;
   budget_range?: unknown;
   page_url?: unknown;
@@ -128,12 +147,16 @@ function validatePayload(payload: InquiryPayload) {
     name: toCleanString(payload.name),
     email: toCleanString(payload.email).toLowerCase(),
     company: toNullableString(payload.company, MAX_LENGTHS.company),
+    role: toCleanString(payload.role),
+    owning_team: toCleanString(payload.owning_team),
     intent: toNullableString(payload.intent, MAX_LENGTHS.intent),
     workflow_type: toCleanString(payload.workflow_type),
     messy_workflow: toCleanString(payload.messy_workflow),
     desired_output: toCleanString(payload.desired_output),
     human_approval_required: toCleanString(payload.human_approval_required),
     tools: toNullableString(payload.tools, MAX_LENGTHS.tools),
+    volume: toCleanString(payload.volume),
+    cost_risk: toCleanString(payload.cost_risk),
     timeline: toCleanString(payload.timeline),
     budget_range: toNullableString(payload.budget_range, MAX_LENGTHS.budget_range),
     page_url: toNullableString(payload.page_url, MAX_LENGTHS.page_url),
@@ -162,6 +185,10 @@ function validatePayload(payload: InquiryPayload) {
 
   if (normalized.workflow_type && !ALLOWED_WORKFLOW_TYPES.has(normalized.workflow_type)) {
     errors.push({ field: 'workflow_type', message: 'Select an allowed workflow type.' });
+  }
+
+  if (normalized.timeline && !ALLOWED_ENGAGEMENTS.has(normalized.timeline)) {
+    errors.push({ field: 'timeline', message: 'Select an allowed engagement.' });
   }
 
   if (

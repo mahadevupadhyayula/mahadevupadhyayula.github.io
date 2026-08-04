@@ -23,7 +23,11 @@
       'Pre-CRM Research Workflow',
       'Quote / Proposal Workflow',
       'Content Workflow',
-      'Custom Workflow MVP'
+      'Custom Workflow MVP',
+      'Revenue Intelligence',
+      'Implementation Intelligence',
+      'Quality Intelligence',
+      'Product Evidence'
     ];
     var allowedHumanApprovalResponses = [
       'Yes',
@@ -35,6 +39,7 @@
     var capturedUserAgent = window.navigator && window.navigator.userAgent ? window.navigator.userAgent : '';
     var params = new URLSearchParams(window.location.search);
     var pageIntent = params.get('intent') || '';
+    var pageEngagement = params.get('engagement') || '';
     var modal = document.querySelector('[data-workflow-modal]');
     var modalPanel = modal ? modal.querySelector('.workflow-modal__panel') : null;
     var lastFocusedElement = null;
@@ -162,10 +167,14 @@
         company: getValue(form, 'company'),
         intent: getValue(form, 'intent'),
         workflow_type: getValue(form, 'workflow_type'),
-        messy_workflow: [getValue(form, 'messy_workflow'), getValue(form, 'role') && 'Role: ' + getValue(form, 'role'), getValue(form, 'owning_team') && 'Owning team: ' + getValue(form, 'owning_team'), getValue(form, 'volume') && 'Volume/frequency: ' + getValue(form, 'volume'), getValue(form, 'cost_risk') && 'Current rework/time/risk: ' + getValue(form, 'cost_risk')].filter(Boolean).join('\n\n'),
+        role: getValue(form, 'role'),
+        owning_team: getValue(form, 'owning_team'),
+        messy_workflow: getValue(form, 'messy_workflow'),
         desired_output: getValue(form, 'desired_output'),
         human_approval_required: getValue(form, 'human_approval_required'),
         tools: getValue(form, 'tools'),
+        volume: getValue(form, 'volume'),
+        cost_risk: getValue(form, 'cost_risk'),
         timeline: getValue(form, 'timeline'),
         budget_range: getValue(form, 'budget_range'),
         page_url: capturedPageUrl,
@@ -251,6 +260,18 @@
 
           return false;
         });
+      }
+
+      var engagement = getField(form, 'timeline');
+      var engagementMap = {
+        audit: 'Workflow Audit',
+        prototype: 'AI Workflow Prototype Sprint',
+        advisory: 'AI Workflow Advisory',
+        unsure: 'Exploring options'
+      };
+
+      if (engagement && engagement.options && engagementMap[pageEngagement]) {
+        engagement.value = engagementMap[pageEngagement];
       }
     }
 
