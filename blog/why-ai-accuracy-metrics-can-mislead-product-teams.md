@@ -3,6 +3,7 @@ layout: page
 title: Why AI Accuracy Metrics Can Mislead Product Teams
 subtitle: 92% Accurate. 100% Confident. 0% Useful.
 date: 2026-03-04
+category: "Quality Intelligence"
 image: /assets/images/why-ai-accuracy-metrics-can-mislead-product-teams.png
 permalink: /blog/why-ai-accuracy-metrics-can-mislead-product-teams/
 ---

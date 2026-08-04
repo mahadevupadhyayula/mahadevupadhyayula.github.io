@@ -3,6 +3,7 @@ layout: page
 title: The North Star Metric in AI-Driven Product Development
 subtitle: Why the brightest metric in the sky still won’t steer the ship
 date: 2026-03-10
+category: "ROI & Workflow Measurement"
 image: /assets/images/the-north-star-metric-in-ai-driven-product-development.png
 permalink: /blog/the-north-star-metric-in-ai-driven-product-development/
 ---
