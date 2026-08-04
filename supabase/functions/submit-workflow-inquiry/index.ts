@@ -168,6 +168,9 @@ function validatePayload(payload: InquiryPayload) {
 
   addRequiredStringError(errors, normalized.name, 'name', 'Name');
   addRequiredStringError(errors, normalized.email, 'email', 'Email');
+  addRequiredStringError(errors, normalized.company || '', 'company', 'Company');
+  addRequiredStringError(errors, normalized.role, 'role', 'Role');
+  addRequiredStringError(errors, normalized.owning_team, 'owning_team', 'Owning team');
   addRequiredStringError(errors, normalized.workflow_type, 'workflow_type', 'Workflow type');
   addRequiredStringError(errors, normalized.messy_workflow, 'messy_workflow', 'Current workflow and inputs');
   addRequiredStringError(errors, normalized.desired_output, 'desired_output', 'Desired decision, action, or output');
@@ -177,6 +180,8 @@ function validatePayload(payload: InquiryPayload) {
     'human_approval_required',
     'Human approval requirement',
   );
+  addRequiredStringError(errors, normalized.volume, 'volume', 'Rough volume or frequency');
+  addRequiredStringError(errors, normalized.cost_risk, 'cost_risk', 'Current rework, time cost, or risk');
   addRequiredStringError(errors, normalized.timeline, 'timeline', 'Timeline');
 
   if (normalized.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalized.email)) {

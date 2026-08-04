@@ -393,6 +393,10 @@
           showFieldError(form, error.field, error.message);
         });
         setStatus(form, 'Please fix the highlighted fields and submit again.', 'error');
+        var firstInvalidField = form.querySelector('[aria-invalid="true"]');
+        if (firstInvalidField) {
+          firstInvalidField.focus();
+        }
         return;
       }
 
