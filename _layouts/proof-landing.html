@@ -5,7 +5,7 @@ layout: default
 
 <div class="proof-page">
   <section class="proof-hero" aria-labelledby="proof-title">
-    <p class="proof-breadcrumb"><a href="{{ '/case-studies' | relative_url }}">Case Studies</a> / {{ page.pillar | default: page.title }}</p>
+    <p class="proof-breadcrumb"><a href="{{ '/case-studies/' | relative_url }}">Case Studies</a> / {{ page.pillar | default: page.title }}</p>
     <p class="proof-eyebrow">{{ page.pillar | default: 'Human-approved AI workflow product' }}</p>
     <h1 id="proof-title">{{ page.hero_title | default: page.title }}</h1>
     {% if page.lede %}<p class="proof-lede">{{ page.lede }}</p>{% endif %}

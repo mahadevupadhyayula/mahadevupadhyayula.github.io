@@ -128,7 +128,7 @@ image_alt: Sales-to-Implementation Handoff Validator guided demo
     <p class="demo-eyebrow">Apply this pattern</p>
     <h2>Discuss one implementation handoff worth validating.</h2>
     <p>Start with the deal sources your team already uses, the failure point that creates rework, and the approval owner who must stay in control.</p>
-    <a class="button-link button-primary" href="{{ '/work-with-me?intent=implementation-intelligence' | relative_url }}" data-workflow-modal-open data-workflow-intent="implementation-intelligence">Request a Workflow Review</a>
+    <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=implementation-intelligence' | relative_url }}" data-workflow-modal-open data-workflow-intent="implementation-intelligence">Request a Workflow Review</a>
   </section>
 </main>
 

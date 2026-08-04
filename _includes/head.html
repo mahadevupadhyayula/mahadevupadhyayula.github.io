@@ -23,6 +23,8 @@
   <meta property="og:image" content="{{ seo_image }}">
   <meta property="og:image:alt" content="{{ page.image_alt | default: page.title | default: site.title | escape }}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
+  <meta name="twitter:description" content="{{ seo_description | escape }}">
   <meta name="twitter:image" content="{{ seo_image }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {%- seo title=false -%}
