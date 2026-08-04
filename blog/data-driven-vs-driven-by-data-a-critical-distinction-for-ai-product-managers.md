@@ -3,6 +3,7 @@ layout: page
 title: "Data-Driven vs Driven by Data: A Critical Distinction for AI Product Managers"
 subtitle: "Data Should Guide Product Strategy — Not Drive It Blindly."
 date: 2026-03-12
+category: "Product Evidence"
 image: /assets/images/data-driven-vs-driven-by-data-a-critical-distinction-for-ai-product-managers.png
 permalink: /blog/data-driven-vs-driven-by-data-a-critical-distinction-for-ai-product-managers/
 ---

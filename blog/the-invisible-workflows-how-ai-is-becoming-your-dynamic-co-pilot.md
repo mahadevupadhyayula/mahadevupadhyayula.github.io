@@ -3,6 +3,7 @@ layout: page
 title: "The Invisible Workflows: How AI is Becoming Your Dynamic Co-Pilot"
 subtitle: "From rigid automations to dynamic multi-agent orchestration."
 date: 2026-03-18
+category: "Implementation Intelligence"
 image: /assets/images/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot-1.png
 permalink: /blog/the-invisible-workflows-how-ai-is-becoming-your-dynamic-co-pilot/
 ---

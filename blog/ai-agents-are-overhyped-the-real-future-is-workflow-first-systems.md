@@ -3,6 +3,7 @@ layout: page
 title: "AI Agents Are Overhyped — The Real Future Is Workflow-First Systems"
 subtitle: "Why workflow-first systems will outlast agent-first hype."
 date: 2026-03-20
+category: "Human Control & AI Governance"
 image: /assets/images/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems-1.png
 permalink: /blog/ai-agents-are-overhyped-the-real-future-is-workflow-first-systems/
 ---
