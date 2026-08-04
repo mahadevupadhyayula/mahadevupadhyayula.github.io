@@ -10,6 +10,8 @@ This static site does not write directly to `public.workflow_inquiries`. The bro
    supabase db push
    ```
 
+   Phase 3 adds nullable `role`, `owning_team`, `volume`, and `cost_risk` columns and extends the existing workflow-type constraint. Existing rows remain valid and no data is rewritten or removed. Deploy the migration before deploying the Phase 3 Edge Function so new fields can be inserted safely.
+
 2. Deploy the Edge Function:
 
    ```bash
