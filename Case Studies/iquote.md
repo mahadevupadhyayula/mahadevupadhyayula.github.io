@@ -11,7 +11,7 @@ permalink: /case-studies/iquote/
   <div class="iquote-hero-stack" style="display: grid; gap: 1.25rem;">
     <section class="iquote-hero" aria-labelledby="iquote-title" style="display: block;">
       <div>
-        <p class="iquote-breadcrumb"><a href="{{ '/case-studies/' | relative_url }}">Case Studies</a> / iQuote</p>
+        <p class="iquote-breadcrumb"><a href="{{ '/workflow-evidence/' | relative_url }}">Use Cases</a> / iQuote</p>
         <p class="iquote-eyebrow">Enterprise finance &amp; commercial operations workflow</p>
         <h1 id="iquote-title">From messy quote requests to approved commercial output</h1>
         <p class="iquote-lede">iQuote is a working AI-assisted quote workflow that extracts unstructured customer requests, resolves products and inventory, applies deterministic pricing rules, and routes exceptions through human approval before producing a customer-ready quote.</p>
@@ -334,7 +334,7 @@ permalink: /case-studies/iquote/
     <h2 id="iquote-cta-title">Building an AI workflow where business rules and human judgement must stay in control?</h2>
     <p>I’m interested in roles and projects where ambiguous operational work needs to become a reliable, inspectable and human-controlled AI system.</p>
     <div class="iquote-actions">
-      <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=iquote-case-study' | relative_url }}">Discuss the workflow</a>
+      <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=iquote-case-study' | relative_url }}">Book a Discovery Call</a>
       <a class="button-link button-secondary" href="https://www.linkedin.com/in/mahadevupadhyayula/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
     </div>
   </section>

@@ -10,7 +10,7 @@ permalink: /case-studies/mawi/
 <div class="iquote-page">
   <section class="iquote-hero" aria-labelledby="mawi-title" style="display: block;">
     <div>
-      <p class="iquote-breadcrumb"><a href="{{ '/case-studies/' | relative_url }}">Case Studies</a> / MAWI</p>
+      <p class="iquote-breadcrumb"><a href="{{ '/workflow-evidence/' | relative_url }}">Use Cases</a> / MAWI</p>
       <p class="iquote-eyebrow">Controlled AI orchestration · Reference implementation</p>
       <h1 id="mawi-title">Human-controlled AI workflows that keep execution outside the model</h1>
       <p class="iquote-lede">MAWI turns business signals into structured decisions, approval-gated actions and auditable outcomes, with deterministic fallback when model output fails.</p>
@@ -162,6 +162,6 @@ permalink: /case-studies/mawi/
     <p class="iquote-section-eyebrow">Roles and projects</p>
     <h2 id="mawi-cta-title">Interested in a controlled AI workflow?</h2>
     <p>Let’s discuss the operating decisions, approval boundaries and evidence your workflow needs.</p>
-    <div class="iquote-actions"><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=mawi-case-study' | relative_url }}">Discuss a role or project</a></div>
+    <div class="iquote-actions"><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=mawi-case-study' | relative_url }}">Book a Discovery Call</a></div>
   </section>
 </div>

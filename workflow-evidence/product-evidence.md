@@ -1,6 +1,6 @@
 ---
 layout: workflow-proof
-title: Product Evidence | Workflow Evidence
+title: Product Evidence | Use Cases
 permalink: /workflow-evidence/product-evidence/
 description: A representative human-approved Product Evidence workflow with source evidence, deterministic validation, reviewer decisions, and controlled output.
 evidence_status: Representative workflow and product-building evidence.

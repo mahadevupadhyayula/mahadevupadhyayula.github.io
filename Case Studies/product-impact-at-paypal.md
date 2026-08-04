@@ -314,5 +314,5 @@ The transferable pattern is practical rather than promotional: connect product a
   <p class="section-eyebrow">Apply the workflow pattern</p>
   <h2 id="paypal-case-study-cta">Discuss a quality or onboarding workflow prototype.</h2>
   <p>Start with the signals your team reviews, the decision or handoff that follows, and the person who needs to approve the output.</p>
-  <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=paypal-quality-release-workflow' | relative_url }}">Discuss an AI Workflow Prototype</a>
+  <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=paypal-quality-release-workflow' | relative_url }}">Book a Discovery Call</a>
 </section>

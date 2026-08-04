@@ -1,6 +1,6 @@
 ---
 layout: workflow-proof
-title: Quality Intelligence | Workflow Evidence
+title: Quality Intelligence | Use Cases
 permalink: /workflow-evidence/quality-intelligence/
 description: A representative human-approved Quality Intelligence workflow with source evidence, deterministic validation, reviewer decisions, and controlled output.
 evidence_status: Representative workflow and product-building evidence.
