@@ -14,3 +14,107 @@
 
 /* Homepage client story and selected work revision */
 .hero-credibility{margin-top:1.25rem;color:#d6e2f4;font-size:1rem;max-width:760px}.who-i-am{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(1.25rem,3vw,2rem);align-items:center;padding:clamp(1.25rem,3vw,2rem);border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,rgba(19,34,58,.72),rgba(7,16,31,.92));box-shadow:var(--shadow)}.who-i-am__photo{width:clamp(130px,18vw,220px);height:clamp(130px,18vw,220px);object-fit:cover;border-radius:24px;border:1px solid #315b9d;box-shadow:0 18px 42px rgba(0,0,0,.28)}.who-i-am h2{margin:.65rem 0 1rem;max-width:820px}.who-i-am p:last-child{margin:0;color:#d6e2f4;font-size:clamp(1.16rem,1.75vw,1.4rem);line-height:1.78;max-width:860px}.home-hero h1{max-width:13.5ch}.client-problem,.help-section,.selected-work{padding:clamp(1.5rem,4vw,3rem);border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,rgba(19,34,58,.72),rgba(7,16,31,.92));box-shadow:var(--shadow)}.problem-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.5rem,4vw,3rem);align-items:start}.problem-copy p{font-size:1.08rem;color:#d6e2f4}.problem-stack{display:grid;gap:1rem}.problem-stack article{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.035);padding:1.25rem}.problem-stack span,.work-label{color:var(--blue-2);font-size:.78rem;font-weight:850;text-transform:uppercase;letter-spacing:.08em}.problem-card-offset{transform:translateX(-2rem)}.help-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}.help-steps{display:grid;gap:1rem}.help-steps article{display:grid;grid-template-columns:auto 1fr;column-gap:1rem;border-bottom:1px solid var(--line);padding-bottom:1rem}.help-steps h3,.help-steps p{grid-column:2}.review-flow{display:grid;grid-template-columns:1fr auto 1.35fr auto 1fr;gap:.7rem;align-items:center}.flow-source-card,.flow-review-card,.flow-output-card{border:1px solid var(--line);border-radius:16px;background:#081426;padding:1rem;box-shadow:0 12px 28px rgba(0,0,0,.18)}.flow-source-card{grid-column:1}.flow-source-card:nth-child(2){transform:translateY(12px)}.flow-source-card:nth-child(3){transform:translateY(24px)}.flow-arrow{color:var(--blue-2);font-weight:900;font-size:1.4rem}.flow-review-card{border-color:rgba(244,184,96,.55)}.flow-output-card{border-color:rgba(79,209,161,.65)}.section-support{max-width:820px;color:#c9d4e5;font-size:1.08rem}.selected-work-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:1rem;margin-top:2rem}.work-card{position:relative;display:flex;flex-direction:column;gap:1rem;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(13,25,43,.94),rgba(5,11,21,.92));padding:1rem;box-shadow:0 16px 40px rgba(0,0,0,.24);transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}.work-card--featured{grid-row:span 2;padding:1.25rem}.work-card:hover,.work-card:focus-within{transform:translateY(-5px);border-color:var(--blue-2);box-shadow:0 24px 60px rgba(0,0,0,.34)}.mini-work-artifact{min-height:170px;border:1px solid #315b9d;border-radius:18px;padding:1rem;background:radial-gradient(circle at 20% 0,rgba(79,140,255,.18),transparent 55%),#081426;display:grid;gap:.55rem;align-content:start}.work-card--featured .mini-work-artifact{min-height:290px}.mini-work-artifact div{border:1px solid var(--line);border-radius:12px;padding:.55rem;color:#c9d4e5;background:rgba(255,255,255,.04)}.mini-work-artifact .flag{border-color:rgba(244,184,96,.6);background:rgba(244,184,96,.1)}.mini-work-artifact .approved{border-color:rgba(79,209,161,.65);background:rgba(79,209,161,.1)}.tag-line{color:#c9d4e5;font-size:.94rem}.work-card a{font-weight:850}.iquote{background:radial-gradient(circle at 80% 0,rgba(79,209,161,.18),transparent 55%),#081426}.quality{background:radial-gradient(circle at 30% 0,rgba(244,184,96,.16),transparent 55%),#081426}.product{background:radial-gradient(circle at 30% 0,rgba(139,180,255,.18),transparent 55%),#081426}@media(prefers-reduced-motion:no-preference){.reveal-on-scroll{animation:softRise .7s ease both}.selected-work-grid .work-card:nth-child(2){animation-delay:.08s}.selected-work-grid .work-card:nth-child(3){animation-delay:.16s}.selected-work-grid .work-card:nth-child(4){animation-delay:.24s}.selected-work-grid .work-card:nth-child(5){animation-delay:.32s}.flow-source-card,.flow-review-card,.flow-output-card{animation:softRise .6s ease both}.flow-review-card{animation-delay:.16s}.flow-output-card{animation-delay:.32s}}@media(max-width:1050px){.problem-layout,.help-grid{grid-template-columns:1fr}.selected-work-grid{grid-template-columns:1fr 1fr}.work-card--featured{grid-column:1/-1}.problem-card-offset{transform:none}.review-flow{grid-template-columns:1fr}.flow-source-card,.flow-source-card:nth-child(2),.flow-source-card:nth-child(3){grid-column:auto;transform:none}.flow-arrow{transform:rotate(90deg);justify-self:center}}@media(max-width:700px){.who-i-am{grid-template-columns:1fr}.who-i-am__photo{width:150px;height:150px}.selected-work-grid{grid-template-columns:1fr}.work-card--featured .mini-work-artifact{min-height:210px}.help-steps article{grid-template-columns:1fr}.help-steps h3,.help-steps p{grid-column:auto}.client-problem,.help-section,.selected-work{padding:1.15rem}}@media(prefers-reduced-motion:reduce){.reveal-on-scroll,.flow-source-card,.flow-review-card,.flow-output-card{animation:none!important}.work-card:hover,.work-card:focus-within,.artifact-card:hover,.artifact-card:focus-visible{transform:none}}
+
+/* Homepage typography and alignment consistency */
+.home-hero,
+.who-i-am,
+.client-problem,
+.help-section,
+.page-content > section:not(.home-hero):not(.who-i-am):not(.client-problem):not(.help-section):not(.selected-work):not(.final-cta),
+.selected-work,
+.final-cta {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+}
+
+.home-hero,
+.who-i-am,
+.client-problem,
+.help-section,
+.selected-work,
+.services-path,
+.insights-feature,
+.final-cta {
+  text-align: left;
+}
+
+.who-i-am__content,
+.problem-layout,
+.help-grid,
+.card-grid,
+.selected-work-grid,
+.engagement-path,
+.editorial-insights,
+.final-cta > * {
+  width: 100%;
+}
+
+.who-i-am h2,
+.client-problem h2,
+.help-section h2,
+.pillar-grid h3,
+.selected-work h2,
+.services-path h2,
+.insights-feature h2,
+.final-cta h2 {
+  line-height: 1.13;
+  letter-spacing: -.025em;
+}
+
+.who-i-am p:not(.section-eyebrow),
+.client-problem p:not(.section-eyebrow),
+.help-section p:not(.section-eyebrow),
+.pillar-grid p,
+.selected-work p:not(.section-eyebrow),
+.services-path p:not(.section-eyebrow),
+.insights-feature p:not(.section-eyebrow),
+.final-cta p:not(.section-eyebrow) {
+  line-height: 1.82;
+}
+
+.client-problem > .section-eyebrow,
+.client-problem > h2,
+.help-section > .section-eyebrow,
+.help-section > h2,
+.selected-work > .section-eyebrow,
+.selected-work > h2,
+.selected-work > .section-support,
+.services-path > .section-eyebrow,
+.services-path > h2,
+.insights-feature > .section-eyebrow,
+.insights-feature > h2,
+.final-cta > .section-eyebrow,
+.final-cta > h2,
+.final-cta > p {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.final-cta {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.final-cta .button-link {
+  width: fit-content;
+}
+
+@media (max-width: 700px) {
+  .home-hero,
+  .who-i-am,
+  .client-problem,
+  .help-section,
+  .selected-work,
+  .services-path,
+  .insights-feature,
+  .final-cta {
+    text-align: left;
+  }
+}
+
+.evidence-artifact .synthetic-note {
+  font-size: .82rem;
+  font-style: italic;
+  line-height: 1.45;
+}

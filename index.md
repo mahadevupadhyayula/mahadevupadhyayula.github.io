@@ -24,7 +24,7 @@ image_alt: Human-approved AI workflow products for B2B teams
       <div class="artifact-card artifact-card--blue" tabindex="0"><span>Reviewer decision</span><strong>Return to account owner for migration scope and named implementation lead.</strong></div>
       <div class="artifact-card artifact-card--green" tabindex="0"><span>Approved output state</span><strong>Handoff can proceed after required fields are confirmed.</strong></div>
     </div>
-    <p class="synthetic-note">Representative synthetic workflow artifact. Not a client deployment.</p>
+    <p class="synthetic-note">* Representative synthetic workflow artifact. Not a client deployment.</p>
   </aside>
 </section>
 
@@ -33,7 +33,7 @@ image_alt: Human-approved AI workflow products for B2B teams
   <div class="who-i-am__content">
     <p class="section-eyebrow">Who I am</p>
     <h2 id="who-i-am-title">A practical AI workflow-product builder for B2B SaaS teams.</h2>
-    <p>I’m Mahadev Upadhyayula—an AI product and workflow builder with experience across product, engineering, data, quality, and operational systems, including PayPal.</p>
+    <p>I’m Mahadev Upadhyayula—an AI product and workflow builder with 7+ years of experience across product, engineering, data, quality, and operational systems, including PayPal.</p>
   </div>
 </section>
 
