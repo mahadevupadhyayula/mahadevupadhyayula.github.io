@@ -29,7 +29,15 @@ image_alt: Human-approved AI workflow products for B2B teams
   </aside>
 </section>
 
-<section class="credibility-note" aria-label="Credibility note"><p>Built by Mahadev Upadhyayula—an AI product and workflow builder with experience across product, engineering, data, quality, and operational systems, including PayPal.</p></section>
+<section class="credibility-note credibility-note--profile" aria-labelledby="credibility-note-title">
+  <div class="credibility-note__copy">
+    <p class="section-eyebrow">How I build</p>
+    <h2 id="credibility-note-title">I build AI workflow products from the operational decision backward.</h2>
+    <p>I help B2B SaaS product, engineering, and implementation teams turn scattered implementation inputs, quality signals, and product evidence into structured workflows a responsible owner can review and approve.</p>
+    <p>I bring product, engineering, data, QA, and operational systems experience, including product and engineering work at PayPal. My focus is not a polished AI demo; it is a reviewable workflow that exposes gaps, validates evidence, and gives your team confidence before work moves downstream.</p>
+  </div>
+  <img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Mahadev Upadhyayula" class="credibility-note__photo">
+</section>
 
 <section class="operational-pattern" aria-labelledby="pain-title"><p class="section-eyebrow">The operational pattern</p><h2 id="pain-title">The work rarely fails because information does not exist. It fails because no one can reliably reconcile it before a decision is made.</h2><div class="asymmetric-grid"><article class="large-card"><h3>Scattered context becomes operational risk.</h3><p>Inputs are spread across systems, documents, calls, tickets, and spreadsheets. The team may have the evidence, but not in a form an accountable owner can inspect, challenge, and approve.</p></article><article><h3>Plausible summaries hide uncertainty.</h3><p>AI-generated summaries can sound complete while hiding missing evidence, conflicts, and assumptions.</p></article><article><h3>The cost appears downstream.</h3><p>Teams discover the cost later: rework, unclear ownership, slow triage, delivery surprises, or weak decisions.</p></article></div></section>
 
