@@ -29,15 +29,7 @@ image_alt: Human-approved AI workflow products for B2B teams
   </aside>
 </section>
 
-<section class="credibility-note" aria-labelledby="builder-title">
-  <div class="credibility-note__copy">
-    <p class="section-eyebrow">Built by an operator-builder</p>
-    <h2 id="builder-title">The person designing the workflow understands the product, data, quality, and handoff realities around it.</h2>
-    <p>I’m Mahadev Upadhyayula. I build AI workflow products where evidence is prepared, validation is explicit, exceptions are visible, and a responsible person stays in control of the decision.</p>
-    <p>My background spans product, engineering, data, quality, and operational systems, including PayPal—so the work is shaped around how B2B teams actually review risk, clarify ownership, and move decisions downstream.</p>
-  </div>
-  <img class="credibility-note__photo" src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Mahadev Upadhyayula">
-</section>
+<section class="credibility-note" aria-label="Credibility note"><p>Built by Mahadev Upadhyayula—an AI product and workflow builder with experience across product, engineering, data, quality, and operational systems, including PayPal.</p></section>
 
 <section class="operational-pattern" aria-labelledby="pain-title"><p class="section-eyebrow">The operational pattern</p><h2 id="pain-title">The work rarely fails because information does not exist. It fails because no one can reliably reconcile it before a decision is made.</h2><div class="asymmetric-grid"><article class="large-card"><h3>Scattered context becomes operational risk.</h3><p>Inputs are spread across systems, documents, calls, tickets, and spreadsheets. The team may have the evidence, but not in a form an accountable owner can inspect, challenge, and approve.</p></article><article><h3>Plausible summaries hide uncertainty.</h3><p>AI-generated summaries can sound complete while hiding missing evidence, conflicts, and assumptions.</p></article><article><h3>The cost appears downstream.</h3><p>Teams discover the cost later: rework, unclear ownership, slow triage, delivery surprises, or weak decisions.</p></article></div></section>
 
