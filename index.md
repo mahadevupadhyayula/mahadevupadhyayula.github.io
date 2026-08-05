@@ -11,7 +11,6 @@ image_alt: Human-approved AI workflow products for B2B teams
     <h1 id="hero-title">Your team has the information. It is just scattered across the workflow.</h1>
     <p class="hero-subheadline">When decisions depend on CRM records, calls, documents, tickets, research, and spreadsheets, important context gets lost. I build AI-assisted workflows that bring the right evidence together, flag what needs attention, and keep the accountable person in control of the decision.</p>
     <div class="hero-actions"><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?engagement=prototype' | relative_url }}">Book a Discovery Call</a><a class="button-link button-secondary" href="{{ '/workflow-evidence/' | relative_url }}">Explore Use Cases</a></div>
-    <p class="hero-credibility">I’m Mahadev Upadhyayula—an AI product and workflow builder with experience across product, engineering, data, quality, and operational systems, including PayPal.</p>
   </div>
   <aside class="evidence-artifact reveal-on-scroll" aria-label="Representative synthetic workflow artifact">
     <div class="artifact-header"><span>Workflow review surface</span><span class="state state-review">Human review</span></div>
@@ -27,6 +26,15 @@ image_alt: Human-approved AI workflow products for B2B teams
     </div>
     <p class="synthetic-note">Representative synthetic workflow artifact. Not a client deployment.</p>
   </aside>
+</section>
+
+<section class="who-i-am" aria-labelledby="who-i-am-title">
+  <img class="who-i-am__photo" src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Warm headshot of Mahadev Upadhyayula" width="220" height="220">
+  <div class="who-i-am__content">
+    <p class="section-eyebrow">Who I am</p>
+    <h2 id="who-i-am-title">A practical AI workflow-product builder for B2B SaaS teams.</h2>
+    <p>I’m Mahadev Upadhyayula—an AI product and workflow builder with experience across product, engineering, data, quality, and operational systems, including PayPal.</p>
+  </div>
 </section>
 
 <section class="client-problem" aria-labelledby="problem-title"><p class="section-eyebrow">Why this work matters</p><h2 id="problem-title">AI should reduce the work your team has to reconcile—not create another answer to verify.</h2><div class="problem-layout"><div class="problem-copy"><p>Your team already spends too much time chasing context across systems and people. The important clues are often present, but they are split between CRM records, calls, documents, tickets, spreadsheets, and someone’s memory.</p><p>When gaps and contradictions surface late, the cost shows up as rework, delayed handoffs, poor CRM data, slow triage, and decisions made without enough evidence. Generic AI summaries can make that worse because they look complete while concealing missing information and unsupported assumptions.</p></div><div class="problem-stack"><article><span>01</span><h3>The work is scattered</h3><p>You have facts, notes, requests, and signals in different places, with no single reviewable surface for the person who owns the decision.</p></article><article class="problem-card-offset"><span>02</span><h3>The risk appears late</h3><p>Missing owners, conflicting commitments, stale fields, and weak evidence are often discovered after another team has already started work.</p></article><article><span>03</span><h3>The output is hard to trust</h3><p>A summary is not enough if your team cannot see what was supported, what was inferred, and what still needs review.</p></article></div></div></section>
