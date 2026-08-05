@@ -65,11 +65,13 @@
 .who-i-am p:not(.section-eyebrow),
 .client-problem p:not(.section-eyebrow),
 .help-section p:not(.section-eyebrow),
+.measure-section p:not(.section-eyebrow),
 .pillar-grid p,
-.selected-work p:not(.section-eyebrow),
+.selected-work p:not(.section-eyebrow):not(.work-label),
 .services-path p:not(.section-eyebrow),
-.insights-feature p:not(.section-eyebrow),
+.insights-feature p:not(.section-eyebrow):not(.blog-category),
 .final-cta p:not(.section-eyebrow) {
+  font-size: clamp(1.3rem, 2.1vw, 1.58rem);
   line-height: 1.82;
 }
 
