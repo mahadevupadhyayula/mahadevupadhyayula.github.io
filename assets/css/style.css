@@ -112,3 +112,9 @@
     text-align: left;
   }
 }
+
+.evidence-artifact .synthetic-note {
+  font-size: .82rem;
+  font-style: italic;
+  line-height: 1.45;
+}
