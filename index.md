@@ -33,7 +33,7 @@ image_alt: Human-approved AI workflow products for B2B teams
   <div class="who-i-am__content">
     <p class="section-eyebrow">Who I am</p>
     <h2 id="who-i-am-title">A practical AI workflow-product builder for B2B SaaS teams.</h2>
-    <p>I’m Mahadev Upadhyayula—an AI product and workflow builder with experience across product, engineering, data, quality, and operational systems, including PayPal.</p>
+    <p>I’m Mahadev Upadhyayula—an AI product and workflow builder with 7+ years of experience across product, engineering, data, quality, and operational systems, including PayPal.</p>
   </div>
 </section>
 
