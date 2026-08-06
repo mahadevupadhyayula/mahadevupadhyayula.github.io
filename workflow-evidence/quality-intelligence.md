@@ -17,17 +17,26 @@ baseline: Median review time, rework or exception rate, and volume per period me
 target: More reviewer-accepted findings with source coverage; fewer returned outputs and downstream exceptions; no uncontrolled action.
 formula: Eligible volume × current avoidable exception rate × cost per exception × share demonstrably prevented by accepted early findings.
 decision_rule: Continue only if the pilot improves the agreed workflow metric without increasing material errors, reviewer burden, or uncontrolled actions.
-artifact_title: Defect candidate review
-artifact_summary: A plausible defect summary is returned when the required reproduction evidence is absent.
+artifact_title: Escalation evidence review
+artifact_summary: AI reduces triage preparation work, while a quality reviewer controls whether the evidence is ready for engineering.
 artifact_state: withheld
-artifact_decision: Return for evidence
-artifact_sources: [Support ticket, Diagnostic log, Release record]
-artifact_finding: Defect candidate prepared
-artifact_findings: [Symptoms structured, Release context linked, Similar issue surfaced]
+artifact_decision: Return to support for missing reproduction context
+artifact_sources:
+  - label: Support ticket
+    detail: “API rate-limit concern after configuration change”
+  - label: Diagnostic log
+    detail: “Repeated 429 response recorded”
+  - label: Customer reproduction note
+    detail: “Reproduction steps incomplete”
+  - label: Release context
+    detail: “Possible correlation with recent configuration release”
+artifact_finding: Triage findings prepared
+artifact_findings: [Customer impact identified, Log evidence attached, Reproduction context incomplete, Possible release correlation requires review]
 artifact_check_state: exception
 artifact_check: Evidence incomplete
-artifact_checks: [Reproduction steps missing, Environment unconfirmed, Log timestamp valid]
-artifact_review: Requests reproduction steps and environment details before engineering intake.
-artifact_outcome: Candidate returned
-artifact_outcome_detail: Engineering queue remains unchanged; the missing evidence is visible to support.
+artifact_checks: [Environment details missing, Reproduction steps cannot yet be verified, Potential duplicate requires comparison]
+artifact_review: Return to support for missing reproduction context
+artifact_outcome: Engineering candidate not released
+artifact_outcome_detail: Engineering receives the case only when required triage evidence is complete.
+artifact_next_state: When complete → triage-ready defect candidate
 ---

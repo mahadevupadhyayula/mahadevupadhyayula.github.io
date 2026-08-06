@@ -17,7 +17,7 @@
     <li class="evidence-artifact__stage evidence-artifact__stage--source">
       <span class="evidence-artifact__step">01 · Source context</span>
       <h3>Scattered inputs</h3>
-      <ul>{% for item in page.artifact_sources %}<li>{{ item }}</li>{% endfor %}</ul>
+      <ul>{% for item in page.artifact_sources %}<li>{% if item.label %}<strong>{{ item.label }}</strong><span>{{ item.detail }}</span>{% else %}{{ item }}{% endif %}</li>{% endfor %}</ul>
     </li>
     <li class="evidence-artifact__stage evidence-artifact__stage--prepared">
       <span class="evidence-artifact__step">02 · AI prepared</span>
@@ -39,6 +39,7 @@
       <span class="evidence-artifact__step">05 · Controlled outcome</span>
       <h3>{{ page.artifact_outcome }}</h3>
       <p>{{ page.artifact_outcome_detail }}</p>
+      {% if page.artifact_next_state %}<p class="evidence-artifact__next-state">{{ page.artifact_next_state }}</p>{% endif %}
     </li>
   </ol>
 
