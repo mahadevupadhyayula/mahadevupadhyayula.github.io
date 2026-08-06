@@ -19,16 +19,27 @@ formula: Eligible volume × current avoidable exception rate × cost per excepti
 decision_rule: Continue only if the pilot improves the agreed workflow metric without increasing material errors, reviewer burden, or uncontrolled actions.
 demo_url: /workflow-demos/sales-to-implementation-handoff-validator/
 artifact_title: Implementation readiness review
-artifact_summary: A handoff package stays on hold until a material ownership gap is resolved.
+artifact_summary: Sales-to-implementation inputs are checked, reconciled, and reviewed before the kickoff baseline is released.
 artifact_state: withheld
 artifact_decision: Return for clarification
-artifact_sources: [Signed order form, Discovery notes, Security worksheet]
-artifact_finding: Handoff brief prepared
-artifact_findings: [12 requirements linked, 3 dependencies identified, Owners normalized]
+artifact_sources:
+  - title: CRM opportunity
+    signal: Enterprise renewal marked ready
+    detail: Close date confirmed; implementation owner missing.
+  - title: Sales call notes
+    signal: Migration requested before launch
+    detail: Commitment requires confirmation against solution requirements.
+  - title: Requirements document
+    signal: "Migration scope: incomplete"
+    detail: Named data owner not yet confirmed.
+artifact_finding: Readiness findings prepared
+artifact_findings: [Migration requested before launch, Delivery owner missing, Scope confirmation required]
 artifact_check_state: exception
-artifact_check: Material gap found
-artifact_checks: [Data migration owner missing, Timeline dates conflict, Security evidence current]
-artifact_review: Reviews the cited conflict and requests a named migration owner before release.
-artifact_outcome: Handoff withheld
-artifact_outcome_detail: Package returns to the account team; no delivery baseline is released.
+artifact_check: 2 readiness gaps found
+artifact_checks: [Migration scope conflicts across sales context and requirements., No accountable implementation owner is recorded.]
+artifact_review: Account owner must confirm migration scope and name the implementation lead before handoff.
+artifact_outcome: Handoff not released
+artifact_outcome_detail: Implementation baseline remains pending until required fields are confirmed.
+artifact_resolved_label: When resolved
+artifact_resolved: After confirmation → approved readiness baseline
 ---
