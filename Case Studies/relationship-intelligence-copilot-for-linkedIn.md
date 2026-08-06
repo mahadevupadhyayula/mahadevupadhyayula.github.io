@@ -2,6 +2,7 @@
 layout: page
 title: Relationship Intelligence Copilot for LinkedIn
 permalink: /case-studies/relationship-intelligence-copilot-for-linkedin/
+robots: noindex
 ---
 
 _Building Authentic Professional Relationships at Scale_

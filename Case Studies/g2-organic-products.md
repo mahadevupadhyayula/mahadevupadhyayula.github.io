@@ -3,6 +3,7 @@ layout: page
 title: G2 Organic Products | Operational Workflow Product
 description: Founder-led 0→1 operational workflow-product design for inventory, distribution, coordination, role-based visibility, and operational intelligence.
 permalink: /case-studies/g2-organic-products/
+robots: noindex
 ---
 
 **Building a 0→1 operational workflow product for fragmented agribusiness coordination**

@@ -2,6 +2,7 @@
 layout: page
 title: Product Deep Dive
 permalink: /product-deep-dive/
+robots: noindex
 ---
 
 This section explains how each project is approached across the full product lifecycle:

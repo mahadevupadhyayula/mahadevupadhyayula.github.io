@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Human-Approved AI Workflow Products | Mahadev Upadhyayula
-description: Make AI workflows reliable enough for real business operations with deterministic validation, source-linked review, and human approval.
+title: AI Workflow Automation for B2B SaaS Teams | Mahadev Upadhyayula
+description: I design human-approved AI workflows for B2B SaaS teams—turning scattered sales, implementation, support, and customer context into reviewable decisions before rework begins.
 image: /assets/images/social-preview.svg
 image_alt: Human-approved AI workflow products for B2B teams
 ---

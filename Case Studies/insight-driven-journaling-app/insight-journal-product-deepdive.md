@@ -2,6 +2,7 @@
 layout: page
 title: Insight Journal - Product Deep Dive
 permalink: /case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/
+robots: noindex
 ---
 
 [📌 Product Design - Insight based journaling app](/case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/product-design-insight-based-journaling-app/)

@@ -1,8 +1,8 @@
 ---
 layout: workflow-proof
-title: Revenue Intelligence | Use Cases
+title: CRM Hygiene and Revenue Intelligence AI Workflow | Mahadev Upadhyayula
 permalink: /workflow-evidence/revenue-intelligence/
-description: A human-approved workflow for evidence-backed CRM and account updates before revenue teams act on them.
+description: Prepare source-backed CRM and account changes for field-level RevOps review before writeback affects revenue decisions.
 pillar: Revenue Intelligence
 hero_title: Make account context and CRM changes safe to act on.
 hero_copy: I help revenue teams prepare evidence-backed CRM and account updates before incomplete or stale context affects qualification, forecasting, or customer conversations.
