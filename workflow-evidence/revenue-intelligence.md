@@ -17,6 +17,19 @@ baseline: Median review time, rework or exception rate, and volume per period me
 target: More reviewer-accepted findings with source coverage; fewer returned outputs and downstream exceptions; no uncontrolled action.
 formula: Eligible volume × current avoidable exception rate × cost per exception × share demonstrably prevented by accepted early findings.
 decision_rule: Continue only if the pilot improves the agreed workflow metric without increasing material errors, reviewer burden, or uncontrolled actions.
+artifact_title: CRM change-set review
+artifact_summary: Proposed account updates remain reviewable and cannot overwrite the system of record on their own.
+artifact_state: review
+artifact_decision: Review required
+artifact_sources: [CRM account record, Call notes, Company source]
+artifact_finding: Change set prepared
+artifact_findings: [Firmographics cited, Buyer role labelled, Field changes separated]
+artifact_check_state: exception
+artifact_check: One exception open
+artifact_checks: [Employee range conflicts, Domain confirmed, Call evidence current]
+artifact_review: Compares the conflicting sources and must approve, edit, return, or reject the change set.
+artifact_outcome: Writeback locked
+artifact_outcome_detail: No CRM field changes until Revenue Operations records a decision.
 ---
 
 <section>

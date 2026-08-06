@@ -1,0 +1,50 @@
+{% if page.artifact_title %}
+<figure class="evidence-artifact" aria-labelledby="artifact-title" aria-describedby="artifact-summary artifact-disclosure">
+  <figcaption class="evidence-artifact__header">
+    <span class="evidence-artifact__eyebrow">Workflow evidence · synthetic preview</span>
+    <div class="evidence-artifact__title-row">
+      <div>
+        <h2 id="artifact-title">{{ page.artifact_title }}</h2>
+        <p id="artifact-summary">{{ page.artifact_summary }}</p>
+      </div>
+      <p class="evidence-artifact__status evidence-artifact__status--{{ page.artifact_state }}">
+        <span>Current decision</span><strong>{{ page.artifact_decision }}</strong>
+      </p>
+    </div>
+  </figcaption>
+
+  <ol class="evidence-artifact__flow" aria-label="Source context through controlled outcome">
+    <li class="evidence-artifact__stage evidence-artifact__stage--source">
+      <span class="evidence-artifact__step">01 · Source context</span>
+      <h3>Scattered inputs</h3>
+      <ul>{% for item in page.artifact_sources %}<li>{{ item }}</li>{% endfor %}</ul>
+    </li>
+    <li class="evidence-artifact__stage evidence-artifact__stage--prepared">
+      <span class="evidence-artifact__step">02 · AI prepared</span>
+      <h3>{{ page.artifact_finding }}</h3>
+      <ul>{% for item in page.artifact_findings %}<li>{{ item }}</li>{% endfor %}</ul>
+    </li>
+    <li class="evidence-artifact__stage evidence-artifact__stage--{{ page.artifact_check_state }}">
+      <span class="evidence-artifact__step">03 · Checks</span>
+      <h3>{{ page.artifact_check }}</h3>
+      <ul>{% for item in page.artifact_checks %}<li>{{ item }}</li>{% endfor %}</ul>
+    </li>
+    <li class="evidence-artifact__stage evidence-artifact__stage--review">
+      <span class="evidence-artifact__step">04 · Human approval</span>
+      <h3>{{ page.owner }}</h3>
+      <p>{{ page.artifact_review }}</p>
+      <span class="evidence-artifact__decision">{{ page.artifact_decision }}</span>
+    </li>
+    <li class="evidence-artifact__stage evidence-artifact__stage--{{ page.artifact_state }}">
+      <span class="evidence-artifact__step">05 · Controlled outcome</span>
+      <h3>{{ page.artifact_outcome }}</h3>
+      <p>{{ page.artifact_outcome_detail }}</p>
+    </li>
+  </ol>
+
+  <p class="evidence-artifact__legend" aria-label="Artifact color key">
+    <span class="is-source">Source evidence</span><span class="is-exception">Gap or exception</span><span class="is-review">Review action</span><span class="is-approved">Confirmed</span><span class="is-withheld">Withheld or returned</span>
+  </p>
+  <p class="evidence-artifact__disclosure" id="artifact-disclosure">Representative synthetic workflow artifact. Not a client deployment.</p>
+</figure>
+{% endif %}

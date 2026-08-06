@@ -17,4 +17,17 @@ baseline: Median review time, rework or exception rate, and volume per period me
 target: More reviewer-accepted findings with source coverage; fewer returned outputs and downstream exceptions; no uncontrolled action.
 formula: Eligible volume × current avoidable exception rate × cost per exception × share demonstrably prevented by accepted early findings.
 decision_rule: Continue only if the pilot improves the agreed workflow metric without increasing material errors, reviewer burden, or uncontrolled actions.
+artifact_title: Product evidence review
+artifact_summary: Research and usage evidence are reconciled before a discovery brief is accepted.
+artifact_state: approved
+artifact_decision: Approved after resolution
+artifact_sources: [Interview excerpts, Usage events, Support themes]
+artifact_finding: Evidence brief prepared
+artifact_findings: [Problem themes grouped, Claims source-linked, Interpretation labelled]
+artifact_check_state: approved
+artifact_check: Conflict resolved
+artifact_checks: [Usage window corrected, Segment mismatch reconciled, Source coverage confirmed]
+artifact_review: Confirms the corrected usage window and accepts the source-linked brief for discovery.
+artifact_outcome: Discovery brief released
+artifact_outcome_detail: Approved evidence enters planning; no roadmap priority is assigned automatically.
 ---

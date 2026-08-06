@@ -18,4 +18,17 @@ target: More reviewer-accepted findings with source coverage; fewer returned out
 formula: Eligible volume × current avoidable exception rate × cost per exception × share demonstrably prevented by accepted early findings.
 decision_rule: Continue only if the pilot improves the agreed workflow metric without increasing material errors, reviewer burden, or uncontrolled actions.
 demo_url: /workflow-demos/sales-to-implementation-handoff-validator/
+artifact_title: Implementation readiness review
+artifact_summary: A handoff package stays on hold until a material ownership gap is resolved.
+artifact_state: withheld
+artifact_decision: Return for clarification
+artifact_sources: [Signed order form, Discovery notes, Security worksheet]
+artifact_finding: Handoff brief prepared
+artifact_findings: [12 requirements linked, 3 dependencies identified, Owners normalized]
+artifact_check_state: exception
+artifact_check: Material gap found
+artifact_checks: [Data migration owner missing, Timeline dates conflict, Security evidence current]
+artifact_review: Reviews the cited conflict and requests a named migration owner before release.
+artifact_outcome: Handoff withheld
+artifact_outcome_detail: Package returns to the account team; no delivery baseline is released.
 ---
