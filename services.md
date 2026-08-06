@@ -65,7 +65,7 @@ permalink: /services/
   </article>
 </div>
 
-<section class="final-cta" aria-labelledby="engagement-fit-title">
+<section class="final-cta services-page-cta" aria-labelledby="engagement-fit-title">
   <h2 id="engagement-fit-title">Not sure which engagement fits?</h2>
   <p>Start with one workflow. I’ll help you determine whether a review, audit, prototype, advisory engagement—or no build—is the right next step.</p>
   <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?engagement=free-review' | relative_url }}">Book a Free Workflow Review</a>
@@ -84,7 +84,7 @@ permalink: /services/
   </table>
 </div>
 
-<section class="final-cta" aria-labelledby="services-final-title">
+<section class="final-cta services-page-cta" aria-labelledby="services-final-title">
   <p class="section-eyebrow">Start with the operating problem</p>
   <h2 id="services-final-title">Bring one evidence-heavy operating workflow.</h2>
   <p>Bring the inputs, current rework, accountable owner, and decision that needs stronger evidence.</p>
