@@ -13,10 +13,10 @@
     </div>
   </figcaption>
 
-  <ol class="evidence-artifact__flow{% if page.artifact_resolved %} evidence-artifact__flow--review-surface{% endif %}" aria-label="Source context through controlled outcome">
+  <ol class="evidence-artifact__flow{% if page.artifact_sources.first.title %} evidence-artifact__flow--review-surface{% endif %}" aria-label="Observed evidence through interpretation, recommendation, and controlled outcome">
     <li class="evidence-artifact__stage evidence-artifact__stage--source">
-      <span class="evidence-artifact__step">01 · Source context</span>
-      <h3>Scattered inputs</h3>
+      <span class="evidence-artifact__step">01 · {{ page.artifact_source_label | default: "Source context" }}</span>
+      <h3>{{ page.artifact_source_heading | default: "Scattered inputs" }}</h3>
       {% if page.artifact_sources.first.title %}
       <div class="evidence-artifact__sources">
         {% for item in page.artifact_sources %}
@@ -32,17 +32,17 @@
       {% endif %}
     </li>
     <li class="evidence-artifact__stage evidence-artifact__stage--prepared">
-      <span class="evidence-artifact__step">02 · AI prepared</span>
+      <span class="evidence-artifact__step">02 · {{ page.artifact_finding_label | default: "AI prepared" }}</span>
       <h3>{{ page.artifact_finding }}</h3>
       <ul>{% for item in page.artifact_findings %}<li>{{ item }}</li>{% endfor %}</ul>
     </li>
     <li class="evidence-artifact__stage evidence-artifact__stage--{{ page.artifact_check_state }}">
-      <span class="evidence-artifact__step">03 · Checks</span>
+      <span class="evidence-artifact__step">03 · {{ page.artifact_check_label | default: "Checks" }}</span>
       <h3>{{ page.artifact_check }}</h3>
       <ul>{% for item in page.artifact_checks %}<li>{{ item }}</li>{% endfor %}</ul>
     </li>
     <li class="evidence-artifact__stage evidence-artifact__stage--review">
-      <span class="evidence-artifact__step">04 · Human approval</span>
+      <span class="evidence-artifact__step">04 · {{ page.artifact_review_label | default: "Human approval" }}</span>
       <h3>{{ page.owner }}</h3>
       <p>{{ page.artifact_review }}</p>
       <span class="evidence-artifact__decision">{{ page.artifact_decision }}</span>
