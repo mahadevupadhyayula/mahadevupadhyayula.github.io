@@ -17,19 +17,33 @@ baseline: Median review time, rework or exception rate, and volume per period me
 target: More reviewer-accepted findings with source coverage; fewer returned outputs and downstream exceptions; no uncontrolled action.
 formula: Eligible volume × current avoidable exception rate × cost per exception × share demonstrably prevented by accepted early findings.
 decision_rule: Continue only if the pilot improves the agreed workflow metric without increasing material errors, reviewer burden, or uncontrolled actions.
-artifact_title: CRM change-set review
-artifact_summary: Proposed account updates remain reviewable and cannot overwrite the system of record on their own.
-artifact_state: review
-artifact_decision: Review required
-artifact_sources: [CRM account record, Call notes, Company source]
-artifact_finding: Change set prepared
-artifact_findings: [Firmographics cited, Buyer role labelled, Field changes separated]
+artifact_title: CRM change review
+artifact_summary: Account context and proposed CRM changes are prepared for Revenue Operations review before writeback. The workflow cannot update the CRM autonomously.
+artifact_state: approved
+artifact_decision: Review proposed CRM changes
+artifact_sources:
+  - title: CRM record
+    signal: "Enterprise account: close date set to September"
+  - title: Call notes
+    signal: Customer requested security review before renewal
+  - title: Account research
+    signal: Parent-company acquisition announced
+artifact_finding: AI-prepared findings
+artifact_findings:
+  - Security review is a relevant renewal dependency
+  - Account ownership may need confirmation after acquisition
+  - Close date requires review against current customer context
 artifact_check_state: exception
-artifact_check: One exception open
-artifact_checks: [Employee range conflicts, Domain confirmed, Call evidence current]
-artifact_review: Compares the conflicting sources and must approve, edit, return, or reject the change set.
-artifact_outcome: Writeback locked
-artifact_outcome_detail: No CRM field changes until Revenue Operations records a decision.
+artifact_check: Writeback blocked
+artifact_checks:
+  - Required implementation or security dependency not captured
+  - Account owner confirmation required
+  - Existing close date may be stale
+artifact_review_heading: Review proposed CRM changes
+artifact_review: Revenue Operations compares every proposed field with its retained source, then approves, edits, returns, or rejects the package.
+artifact_outcome: Approved CRM change package
+artifact_outcome_detail: Only the reviewer-approved fields are ready for writeback.
+artifact_audit: Sources retained · reviewer recorded · proposed changes visible
 ---
 
 <section>
