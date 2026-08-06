@@ -2,7 +2,7 @@
 {%- assign workflow_form_prefix = include.id_prefix | default: workflow_form_id -%}
 {%- assign configured_workflow_endpoint = site.data.env.workflow_inquiry_endpoint | default: '' -%}
 {%- assign workflow_form_endpoint = include.endpoint | default: configured_workflow_endpoint -%}
-{%- assign workflow_form_button = include.button_label | default: 'Book a Discovery Call' -%}
+{%- assign workflow_form_button = include.button_label | default: 'Book Free Review' -%}
 {%- assign workflow_form_compact = include.compact | default: false -%}
 <form id="{{ workflow_form_id }}" class="workflow-intake-form{% if workflow_form_compact %} workflow-intake-form--compact{% endif %}" action="{{ workflow_form_endpoint | escape }}" method="post" data-workflow-form data-endpoint="{{ workflow_form_endpoint | escape }}" novalidate>
   <input type="hidden" name="intent" value="">
@@ -95,7 +95,7 @@
     <div class="form-field">
       <label for="{{ workflow_form_prefix }}-timeline">Preferred engagement</label>
       <select id="{{ workflow_form_prefix }}-timeline" name="timeline" required>
-        <option value="">Select one</option><option value="Workflow Audit">Audit</option><option value="AI Workflow Prototype Sprint">Prototype</option><option value="AI Workflow Advisory">Advisory</option><option value="Exploring options">Unsure</option>
+        <option value="">Select one</option><option value="Free Review">Free Review</option><option value="Workflow Audit">Audit</option><option value="AI Workflow Prototype Sprint">Prototype</option><option value="AI Workflow Advisory">Advisory</option><option value="Exploring options">Unsure</option>
       </select>
     </div>
 

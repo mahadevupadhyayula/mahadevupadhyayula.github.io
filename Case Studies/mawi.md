@@ -162,6 +162,6 @@ permalink: /case-studies/mawi/
     <p class="iquote-section-eyebrow">Roles and projects</p>
     <h2 id="mawi-cta-title">Interested in a controlled AI workflow?</h2>
     <p>Let’s discuss the operating decisions, approval boundaries and evidence your workflow needs.</p>
-    <div class="iquote-actions"><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=mawi-case-study' | relative_url }}">Book a Discovery Call</a></div>
+    <div class="iquote-actions"><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=mawi-case-study' | relative_url }}">Book Free Review</a></div>
   </section>
 </div>

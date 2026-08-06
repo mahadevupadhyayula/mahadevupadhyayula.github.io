@@ -218,5 +218,5 @@ For a deeper dive into this project please check below:
   <p class="section-eyebrow">Apply the workflow pattern</p>
   <h2 id="insight-journal-cta">Discuss a structured AI workflow prototype.</h2>
   <p>Start with the unstructured inputs, the state that needs to persist, the decision or feedback the product should support, and the human-review model.</p>
-  <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=insight-journal-other-internal-workflow' | relative_url }}">Book a Discovery Call</a>
+  <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=insight-journal-other-internal-workflow' | relative_url }}">Book Free Review</a>
 </section>
