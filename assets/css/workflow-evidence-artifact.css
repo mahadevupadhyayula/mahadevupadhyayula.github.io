@@ -17,4 +17,5 @@
 .evidence-artifact__resolved{grid-column:1/-1;display:flex;align-items:center;gap:.65rem;margin-top:.15rem;padding:.55rem .7rem;border:1px solid rgba(99,214,170,.42);border-radius:10px;background:rgba(16,62,51,.38);color:var(--artifact-green)}
 .evidence-artifact__resolved span{font-size:.65rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .evidence-artifact__resolved p{margin:0;font-size:.74rem}
+.evidence-artifact__audit{display:flex;flex-wrap:wrap;gap:.35rem .6rem;margin:.85rem 0 0;color:#aebed3;font-size:.72rem}.evidence-artifact__audit span{color:var(--artifact-blue);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:800px){.evidence-artifact__flow--review-surface .evidence-artifact__stage--prepared,.evidence-artifact__flow--review-surface .evidence-artifact__stage--exception,.evidence-artifact__flow--review-surface .evidence-artifact__stage--review,.evidence-artifact__flow--review-surface .evidence-artifact__stage--withheld{grid-column:1/-1}.evidence-artifact__sources{grid-template-columns:1fr}}

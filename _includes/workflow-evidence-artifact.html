@@ -23,7 +23,9 @@
         <article class="evidence-artifact__source-card">
           <span>{{ item.title }}</span>
           <strong>“{{ item.signal }}”</strong>
+          {% if item.detail %}
           <p>“{{ item.detail }}”</p>
+          {% endif %}
         </article>
         {% endfor %}
       </div>
@@ -43,7 +45,7 @@
     </li>
     <li class="evidence-artifact__stage evidence-artifact__stage--review">
       <span class="evidence-artifact__step">04 · {{ page.artifact_review_label | default: "Human approval" }}</span>
-      <h3>{{ page.owner }}</h3>
+      <h3>{{ page.artifact_review_heading | default: page.owner }}</h3>
       <p>{{ page.artifact_review }}</p>
       <span class="evidence-artifact__decision">{{ page.artifact_decision }}</span>
     </li>
@@ -59,6 +61,10 @@
     </li>
     {% endif %}
   </ol>
+
+  {% if page.artifact_audit %}
+  <p class="evidence-artifact__audit"><span>Audit trail</span>{{ page.artifact_audit }}</p>
+  {% endif %}
 
   <p class="evidence-artifact__legend" aria-label="Artifact color key">
     <span class="is-source">Source evidence</span><span class="is-exception">Gap or exception</span><span class="is-review">Review action</span><span class="is-approved">Confirmed</span><span class="is-withheld">Withheld or returned</span>
