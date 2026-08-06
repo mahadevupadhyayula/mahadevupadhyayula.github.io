@@ -5,5 +5,82 @@ description: Start with a free workflow review, then scope an audit, prototype, 
 permalink: /services/
 ---
 <p class="page-lede">Start with a free review of one evidence-heavy workflow. If there is a useful next step, choose the scoped engagement that makes it measurable, reviewable, and safe to operate. Paid work is scoped privately; no public price is implied.</p>
-<div class="card-grid two"><article><p class="section-eyebrow">Free · 30 minutes</p><h2>Free Review</h2><p>Bring one workflow that creates rework, delay, or unclear decisions. We will review the current friction, the inputs involved, the accountable reviewer, and where human approval matters.</p><h3>Scope</h3><ul><li>One bounded operational workflow</li><li>Current friction and desired decision</li><li>Available inputs and system constraints</li><li>Reviewer and approval boundary</li><li>Recommendation for the smallest useful next step</li></ul><p>You leave with a practical recommendation. There is no build commitment and no implementation work included.</p><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?engagement=free-review' | relative_url }}">Book Free Review</a></article><article><p class="section-eyebrow">Fixed-fee</p><h2>Workflow Audit</h2><p>Establish how the workflow operates today, where control breaks down, and whether a bounded prototype is justified.</p><h3>Deliverables</h3><ul><li>Current workflow map</li><li>Operating baseline and ROI hypothesis</li><li>Source and system inventory</li><li>Deterministic versus AI-assisted logic</li><li>Validation and human-approval design</li><li>Prototype recommendation and next step</li></ul><a class="button-link button-secondary" href="{{ '/start-a-workflow-audit/' | relative_url }}">Book Free Review</a></article><article><p class="section-eyebrow">Scoped project</p><h2>AI Workflow Prototype Sprint</h2><p>Turn a bounded workflow into a reviewable product prototype. The sprint defines source handling, builds validation rules and the reviewer experience, runs a controlled evaluation with representative inputs, and produces a pilot measurement plan.</p><h3>Primary output</h3><p>A working prototype and evidence pack that let the accountable reviewer test behavior before any operational integration or writeback.</p><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?engagement=free-review' | relative_url }}">Book Free Review</a></article><article><p class="section-eyebrow">Monthly retainer</p><h2>AI Workflow Advisory</h2><p>Support an internal team that is evaluating or building multiple AI-assisted workflows. Advisory covers workflow prioritisation, measurement design, governance boundaries, architecture choices, and practical guidance for product and engineering teams.</p><h3>Primary output</h3><p>A governed portfolio of workflow decisions, evaluation plans, and build guidance owned by your internal team.</p><a class="button-link button-secondary" href="{{ '/start-a-workflow-audit/?engagement=advisory' | relative_url }}">Book Free Review</a></article></div>
-<h2>Compare engagements</h2><div class="table-scroll" tabindex="0" role="region" aria-label="Service comparison"><table><thead><tr><th scope="col">Offer</th><th scope="col">Best when</th><th scope="col">Primary output</th><th scope="col">Commercial model</th></tr></thead><tbody><tr><th scope="row">Free Review</th><td>You want a focused outside perspective on one workflow</td><td>Practical recommendation for the smallest useful next step</td><td>Free, 30 minutes</td></tr><tr><th scope="row">Audit</th><td>The workflow and baseline need definition</td><td>Decision-ready audit and recommendation</td><td>Fixed-fee</td></tr><tr><th scope="row">Prototype Sprint</th><td>The workflow is bounded and ready to test</td><td>Reviewable prototype and pilot plan</td><td>Scoped project</td></tr><tr><th scope="row">Advisory</th><td>An internal portfolio needs ongoing guidance</td><td>Priorities, governance, measurement, architecture</td><td>Monthly retainer</td></tr></tbody></table></div>
+
+<div class="hero-actions services-hero-actions">
+  <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?engagement=free-review' | relative_url }}">Book a Free Workflow Review</a>
+</div>
+
+<div class="card-grid two">
+  <article>
+    <p class="section-eyebrow">Free · 30 minutes</p>
+    <h2>Free Review</h2>
+    <p>Bring one workflow that creates rework, delay, or unclear decisions. We will review the current friction, the inputs involved, the accountable reviewer, and where human approval matters.</p>
+    <p><strong>Best when:</strong> You need an outside view on one workflow.</p>
+    <h3>Scope</h3>
+    <ul>
+      <li>One bounded operational workflow</li>
+      <li>Current friction and desired decision</li>
+      <li>Available inputs and system constraints</li>
+      <li>Reviewer and approval boundary</li>
+      <li>Recommendation for the smallest useful next step</li>
+    </ul>
+    <p>You leave with a practical recommendation. There is no build commitment and no implementation work included.</p>
+  </article>
+  <article>
+    <p class="section-eyebrow">Fixed-fee</p>
+    <h2>Workflow Audit</h2>
+    <p>Establish how the workflow operates today, where control breaks down, and whether a bounded prototype is justified.</p>
+    <p><strong>Best when:</strong> The problem is real, but scope and baseline are unclear.</p>
+    <h3>Deliverables</h3>
+    <ul>
+      <li>Current workflow map</li>
+      <li>Operating baseline and ROI hypothesis</li>
+      <li>Source and system inventory</li>
+      <li>Deterministic versus AI-assisted logic</li>
+      <li>Validation and human-approval design</li>
+      <li>Prototype recommendation and next step</li>
+    </ul>
+  </article>
+  <article>
+    <p class="section-eyebrow">Scoped project</p>
+    <h2>AI Workflow Prototype Sprint</h2>
+    <p>Turn a bounded workflow into a reviewable product prototype. The sprint defines source handling, builds validation rules and the reviewer experience, runs a controlled evaluation with representative inputs, and produces a pilot measurement plan.</p>
+    <p><strong>Best when:</strong> The workflow is bounded and ready to test.</p>
+    <h3>Primary output</h3>
+    <p>A working prototype and evidence pack that let the accountable reviewer test behavior before any operational integration or writeback.</p>
+  </article>
+  <article>
+    <p class="section-eyebrow">Monthly retainer</p>
+    <h2>AI Workflow Advisory</h2>
+    <p>Support an internal team that is evaluating or building multiple AI-assisted workflows. Advisory covers workflow prioritisation, measurement design, governance boundaries, architecture choices, and practical guidance for product and engineering teams.</p>
+    <p><strong>Best when:</strong> Your team is evaluating several workflows over time.</p>
+    <h3>Primary output</h3>
+    <p>A governed portfolio of workflow decisions, evaluation plans, and build guidance owned by your internal team.</p>
+  </article>
+</div>
+
+<h2>Compare engagements</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Service comparison">
+  <table>
+    <thead><tr><th scope="col">Offer</th><th scope="col">Best when</th><th scope="col">Primary output</th><th scope="col">Commercial model</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Free Review</th><td>You want a focused outside perspective on one workflow</td><td>Practical recommendation for the smallest useful next step</td><td>Free, 30 minutes</td></tr>
+      <tr><th scope="row">Audit</th><td>The workflow and baseline need definition</td><td>Decision-ready audit and recommendation</td><td>Fixed-fee</td></tr>
+      <tr><th scope="row">Prototype Sprint</th><td>The workflow is bounded and ready to test</td><td>Reviewable prototype and pilot plan</td><td>Scoped project</td></tr>
+      <tr><th scope="row">Advisory</th><td>An internal portfolio needs ongoing guidance</td><td>Priorities, governance, measurement, architecture</td><td>Monthly retainer</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<section class="final-cta" aria-labelledby="engagement-fit-title">
+  <h2 id="engagement-fit-title">Not sure which engagement fits?</h2>
+  <p>Start with one workflow. I’ll help you determine whether a review, audit, prototype, advisory engagement—or no build—is the right next step.</p>
+  <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?engagement=free-review' | relative_url }}">Book a Free Workflow Review</a>
+</section>
+
+<section class="final-cta" aria-labelledby="services-final-title">
+  <p class="section-eyebrow">Start with the operating problem</p>
+  <h2 id="services-final-title">Bring one evidence-heavy operating workflow.</h2>
+  <p>Bring the inputs, current rework, accountable owner, and decision that needs stronger evidence.</p>
+  <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?engagement=free-review' | relative_url }}">Book a Free Workflow Review</a>
+</section>

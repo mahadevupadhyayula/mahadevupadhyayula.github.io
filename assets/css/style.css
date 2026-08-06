@@ -121,6 +121,11 @@
   line-height: 1.45;
 }
 
+/* Services page CTA rhythm */
+.services-hero-actions {
+  margin: 1.5rem 0 3rem;
+}
+
 /* Homepage workflow-story refinements */
 .measure-section {
   padding: clamp(1.5rem, 4vw, 3rem);
