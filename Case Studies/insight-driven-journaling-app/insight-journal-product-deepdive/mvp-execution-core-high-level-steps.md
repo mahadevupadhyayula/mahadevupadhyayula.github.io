@@ -2,6 +2,7 @@
 layout: page
 title: "🚀 MVP Execution: Core High-Level Steps"
 permalink: /case-studies/insight-driven-journaling-app/insight-journal-product-deepdive/mvp-execution-core-high-level-steps/
+robots: noindex
 ---
 
 

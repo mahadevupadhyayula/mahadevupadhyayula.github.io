@@ -3,6 +3,7 @@ layout: page
 title: Product Quality & Onboarding Operations at PayPal
 description: PayPal product and engineering experience across ML personalization, merchant onboarding, and QA workflow automation, preserving the original outcomes and context.
 permalink: /case-studies/product-impact-at-paypal/
+robots: noindex
 ---
 
 **Product and engineering experience across merchant engagement, onboarding operations, and product quality**

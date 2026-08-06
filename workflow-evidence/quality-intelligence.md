@@ -1,8 +1,8 @@
 ---
 layout: workflow-proof
-title: Quality Intelligence | Use Cases
+title: Support-to-Engineering Triage AI Workflow | Mahadev Upadhyayula
 permalink: /workflow-evidence/quality-intelligence/
-description: A human-approved workflow that turns fragmented escalations into evidence-backed defect candidates for engineering review.
+description: Turn support tickets, diagnostic logs, reproduction notes, and release context into a triage-ready defect candidate for engineering review.
 pillar: Quality Intelligence
 hero_title: Give engineering a defect candidate—not another ticket history.
 hero_copy: I help support and quality teams turn fragmented escalations into evidence-backed cases engineering can review without rebuilding the context from scratch.

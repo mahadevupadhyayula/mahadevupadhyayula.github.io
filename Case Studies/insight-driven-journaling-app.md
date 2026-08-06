@@ -3,6 +3,7 @@ layout: page
 title: Insight Journal | Structured AI Workflow Product
 description: Personal AI product build using structured extraction, persistent signals and embeddings, deterministic aggregation, similarity retrieval, explainability, and user feedback.
 permalink: /case-studies/insight-driven-journaling-app/
+robots: noindex
 ---
 
 **A personal product build that turns unstructured reflection into persistent, explainable feedback**

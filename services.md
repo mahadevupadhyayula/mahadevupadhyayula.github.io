@@ -1,7 +1,7 @@
 ---
 layout: page
-title: AI Workflow Services | Free Review, Audit, Prototype Sprint, and Advisory
-description: Start with a free workflow review, then scope an audit, prototype, or advisory engagement for a human-approved B2B AI workflow.
+title: AI Workflow Consulting for B2B SaaS | Audit, Prototype & Advisory
+description: Start with a free workflow review, then choose a fixed-fee audit, scoped AI workflow prototype, or ongoing advisory support.
 permalink: /services/
 ---
 <p class="page-lede">Start with a free review of one evidence-heavy workflow. If there is a useful next step, choose the scoped engagement that makes it measurable, reviewable, and safe to operate. Paid work is scoped privately; no public price is implied.</p>

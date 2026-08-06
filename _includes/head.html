@@ -26,9 +26,11 @@
   <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="twitter:description" content="{{ seo_description | escape }}">
   <meta name="twitter:image" content="{{ seo_image }}">
+  {% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+  {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% if page.artifact_title %}<link rel="stylesheet" href="{{ '/assets/css/workflow-evidence-artifact.css' | relative_url }}">{% endif %}
-  {%- seo title=false -%}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,6 +57,34 @@
       "url": "{{ site.url }}"
     },
     "areaServed": "Worldwide"
+  }
+  </script>
+  {% endif %}
+  {% if page.layout == 'workflow-proof' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ '/' | absolute_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Use Cases",
+        "item": "{{ '/workflow-evidence/' | absolute_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ page.pillar | escape }}",
+        "item": "{{ page.url | absolute_url }}"
+      }
+    ]
   }
   </script>
   {% endif %}

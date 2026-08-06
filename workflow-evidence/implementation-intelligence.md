@@ -1,8 +1,8 @@
 ---
 layout: workflow-proof
-title: Implementation Intelligence | Use Cases
+title: Sales-to-Implementation Handoff AI Workflow | Mahadev Upadhyayula
 permalink: /workflow-evidence/implementation-intelligence/
-description: A human-approved workflow for reconciling sales commitments, requirements, dependencies, and ownership before implementation begins.
+description: Reconcile sales commitments, requirements, dependencies, and ownership into a reviewed implementation-readiness baseline before kickoff.
 pillar: Implementation Intelligence
 hero_title: Start delivery with a handoff your implementation team can trust.
 hero_copy: I help implementation and professional-services teams reconcile sales commitments, requirements, dependencies, and ownership before incomplete context turns into delivery rework.

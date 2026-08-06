@@ -1,8 +1,8 @@
 ---
 layout: workflow-proof
-title: Product Evidence | Use Cases
+title: Customer Evidence AI Workflow for Product Teams | Mahadev Upadhyayula
 permalink: /workflow-evidence/product-evidence/
-description: A human-approved workflow that connects customer signals into source-linked evidence for product discovery and review.
+description: Connect interviews, support requests, usage signals, and commercial context into a source-linked evidence brief for product review.
 pillar: Product Evidence
 hero_title: Turn customer signals into evidence your product team can use.
 hero_copy: I help product teams connect feedback, research, usage, support, and commercial context without turning isolated anecdotes into roadmap commitments.

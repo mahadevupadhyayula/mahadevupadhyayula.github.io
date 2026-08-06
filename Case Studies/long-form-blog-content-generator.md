@@ -2,6 +2,7 @@
 layout: page
 title: Long-form Blog Content Generator
 permalink: /case-studies/long-form-blog-content-generator/
+robots: noindex
 ---
 
 **Portfolio prototype: Turning source documents into SEO/AEO blog drafts, visuals, and publishing assets**
