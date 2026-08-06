@@ -13,49 +13,55 @@ permalink: /services/
 <div class="card-grid two">
   <article>
     <p class="section-eyebrow">Free · 30 minutes</p>
-    <h2>Free Review</h2>
-    <p>Bring one workflow that creates rework, delay, or unclear decisions. We will review the current friction, the inputs involved, the accountable reviewer, and where human approval matters.</p>
-    <p><strong>Best when:</strong> You need an outside view on one workflow.</p>
-    <h3>Scope</h3>
+    <h2>Free Workflow Review</h2>
+    <p>Bring one workflow that is creating friction. I’ll help you decide whether there is a practical opportunity worth pursuing.</p>
+    <p><strong>Best when:</strong> you need an outside perspective before committing to an audit, prototype, or advisory engagement.</p>
     <ul>
-      <li>One bounded operational workflow</li>
-      <li>Current friction and desired decision</li>
-      <li>Available inputs and system constraints</li>
-      <li>Reviewer and approval boundary</li>
-      <li>Recommendation for the smallest useful next step</li>
+      <li>Current workflow and decision point</li>
+      <li>Where rework, delay, or uncertainty appears</li>
+      <li>Available inputs and systems involved</li>
+      <li>Accountable owner and review boundary</li>
+      <li>Honest recommendation for the smallest useful next step</li>
     </ul>
-    <p>You leave with a practical recommendation. There is no build commitment and no implementation work included.</p>
   </article>
   <article>
     <p class="section-eyebrow">Fixed-fee</p>
     <h2>Workflow Audit</h2>
-    <p>Establish how the workflow operates today, where control breaks down, and whether a bounded prototype is justified.</p>
-    <p><strong>Best when:</strong> The problem is real, but scope and baseline are unclear.</p>
-    <h3>Deliverables</h3>
+    <p>Clarify whether one workflow is worth automating and what it would take to do it responsibly.</p>
+    <p><strong>Best when:</strong> the problem is clear, but the workflow, baseline, and solution scope are not.</p>
     <ul>
-      <li>Current workflow map</li>
-      <li>Operating baseline and ROI hypothesis</li>
+      <li>Current workflow and friction map</li>
       <li>Source and system inventory</li>
-      <li>Deterministic versus AI-assisted logic</li>
-      <li>Validation and human-approval design</li>
+      <li>Baseline and ROI hypothesis</li>
+      <li>Validation and review requirements</li>
       <li>Prototype recommendation and next step</li>
     </ul>
   </article>
   <article>
     <p class="section-eyebrow">Scoped project</p>
     <h2>AI Workflow Prototype Sprint</h2>
-    <p>Turn a bounded workflow into a reviewable product prototype. The sprint defines source handling, builds validation rules and the reviewer experience, runs a controlled evaluation with representative inputs, and produces a pilot measurement plan.</p>
-    <p><strong>Best when:</strong> The workflow is bounded and ready to test.</p>
-    <h3>Primary output</h3>
-    <p>A working prototype and evidence pack that let the accountable reviewer test behavior before any operational integration or writeback.</p>
+    <p>Build one focused workflow your team can evaluate before committing to wider rollout.</p>
+    <p><strong>Best when:</strong> the workflow is bounded and an accountable owner is ready to test it.</p>
+    <ul>
+      <li>Source-handling and workflow design</li>
+      <li>Validation rules and reviewer experience</li>
+      <li>Representative-input evaluation</li>
+      <li>Reviewable prototype</li>
+      <li>Pilot measurement plan</li>
+    </ul>
   </article>
   <article>
     <p class="section-eyebrow">Monthly retainer</p>
     <h2>AI Workflow Advisory</h2>
-    <p>Support an internal team that is evaluating or building multiple AI-assisted workflows. Advisory covers workflow prioritisation, measurement design, governance boundaries, architecture choices, and practical guidance for product and engineering teams.</p>
-    <p><strong>Best when:</strong> Your team is evaluating several workflows over time.</p>
-    <h3>Primary output</h3>
-    <p>A governed portfolio of workflow decisions, evaluation plans, and build guidance owned by your internal team.</p>
+    <p>Give your internal team ongoing product and technical guidance across multiple AI workflow decisions.</p>
+    <p><strong>Best when:</strong> you have several workflow opportunities and need senior judgment without hiring a full internal team first.</p>
+    <ul>
+      <li>Workflow prioritisation</li>
+      <li>Measurement and ROI design</li>
+      <li>Governance boundaries</li>
+      <li>Architecture and integration guidance</li>
+      <li>Evaluation and rollout decisions</li>
+    </ul>
   </article>
 </div>
 
