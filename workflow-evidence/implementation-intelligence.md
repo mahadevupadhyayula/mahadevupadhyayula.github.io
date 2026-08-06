@@ -2,36 +2,26 @@
 layout: workflow-proof
 title: Implementation Intelligence | Use Cases
 permalink: /workflow-evidence/implementation-intelligence/
-description: A representative human-approved Implementation Intelligence workflow with source evidence, deterministic validation, reviewer decisions, and controlled output.
+description: A human-approved workflow for reconciling sales commitments, requirements, dependencies, and ownership before implementation begins.
+pillar: Implementation Intelligence
+hero_title: Start delivery with a handoff your implementation team can trust.
+hero_copy: I help implementation and professional-services teams reconcile sales commitments, requirements, dependencies, and ownership before incomplete context turns into delivery rework.
 evidence_status: Representative workflow and product-building evidence.
-lede: A reviewer-first control pattern for evidence-heavy B2B operations.
-problem: Sales commitments, requirements, dependencies, security needs, owners, and open questions remain scattered when delivery begins.
-weak_pattern: A plausible AI summary hides missing evidence, conflicts, and assumptions, then moves downstream without an accountable decision.
-pattern: AI prepares traceable findings; explicit rules test completeness and conflicts; the named owner edits, returns, rejects, or approves the result.
-sources: Executed agreements, approved solution documents, CRM commitments, discovery evidence, and clearly labelled assumptions. Higher-authority system records and approved documents outrank notes, inferred context, and model-generated claims; every material finding keeps a citation and evidence state.
-validation: Required-field checks, allowed-value rules, cross-source conflict tests, freshness checks, and confidence thresholds route gaps to review rather than silently filling them.
+before_sources: [CRM commitment, Sales-call note, Requirements document]
+before_action: Implementation starts
+before_failure: Owner and migration scope still unresolved
+consequences: [Delivery discovers commitments after kickoff, Teams spend time on unplanned remediation, Customer expectations and implementation reality drift apart]
+value_outcome: Fewer late surprises after kickoff and less avoidable delivery rework
+value_output: A reviewed implementation-readiness baseline
 owner: Implementation manager
-decision: The reviewer can approve, approve with conditions, return for clarification, reject, or escalate. No operational writeback occurs before this point.
-output: An approved implementation-readiness baseline and controlled handoff package, together with citations, unresolved gaps, decision status, reviewer identity, and an audit trail.
-baseline: Median review time, rework or exception rate, and volume per period measured before the pilot.
-target: More reviewer-accepted findings with source coverage; fewer returned outputs and downstream exceptions; no uncontrolled action.
-formula: Eligible volume × current avoidable exception rate × cost per exception × share demonstrably prevented by accepted early findings.
-decision_rule: Continue only if the pilot improves the agreed workflow metric without increasing material errors, reviewer burden, or uncontrolled actions.
-demo_url: /workflow-demos/sales-to-implementation-handoff-validator/
 artifact_title: Implementation readiness review
 artifact_summary: Sales-to-implementation inputs are checked, reconciled, and reviewed before the kickoff baseline is released.
 artifact_state: withheld
-artifact_decision: Return for clarification
+artifact_decision: Return for clarification — handoff not released
 artifact_sources:
-  - title: CRM opportunity
-    signal: Enterprise renewal marked ready
-    detail: Close date confirmed; implementation owner missing.
-  - title: Sales call notes
-    signal: Migration requested before launch
-    detail: Commitment requires confirmation against solution requirements.
-  - title: Requirements document
-    signal: "Migration scope: incomplete"
-    detail: Named data owner not yet confirmed.
+  - {title: CRM opportunity, signal: Enterprise renewal marked ready, detail: Close date confirmed; implementation owner missing.}
+  - {title: Sales call notes, signal: Migration requested before launch, detail: Commitment requires confirmation against solution requirements.}
+  - {title: Requirements document, signal: "Migration scope: incomplete", detail: Named data owner not yet confirmed.}
 artifact_finding: Readiness findings prepared
 artifact_findings: [Migration requested before launch, Delivery owner missing, Scope confirmation required]
 artifact_check_state: exception
@@ -42,4 +32,20 @@ artifact_outcome: Handoff not released
 artifact_outcome_detail: Implementation baseline remains pending until required fields are confirmed.
 artifact_resolved_label: When resolved
 artifact_resolved: After confirmation → approved readiness baseline
+principles:
+  - {title: Connect delivery reality, detail: "CRM, agreements, solution documents, discovery notes, requirements, and dependencies."}
+  - {title: Decide authority, detail: Approved agreements and requirements outrank sales notes, assumptions, or model-generated claims.}
+  - {title: Create a readiness model, detail: Structure commitments, owners, dependencies, risks, security needs, and open questions.}
+  - {title: Check before kickoff, detail: Surface missing owners, contradictions, incomplete requirements, and unresolved dependencies.}
+  - {title: Give the owner the decision, detail: Accept, conditionally accept, return, reject, or escalate the handoff.}
+baseline_cost: Late gaps, remediation effort, and slow handoff review
+workflow_hypothesis: Gaps and conflicting commitments are found before kickoff
+business_value: Less avoidable rework, stronger delivery margin, and faster time to value
+current_work:
+  - name: Sales-to-Implementation Handoff Validator
+    type: Guided synthetic workflow / representative proof
+    demonstrates: Readiness checks, source conflicts, reviewer decisions, and controlled handoff release
+    summary_url: /workflow-demos/sales-to-implementation-handoff-validator/
+    workflow_url: /workflow-demos/sales-to-implementation-handoff-validator/
+cta_support: Bring one handoff that repeatedly creates delivery surprises.
 ---
