@@ -334,7 +334,7 @@ permalink: /case-studies/iquote/
     <h2 id="iquote-cta-title">Building an AI workflow where business rules and human judgement must stay in control?</h2>
     <p>I’m interested in roles and projects where ambiguous operational work needs to become a reliable, inspectable and human-controlled AI system.</p>
     <div class="iquote-actions">
-      <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=iquote-case-study' | relative_url }}">Book a Discovery Call</a>
+      <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/?intent=iquote-case-study' | relative_url }}">Book Free Review</a>
       <a class="button-link button-secondary" href="https://www.linkedin.com/in/mahadevupadhyayula/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
     </div>
   </section>

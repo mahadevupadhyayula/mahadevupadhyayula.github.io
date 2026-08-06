@@ -3,11 +3,11 @@
   <section class="workflow-modal__panel" role="dialog" aria-modal="true" aria-labelledby="workflow-modal-title" aria-describedby="workflow-modal-description" tabindex="-1">
     <button class="workflow-modal__close" type="button" data-workflow-modal-close aria-label="Close workflow form">×</button>
     <div class="workflow-modal__copy">
-      <p class="section-eyebrow">Discovery Call</p>
-      <h2 id="workflow-modal-title">Book a Discovery Call</h2>
-      <p id="workflow-modal-description">We’ll discuss one workflow, the current friction it creates, the available inputs, the human decision point, and whether an audit, prototype, or advisory engagement is the right next step.</p>
+      <p class="section-eyebrow">Free workflow review</p>
+      <h2 id="workflow-modal-title">Book Free Review</h2>
+      <p id="workflow-modal-description">We’ll discuss one workflow, the current friction it creates, the available inputs, the human decision point, and the smallest useful next step—whether that is an audit, prototype, advisory engagement, or no build at all.</p>
     </div>
-    {% include workflow-form.html form_id='workflow-modal-intake' id_prefix='workflow-modal' compact=true button_label='Book a Discovery Call' %}
+    {% include workflow-form.html form_id='workflow-modal-intake' id_prefix='workflow-modal' compact=true button_label='Book Free Review' %}
   </section>
 </div>
 
@@ -264,6 +264,7 @@
 
       var engagement = getField(form, 'timeline');
       var engagementMap = {
+        'free-review': 'Free Review',
         audit: 'Workflow Audit',
         prototype: 'AI Workflow Prototype Sprint',
         advisory: 'AI Workflow Advisory',

@@ -12,7 +12,7 @@ permalink: /workflow-evidence/
     <h1 id="use-cases-title">Use Cases</h1>
     <p class="use-cases-hero__headline">Your team has the information. It is just scattered across the workflow.</p>
     <p class="use-cases-hero__copy">I build human-approved AI workflow systems that turn fragmented evidence into validated, reviewable outputs—before it creates revenue leakage, delivery rework, engineering churn, or weak product decisions.</p>
-    <div class="hero-actions"><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/' | relative_url }}">Book a Discovery Call</a><a class="button-link button-secondary" href="#use-case-list">Explore a Use Case</a></div>
+    <div class="hero-actions"><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/' | relative_url }}">Book Free Review</a><a class="button-link button-secondary" href="#use-case-list">Explore a Use Case</a></div>
   </section>
 
   <div id="use-case-list" class="use-case-list">
@@ -52,5 +52,5 @@ permalink: /workflow-evidence/
     <div class="portfolio-grid"><article><p class="proof-label">Independent portfolio build</p><h3>MAWI</h3><p>Approval-gated actions, policy checks, auditable decisions, and deterministic fallback.</p><a href="{{ '/case-studies/mawi/' | relative_url }}">Inspect MAWI <span aria-hidden="true">→</span></a></article><article><p class="proof-label">Portfolio prototype</p><h3>CRM Hygiene</h3><p>Source-backed CRM change packages prepared for Revenue Operations review.</p><a href="{{ '/case-studies/crm-hygiene-agent/' | relative_url }}">Inspect CRM Hygiene <span aria-hidden="true">→</span></a></article><article><p class="proof-label">Representative demo</p><h3>iQuote</h3><p>AI-assisted extraction with deterministic commercial rules and human approval.</p><a href="{{ '/case-studies/iquote/' | relative_url }}">Inspect iQuote <span aria-hidden="true">→</span></a></article></div>
   </section>
 
-  <section class="final-cta" aria-labelledby="use-cases-cta-title"><p class="section-eyebrow">Next step</p><h2 id="use-cases-cta-title">Want to get started?</h2><p>Book a Discovery Call to discuss one operational workflow, the friction it creates today, and the most useful next step.</p><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/' | relative_url }}">Book a Discovery Call</a></section>
+  <section class="final-cta" aria-labelledby="use-cases-cta-title"><p class="section-eyebrow">Next step</p><h2 id="use-cases-cta-title">Want to get started?</h2><p>Book Free Review to discuss one operational workflow, the friction it creates today, and the most useful next step.</p><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/' | relative_url }}">Book Free Review</a></section>
 </div>

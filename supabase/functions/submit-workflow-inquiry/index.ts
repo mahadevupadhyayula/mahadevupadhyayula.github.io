@@ -21,6 +21,7 @@ const ALLOWED_WORKFLOW_TYPES = new Set([
 ]);
 
 const ALLOWED_ENGAGEMENTS = new Set([
+  'Free Review',
   'Workflow Audit',
   'AI Workflow Prototype Sprint',
   'AI Workflow Advisory',
