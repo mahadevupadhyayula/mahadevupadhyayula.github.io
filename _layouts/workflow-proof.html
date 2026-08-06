@@ -1,19 +1,80 @@
 ---
-layout: page
+layout: default
 ---
-<p class="proof-breadcrumb"><a href="{{ '/workflow-evidence/' | relative_url }}">Use Cases</a> / {{ page.title | split: ' | ' | first }}</p>
-<p class="proof-disclosure"><strong>Evidence status:</strong> {{ page.evidence_status }} This is not presented as a client deployment or claimed client outcome.</p>
-<p class="page-lede">{{ page.lede }}</p>
-<nav class="proof-actions" aria-label="Available proof actions">
-  <a href="#workflow-architecture">Inspect workflow architecture</a>
-  <a href="#controlled-output">View representative output</a>
-  <a href="#pilot-measurement">Inspect pilot measurement</a>
-  {% if page.demo_url %}<a href="{{ page.demo_url | relative_url }}">Open guided synthetic demo</a>{% endif %}
-</nav>
-<section><h2>1. Operating problem</h2><p>{{ page.problem }}</p></section>
-<section><h2>2. Weak current pattern</h2><p>{{ page.weak_pattern }}</p></section>
-<section id="workflow-architecture"><h2>3. Human-approved workflow pattern</h2><div class="workflow-path"><span>Scattered inputs</span><span>AI processing</span><span>Deterministic validation</span><span>Source-linked review</span><span>Human approval</span><span>Reviewable output</span></div><p>{{ page.pattern }}</p></section>
-{% include workflow-evidence-artifact.html %}
-<div class="card-grid two"><section><h2>4. Source / evidence hierarchy</h2><p>{{ page.sources }}</p></section><section><h2>5. Deterministic validation</h2><p>{{ page.validation }}</p></section><section><h2>6. Reviewer decision</h2><p><strong>Operating owner:</strong> {{ page.owner }}</p><p>{{ page.decision }}</p></section><section id="controlled-output"><h2>7. Controlled output</h2><p>{{ page.output }}</p></section></div>
-<section id="pilot-measurement"><h2>8. How a pilot would measure value</h2><dl class="measurement"><dt>Baseline metric</dt><dd>{{ page.baseline }}</dd><dt>Target workflow behavior</dt><dd>{{ page.target }}</dd><dt>Economic hypothesis formula</dt><dd>{{ page.formula }}</dd><dt>Decision rule</dt><dd>{{ page.decision_rule }}</dd></dl><p class="proof-disclosure">This is an evaluation model using buyer-supplied variables, not a forecast or customer result.</p></section>
-<section class="final-cta"><h2>9. Related service: AI Workflow Prototype Sprint</h2><p>Test this pattern with representative inputs, the accountable reviewer, and an honest operating baseline before operational integration.</p><a class="button-link button-primary" href="{{ '/start-a-workflow-audit/' | relative_url }}">Book Free Review</a><a class="button-link button-secondary" href="{{ '/workflow-evidence/' | relative_url }}">Explore Use Cases</a></section>
+<link rel="stylesheet" href="{{ '/assets/css/workflow-proof.css' | relative_url }}">
+
+<div class="workflow-proof-page">
+  <header class="workflow-proof-hero">
+    <p class="proof-breadcrumb"><a href="{{ '/workflow-evidence/' | relative_url }}">Use Cases</a> / {{ page.pillar }}</p>
+    <p class="workflow-proof-kicker">{{ page.pillar }}</p>
+    <h1>{{ page.hero_title }}</h1>
+    <p class="workflow-proof-lede">{{ page.hero_copy }}</p>
+    <p class="workflow-proof-status"><strong>Evidence status:</strong> {{ page.evidence_status }}</p>
+    <p class="workflow-proof-disclosure">Representative workflow and synthetic evidence. Not a client deployment or claimed client outcome.</p>
+  </header>
+
+  <section class="workflow-proof-section" aria-labelledby="broken-title">
+    <p class="workflow-proof-kicker">What is broken in the current workflow</p>
+    <h2 id="broken-title">Scattered context reaches the next team before it is ready.</h2>
+    <div class="before-flow" aria-label="Current workflow">
+      <div class="before-flow__sources">{% for item in page.before_sources %}<span>{{ item }}</span>{% endfor %}</div>
+      <span class="before-flow__arrow" aria-hidden="true">→</span>
+      <strong>{{ page.before_action }}</strong>
+      <span class="before-flow__arrow" aria-hidden="true">→</span>
+      <strong class="before-flow__failure">{{ page.before_failure }}</strong>
+    </div>
+    <div class="consequence-grid">{% for item in page.consequences %}<article><span aria-hidden="true">!</span><p>{{ item }}</p></article>{% endfor %}</div>
+  </section>
+
+  <section class="workflow-proof-section value-section" aria-labelledby="value-title">
+    <p class="workflow-proof-kicker">What changes for your team</p>
+    <div class="value-grid">
+      <div><h2 id="value-title">{{ page.value_outcome }}</h2><p>I design the workflow around the decision your team needs to make—not around a generic AI summary.</p></div>
+      <article><span>High-level output</span><strong>{{ page.value_output }}</strong></article>
+    </div>
+  </section>
+
+  <section id="representative-artifact" class="artifact-section" aria-label="Representative workflow artifact">
+    {% include workflow-evidence-artifact.html %}
+  </section>
+
+  <section class="workflow-proof-section" aria-labelledby="implementation-title">
+    <p class="workflow-proof-kicker">How I implement AI in this workflow</p>
+    <h2 id="implementation-title">Enterprise AI design for {{ page.pillar }}</h2>
+    <div class="principle-grid">{% for item in page.principles %}<article><span>0{{ forloop.index }}</span><h3>{{ item.title }}</h3><p>{{ item.detail }}</p></article>{% endfor %}</div>
+  </section>
+
+  <section class="workflow-proof-section business-value" aria-labelledby="business-value-title">
+    <p class="workflow-proof-kicker">How I tie the workflow to business value</p>
+    <h2 id="business-value-title">Measure the operating change before claiming the return.</h2>
+    <p class="business-value__intro">I do not assume ROI. I start with your baseline, define the operational measure that should change, and test whether the workflow creates a credible business benefit.</p>
+    <div class="business-value__grid">
+      <article><span>Baseline cost</span><strong>{{ page.baseline_cost }}</strong></article>
+      <article><span>Workflow hypothesis</span><strong>{{ page.workflow_hypothesis }}</strong></article>
+      <article><span>Business value</span><strong>{{ page.business_value }}</strong></article>
+    </div>
+    <p class="business-value__rule">A pilot continues only if it improves the agreed measure without increasing material errors, reviewer burden, or uncontrolled action.</p>
+  </section>
+
+  <section id="current-work" class="workflow-proof-section" aria-labelledby="current-work-title">
+    <p class="workflow-proof-kicker">Current work and executive proof</p>
+    <h2 id="current-work-title">Inspect the representative proof behind this workflow.</h2>
+    <div class="current-work-grid">
+      {% for item in page.current_work %}
+      <article>
+        <div class="mini-proof" aria-hidden="true"><span>{{ page.pillar }}</span><strong>{{ item.name }}</strong><i></i><i></i><i></i></div>
+        <p class="work-type">{{ item.type }}</p><h3>{{ item.name }}</h3><p><strong>What it demonstrates:</strong> {{ item.demonstrates }}</p>
+        <div class="work-links">{% if item.summary_url %}<a href="{{ item.summary_url | relative_url }}">Read the executive summary →</a>{% endif %}{% if item.workflow_url %}<a href="{{ item.workflow_url | relative_url }}">Explore the workflow →</a>{% endif %}</div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <p class="workflow-proof-kicker">Next step</p>
+    <h2>{{ page.cta_support }}</h2>
+    <p>Test one bounded workflow with representative inputs, the accountable reviewer, and an honest operating baseline.</p>
+    <a class="button-link button-primary" href="{{ '/start-a-workflow-audit/' | relative_url }}">Book Free Review</a>
+    <a class="button-link button-secondary" href="{{ '/workflow-evidence/' | relative_url }}">Explore Use Cases</a>
+  </section>
+</div>
