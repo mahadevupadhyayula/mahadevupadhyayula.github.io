@@ -13,11 +13,23 @@
     </div>
   </figcaption>
 
-  <ol class="evidence-artifact__flow" aria-label="Source context through controlled outcome">
+  <ol class="evidence-artifact__flow{% if page.artifact_resolved %} evidence-artifact__flow--review-surface{% endif %}" aria-label="Source context through controlled outcome">
     <li class="evidence-artifact__stage evidence-artifact__stage--source">
       <span class="evidence-artifact__step">01 · Source context</span>
       <h3>Scattered inputs</h3>
+      {% if page.artifact_sources.first.title %}
+      <div class="evidence-artifact__sources">
+        {% for item in page.artifact_sources %}
+        <article class="evidence-artifact__source-card">
+          <span>{{ item.title }}</span>
+          <strong>“{{ item.signal }}”</strong>
+          <p>“{{ item.detail }}”</p>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
       <ul>{% for item in page.artifact_sources %}<li>{{ item }}</li>{% endfor %}</ul>
+      {% endif %}
     </li>
     <li class="evidence-artifact__stage evidence-artifact__stage--prepared">
       <span class="evidence-artifact__step">02 · AI prepared</span>
@@ -40,6 +52,12 @@
       <h3>{{ page.artifact_outcome }}</h3>
       <p>{{ page.artifact_outcome_detail }}</p>
     </li>
+    {% if page.artifact_resolved %}
+    <li class="evidence-artifact__resolved">
+      <span>{{ page.artifact_resolved_label }}</span>
+      <p>{{ page.artifact_resolved }}</p>
+    </li>
+    {% endif %}
   </ol>
 
   <p class="evidence-artifact__legend" aria-label="Artifact color key">
